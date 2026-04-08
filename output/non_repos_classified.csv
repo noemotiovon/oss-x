@@ -1,0 +1,33 @@
+页签,序号,项目名称,分类,上游地址,entity_type,reason
+昇腾,17,OPEA,推理加速,https://github.com/opea-project,organization,脚本分类: github.com/opea-project (org-level URL)
+昇腾,22,OpenMMLab,训练加速,https://github.com/open-mmlab,organization,脚本分类: github.com/open-mmlab (org-level URL)
+昇腾,23,ModelScope,推理加速,https://github.com/modelscope,organization,脚本分类: github.com/modelscope (org-level URL)
+昇腾,31,vLLM社区,推理加速,https://github.com/vllm-project,organization,脚本分类: github.com/vllm-project (org-level URL)
+昇腾,32,SGLang社区,推理加速,https://github.com/sgl-project,organization,脚本分类: github.com/sgl-project (org-level URL)
+昇腾,38,PyTorch社区,AI框架,https://github.com/pytorch,organization,脚本分类: github.com/pytorch (org-level URL)
+昇腾,44,MTGR,应用加速,https://github.com/meituan,organization,"脚本分类: github.com/meituan (org-level URL, 已知归属: 美团)"
+昇腾,69,inclusionAI,推理加速,https://github.com/inclusionAI,organization,"脚本分类: github.com/inclusionAI (org-level URL, 已知归属: 蚂蚁)"
+昇腾,88,deepseek-ai,推理加速,https://github.com/deepseek-ai,organization,"脚本分类: github.com/deepseek-ai (org-level URL, 已知归属: DeepSeek)"
+昇腾,89,QwenLM,推理加速,https://github.com/QwenLM,organization,"脚本分类: github.com/QwenLM (org-level URL, 已知归属: 阿里/通义千问)"
+昇腾,90,THUDM,推理加速,https://github.com/THUDM,organization,"脚本分类: github.com/THUDM (org-level URL, 已知归属: 清华大学)"
+鲲鹏,3,openMPI,基础库&加速库,"https://www.open-mpi.org/
+https://openucx.org/",organization,LLM分类: 上游地址包含两个独立项目URL(OpenMPI和OpenUCX)，属于多项目组织
+鲲鹏,78,Lustre,分布式存储,https://git.whamcloud.com/,repo,LLM分类: Lustre是单一分布式文件系统项目，git.whamcloud.com托管其源码仓库
+鲲鹏,117,Spring Cloud,Web,https://github.com/spring-cloud,organization,脚本分类: github.com/spring-cloud (org-level URL)
+鲲鹏,131,LVS,Web,在内核集成,repo,LLM分类: Linux Virtual Server是Linux内核子系统(IPVS)，属于单一代码组件
+鲲鹏,153,Python,基础库&加速库,https://github.com/python,organization,脚本分类: github.com/python (org-level URL)
+鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/,repo,LLM分类: GNU Multiple Precision Arithmetic Library，单一数学库项目
+鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/,repo,LLM分类: GNU MPC是单一任意精度复数运算库
+鲲鹏,203,Memtester,基础库&加速库,https://pyropus.ca./software/memtester/,repo,LLM分类: 单一内存测试工具软件
+鲲鹏,218,LZO,基础库&加速库,http://www.oberhumer.com/opensource/lzo/,repo,LLM分类: 单一数据压缩库
+鲲鹏,242,Bioconda,HPC,https://github.com/bioconda/,organization,脚本分类: github.com/bioconda (org-level URL)
+鲲鹏,243,Bioconductor,HPC,https://github.com/bioconductor,organization,脚本分类: github.com/bioconductor (org-level URL)
+鲲鹏,251,VASP,HPC,https://www.vasp.at/,repo,LLM分类: Vienna Ab initio Simulation Package，单一量子力学计算软件包
+鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php,repo,LLM分类: AmberTools是单一分子动力学模拟工具包
+鲲鹏,262,OpenFOAM,HPC,https://openfoam.org/release/,repo,LLM分类: 单一计算流体力学(CFD)开源软件
+鲲鹏,264,genewise,HPC,https://www.ebi.ac.uk/~birney/wise2/,repo,LLM分类: EBI开发的单一基因预测生物信息学工具
+鲲鹏,266,OpenLB,HPC,https://www.openlb.net/,repo,LLM分类: 单一开源格子玻尔兹曼方法库
+鲲鹏,294,repeatmasker,HPC,http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz,repo,LLM分类: 单一基因组重复序列屏蔽工具，URL指向tarball下载
+鲲鹏,326,Meraculous,HPC,https://jgi.doe.gov/data-and-tools/meraculous/,repo,LLM分类: JGI开发的单一基因组组装器
+鲲鹏,329,Yambo,HPC,http://www.yambo-code.org/,repo,LLM分类: 单一电子结构计算软件(yambo-code.org)
+鲲鹏,385,Android(联通云),ARM原生,https://github.com/android/,organization,"脚本分类: github.com/android (org-level URL, 已知归属: Google)"
