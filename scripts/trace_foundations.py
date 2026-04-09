@@ -1,179 +1,300 @@
 #!/usr/bin/env python3
 """
-Prepare data for foundation tracing (Step ⑤).
+Trace foundation affiliations for repos.
 
-Reads all_repos.csv and organizations.csv, extracts unique entities,
-applies known-foundation heuristics, and outputs a candidates file for
-LLM + human review.
+Strategy (3 layers):
+  Layer 1: Match repos against a pre-built foundation project cache
+  Layer 2: GitHub org-name heuristics (e.g., "apache/*" → Apache)
+  Layer 3: Mark remaining repos for LLM Web Search
 
-Usage:
-  python3 scripts/trace_foundations.py output/all_repos.csv output/organizations.csv \
-      -o output/foundations_candidates.csv --summary
+The foundation cache is built externally (via LLM Web Search) and stored in
+output/.cache/foundation_projects.json.  The script reads it, matches, and
+outputs results.
 """
 
 import argparse
 import csv
+import json
+import os
+import re
 import sys
+from pathlib import Path
 from urllib.parse import urlparse
 
+CACHE_DIR = Path("output/.cache")
+FOUNDATION_CACHE = CACHE_DIR / "foundation_projects.json"
+
 # ---------------------------------------------------------------------------
-# Known foundations — curated mapping of GitHub org/owner/project → foundation
+# Built-in org-name → foundation mapping (Layer 2 heuristics)
 # ---------------------------------------------------------------------------
 
-KNOWN_FOUNDATIONS = {
-    # GitHub org name (lowercase) → foundation name
+ORG_FOUNDATION_MAP = {
+    # Apache Software Foundation
     "apache": "Apache Software Foundation",
-    "cncf": "Cloud Native Computing Foundation (CNCF)",
-    "kubernetes": "Cloud Native Computing Foundation (CNCF)",
-    "prometheus": "Cloud Native Computing Foundation (CNCF)",
-    "envoyproxy": "Cloud Native Computing Foundation (CNCF)",
-    "grpc": "Cloud Native Computing Foundation (CNCF)",
-    "etcd-io": "Cloud Native Computing Foundation (CNCF)",
-    "open-telemetry": "Cloud Native Computing Foundation (CNCF)",
-    "argoproj": "Cloud Native Computing Foundation (CNCF)",
-    "fluent": "Cloud Native Computing Foundation (CNCF)",
-    "containerd": "Cloud Native Computing Foundation (CNCF)",
-    "coredns": "Cloud Native Computing Foundation (CNCF)",
-    "vitessio": "Cloud Native Computing Foundation (CNCF)",
-    "jaegertracing": "Cloud Native Computing Foundation (CNCF)",
-    "thanos-io": "Cloud Native Computing Foundation (CNCF)",
-    "falcosecurity": "Cloud Native Computing Foundation (CNCF)",
-    "cilium": "Cloud Native Computing Foundation (CNCF)",
-    "eclipse": "Eclipse Foundation",
-    "eclipse-vertx": "Eclipse Foundation",
-    "eclipse-theia": "Eclipse Foundation",
-    "openstack": "OpenInfra Foundation",
-    "starlingx": "OpenInfra Foundation",
-    "openinfra": "OpenInfra Foundation",
+    # Linux Foundation (umbrella)
+    "torvalds": "Linux Foundation",
+    "linuxfoundation": "Linux Foundation",
+    "lf-edge": "Linux Foundation",
+    "lfai": "Linux Foundation",
+    "lfnetworking": "Linux Foundation",
+    "openssf": "Linux Foundation",
+    "todogroup": "Linux Foundation",
+    # CNCF (under LF)
+    "cncf": "CNCF",
+    "kubernetes": "CNCF",
+    "kubernetes-sigs": "CNCF",
+    "grpc": "CNCF",
+    "envoyproxy": "CNCF",
+    "etcd-io": "CNCF",
+    "containerd": "CNCF",
+    "coredns": "CNCF",
+    "argoproj": "CNCF",
+    "fluxcd": "CNCF",
+    "open-telemetry": "CNCF",
+    "thanos-io": "CNCF",
+    "tikv": "CNCF",
+    "vitessio": "CNCF",
+    "jaegertracing": "CNCF",
+    "linkerd": "CNCF",
+    "nats-io": "CNCF",
+    "projectcontour": "CNCF",
+    "buildpacks": "CNCF",
+    "dragonflyoss": "CNCF",
+    "falcosecurity": "CNCF",
+    "fluent": "CNCF",
+    "goharbor": "CNCF",
+    "helm": "CNCF",
+    "kedacore": "CNCF",
+    "kubeedge": "CNCF",
+    "kubevirt": "CNCF",
+    "longhorn": "CNCF",
+    "open-policy-agent": "CNCF",
+    "operator-framework": "CNCF",
+    "prometheus": "CNCF",
+    "rook": "CNCF",
+    "spiffe": "CNCF",
+    "strimzi": "CNCF",
+    # PyTorch Foundation (under LF)
+    "pytorch": "PyTorch Foundation",
+    # OpenJS Foundation (under LF)
     "nodejs": "OpenJS Foundation",
+    "electron": "OpenJS Foundation",
     "jquery": "OpenJS Foundation",
     "webpack": "OpenJS Foundation",
     "expressjs": "OpenJS Foundation",
-    "electron": "OpenJS Foundation",
-    "openjsf": "OpenJS Foundation",
+    "jestjs": "OpenJS Foundation",
+    # Eclipse Foundation
+    "eclipse": "Eclipse Foundation",
+    "eclipse-ee4j": "Eclipse Foundation",
+    "eclipse-theia": "Eclipse Foundation",
+    "adoptium": "Eclipse Foundation",
+    "eclipse-vertx": "Eclipse Foundation",
+    "jakartaee": "Eclipse Foundation",
+    # OpenInfra Foundation
+    "openstack": "OpenInfra Foundation",
+    # Python Software Foundation
     "python": "Python Software Foundation",
+    "psf": "Python Software Foundation",
     "pypa": "Python Software Foundation",
+    # Rust Foundation
     "rust-lang": "Rust Foundation",
-    "linuxfoundation": "Linux Foundation",
-    "lf-edge": "Linux Foundation (LF Edge)",
-    "lfai": "Linux Foundation (LF AI & Data)",
-    "hyperledger": "Linux Foundation (Hyperledger)",
-    "zephyrproject-rtos": "Linux Foundation (Zephyr)",
-    "openssf": "Linux Foundation (OpenSSF)",
-    "todogroup": "Linux Foundation (TODO Group)",
-    "onnx": "Linux Foundation (LF AI & Data)",
-    "pytorch": "Linux Foundation (PyTorch Foundation)",
-    "torvalds": "Linux Foundation",
-    "freedesktop": "freedesktop.org",
+    # GNOME Foundation
     "gnome": "GNOME Foundation",
+    # KDE
     "kde": "KDE e.V.",
+    # Mozilla Foundation
     "mozilla": "Mozilla Foundation",
-    "wikimedia": "Wikimedia Foundation",
-    "w3c": "W3C",
-    "oasis-open": "OASIS Open",
+    # FreeBSD Foundation
+    "freebsd": "FreeBSD Foundation",
+    # OpenCV
+    "opencv": "OpenCV Foundation",
+    # Blender Foundation
+    "blender": "Blender Foundation",
+    # NumFOCUS
+    "numpy": "NumFOCUS",
+    "pandas-dev": "NumFOCUS",
+    "scipy": "NumFOCUS",
+    "matplotlib": "NumFOCUS",
+    "jupyter": "NumFOCUS",
+    "scikit-learn": "NumFOCUS",
+    # LLVM Foundation
+    "llvm": "LLVM Foundation",
+    # .NET Foundation
+    "dotnet": ".NET Foundation",
+    "dotnet-foundation": ".NET Foundation",
+    # Django Software Foundation
+    "django": "Django Software Foundation",
+    # Linux Foundation (additional projects)
+    "dpdk": "Linux Foundation",
+    "spdk": "Linux Foundation",
+    "o3de": "Linux Foundation",
+    "openvswitch": "Linux Foundation",
+    "sonic-net": "Linux Foundation",
+    "apptainer": "Linux Foundation",
+    "jenkinsci": "Linux Foundation",
+    # CNCF (additional projects)
+    "kubeflow": "CNCF",
+    "kserve": "CNCF",
+    "fluid-cloudnative": "CNCF",
+    # OpenInfra Foundation (additional)
+    "kata-containers": "OpenInfra Foundation",
+    # LF AI & Data (additional)
+    "opea-project": "LF AI & Data",
+    # PyTorch Foundation (additional projects)
+    "vllm-project": "PyTorch Foundation",
+    "ray-project": "PyTorch Foundation",
+    "deepspeedai": "PyTorch Foundation",
+    # OpenSSL Foundation
+    "openssl": "OpenSSL Foundation",
+    # Erlang Ecosystem Foundation
+    "erlang": "Erlang Ecosystem Foundation",
+    # OSGeo Foundation
+    "osgeo": "OSGeo Foundation",
+    "qgis": "OSGeo Foundation",
+    # Software Freedom Conservancy
+    "git": "Software Freedom Conservancy",
+    # Wireshark Foundation
+    "wireshark": "Wireshark Foundation",
+    # VideoLAN (non-profit)
+    "videolan": "VideoLAN",
+    # Apache brpc (old org before move to apache/)
+    "brpc": "Apache Software Foundation",
+    # Perl & Raku Foundation
+    "perl": "Perl & Raku Foundation",
 }
 
-# Known project → foundation mappings (for repos that don't match org-level)
-KNOWN_PROJECT_FOUNDATIONS = {
-    "linux": "Linux Foundation",
-    "kubernetes": "Cloud Native Computing Foundation (CNCF)",
-    "tensorflow": "Linux Foundation",
-    "pytorch": "Linux Foundation (PyTorch Foundation)",
-    "node": "OpenJS Foundation",
-    "chromium": "N/A (Google-led)",
-}
+
+def load_foundation_cache():
+    """Load the foundation project cache built by LLM."""
+    if FOUNDATION_CACHE.exists():
+        try:
+            with open(FOUNDATION_CACHE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return data
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
 
 
-def lookup_foundation(owner: str, repo_name: str = "") -> str | None:
-    """Try to find a known foundation for a GitHub owner or project."""
-    owner_lower = owner.strip().lower()
-    if owner_lower in KNOWN_FOUNDATIONS:
-        return KNOWN_FOUNDATIONS[owner_lower]
+def save_foundation_cache(cache):
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    tmp = FOUNDATION_CACHE.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1)
+    tmp.replace(FOUNDATION_CACHE)
 
-    repo_lower = repo_name.strip().lower()
-    if repo_lower in KNOWN_PROJECT_FOUNDATIONS:
-        return KNOWN_PROJECT_FOUNDATIONS[repo_lower]
+
+def extract_github_owner_repo(url):
+    """Extract (owner, repo) from GitHub URL."""
+    parsed = urlparse((url or "").strip().rstrip("/"))
+    host = (parsed.hostname or "").lower()
+    if host != "github.com":
+        return None, None
+    parts = [p for p in parsed.path.strip("/").split("/") if p]
+    if len(parts) >= 2:
+        return parts[0].lower(), parts[1].lower()
+    elif len(parts) == 1:
+        return parts[0].lower(), None
+    return None, None
+
+
+def match_foundation(owner, repo, project_name, cache):
+    """
+    Try to match a repo to a foundation.
+
+    Returns (foundation_name, evidence, confidence) or None.
+    """
+    # Layer 1: Check foundation project cache (project-level match)
+    # Cache format: { "Foundation Name": { "projects": ["owner/repo", ...], "evidence": "..." } }
+    full_name = f"{owner}/{repo}" if owner and repo else None
+    project_lower = (project_name or "").strip().lower()
+
+    for foundation_name, fdata in cache.items():
+        projects = fdata.get("projects", [])
+        # Match by owner/repo
+        if full_name:
+            for p in projects:
+                if p.lower() == full_name:
+                    return (foundation_name, f"基金会项目列表匹配: {p}", "S")
+        # Match by project name
+        if project_lower:
+            for p in projects:
+                p_repo = p.split("/")[-1].lower() if "/" in p else p.lower()
+                if p_repo == project_lower:
+                    return (foundation_name, f"基金会项目名匹配: {p}", "A")
+
+    # Layer 2: GitHub org heuristics
+    if owner and owner in ORG_FOUNDATION_MAP:
+        foundation = ORG_FOUNDATION_MAP[owner]
+        return (foundation, f"GitHub org匹配: {owner} → {foundation}", "S")
 
     return None
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Prepare foundation tracing candidates (step ⑤)"
-    )
-    parser.add_argument("repos_csv", help="Path to all_repos.csv")
-    parser.add_argument("orgs_csv", help="Path to organizations.csv")
-    parser.add_argument("--output", "-o", help="Output CSV path (default: stdout)")
-    parser.add_argument("--summary", action="store_true", help="Print summary to stderr")
+    parser = argparse.ArgumentParser(description="Trace foundation affiliations")
+    parser.add_argument("csv_file", help="Path to repo_exp.csv")
+    parser.add_argument("-o", "--output", required=True, help="Output CSV path")
+    parser.add_argument("--summary", action="store_true")
     args = parser.parse_args()
 
-    # --- Read organizations.csv ---
-    orgs = []
-    with open(args.orgs_csv, "r", encoding="utf-8") as f:
+    # Read repos
+    rows = []
+    with open(args.csv_file, "r", encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            orgs.append(row)
+            rows.append(row)
 
-    # --- Build candidates: one per unique org/owner ---
-    fieldnames = [
-        "owner", "name", "foundation", "confidence", "source",
-        "platform", "url", "description",
-        "repo_count", "repos_list",
-    ]
-    candidates = []
-    seen_owners = set()
+    # Load cache
+    cache = load_foundation_cache()
+    if cache:
+        total_projects = sum(len(v.get("projects", [])) for v in cache.values())
+        print(f"Loaded foundation cache: {len(cache)} foundations, {total_projects} projects", file=sys.stderr)
+    else:
+        print("No foundation cache found. Run LLM step to build it first.", file=sys.stderr)
 
-    for row in orgs:
-        owner = row.get("owner", "").strip()
-        if not owner or owner.lower() in seen_owners:
-            continue
-        seen_owners.add(owner.lower())
+    # Match
+    matched = 0
+    unmatched = 0
+    output_fields = list(rows[0].keys()) + ["foundation_name", "evidence", "confidence"]
 
-        foundation = lookup_foundation(owner)
-        candidates.append({
-            "owner": owner,
-            "name": row.get("name", owner),
-            "foundation": foundation or "",
-            "confidence": "high" if foundation else "unknown",
-            "source": "已知基金会映射" if foundation else "待LLM研究",
-            "platform": row.get("platform", ""),
-            "url": row.get("url", ""),
-            "description": row.get("description", ""),
-            "repo_count": row.get("repo_count", ""),
-            "repos_list": row.get("repos_list", ""),
-        })
+    for row in rows:
+        url = row.get("上游地址", "")
+        name = row.get("项目名称", "")
+        owner, repo = extract_github_owner_repo(url)
 
-    # Sort: known foundations first, then unknowns by repo_count desc
-    candidates.sort(key=lambda r: (
-        0 if r["confidence"] == "high" else 1,
-        -int(r["repo_count"]) if r["repo_count"] else 0
-    ))
+        result = match_foundation(owner, repo, name, cache)
+        if result:
+            row["foundation_name"], row["evidence"], row["confidence"] = result
+            matched += 1
+        else:
+            row["foundation_name"] = "unknown"
+            row["evidence"] = ""
+            row["confidence"] = ""
+            unmatched += 1
 
-    # --- Output ---
-    out = sys.stdout
-    if args.output:
-        out = open(args.output, "w", encoding="utf-8", newline="")
-
-    writer = csv.DictWriter(out, fieldnames=fieldnames)
-    writer.writeheader()
-    for row in candidates:
-        writer.writerow(row)
-
-    if args.output:
-        out.close()
-
-    # --- Summary ---
-    known = sum(1 for c in candidates if c["confidence"] == "high")
-    unknown = len(candidates) - known
+    # Write output
+    os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
+    with open(args.output, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=output_fields)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({k: row.get(k, "") for k in output_fields})
 
     if args.summary:
-        print(f"\n{'='*50}", file=sys.stderr)
-        print(f"Foundation Tracing Candidates (Step ⑤)", file=sys.stderr)
-        print(f"{'='*50}", file=sys.stderr)
-        print(f"  Total unique owners:      {len(candidates)}", file=sys.stderr)
-        print(f"  Known foundations:         {known}", file=sys.stderr)
-        print(f"  Need LLM research:        {unknown}", file=sys.stderr)
-
-    sys.exit(1 if unknown > 0 else 0)
+        from collections import Counter
+        foundations = Counter(r.get("foundation_name", "unknown") for r in rows)
+        print(f"\n{'='*60}", file=sys.stderr)
+        print(f"Foundation Tracing Summary", file=sys.stderr)
+        print(f"{'='*60}", file=sys.stderr)
+        print(f"  Total repos:     {len(rows)}", file=sys.stderr)
+        print(f"  Matched:         {matched}", file=sys.stderr)
+        print(f"  Unmatched:       {unmatched} (need LLM)", file=sys.stderr)
+        print(f"{'─'*60}", file=sys.stderr)
+        print(f"  By foundation:", file=sys.stderr)
+        for f_name, count in foundations.most_common():
+            if f_name != "unknown":
+                print(f"    {f_name:40s} {count}", file=sys.stderr)
+        print(f"    {'unknown':40s} {foundations.get('unknown', 0)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

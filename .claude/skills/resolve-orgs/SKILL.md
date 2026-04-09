@@ -1,79 +1,53 @@
 ---
 name: resolve-orgs
-description: Resolve repos into their parent organizations, deduplicate by org, and generate organization.csv
+description: Resolve repos to their parent organizations via GitHub API, split into known and unknown org results
 user-invocable: true
 ---
 
-# Organization Resolution Skill
+# Repo Organization Resolution Skill (Step ④)
 
-Read `output/all_repos.csv`, resolve each repo to its parent organization/owner via GitHub API, deduplicate by organization, and output `output/organizations.csv`.
+For each repo in `repo.csv`, query GitHub API to find its parent organization. Split results into known-org (aggregated) and unknown-org files.
 
 ## Input
 
-- `output/all_repos.csv` — full repo pool (from `/merge-repos`)
-- User may optionally specify:
-  - A different input CSV path
+- `output/repo.csv` — from step ③ `/split-merge`
 
 ## Procedure
 
 ### Step 1: Run the resolution script
 
 ```bash
-python3 scripts/resolve_orgs.py output/all_repos.csv --summary -o output/organizations.csv
+python3 scripts/resolve_orgs.py output/repo.csv --summary -o output
 ```
 
-- If exit code is **0** — all owners resolved successfully, go to Step 3.
-- If exit code is **1** — some repos have non-GitHub URLs or unparseable URLs that need manual handling, proceed to Step 2.
+The script:
+1. For each repo, calls GitHub API to get `owner` info
+2. If `owner.type == Organization` → records the org name and URL
+3. **Known org repos**: groups by org, aggregates:
+   - `org_name` — organization name
+   - `org_url` — organization GitHub URL
+   - `repo_count` — number of repos under this org
+   - `页签` — aggregated (semicolon-joined)
+   - `项目名称` — aggregated (semicolon-joined)
+   - `分类` — aggregated (semicolon-joined)
+   - `上游地址` — aggregated (semicolon-joined)
+4. **Unknown org repos**: repos where API cannot determine org (personal accounts, non-GitHub URLs) → kept as-is, not aggregated
 
-### Step 2: LLM resolution (fallback for non-GitHub and manual_review items)
+### Step 2: Verify output
 
-For items the script cannot handle (non-GitHub URLs, unparseable URLs), you MUST research each one to find the parent organization.
+Check that both files exist:
+- `output/repo_known_org.csv` — aggregated by organization
+- `output/repo_unknown_org.csv` — repos without known organization
 
-#### Research methodology
+### Step 3: Output summary
 
-For each `manual_review` or `non_github` item:
-
-1. **Web search** for `"{project_name}" organization` or `"{project_name}" maintained by`
-2. **Identify the parent org** — most projects belong to some organization, company, or foundation
-3. **If a GitHub org is found**, update the entry with the GitHub org URL and set `owner_type` to `organization` or `user`
-4. **If no GitHub org exists**, determine the owner from the project's hosting platform or website
-5. **If truly ambiguous**, keep as `manual_review` and flag for the user
-
-#### What to update for each resolved item
-
-| Field | Value |
-|-------|-------|
-| owner | Organization/owner login or name |
-| owner_type | `organization`, `user`, or `manual_review` |
-| name | Display name of the org |
-| platform | Hosting platform (e.g., `gitlab.com`, `gitee.com`) |
-| url | Organization URL |
-| source | `LLM解析: {reasoning}` |
-
-After manually resolving items, update `output/organization.csv` with the resolved entries.
-
-### Step 3: Deduplication verification
-
-Verify no duplicate owners exist in the final output:
-
-```bash
-awk -F',' 'NR>1 {print tolower($1)}' output/organization.csv | sort | uniq -d
-```
-
-If duplicates are found, merge their repo counts and repo lists, keeping the richer metadata entry.
-
-### Step 4: Output summary
-
-Print a summary table:
-- Total unique organizations/owners
-- Breakdown by type (organization, user, non_github, manual_review)
+Print:
+- Total repos processed
+- Repos with known org (count + org count)
+- Repos with unknown org (count)
 - Top organizations by repo count
-- Any items that could not be resolved
 
-### Step 5: Review with user
+### Next step
 
-Present the resolution results to the user for review. Key things to highlight:
-- Owners with many repos — these are the most important organizations
-- `user` type owners — may actually be organizations worth investigating
-- `non_github` owners — verify their org assignment is correct
-- `manual_review` items — need user decision
+→ If unknown orgs exist: `/resolve-unknown-orgs`
+→ If no unknowns: `/merge-orgs`

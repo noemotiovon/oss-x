@@ -118,7 +118,6 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,38,Spark,大数据,https://github.com/apache/spark,repo,脚本分类: github.com/apache/spark
 鲲鹏,39,Hive,大数据,https://github.com/apache/hive,repo,脚本分类: github.com/apache/hive
 鲲鹏,40,HBase,大数据,https://github.com/apache/hbase,repo,脚本分类: github.com/apache/hbase
-鲲鹏,41,ElasticSearch,大数据,https://github.com/elastic/elasticsearch,repo,脚本分类: github.com/elastic/elasticsearch
 鲲鹏,42,Flink,大数据,https://github.com/apache/flink,repo,脚本分类: github.com/apache/flink
 鲲鹏,43,Kafka,大数据,https://github.com/apache/kafka,repo,脚本分类: github.com/apache/kafka
 鲲鹏,44,Storm,大数据,https://github.com/apache/storm,repo,脚本分类: github.com/apache/storm
@@ -391,9 +390,20 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,330,Cubep3m,HPC,https://github.com/jharno/cubep3m,repo,脚本分类: github.com/jharno/cubep3m
 鲲鹏,331,SWAN,HPC,https://swanmodel.sourceforge.io/,repo,脚本分类: swanmodel.sourceforge (project site)
 鲲鹏,332,dnacopy,HPC,https://bioconductor.org/packages/3.20/bioc/html/DNAcopy.html,repo,脚本分类: bioconductor.org package: DNAcopy
+鲲鹏,333,metapod,HPC,https://bioconductor.org/packages/3.20/bioc/html/metapod.html,repo,脚本分类: bioconductor.org package: metapod
+鲲鹏,334,geneselectmmd,HPC,https://bioconductor.org/packages/3.20/bioc/html/GeneSelectMMD.html,repo,脚本分类: bioconductor.org package: GeneSelectMMD
 鲲鹏,335,maigespack,HPC,https://bioconductor.org/packages/3.17/bioc/html/maigesPack.html,repo,脚本分类: bioconductor.org package: maigesPack
+鲲鹏,336,fastseg,HPC,https://bioconductor.org/packages/3.20/bioc/html/fastseg.html,repo,脚本分类: bioconductor.org package: fastseg
+鲲鹏,337,batchelor,HPC,https://bioconductor.org/packages/3.20/bioc/html/batchelor.html,repo,脚本分类: bioconductor.org package: batchelor
+鲲鹏,338,methylkit,HPC,https://bioconductor.org/packages/3.20/bioc/html/methylKit.html,repo,脚本分类: bioconductor.org package: methylKit
+鲲鹏,339,monocle,HPC,https://bioconductor.org/packages/3.20/bioc/html/monocle.html,repo,脚本分类: bioconductor.org package: monocle
+鲲鹏,340,biovizbase,HPC,https://bioconductor.org/packages/3.20/bioc/html/biovizBase.html,repo,脚本分类: bioconductor.org package: biovizBase
+鲲鹏,341,genomation,HPC,https://bioconductor.org/packages/3.20/bioc/html/genomation.html,repo,脚本分类: bioconductor.org package: genomation
+鲲鹏,342,kebabs,HPC,https://bioconductor.org/packages/3.20/bioc/html/kebabs.html,repo,脚本分类: bioconductor.org package: kebabs
 鲲鹏,343,Doris,大数据,https://github.com/apache/doris,repo,脚本分类: github.com/apache/doris
 鲲鹏,344,Cubefs,分布式存储,https://github.com/cubefs/cubefs,repo,脚本分类: github.com/cubefs/cubefs
+鲲鹏,345,fuse,分布式存储,"fuse-go修改部分:https://github.com/cubefs/cubefs/
+fuse内核优化部分：https://github.com/torvalds/linux",repo,脚本分类: github.com/cubefs/cubefs
 鲲鹏,346,Milvus,数据库,https://github.com/milvus-io/milvus,repo,脚本分类: github.com/milvus-io/milvus
 鲲鹏,347,OceanBase,数据库,https://github.com/oceanbase/oceanbase,repo,脚本分类: github.com/oceanbase/oceanbase
 鲲鹏,348,O3DE,虚拟化,https://github.com/o3de/o3de,repo,脚本分类: github.com/o3de/o3de
@@ -447,6 +457,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,400,vLLM(蚂蚁/腾讯),搜广推,https://github.com/vllm-project/vllm,repo,脚本分类: github.com/vllm-project/vllm
 鲲鹏,401,llama.cpp（电信/移动）,搜广推,https://github.com/ggerganov/llama.cpp,repo,脚本分类: github.com/ggerganov/llama.cpp
 鲲鹏,402,LangGraph(移动),搜广推,https://github.com/langchain-ai/langgraph,repo,脚本分类: github.com/langchain-ai/langgraph
+鲲鹏,403,TensorRT（京东）,搜广推,https://github.com/NVIDIA/TensorRT,repo,脚本分类: github.com/NVIDIA/TensorRT
 鲲鹏,404,TensorRT-LLM（京东）,搜广推,https://github.com/NVIDIA/TensorRT-LLM,repo,脚本分类: github.com/NVIDIA/TensorRT-LLM
 鲲鹏,406,folly(字节),基础库&加速库,https://github.com/facebook/folly,repo,脚本分类: github.com/facebook/folly
 鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/sonic-net/sonic-cpp,repo,脚本分类: github.com/sonic-net/sonic-cpp
@@ -540,6 +551,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,495,FastTree,HPC,https://github.com/morgannprice/fasttree,repo,脚本分类: github.com/morgannprice/fasttree
 鲲鹏,496,kraken2,HPC,https://github.com/DerrickWood/kraken2,repo,脚本分类: github.com/DerrickWood/kraken2
 鲲鹏,497,Blat,HPC,https://github.com/icebert/pblat-cluster,repo,脚本分类: github.com/icebert/pblat-cluster
+鲲鹏,498,AutoDOCK,HPC,https://github.com/ccsb-scripps/AutoDock-Vina,repo,脚本分类: github.com/ccsb-scripps/AutoDock-Vina
 鲲鹏,499,cd-hit,HPC,https://github.com/weizhongli/cdhit,repo,脚本分类: github.com/weizhongli/cdhit
 鲲鹏,500,kobas,HPC,https://github.com/xmao/kobas,repo,脚本分类: github.com/xmao/kobas
 鲲鹏,501,meryl,HPC,https://github.com/marbl/meryl,repo,脚本分类: github.com/marbl/meryl
@@ -605,17 +617,18 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,563,kokkos,基础库&加速库,https://github.com/kokkos/kokkos,repo,脚本分类: github.com/kokkos/kokkos
 鲲鹏,565,slurm,基础库&加速库,https://github.com/SchedMD/slurm,repo,脚本分类: github.com/SchedMD/slurm
 鲲鹏,566,sglang,HPC,https://github.com/sgl-project/sglang,repo,脚本分类: github.com/sgl-project/sglang
-鲲鹏,78,Lustre,分布式存储,https://git.whamcloud.com/,repo,LLM分类: Lustre是单一分布式文件系统项目，git.whamcloud.com托管其源码仓库
-鲲鹏,131,LVS,Web,在内核集成,repo,LLM分类: Linux Virtual Server是Linux内核子系统(IPVS)，属于单一代码组件
-鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/,repo,LLM分类: GNU Multiple Precision Arithmetic Library，单一数学库项目
-鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/,repo,LLM分类: GNU MPC是单一任意精度复数运算库
-鲲鹏,203,Memtester,基础库&加速库,https://pyropus.ca./software/memtester/,repo,LLM分类: 单一内存测试工具软件
-鲲鹏,218,LZO,基础库&加速库,http://www.oberhumer.com/opensource/lzo/,repo,LLM分类: 单一数据压缩库
-鲲鹏,251,VASP,HPC,https://www.vasp.at/,repo,LLM分类: Vienna Ab initio Simulation Package，单一量子力学计算软件包
-鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php,repo,LLM分类: AmberTools是单一分子动力学模拟工具包
-鲲鹏,262,OpenFOAM,HPC,https://openfoam.org/release/,repo,LLM分类: 单一计算流体力学(CFD)开源软件
-鲲鹏,264,genewise,HPC,https://www.ebi.ac.uk/~birney/wise2/,repo,LLM分类: EBI开发的单一基因预测生物信息学工具
-鲲鹏,266,OpenLB,HPC,https://www.openlb.net/,repo,LLM分类: 单一开源格子玻尔兹曼方法库
-鲲鹏,294,repeatmasker,HPC,http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz,repo,LLM分类: 单一基因组重复序列屏蔽工具，URL指向tarball下载
-鲲鹏,326,Meraculous,HPC,https://jgi.doe.gov/data-and-tools/meraculous/,repo,LLM分类: JGI开发的单一基因组组装器
-鲲鹏,329,Yambo,HPC,http://www.yambo-code.org/,repo,LLM分类: 单一电子结构计算软件(yambo-code.org)
+鲲鹏,41,openMPI,HPC,"https://www.open-mpi.org/, https://openucx.org/",repo,GitHub repo: github.com/open-mpi/ompi — Open MPI main development repository
+鲲鹏,78,Lustre,分布式存储,https://git.whamcloud.com/,repo,GitHub mirror: github.com/lustre/lustre-release — Lustre parallel file system
+鲲鹏,131,LVS,Web,在内核集成,repo,Linux内核子系统 net/netfilter/ipvs — Linux Virtual Server已合入内核主线
+鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/,repo,GNU Multiple Precision Arithmetic Library — 官方Mercurial仓库 gmplib.org/repo; GitHub mirror: github.com/gmp-mirror
+鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/,repo,GNU MPC — 复数高精度运算C库; 源码发布于 ftp.gnu.org/gnu/mpc/
+鲲鹏,203,Memtester,基础库&加速库,https://pyropus.ca./software/memtester/,repo,用户态内存测试工具; GitHub mirror: github.com/jnavila/memtester
+鲲鹏,218,LZO,基础库&加速库,http://www.oberhumer.com/opensource/lzo/,repo,LZO实时数据压缩库; GitHub mirror: github.com/nemequ/lzo
+鲲鹏,251,VASP,HPC,https://www.vasp.at/,repo,Vienna Ab initio Simulation Package — 商业授权的Fortran计算化学软件; 单一代码库
+鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php,repo,AmberTools — 分子动力学模拟工具集; GitHub: github.com/Amber-MD/AmberClassic (GPLv2)
+鲲鹏,262,OpenFOAM,HPC,https://openfoam.org/release/,repo,OpenFOAM CFD工具箱; GitHub: github.com/OpenFOAM/OpenFOAM-dev
+鲲鹏,264,genewise,HPC,https://www.ebi.ac.uk/~birney/wise2/,repo,Wise2/GeneWise — 蛋白质-DNA比对工具; GitHub mirror: github.com/PlantandFoodResearch/wise2
+鲲鹏,266,OpenLB,HPC,https://www.openlb.net/,repo,OpenLB — 开源格子玻尔兹曼C++代码; GitLab: gitlab.com/openlb/release (GPLv2)
+鲲鹏,294,repeatmasker,HPC,http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz,repo,RepeatMasker — DNA重复序列筛查工具; GitHub: github.com/Dfam-consortium/RepeatMasker
+鲲鹏,326,Meraculous,HPC,https://jgi.doe.gov/data-and-tools/meraculous/,repo,Meraculous — 全基因组组装器; SourceForge: sourceforge.net/projects/meraculous20
+鲲鹏,329,Yambo,HPC,http://www.yambo-code.org/,repo,Yambo — 多体计算ab initio代码; GitHub: github.com/yambo-code/yambo (GPL)

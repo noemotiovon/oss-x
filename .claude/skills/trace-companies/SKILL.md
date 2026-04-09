@@ -1,84 +1,83 @@
 ---
 name: trace-companies
-description: Trace repos/organizations to their parent companies, output companies.csv
+description: Use LLM Web Search to determine company affiliation for each repo
 user-invocable: true
 ---
 
-# Company Tracing Skill (Step ④)
+# Company Tracing Skill (Step ⑩)
 
-Trace each repo/organization to its parent company using known mappings, LLM research, and human confirmation.
+Determine which repos are backed by commercial companies using Web Search.
 
 ## Input
 
-- `output/all_repos.csv` — full repo pool (from merge step)
-- `output/organizations.csv` — verified organizations (from step ③)
+- `output/repo_exp.csv` — expanded repo list (from step ⑧)
 
 ## Procedure
 
-### Step 1: Run the prep script
+### Step 1: Read repos
 
-```bash
-python3 scripts/trace_companies.py output/all_repos.csv output/organizations.csv \
-    --summary -o output/companies_candidates.csv
-```
+Read `output/repo_exp.csv` and prepare to process each repo.
 
-- If exit code is **0** — all owners have known company mappings, go to Step 3.
-- If exit code is **1** — some owners need LLM research, proceed to Step 2.
+### Step 2: LLM Web Search for company affiliation
 
-### Step 2: LLM research for unknown company affiliations
-
-For each row in `output/companies_candidates.csv` where `confidence=unknown`, research the company affiliation.
+For each repo, **you MUST use Web Search** to determine company affiliation. Do NOT guess.
 
 #### Research methodology
 
-For each unknown owner/org:
+For each repo:
 
-1. **Check the org's GitHub page metadata** — description, blog URL, and location often reveal the company
-2. **Web search** for `"{org_name}" company OR Inc OR Ltd OR "backed by" OR "founded by"`
-3. **Check the blog/website URL** — commercial domains often point to the parent company
+1. **Check the repo's GitHub page** — description, website URL, and org info often reveal the company
+2. **Web search** for `"{project_name}" company OR Inc OR Ltd OR "backed by" OR "developed by" OR "maintained by"`
+3. **Check the org's website** — commercial domains often point to the parent company
 
 #### Decision criteria
 
-- **Has parent company**: The org is owned/maintained by a for-profit company
-  - Set `company` to the company name, `confidence` to `high`, `source` to `LLM研究: {evidence}`
-- **Is an independent project**: Community-driven, no single corporate owner
-  - Set `company` to empty, `confidence` to `none`, `source` to `LLM研究: 独立社区项目`
-- **Ambiguous**: Multiple corporate sponsors or unclear ownership
-  - Set `company` to best guess, `confidence` to `low`, `source` to `LLM研究: {details}`
+- **Has parent company**: The repo is owned/maintained by a for-profit company
+  - Record company name, confidence, and evidence
+- **Independent project**: Community-driven, no single corporate owner
+  - Set `company_name=unknown`
+- **Multiple sponsors**: Several companies contribute but none owns it
+  - Set `company_name=unknown`, note the sponsors in evidence
+
+#### Common patterns
+
+- Chinese tech companies: Huawei/华为, Alibaba/阿里, Tencent/腾讯, Baidu/百度, ByteDance/字节
+- US tech: Google, Meta, Microsoft, Amazon, Apple
+- AI companies: OpenAI, Anthropic, Hugging Face, Stability AI
+- University labs: not companies — mark as `unknown`
+
+#### For each repo, record:
+
+- `company_name` — company name, or `unknown` if not affiliated
+- `evidence` — actual URLs and facts from web search
+- `confidence` — S/A/B/C
 
 #### Batch optimization
 
-Group unknowns by pattern:
-- All orgs under the same parent (e.g., multiple Google orgs) — research once, apply to all
-- University/research labs — often not companies, mark as `none` unless they have a commercial arm
-- Chinese tech orgs — check if they belong to BAT/华为/字节 etc.
+- Group repos by org — repos in the same org usually belong to the same company
+- Research the org once, apply to all its repos
 
-After research, update `output/companies_candidates.csv` with findings.
+### Step 3: Present to user
 
-### Step 3: Generate companies.csv
-
-From the completed candidates file, produce the final deduplicated company list.
-
-**Present candidates to the user for review** before generating the final file. Group by company and show:
+Show results grouped by company:
 - Company name
-- Associated orgs/repos
-- Evidence/source
+- Repos under this company
+- Evidence and confidence for each
 
-After user confirmation, generate `output/companies.csv` with columns:
+The user reviews and may correct assignments.
 
-```
-company,url,associated_orgs,associated_repos,evidence
-```
+### Step 4: Save output
 
-Where:
-- `company` — Company name
-- `url` — Company website or primary URL
-- `associated_orgs` — Semicolon-joined list of GitHub orgs belonging to this company
-- `associated_repos` — Semicolon-joined list of key repos
-- `evidence` — How the affiliation was determined
+After user confirmation, write `output/company.csv` with columns:
+- All repo columns from repo_exp.csv
+- `company_name` — company name or `unknown`
+- `evidence` — search evidence
+- `confidence` — S/A/B/C
 
-Deduplicate by company name (case-insensitive).
+### Step 5: Output summary
 
-### Step 4: Self-improvement
-
-If you identified new company → org mappings, add them to `KNOWN_COMPANIES` in `scripts/trace_companies.py` so future runs auto-classify them. Ask the user before making changes.
+Print:
+- Total repos processed
+- Repos with company affiliation (count by company)
+- Repos with no company (`unknown`)
+- Count by confidence level

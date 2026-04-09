@@ -1,0 +1,368 @@
+owner,owner_type,name,platform,url,repo_count,页签,分类,description,blog,location,public_repos,source,repos_list
+apache,organization,The Apache Software Foundation,github.com,https://github.com/apache,49,鲲鹏,"Web,基础库&加速库,大数据,搜广推,数据库",,https://www.apache.org/,,3097,github_api,Hadoop;Spark;Hive;HBase;Flink;Kafka;Storm;Impala;Zookeeper;Tez;Flume;Oozie;Solr;Kylin;Accumulo;Avro;Pig;Atlas;Livy;Parquet;Mesos;Thrift;Drill;Druid;Phoenix;Lucene;Arrow;Kudu;Apache HTTP Server;Tomcat;ATS;Dubbo;Cassandra;Maven;Ant;APR-util;ActiveMQ;APR;Guacamole;Doris;Gluten(京东/美团);Iceberg(字节/京东);Ambari(中移);hudi(字节/京东);ORC(京东);Celeborn（阿里）;auron（快手）;TVM(CBG);brpc
+google,organization,Google,github.com,https://github.com/google,8,"昇腾,鲲鹏","ARM应用支持,基础库&加速库,应用加速,搜广推,数据库",Google ❤️ Open Source,https://opensource.google/,United States of America,2852,github_api,A2UI;Snappy;benchmark;LevelDB;Google Test;FlatBuffers;RE2;ScaNN(美团)
+huggingface,organization,Hugging Face,github.com,https://github.com/huggingface,7,昇腾,"推理加速,训练加速",The AI community building the future.,https://huggingface.co/,NYC + Paris,403,github_api,transformers;accelerate;PEFT;TRL;diffusers;timm;TGI
+alibaba,organization,Alibaba,github.com,https://github.com/alibaba,6,"昇腾,鲲鹏","Web,基础库&加速库,推理加速,训练加速",Alibaba Open Source,https://opensource.alibaba.com/,"Hangzhou, China",520,github_api,ChatLearn;ROLL;rtp-llm;Tengine;FastJSON;canal
+vllm-project,organization,vLLM,github.com,https://github.com/vllm-project,5,"昇腾,鲲鹏","推理加速,搜广推,训练加速",,,,36,github_api,speculators;router;AIBrix;llm-compressor;vLLM(蚂蚁/腾讯)
+facebook,organization,Meta,github.com,https://github.com/facebook,5,鲲鹏,"基础库&加速库,数据库",We are working to build community through open source technology. NB: members must have two-factor auth.,https://opensource.fb.com,"Menlo Park, California",167,github_api,Zstd;RocksDB;React;folly(字节);fbthrift(字节)
+NVIDIA,organization,NVIDIA Corporation,github.com,https://github.com/NVIDIA,4,"昇腾,鲲鹏","HPC,搜广推,训练加速",,https://nvidia.com,"2788 San Tomas Expressway, Santa Clara, CA, 95051",710,github_api,Magatron;TensorRT;TensorRT（京东）;TensorRT-LLM（京东）
+pytorch,organization,pytorch,github.com,https://github.com/pytorch,4,"昇腾,鲲鹏","搜广推,训练加速",,https://pytorch.org,where the eigens are valued,67,github_api,torchtitan;tensordict;torchvision;PyTorch
+microsoft,organization,Microsoft,github.com,https://github.com/microsoft,3,"昇腾,鲲鹏","基础库&加速库,推理加速,搜广推",Open source projects and samples from Microsoft,https://opensource.microsoft.com,"Redmond, WA",7751,github_api,ONNXRuntime;TypeScript;DiskANN(字节)
+tensorflow,organization,tensorflow,github.com,https://github.com/tensorflow,3,"昇腾,鲲鹏","AI框架,搜广推",,http://www.tensorflow.org,,107,github_api,TensorFlow;tensorflow-serving(BOSS);XLA(京东)
+elastic,organization,elastic,github.com,https://github.com/elastic,3,鲲鹏,"基础库&加速库,大数据",,https://www.elastic.co/,,908,github_api,logstash;Kibana;Filebeat
+broadinstitute,organization,Broad Institute,github.com,https://github.com/broadinstitute,3,鲲鹏,HPC,Broad Institute of MIT and Harvard,http://www.broadinstitute.org/,"Cambridge, MA",1468,github_api,GATK;pilon;picard
+NOAA-EMC,organization,NOAA Environmental Modeling Center (EMC),github.com,https://github.com/NOAA-EMC,3,鲲鹏,HPC,We develop numerical forecast systems and enhance numerical forecasts through numerical computational technology and data assimilation techniques.   ,http://www.emc.ncep.noaa.gov/,United States of America,237,github_api,WAVEWATCH;NCEPLIBS;wgrib2
+InternLM,organization,InternLM,github.com,https://github.com/InternLM,2,昇腾,"推理加速,训练加速",,https://chat.intern-ai.org.cn/,China,46,github_api,InternLM;xtuner
+kubernetes,organization,Kubernetes,github.com,https://github.com/kubernetes,2,"昇腾,鲲鹏","推理加速,虚拟化",Production-Grade Container Scheduling and Management,https://kubernetes.io,,80,github_api,Kubernetes DRA;Kubernetes
+ray-project,organization,ray-project,github.com,https://github.com/ray-project,2,"昇腾,鲲鹏","推理加速,虚拟化",,https://docs.ray.io,,124,github_api,Ray;kuberay(字节)
+modelscope,organization,ModelScope,github.com,https://github.com/modelscope,2,昇腾,"推理加速,训练加速",Model-as-a-Service in the making: bring accessible AI to all.,https://www.modelscope.cn/,,45,github_api,ms-swift;DiffSynth-Studio
+sgl-project,organization,sgl-project,github.com,https://github.com/sgl-project,2,"昇腾,鲲鹏","HPC,训练加速",,,,26,github_api,SpecForge;sglang
+kvcache-ai,organization,kvcache.ai,github.com,https://github.com/kvcache-ai,2,昇腾,推理加速,"KVCache.AI is a joint research project between MADSys and top industry collaborators, focusing on efficient LLM serving.",https://madsys.cs.tsinghua.edu.cn/,,13,github_api,Mooncake;Ktransformers
+redis,organization,Redis,github.com,https://github.com/redis,2,鲲鹏,"基础库&加速库,大数据",,https://redis.io,,69,github_api,Redis;Hiredis
+automattic,organization,Automattic,github.com,https://github.com/automattic,2,鲲鹏,"Web,大数据",We are passionate about making the web a better place.,https://automattic.com,Worldwide,1265,github_api,Knox;Mongoose
+spring-projects,organization,Spring,github.com,https://github.com/spring-projects,2,鲲鹏,Web,Spring Projects,https://spring.io/projects,United States of America,80,github_api,Spring Framework;Spring Boot
+influxdata,organization,InfluxData,github.com,https://github.com/influxdata,2,鲲鹏,"基础库&加速库,数据库",,https://influxdata.com,United States of America,216,github_api,InfluxDB;Telegraf
+grpc,organization,grpc,github.com,https://github.com/grpc,2,鲲鹏,基础库&加速库,"A high performance, open source, general-purpose RPC framework",https://grpc.io,,31,github_api,grpc-java;grpc
+qef,organization,Quantum ESPRESSO,github.com,https://github.com/qef,2,鲲鹏,"HPC,基础库&加速库",,http://www.quantum-espresso.org/,,24,github_api,QuantumEspresso;Want
+wrf-model,organization,Weather Research and Forecasting Model,github.com,https://github.com/wrf-model,2,鲲鹏,HPC,,http://www2.mmm.ucar.edu/wrf/users/,"Boulder, Colorado, USA",16,github_api,WRF;WPS
+dfam-consortium,organization,Dfam Consortium,github.com,https://github.com/dfam-consortium,2,鲲鹏,HPC,Resources for the Study of Transposable Element Families,www.dfam.org,,24,github_api,RepeatModeler;RepeatScout
+ccsb-scripps,organization,Center for Computational Structural Biology,github.com,https://github.com/ccsb-scripps,2,鲲鹏,HPC,Docking and Mesoscale Modeling,https://ccsb.scripps.edu,Scripps Research,11,github_api,AutoDock vina;AutoDOCK
+soedinglab,organization,Söding Lab,github.com,https://github.com/soedinglab,2,鲲鹏,HPC,Quantitative and Computational Biology,https://mpinat.mpg.de/soeding,"Goettingen, Germany",57,github_api,metaeuk;HH-suite
+DaehwanKimLab,organization,Kim Lab at UT Southwestern Medical Center,github.com,https://github.com/DaehwanKimLab,2,鲲鹏,HPC,,https://kim-lab.org,,17,github_api,centrifuge;HISAT2
+bytedance,organization,Bytedance Inc.,github.com,https://github.com/bytedance,2,鲲鹏,"大数据,搜广推",,https://opensource.bytedance.com,Singapore,401,github_api,Bolt(字节);monolith(字节)
+SPECFEM,organization,SPECFEM,github.com,https://github.com/SPECFEM,2,鲲鹏,HPC,Spectral-element code repositories,https://specfem.org,,12,github_api,specfem3d;specfem3d_globe
+RosettaCommons,organization,RosettaCommons,github.com,https://github.com/RosettaCommons,2,鲲鹏,HPC,,https://www.rosettacommons.org,,50,github_api,Rfdiffusion;PyRosetta
+NanoComp,organization,Nanostructures and Computation Group,github.com,https://github.com/NanoComp,2,鲲鹏,HPC,,http://math.mit.edu/~stevenj/group,"MIT, Cambridge, MA, USA",11,github_api,MEEP;MPB
+USEPA,organization,U.S. Environmental Protection Agency,github.com,https://github.com/USEPA,2,鲲鹏,"HPC,基础库&加速库",Protecting Human Health and the Environment,https://www.epa.gov,United States of America,680,github_api,CMAQ;SWMM
+pachterlab,organization,Pachter Lab,github.com,https://github.com/pachterlab,2,鲲鹏,HPC,,http://pachterlab.github.io,"Pasadena, CA",172,github_api,kallisto;kallisto+bustools_python
+phonopy,organization,phonopy,github.com,https://github.com/phonopy,2,鲲鹏,HPC,,,,5,github_api,phonopy;phono3py
+samtools,organization,samtools,github.com,https://github.com/samtools,2,鲲鹏,HPC,,http://samtools.github.io,,16,github_api,bcftools;Samtools
+marbl,organization,MarBL,github.com,https://github.com/marbl,2,鲲鹏,HPC,Maryland Bioinformatics Labs,,,44,github_api,Canu;meryl
+llnl,organization,Lawrence Livermore National Laboratory,github.com,https://github.com/llnl,2,鲲鹏,"HPC,基础库&加速库","For over 70 years, the Lawrence Livermore National Laboratory has applied science and technology to make the world a safer place.",https://software.llnl.gov,"Livermore, CA, USA",657,github_api,AMG;sundials
+ecmwf,organization,European Centre for Medium-Range Weather Forecasts,github.com,https://github.com/ecmwf,2,鲲鹏,HPC,Providing software to work with meteorological data and services,www.ecmwf.int,"Shinfield Park, Reading, United Kingdom",157,github_api,eccodes;ecflow
+OSGeo,organization,Open Source Geospatial Foundation,github.com,https://github.com/OSGeo,2,鲲鹏,基础库&加速库,Empower everyone with open source geospatial,https://www.osgeo.org,United States of America,44,github_api,GDAL;Proj
+lm-sys,organization,LMSYS,github.com,https://github.com/lm-sys,1,昇腾,推理加速,Large Model Systems Organization,,,5,github_api,FastChat
+EleutherAI,organization,EleutherAI,github.com,https://github.com/EleutherAI,1,昇腾,推理加速,,www.eleuther.ai,The Internet,182,github_api,lm-eval-harness
+open-compass,organization,OpenCompass,github.com,https://github.com/open-compass,1,昇腾,推理加速,,opencompass.org.cn,China,47,github_api,opencompass
+axolotl-ai-cloud,organization,Axolotl AI,github.com,https://github.com/axolotl-ai-cloud,1,昇腾,训练加速,,https://axolotl.ai,United States of America,18,github_api,axolotl
+mlfoundations,organization,mlfoundations,github.com,https://github.com/mlfoundations,1,昇腾,推理加速,,https://people.csail.mit.edu/ludwigs/,,35,github_api,openclip
+ollama,organization,Ollama,github.com,https://github.com/ollama,1,昇腾,推理加速,,https://ollama.com,,3,github_api,Ollama
+unslothai,organization,Unsloth AI,github.com,https://github.com/unslothai,1,昇腾,训练加速,Run and train AI models locally. 🦥,https://unsloth.ai/,United States of America,9,github_api,unsolth
+OpenRLHF,organization,OpenRLHF,github.com,https://github.com/OpenRLHF,1,昇腾,训练加速,Open-sourced Reinforcment Learning from Human Feedback,,,3,github_api,OpenRLHF
+volcengine,organization,Volcengine,github.com,https://github.com/volcengine,1,昇腾,训练加速,,https://www.volcengine.cn/,,191,github_api,veRL
+deepspeedai,organization,deepspeedai,github.com,https://github.com/deepspeedai,1,昇腾,训练加速,,,,6,github_api,DeepSpeed
+opencv,organization,OpenCV,github.com,https://github.com/opencv,1,昇腾,推理加速,,https://opencv.org,,17,github_api,OpenCV
+ggml-org,organization,ggml,github.com,https://github.com/ggml-org,1,昇腾,推理加速,AI inference at the edge,https://ggml.ai,,18,github_api,llama.cpp
+wenet-e2e,organization,WeNet Community,github.com,https://github.com/wenet-e2e,1,昇腾,推理加速,Production First and Production Ready End-to-End Speech Toolkit,https://wenet.org.cn/,"Beijing & Xian, China",23,github_api,wenet
+kserve,organization,KServe,github.com,https://github.com/kserve,1,昇腾,推理加速,"Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes",https://kserve.github.io/website,,15,github_api,Kserver
+openxla,organization,OpenXLA,github.com,https://github.com/openxla,1,昇腾,推理加速,"A community-driven, open source ML compiler ecosystem, using the best of XLA & MLIR.",,,9,github_api,OpenXLA
+bitsandbytes-foundation,organization,bitsandbytes collective,github.com,https://github.com/bitsandbytes-foundation,1,昇腾,推理加速,,,,3,github_api,bitsandbytes
+triton-lang,organization,triton-lang,github.com,https://github.com/triton-lang,1,昇腾,算子库和编程,,,,8,github_api,Triton
+langgenius,organization,LangGenius,github.com,https://github.com/langgenius,1,昇腾,应用加速,Dify is an LLMOps platform that helps you build GPT-based applications easily and intuitively.,https://dify.ai,,27,github_api,Dify
+coze-dev,organization,coze-dev,github.com,https://github.com/coze-dev,1,昇腾,应用加速,Next-generation AI chatbot building platform. Quickly create bots without coding and publish them on various platforms,https://www.coze.com,,22,github_api,Coze
+coinbase,organization,Coinbase,github.com,https://github.com/coinbase,1,昇腾,应用加速,,https://www.coinbase.com,,169,github_api,X402
+google-agentic-commerce,organization,Google Agentic Commerce,github.com,https://github.com/google-agentic-commerce,1,昇腾,应用加速,,https://ap2-protocol.org,United States of America,2,github_api,AP2
+modelcontextprotocol,organization,Model Context Protocol,github.com,https://github.com/modelcontextprotocol,1,昇腾,应用加速,An open protocol that enables seamless integration between LLM applications and external data sources and tools.,https://modelcontextprotocol.io,,39,github_api,MCP
+a2aproject,organization,Agent2Agent (A2A) Project,github.com,https://github.com/a2aproject,1,昇腾,应用加速,Donated to the Linux Foundation by Google,https://a2a-protocol.org,,11,github_api,A2A
+agent-network-protocol,organization,ANP Open Source Community,github.com,https://github.com/agent-network-protocol,1,昇腾,应用加速,The goal of the ANP Open Source Community is to define agent connectivity and collaboration through open source.,www.agent-network-protocol.com,,16,github_api,ANP
+ByteDance-Seed,organization,ByteDance-Seed,github.com,https://github.com/ByteDance-Seed,1,昇腾,训练加速,,https://seed.bytedance.com/,,54,github_api,VeOmni
+meta-pytorch,organization,Meta PyTorch,github.com,https://github.com/meta-pytorch,1,昇腾,训练加速,,https://pytorch.org,,54,github_api,torchtune
+inclusionAI,organization,inclusionAI,github.com,https://github.com/inclusionAI,1,昇腾,训练加速,This organization contains the series of open-source projects from Ant Group with dedicated efforts to work towards Artificial General Intelligence (AGI).,https://inclusion-ai.org,,45,github_api,Areal
+THUDM,organization,THUKEG,github.com,https://github.com/THUDM,1,昇腾,训练加速,"ChatGLM, GLM-4, CogVLM, CodeGeeX, CogView, ImageReward, CogVideoX | CogDL, GraphMAE, AMiner | Zhipu.ai (Z.ai) & Knowledge Engineering Group (KEG)",https://huggingface.co/THUDM,"FIT Building, Tsinghua University",127,github_api,Slime
+linkedin,organization,LinkedIn,github.com,https://github.com/linkedin,1,昇腾,训练加速,,https://engineering.linkedin.com,"Sunnyvale, CA, USA",136,github_api,Liger-Kernel
+fla-org,organization,FLA,github.com,https://github.com/fla-org,1,昇腾,训练加速,,,,13,github_api,flash-linear-attention
+dmlc,organization,Distributed (Deep) Machine Learning Community,github.com,https://github.com/dmlc,1,昇腾,训练加速,A Community of Awesome Machine Learning Projects,,,51,github_api,dgl
+pyg-team,organization,PyG,github.com,https://github.com/pyg-team,1,昇腾,训练加速,Graph Neural Network Library for PyTorch,https://pyg.org,Germany,5,github_api,pyg
+databricks,organization,Databricks,github.com,https://github.com/databricks,1,昇腾,训练加速,Helping data teams solve the world’s toughest problems using data and AI,https://databricks.com,United States of America,255,github_api,megablocks
+vipshop,organization,唯品会,github.com,https://github.com/vipshop,1,昇腾,推理加速,全球精选，正品特卖 (NASDAQ: VIPS),www.vip.com,Guangzhou China,36,github_api,cache-dit
+LMCache,organization,LMCache,github.com,https://github.com/LMCache,1,昇腾,推理加速,,,,20,github_api,LMCache
+jd-opensource,organization,JD.com,github.com,https://github.com/jd-opensource,1,昇腾,推理加速,JD Open Source,https://www.jdcloud.com,China,116,github_api,xllm
+aigw-project,organization,aigw-project,github.com,https://github.com/aigw-project,1,昇腾,推理加速,,,,4,github_api,AIGW
+llm-d,organization,llm-d,github.com,https://github.com/llm-d,1,昇腾,推理加速,llm-d enables high performance distributed inference in production on Kubernetes,https://llm-d.ai,United States of America,16,github_api,llm-d
+gpustack,organization,GPUStack,github.com,https://github.com/gpustack,1,昇腾,推理加速,GPU cluster manager for optimized AI model deployment,,,15,github_api,GPUStack
+flagos-ai,organization,FlagOS,github.com,https://github.com/flagos-ai,1,昇腾,推理加速,"A Unified, Open-Source AI System Software Stack",https://flagos.io,China,37,github_api,FlagScale
+hpcaitech,organization,HPC-AI Tech,github.com,https://github.com/hpcaitech,1,昇腾,推理加速,We are a global team to help you train and deploy your AI models,https://hpc-ai.com/,,33,github_api,ColossalAI
+Vchitect,organization,Vchitect,github.com,https://github.com/Vchitect,1,昇腾,推理加速,,https://vchitect.intern-ai.org.cn/,,37,github_api,Vbench
+ModelTC,organization,ModelTC,github.com,https://github.com/ModelTC,1,昇腾,推理加速,https://light-ai.top/,,,72,github_api,LightX2V
+xdit-project,organization,xdit-project,github.com,https://github.com/xdit-project,1,昇腾,推理加速,,,,7,github_api,xDiT
+tile-ai,organization,tile-ai,github.com,https://github.com/tile-ai,1,昇腾,算子库和编程,Enabling Lightning-Fast AI Workloads Development via Tiling,,,18,github_api,TileLang
+bminor,organization,bminor,github.com,https://github.com/bminor,1,鲲鹏,基础库&加速库,,,,1,github_api,Glibc
+lz4,organization,lz4,github.com,https://github.com/lz4,1,鲲鹏,基础库&加速库,,,,2,github_api,LZ4
+zlib-ng,organization,zlib-ng,github.com,https://github.com/zlib-ng,1,鲲鹏,基础库&加速库,,,,6,github_api,zlib-ng
+tianocore,organization,tianocore,github.com,https://github.com/tianocore,1,鲲鹏,基础库&加速库,,http://www.tianocore.org,,34,github_api,edk2
+OISF,organization,Open Information Security Foundation,github.com,https://github.com/OISF,1,鲲鹏,基础库&加速库,The Open Information Security Foundation manages Suricata IDS development.,https://www.oisf.net,world,7,github_api,Suricata
+snort3,organization,Snort 3.0 Team,github.com,https://github.com/snort3,1,鲲鹏,基础库&加速库,,,,6,github_api,Snort
+ntop,organization,ntop,github.com,https://github.com/ntop,1,鲲鹏,基础库&加速库,Open source network traffic monitoring software: http://t.me/ntop_community,http://www.ntop.org,Europe,24,github_api,nDPI
+distrotech,organization,Mzanzi Open Source Solutions,github.com,https://github.com/distrotech,1,鲲鹏,基础库&加速库,,http://www.mzanziopensource.co.za,,976,github_api,Gzip
+videolan,organization,VideoLAN,github.com,https://github.com/videolan,1,鲲鹏,基础库&加速库,VideoLAN: open source multimedia for everyone,https://www.videolan.org/,The internet,18,github_api,X265
+dpdk,organization,DPDK,github.com,https://github.com/dpdk,1,鲲鹏,基础库&加速库,Data Plane Development Kit,dpdk.org,,3,github_api,DPDK
+spdk,organization,Storage Performance Development Kit,github.com,https://github.com/spdk,1,鲲鹏,基础库&加速库,,https://spdk.io,,14,github_api,SPDK
+reference-lapack,organization,Lapack,github.com,https://github.com/reference-lapack,1,鲲鹏,基础库&加速库,LAPACK Linear Algebra PACKage,http://www.netlib.org/lapack,,4,github_api,lapack
+numpy,organization,NumPy,github.com,https://github.com/numpy,1,鲲鹏,基础库&加速库,,http://www.numpy.org/,,33,github_api,Numpy
+intel,organization,Intel® Corporation,github.com,https://github.com/intel,1,鲲鹏,基础库&加速库,,,,1327,github_api,ISA-L
+treangenlab,organization,Treangen Lab,github.com,https://github.com/treangenlab,1,鲲鹏,ARM应用支持,Treangen Lab @ Rice University,www.treangenlab.com,United States of America,25,github_api,EMU
+mesa3d,organization,Mesa,github.com,https://github.com/mesa3d,1,鲲鹏,ARM应用支持,Mesa 3D graphics library,https://mesa3d.org,,1,github_api,Mesa
+kupferlauncher,organization,kupferlauncher,github.com,https://github.com/kupferlauncher,1,鲲鹏,ARM应用支持,"Kupfer, Application Launcher and Document Access for Linux",https://kupferlauncher.github.io/,,5,github_api,Binder
+cisco,organization,Cisco Systems,github.com,https://github.com/cisco,1,鲲鹏,ARM应用支持,Open Source Projects from Cisco Systems,https://cisco.com,,84,github_api,OpenH264
+xiph,organization,Xiph.Org Foundation,github.com,https://github.com/xiph,1,鲲鹏,ARM应用支持,We develop free and open media codecs,https://xiph.org/,,36,github_api,Opus
+ffmpeg,organization,ffmpeg,github.com,https://github.com/ffmpeg,1,鲲鹏,ARM应用支持,,,,9,github_api,Ffmpeg
+libjpeg-turbo,organization,libjpeg-turbo,github.com,https://github.com/libjpeg-turbo,1,鲲鹏,ARM应用支持,SIMD-accelerated libjpeg-compatible JPEG codec library ,https://libjpeg-turbo.org,,12,github_api,libjpeg-turbo
+clickhouse,organization,ClickHouse,github.com,https://github.com/clickhouse,1,鲲鹏,大数据,,https://clickhouse.com,United States of America,308,github_api,ClickHouse
+alluxio,organization,Alluxio,github.com,https://github.com/alluxio,1,鲲鹏,大数据,,https://www.alluxio.io/,,13,github_api,Alluxio
+ranger,organization,ranger,github.com,https://github.com/ranger,1,鲲鹏,大数据,,https://ranger.fm,,5,github_api,Ranger
+prestodb,organization,Presto,github.com,https://github.com/prestodb,1,鲲鹏,大数据,Distributed SQL query engine for big data,http://prestodb.io,Linux Foundation,74,github_api,Presto
+taosdata,organization,TDengine,github.com,https://github.com/taosdata,1,鲲鹏,大数据,"High-performance, scalable time-series database for Industrial IoT",https://tdengine.com,United States of America,67,github_api,TDengine
+ceph,organization,Ceph,github.com,https://github.com/ceph,1,鲲鹏,分布式存储,,https://ceph.io/,"California, USA",201,github_api,Ceph
+gluster,organization,Gluster.org,github.com,https://github.com/gluster,1,鲲鹏,分布式存储,"Gluster is a software defined storage, which you can use for high-availability and other features as storage in Hybrid Cloud, Containers, or as NAS replacement.",https://www.gluster.org,,107,github_api,GlusterFS
+minio,organization,MinIO,github.com,https://github.com/minio,1,鲲鹏,分布式存储,"MinIO is a high-performance, S3 compatible object storage.",https://min.io,United States of America,128,github_api,MinIO
+moosefs,organization,MooseFS Distributed Storage • Distributed File System • Software-Defined Storage,github.com,https://github.com/moosefs,1,鲲鹏,分布式存储,"MooseFS is Open Source, fault-tolerant, highly available and performing, scaling-out, petabyte Distributed Storage / Network Distributed File System / SDS",https://moosefs.com,,6,github_api,MooseFS
+lizardfs,organization,LizardFS,github.com,https://github.com/lizardfs,1,鲲鹏,分布式存储,,https://lizardfs.org,Poland,6,github_api,LizardFS
+sheepdog,organization,Sheepdog,github.com,https://github.com/sheepdog,1,鲲鹏,分布式存储,,http://sheepdog.github.io/sheepdog/,,8,github_api,Sheepdog
+linbit,organization,LINBIT,github.com,https://github.com/linbit,1,鲲鹏,分布式存储,,http://www.linbit.com,"Vienna, Austria/Beaverton, OR",91,github_api,DRBD
+daos-stack,organization,DAOS Storage Stack,github.com,https://github.com/daos-stack,1,鲲鹏,分布式存储,Distributed Asynchronous Object Storage,https://daosio.atlassian.net/wiki/spaces/DC/,,93,github_api,DAOS
+opencurve,organization,opencurve,github.com,https://github.com/opencurve,1,鲲鹏,分布式存储,,,,29,github_api,CURVE
+nextcloud,organization,Nextcloud,github.com,https://github.com/nextcloud,1,鲲鹏,虚拟化,"📱☁️💻 A safe home for all your data – community-driven, free & open source 👏",https://nextcloud.com,Worldwide,364,github_api,Docker
+libvirt,organization,Libvirt Virtualization API Project (Automated readonly mirror),github.com,https://github.com/libvirt,1,鲲鹏,虚拟化,This is an automated read-only mirror of the libvirt project. The master repositories accepting merge requests and issue reports are hosted on GitLab,https://gitlab.com/libvirt/,,49,github_api,libvirt
+openstack,organization,Mirrors of opendev.org/openstack,github.com,https://github.com/openstack,1,鲲鹏,虚拟化,Read-only mirrors of all OpenStack code repositories (hosted at https://opendev.org/openstack by the OpenStack community),https://opendev.org/openstack,,670,github_api,OpenStack
+openvswitch,organization,openvswitch,github.com,https://github.com/openvswitch,1,鲲鹏,虚拟化,,,,8,github_api,Open vSwitch
+qemu,organization,QEMU,github.com,https://github.com/qemu,1,鲲鹏,虚拟化,,http://www.qemu.org,,28,github_api,QEMU
+ovirt,organization,oVirt,github.com,https://github.com/ovirt,1,鲲鹏,虚拟化,Open Virtual Datacenter,https://ovirt.org,worldwide,178,github_api,Ovirt
+projectcalico,organization,Project Calico,github.com,https://github.com/projectcalico,1,鲲鹏,虚拟化,"Highly scalable networking, security, and observability for Kubernetes and more!",http://www.projectcalico.org/,,77,github_api,Calico
+coreos,organization,CoreOS,github.com,https://github.com/coreos,1,鲲鹏,虚拟化,"Key components to secure, simplify and automate your container infrastructure",https://getfedora.org/coreos,,275,github_api,Flannel
+coredns,organization,CoreDNS,github.com,https://github.com/coredns,1,鲲鹏,虚拟化,Cloud Native DNS,https://coredns.io/,,36,github_api,CoreDNS
+containerd,organization,containerd,github.com,https://github.com/containerd,1,鲲鹏,虚拟化,,containerd.io,,38,github_api,Containerd
+prometheus,organization,Prometheus,github.com,https://github.com/prometheus,1,鲲鹏,虚拟化,,https://prometheus.io,,56,github_api,Prometheus
+istio,organization,Istio,github.com,https://github.com/istio,1,鲲鹏,虚拟化,"Connect, secure, control, and observe services.",https://istio.io,,41,github_api,lstio
+envoyproxy,organization,Envoy Proxy - CNCF,github.com,https://github.com/envoyproxy,1,鲲鹏,虚拟化,Envoy Proxy - CNCF,https://www.envoyproxy.io/,,35,github_api,Envoy
+goharbor,organization,Harbor,github.com,https://github.com/goharbor,1,鲲鹏,虚拟化,"An open source registry that secures artifacts with policies and RBAC, ensures images are scanned and free from vulnerabilities, and signs images as trusted.",https://goharbor.io,,28,github_api,harbor
+varnishcache,organization,Varnish Cache,github.com,https://github.com/varnishcache,1,鲲鹏,Web,,https://www.varnish-cache.org/,,10,github_api,Varnish
+wildfly,organization,WildFly,github.com,https://github.com/wildfly,1,鲲鹏,Web,Producers of the WildFly Application Server,http://wildfly.org,,99,github_api,JBOSS
+haproxy,organization,HAProxy,github.com,https://github.com/haproxy,1,鲲鹏,Web,The HAProxy Community,http://haproxy.org/,,7,github_api,HAProxy
+memcached,organization,memcached community,github.com,https://github.com/memcached,1,鲲鹏,Web,,http://memcached.org/,,11,github_api,Memcached
+nginx,organization,nginx,github.com,https://github.com/nginx,1,鲲鹏,Web,Home of NGINX and related open source projects,https://nginx.org/,,60,github_api,Nginx
+dotnet,organization,.NET Platform,github.com,https://github.com/dotnet,1,鲲鹏,Web,Home of the open source .NET platform,https://dot.net,,277,github_api,.NET Core
+eclipse,organization,Eclipse Foundation,github.com,https://github.com/eclipse,1,鲲鹏,Web,,http://eclipse.org,,9,github_api,Jetty
+squid-cache,organization,Squid,github.com,https://github.com/squid-cache,1,鲲鹏,Web,"Squid Web Cache, a flexible HTTP, HTTPS, FTP (and other) proxy",http://www.squid-cache.org/,Virtual,7,github_api,Squid
+eclipse-ee4j,organization,Eclipse EE4J,github.com,https://github.com/eclipse-ee4j,1,鲲鹏,Web,The Eclipse EE4J Project,https://projects.eclipse.org/projects/ee4j,,102,github_api,Glassfish
+nodejs,organization,Node.js,github.com,https://github.com/nodejs,1,鲲鹏,Web,,https://nodejs.org,,231,github_api,Node.js
+chromium,organization,The Chromium Project,github.com,https://github.com/chromium,1,鲲鹏,Web,,https://chromium.org/,Mountain View,39,github_api,chromium
+django,organization,Django,github.com,https://github.com/django,1,鲲鹏,Web,,https://www.djangoproject.com/,Internet,30,github_api,Django
+fastcgi-archives,organization,FastCGI-Archives,github.com,https://github.com/fastcgi-archives,1,鲲鹏,Web,FastCGI.com Github Archives,https://fastcgi-archives.github.io/,,5,github_api,fcgi
+nagiosenterprises,organization,Nagios Enterprises,github.com,https://github.com/nagiosenterprises,1,鲲鹏,Web,,https://www.nagios.com,,19,github_api,Nagios
+mysql,organization,MySQL,github.com,https://github.com/mysql,1,鲲鹏,数据库,Oracle Corporation,http://dev.mysql.com/,,23,github_api,MySQL
+mariadb,organization,MariaDB,github.com,https://github.com/mariadb,1,鲲鹏,数据库,The open source relational database,https://mariadb.org/,,31,github_api,MariaDB
+postgres,organization,PostgreSQL,github.com,https://github.com/postgres,1,鲲鹏,数据库,,https://www.postgresql.org/,Worldwide,5,github_api,PostgreSQL
+mongodb,organization,mongodb,github.com,https://github.com/mongodb,1,鲲鹏,数据库,,http://www.mongodb.com/,United States of America,299,github_api,MongoDB
+pingcap,organization,PingCAP,github.com,https://github.com/pingcap,1,鲲鹏,数据库,"The team behind TiDB TiKV, an open source MySQL compatible HTAP database",https://pingcap.com,,165,github_api,TiDB
+etcd-io,organization,etcd-io,github.com,https://github.com/etcd-io,1,鲲鹏,数据库,etcd Development and Communities,https://etcd.io,The Cloud,18,github_api,etcd
+orientechnologies,organization,OrientDB,github.com,https://github.com/orientechnologies,1,鲲鹏,数据库,OrientDB multi model transactional DBMS community ,https://orientdb.dev,"London, UK",51,github_api,OrientDB
+neo4j,organization,Neo4j,github.com,https://github.com/neo4j,1,鲲鹏,数据库,,http://neo4j.com/,,94,github_api,Neo4j
+gcc-mirror,organization,gcc-mirror,github.com,https://github.com/gcc-mirror,1,鲲鹏,基础库&加速库,,,,1,github_api,gcc
+openjdk,organization,OpenJDK,github.com,https://github.com/openjdk,1,鲲鹏,基础库&加速库,,https://openjdk.org,,135,github_api,OpenJDK
+kitware,organization,"Kitware, Inc.",github.com,https://github.com/kitware,1,鲲鹏,基础库&加速库,"Kitware develops software for web visualization, data storage, build system generation, infovis, media analysis, biomedical inquiry, cloud computing and more.",https://www.kitware.com,,275,github_api,CMake
+llvm,organization,LLVM,github.com,https://github.com/llvm,1,鲲鹏,基础库&加速库,This is the LLVM organization on GitHub for the LLVM Project: a collection of modular and reusable compiler and toolchain technologies.,https://llvm.org,,43,github_api,Clang
+scala,organization,The Scala Programming Language,github.com,https://github.com/scala,1,鲲鹏,基础库&加速库,,https://scala-lang.org,Switzerland,62,github_api,Scala
+golang,organization,Go,github.com,https://github.com/golang,1,鲲鹏,基础库&加速库,The Go Programming Language,https://go.dev,,61,github_api,Golang
+lua,organization,Lua,github.com,https://github.com/lua,1,鲲鹏,基础库&加速库,,https://www.lua.org/,,4,github_api,Lua
+perl,organization,The Perl Programming Language,github.com,https://github.com/perl,1,鲲鹏,基础库&加速库,,https://www.perl.org,Everywhere,8,github_api,Perl
+ruby,organization,The Ruby Programming Language,github.com,https://github.com/ruby,1,鲲鹏,基础库&加速库,Repositories related to the Ruby Programming language.,https://www.ruby-lang.org/,Japan,185,github_api,Ruby
+gradle,organization,Gradle Technologies,github.com,https://github.com/gradle,1,鲲鹏,基础库&加速库,,https://gradle.com,,249,github_api,Gradle
+erlang,organization,Erlang/OTP,github.com,https://github.com/erlang,1,鲲鹏,基础库&加速库,,http://www.erlang.org,"Stockholm, Sweden",23,github_api,Erlang
+scikit-learn,organization,scikit-learn,github.com,https://github.com/scikit-learn,1,鲲鹏,基础库&加速库,Repositories related to the scikit-learn Python machine learning library.,http://scikit-learn.org,,16,github_api,SKLearn
+git,organization,Git,github.com,https://github.com/git,1,鲲鹏,基础库&加速库,,https://git-scm.com,,9,github_api,Git
+jenkinsci,organization,Jenkins,github.com,https://github.com/jenkinsci,1,鲲鹏,基础库&加速库,Jenkins is an open source automation server with an unparalleled plugin ecosystem to support practically every tool as part of your delivery pipelines,www.jenkins.io,United States of America,2731,github_api,Jenkins
+meteorhacks,organization,meteorhacks,github.com,https://github.com/meteorhacks,1,鲲鹏,基础库&加速库,,,,75,github_api,npm
+pyca,organization,Python Cryptographic Authority,github.com,https://github.com/pyca,1,鲲鹏,基础库&加速库,,,,7,github_api,bcrypt
+mirror,organization,A mirror to other labs,github.com,https://github.com/mirror,1,鲲鹏,基础库&加速库,A link between labs if you want to put it that way,,"Unaffiliated with GitHub, Inc.",125,github_api,busybox
+libexpat,organization,Expat development team,github.com,https://github.com/libexpat,1,鲲鹏,基础库&加速库,,https://libexpat.github.io/,,2,github_api,Expat
+gnome,organization,GNOME Github Mirror,github.com,https://github.com/gnome,1,鲲鹏,基础库&加速库,Contributions sent to this organization will be forwarded automatically to https://gitlab.gnome.org,https://handbook.gnome.org/infrastructure/github_mirror.html,United States of America,322,github_api,Libxml2
+vercel,organization,Vercel,github.com,https://github.com/vercel,1,鲲鹏,基础库&加速库,Develop. Preview. Ship. Creators of Next.js.,https://vercel.com,United States of America,230,github_api,Next.js
+pcre2project,organization,PCRE2 Project,github.com,https://github.com/pcre2project,1,鲲鹏,基础库&加速库,PCRE2 - Perl-Compatible Regular Expressions,,,2,github_api,pcre
+php,organization,php.net,github.com,https://github.com/php,1,鲲鹏,基础库&加速库,PHP is a popular general-purpose scripting language that is especially suited to web development,https://www.php.net,,151,github_api,PHP
+scons,organization,SCons Project,github.com,https://github.com/scons,1,鲲鹏,基础库&加速库,,http://scons.org,,14,github_api,SCons
+netty,organization,The Netty Project,github.com,https://github.com/netty,1,鲲鹏,基础库&加速库,Opening the future of network programming since 2001,https://netty.io,,16,github_api,Netty
+boostorg,organization,Boost.org,github.com,https://github.com/boostorg,1,鲲鹏,基础库&加速库,Boost provides free peer-reviewed portable C++ source libraries.,http://libboost.org,Interstellar Space,200,github_api,Boost
+protocolbuffers,organization,Protocol Buffers,github.com,https://github.com/protocolbuffers,1,鲲鹏,基础库&加速库,"A language-neutral, platform-neutral extensible mechanism for serializing structured data.",https://developers.google.com/protocol-buffers/,,15,github_api,Protobuf
+libevent,organization,libevent,github.com,https://github.com/libevent,1,鲲鹏,基础库&加速库,,https://libevent.org,,7,github_api,Libevent
+wireshark,organization,Wireshark Foundation,github.com,https://github.com/wireshark,1,鲲鹏,基础库&加速库,The Wireshark Network Protocol Analyzer,https://wiresharkfoundation.org/,,6,github_api,Wireshark
+junit-team,organization,JUnit,github.com,https://github.com/junit-team,1,鲲鹏,基础库&加速库,The programmer-friendly testing framework for Java and the JVM,https://junit.org,,18,github_api,JUnit
+jemalloc,organization,jemalloc memory allocator,github.com,https://github.com/jemalloc,1,鲲鹏,基础库&加速库,,http://jemalloc.net/,,5,github_api,jemalloc
+rabbitmq,organization,RabbitMQ,github.com,https://github.com/rabbitmq,1,鲲鹏,基础库&加速库,,https://rabbitmq.com,Worldwide,254,github_api,RabbitMQ
+ansible,organization,Ansible,github.com,https://github.com/ansible,1,鲲鹏,基础库&加速库,,https://www.ansible.com/,United States of America,301,github_api,Ansible
+fmtlib,organization,Hello World Foundation,github.com,https://github.com/fmtlib,1,鲲鹏,基础库&加速库,,,United States,5,github_api,fmt
+libgeos,organization,"GEOS -- Geometry Engine, Open Source",github.com,https://github.com/libgeos,1,鲲鹏,基础库&加速库,GEOS is a library for computational geometry operations used in geospatial systems.,https://libgeos.org,,2,github_api,Geos
+netdata,organization,netdata,github.com,https://github.com/netdata,1,鲲鹏,基础库&加速库,,https://www.netdata.cloud,USA,74,github_api,Netdata
+rsyslog,organization,rsyslog and closely related libraries,github.com,https://github.com/rsyslog,1,鲲鹏,基础库&加速库,OFFICIAL rsyslog repositories @ github,http://www.rsyslog.com,,22,github_api,Rsyslog
+swagger-api,organization,Swagger,github.com,https://github.com/swagger-api,1,鲲鹏,基础库&加速库,,http://swagger.io,,37,github_api,Swagger UI
+tornadoweb,organization,tornadoweb,github.com,https://github.com/tornadoweb,1,鲲鹏,基础库&加速库,,,,1,github_api,Tornado
+vuejs,organization,Vue,github.com,https://github.com/vuejs,1,鲲鹏,基础库&加速库,Your friendly JavaScript framework,https://vuejs.org,All Over the World,124,github_api,Vue
+curl,organization,curl,github.com,https://github.com/curl,1,鲲鹏,基础库&加速库,groks those URLs,https://curl.se/,,24,github_api,curl
+grafana,organization,Grafana Labs,github.com,https://github.com/grafana,1,鲲鹏,基础库&加速库,"Grafana Labs is behind leading open source projects Grafana and Loki, and the creator of the first open & composable observability platform.",https://grafana.com,Sweden,981,github_api,Grafana
+orocos-toolchain,organization,Orocos Developers,github.com,https://github.com/orocos-toolchain,1,鲲鹏,基础库&加速库,,www.orocos.org,Worldwide,19,github_api,log4cpp
+clusterlabs,organization,ClusterLabs,github.com,https://github.com/clusterlabs,1,鲲鹏,基础库&加速库,,http://www.ClusterLabs.org/,,28,github_api,PaceMaker
+quartz-scheduler,organization,Quartz Job Scheduler,github.com,https://github.com/quartz-scheduler,1,鲲鹏,基础库&加速库,"A full-featured, Java-based, In-process job scheduler.",http://www.quartz-scheduler.org,,5,github_api,Quartz
+sphinx-doc,organization,Sphinx,github.com,https://github.com/sphinx-doc,1,鲲鹏,基础库&加速库,Sphinx makes it easy to create intelligent and beautiful documentation,https://www.sphinx-doc.org,,23,github_api,Sphinx
+tesseract-ocr,organization,tesseract-ocr,github.com,https://github.com/tesseract-ocr,1,鲲鹏,基础库&加速库,Tesseract OCR,https://github.com/tesseract-ocr/,,14,github_api,Tesseract
+zeromq,organization,The ZeroMQ project,github.com,https://github.com/zeromq,1,鲲鹏,基础库&加速库,,http://www.zeromq.org/,,87,github_api,ZeroMQ
+hashicorp,organization,HashiCorp,github.com,https://github.com/hashicorp,1,鲲鹏,基础库&加速库,"Consistent workflows to provision, secure, connect, and run any infrastructure for any application.",https://hashicorp.com,"San Francisco, CA",930,github_api,consul
+kong,organization,Kong,github.com,https://github.com/kong,1,鲲鹏,基础库&加速库,Powering the API world. No AI without APIs.,https://konghq.com,San Francisco,567,github_api,Kong
+PaddlePaddle,organization,PaddlePaddle,github.com,https://github.com/PaddlePaddle,1,鲲鹏,搜广推,,http://paddlepaddle.org,,107,github_api,PaddlePaddle
+bvlc,organization,Berkeley Vision and Learning Center,github.com,https://github.com/bvlc,1,鲲鹏,搜广推,Autonomous Perception Research,http://bvlc.eecs.berkeley.edu,UC Berkeley,4,github_api,caffe
+horovod,organization,Horovod,github.com,https://github.com/horovod,1,鲲鹏,搜广推,"Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.",https://horovod.ai/,"San Francisco, CA",4,github_api,horovod
+esnet,organization,ESnet: Energy Sciences Network,github.com,https://github.com/esnet,1,鲲鹏,基础库&加速库,"ESnet provides the high-bandwidth, reliable connections that link scientists at national laboratories and other research institutions.",https://software.es.net/,"Berkeley, CA",135,github_api,iperf
+hewlettpackard,organization,Hewlett Packard Enterprise,github.com,https://github.com/hewlettpackard,1,鲲鹏,基础库&加速库,Hewlett Packard Enterprise on github; please contact github@hpe.com for access,http://www.hpe.com,,481,github_api,Netperf
+3dem,organization,3dem,github.com,https://github.com/3dem,1,鲲鹏,HPC,,,,20,github_api,Relion
+google-deepmind,organization,Google DeepMind,github.com,https://github.com/google-deepmind,1,鲲鹏,HPC,,https://www.deepmind.com/,,382,github_api,AlphaFold2
+eddyrivaslab,organization,The Eddy/Rivas Laboratory,github.com,https://github.com/eddyrivaslab,1,鲲鹏,HPC,"Computational genome sequence analysis, especially of RNA",http://eddylab.org,Harvard University,14,github_api,HMMER
+openhpc,organization,OpenHPC,github.com,https://github.com/openhpc,1,鲲鹏,HPC,,https://openhpc.community/,,5,github_api,OpenHPC
+lammps,organization,LAMMPS Developers,github.com,https://github.com/lammps,1,鲲鹏,HPC,Development of the LAMMPS Molecular Dynamics Simulator and Related Projects,https://www.lammps.org,United States of America,13,github_api,Lammps
+cp2k,organization,CP2K,github.com,https://github.com/cp2k,1,鲲鹏,HPC,,https://www.cp2k.org/,,10,github_api,CP2K
+gromacs,organization,Gromacs,github.com,https://github.com/gromacs,1,鲲鹏,HPC,,www.gromacs.org,,7,github_api,GROMACS
+escomp,organization,Earth System Community Modeling Portal,github.com,https://github.com/escomp,1,鲲鹏,HPC,,https://escomp.github.io/,,71,github_api,CESM
+linuxmint,organization,Linux Mint,github.com,https://github.com/linuxmint,1,鲲鹏,HPC,https://www.linuxmint.com,https://linuxmint-developer-guide.readthedocs.io,,157,github_api,NEMO
+csdms,organization,Community Surface Dynamics Modeling System,github.com,https://github.com/csdms,1,鲲鹏,HPC,Cyberinfrastructure for the quantitative modeling of earth and planetary surface processes,http://csdms.colorado.edu,,125,github_api,WAVEWATCH III
+cryoem,organization,CryoEM Software Development,github.com,https://github.com/cryoem,1,鲲鹏,HPC,"This is a group for software development of CryoEM packages, initially only EMAN2/SPARX, but we are happy to accept additional projects.",,,24,github_api,eman2
+simpleitk,organization,simpleitk,github.com,https://github.com/simpleitk,1,鲲鹏,HPC,,,,25,github_api,SimpleITK
+slicer,organization,Slicer,github.com,https://github.com/slicer,1,鲲鹏,HPC,"Multi-platform, free and open source software package for visualization and medical image computing.",https://slicer.org, Worldwide,105,github_api,3DSlicer
+primer3-org,organization,Primer3-org,github.com,https://github.com/primer3-org,1,鲲鹏,HPC,"The home of Primer3, Primer3Plus and Primer3Web",primer3.org,,6,github_api,Primer3
+lbcb-sci,organization,Šikić lab,github.com,https://github.com/lbcb-sci,1,鲲鹏,HPC,A computational group with a focus on the development of new algorithms and AI models for the analysis of DNA and RNA sequencing data and biomolecular strucures,https://sikic-lab.github.io/,Singapore,30,github_api,GRAPHMAP
+papenfusslab,organization,Papenfuss Lab,github.com,https://github.com/papenfusslab,1,鲲鹏,HPC,Walter and Eliza Hall Institute of Medical Research,https://papenfusslab.org/,"Melbourne, Australia",43,github_api,GRIDSS
+xinglab,organization,Xinglab,github.com,https://github.com/xinglab,1,鲲鹏,HPC,"Center for Computational and Genomic Medicine, Children's Hospital of Philadelphia and University of Pennsylvania",https://xinglab.org/,,37,github_api,rMATs
+benson-genomics-lab,organization,benson-genomics-lab,github.com,https://github.com/benson-genomics-lab,1,鲲鹏,HPC,,,,4,github_api,trf
+deeptools,organization,The deepTools ecosystem,github.com,https://github.com/deeptools,1,鲲鹏,HPC,deepTools and related packages,,,13,github_api,deeptools
+aidenlab,organization,Aiden Lab,github.com,https://github.com/aidenlab,1,鲲鹏,HPC,The Center for Genome Architecture,http://aidenlab.org/,United States of America,38,github_api,3d-dna
+dreichlab,organization,David Reich Lab,github.com,https://github.com/dreichlab,1,鲲鹏,HPC,,https://reich.hms.harvard.edu/,,12,github_api,EIGENSOFT
+usadellab,organization,usadellab,github.com,https://github.com/usadellab,1,鲲鹏,HPC,,,,28,github_api,trimmomatic
+falconry,organization,Falconry,github.com,https://github.com/falconry,1,鲲鹏,HPC,,http://falconframework.org,,11,github_api,Falcon
+tinkertools,organization,TinkerTools,github.com,https://github.com/tinkertools,1,鲲鹏,HPC,"TinkerTools is a suite of software packages for molecular modeling & simulation. Visit our community website for users and developers at ""tinkertools.org"".",tinkertools.org,,12,github_api,Tinker
+biod,organization,BioD,github.com,https://github.com/biod,1,鲲鹏,HPC,Dlang for bioinformatics,,,5,github_api,sambamba
+veg,organization,iGEM/UCSD evolutionary biology and bioinformatics group,github.com,https://github.com/veg,1,鲲鹏,HPC,,http://lab.hyphy.org,Philadelphia,104,github_api,hyphy
+mummer4,organization,mummer4,github.com,https://github.com/mummer4,1,鲲鹏,HPC,,,,2,github_api,mummer
+combine-lab,organization,COMBINE lab,github.com,https://github.com/combine-lab,1,鲲鹏,HPC,COMputational BIology and Network Evolution lab,combine-lab.github.io,University of Maryland,137,github_api,salmon
+popgenmethods,organization,popgenmethods,github.com,https://github.com/popgenmethods,1,鲲鹏,HPC,Statistical methods for population genetic analysis,,"University of California, Berkeley",12,github_api,smcpp
+inab,organization,Spanish National Bioinformatics Institute,github.com,https://github.com/inab,1,鲲鹏,HPC,"Alfonso Valencia | BSC, ICREA, INB Director - Salvador Capella-Gutierrez | BSC, INB CTO",https://inb-elixir.es,Spain,229,github_api,trimal
+nbisweden,organization,NBIS - National Bioinformatics Infrastructure Sweden,github.com,https://github.com/nbisweden,1,鲲鹏,HPC,"NBIS is a distributed national bioinformatics infrastructure, supporting life sciences in Sweden.",https://nbis.se,Sweden,365,github_api,mrbayes
+connor-lab,organization,connor-lab,github.com,https://github.com/connor-lab,1,鲲鹏,HPC,,,,25,github_api,VaPoR
+MRtrix3,organization,MRtrix3,github.com,https://github.com/MRtrix3,1,鲲鹏,HPC,"Tools for advanced diffusion MRI analyses, including spherical deconvolution and tractography",https://www.mrtrix.org,,20,github_api,Mrtrix
+mne-tools,organization,MNE tools for MEG and EEG data analysis,github.com,https://github.com/mne-tools,1,鲲鹏,HPC,,http://mne.tools,,47,github_api,MNE-python
+bioinformatics-centre,organization,bioinformatics-centre,github.com,https://github.com/bioinformatics-centre,1,鲲鹏,HPC,,,,4,github_api,BayesTyper
+decodegenetics,organization,decodegenetics,github.com,https://github.com/decodegenetics,1,鲲鹏,HPC,,,,31,github_api,Graphtyper2
+openmopac,organization,MOPAC,github.com,https://github.com/openmopac,1,鲲鹏,HPC,Molecular Orbital PACkage,openmopac.github.io,,14,github_api,MOPAC
+cubefs,organization,CubeFS,github.com,https://github.com/cubefs,1,鲲鹏,分布式存储,"an open-source, cloud-native file storage hosted by the CNCF",https://cubefs.io,,25,github_api,Cubefs
+milvus-io,organization,The Milvus Project,github.com,https://github.com/milvus-io,1,鲲鹏,数据库,The open source vector database designed for AI applications,https://milvus.io/,San Francisco,67,github_api,Milvus
+oceanbase,organization,OceanBase,github.com,https://github.com/oceanbase,1,鲲鹏,数据库,"The Fastest Distributed Database for Transactional, Analytical, and  AI Workloads",https://en.oceanbase.com/,Singapore,118,github_api,OceanBase
+o3de,organization,O3DE,github.com,https://github.com/o3de,1,鲲鹏,虚拟化,,https://o3de.org,,64,github_api,O3DE
+strongswan,organization,strongSwan,github.com,https://github.com/strongswan,1,鲲鹏,虚拟化,,https://strongswan.org,,12,github_api,Strongswan
+linux-rdma,organization,linux-rdma,github.com,https://github.com/linux-rdma,1,鲲鹏,虚拟化,Linux RDMA,https://patchwork.kernel.org/project/linux-rdma/list/,,7,github_api,rdma-core
+nbcrrolls,organization,National Biomedical Computation Resource,github.com,https://github.com/nbcrrolls,1,鲲鹏,HPC,,http://nbcr.ucsd.edu,"University of California, San Diego",43,github_api,NAMD
+starrocks,organization,StarRocks,github.com,https://github.com/starrocks,1,鲲鹏,大数据,,www.starrocks.io,,47,github_api,starrocks(腾讯)
+Eventual-Inc,organization,Eventual,github.com,https://github.com/Eventual-Inc,1,鲲鹏,大数据,Eventual Computing,https://www.eventualcomputing.com/,United States of America,32,github_api,daft（字节）
+datajuicer,organization,DataJuicer,github.com,https://github.com/datajuicer,1,鲲鹏,大数据,Data processing for and with large models.,,,8,github_api,data-juicer（腾讯）
+pandas-dev,organization,pandas,github.com,https://github.com/pandas-dev,1,鲲鹏,大数据,Powerful data manipulation tools for Python,http://pandas.pydata.org,,16,github_api,pandas（携程）
+lancedb,organization,LanceDB,github.com,https://github.com/lancedb,1,鲲鹏,大数据,,https://lancedb.com/,United States of America,46,github_api,Lance（字节）
+3fs,organization,3fs,github.com,https://github.com/3fs,1,鲲鹏,分布式存储,,https://www.3fs.cloud,Sweden,40,github_api,3FS(Xsky)
+juicefs,organization,juicefs,github.com,https://github.com/juicefs,1,鲲鹏,分布式存储,,,,0,github_api,JuiceFS(电信)
+percona,organization,Percona,github.com,https://github.com/percona,1,鲲鹏,数据库,,https://percona.com/software,,203,github_api,Percona(字节)
+openvelinux,organization,openvelinux,github.com,https://github.com/openvelinux,1,鲲鹏,虚拟化,,,,15,github_api,openvelinux(字节)
+OpenCloudOS,organization,OpenCloudOS,github.com,https://github.com/OpenCloudOS,1,鲲鹏,虚拟化,,,,30,github_api,OpenCloudOS(腾讯)
+cloudwego,organization,CloudWeGo,github.com,https://github.com/cloudwego,1,鲲鹏,虚拟化,A leading practice for building enterprise-class cloud native architectures!,https://www.cloudwego.io/,,46,github_api,CloudWeGo(字节)
+delimitrou,organization,delimitrou,github.com,https://github.com/delimitrou,1,鲲鹏,虚拟化,,,,7,github_api,DeathStarBench(字节/腾讯)
+fluid-cloudnative,organization,fluid-cloudnative,github.com,https://github.com/fluid-cloudnative,1,鲲鹏,虚拟化,,,,8,github_api,fluid(字节)
+kubeflow,organization,Kubeflow,github.com,https://github.com/kubeflow,1,鲲鹏,虚拟化,"Kubeflow is an open, community driven project to make it easy to deploy and manage an ML stack on Kubernetes",https://kubeflow.org,,47,github_api,kubeflow(字节)
+k8snetworkplumbingwg,organization,k8snetworkplumbingwg,github.com,https://github.com/k8snetworkplumbingwg,1,鲲鹏,虚拟化,,,,42,github_api,sriov-network-operato(快手/字节)
+e2b-dev,organization,E2B | Cloud for AI Agents,github.com,https://github.com/e2b-dev,1,鲲鹏,虚拟化,"Open-source, secure environment with real-world tools for enterprise-grade agents.",https://e2b.dev/docs,United States of America,54,github_api,E2B(字节)
+kata-containers,organization,Kata Containers,github.com,https://github.com/kata-containers,1,鲲鹏,虚拟化,"The speed of containers, the security of VMs",https://katacontainers.io,,32,github_api,kata-containers(京东/腾讯)
+AOMediaCodec,organization,Alliance for Open Media,github.com,https://github.com/AOMediaCodec,1,鲲鹏,ARM原生,,https://aomedia.org,,24,github_api,libavif(京东)
+webmproject,organization,WebM Project,github.com,https://github.com/webmproject,1,鲲鹏,ARM原生,"A high-quality, open video format for the web that's freely available to everyone.",http://www.webmproject.org/,,25,github_api,libwebp(京东)
+ultravideo,organization,Ultra Video Group,github.com,https://github.com/ultravideo,1,鲲鹏,ARM原生,,https://ultravideo.fi/,"Tampere, Finland",29,github_api,vvenc(字节)
+oneapi-src,organization,oneAPI-SRC,github.com,https://github.com/oneapi-src,1,鲲鹏,搜广推,oneAPI open source projects,https://oneapi.com,Hillsboro OR,51,github_api,onednn(京东)
+facebookresearch,organization,Meta Research,github.com,https://github.com/facebookresearch,1,鲲鹏,搜广推,,https://opensource.fb.com,"Menlo Park, California",1367,github_api,Faiss(美团)
+nmslib,organization,nmslib,github.com,https://github.com/nmslib,1,鲲鹏,搜广推,,,,2,github_api,hnswlib(美团)
+rabitq,organization,rabitq,github.com,https://github.com/rabitq,1,鲲鹏,搜广推,,,,0,github_api,RabitQ(字节)
+eigenteam,organization,eigenteam,github.com,https://github.com/eigenteam,1,鲲鹏,搜广推,,,,2,github_api,Eigen(京东)
+langchain-ai,organization,LangChain,github.com,https://github.com/langchain-ai,1,鲲鹏,搜广推,,https://www.langchain.com,United States of America,235,github_api,LangGraph(移动)
+sonic-net,organization,SONiC,github.com,https://github.com/sonic-net,1,鲲鹏,基础库&加速库,Software for Open Networking in the Cloud (SONiC),https://sonicfoundation.dev/,,47,github_api,sonic-cpp(互联网)
+Tongsuo-Project,organization,铜锁/Tongsuo,github.com,https://github.com/Tongsuo-Project,1,鲲鹏,基础库&加速库,A vessel for Tongsuo and relatives,https://www.tongsuo.net,China,24,github_api,Tongsuo(蚂蚁)
+Tencent,organization,Tencent,github.com,https://github.com/Tencent,1,鲲鹏,基础库&加速库,,https://opensource.tencent.com,"Shenzhen, China",245,github_api,rapidjson(字节/腾讯)
+simdjson,organization,simdjson,github.com,https://github.com/simdjson,1,鲲鹏,基础库&加速库,Parsing gigabytes of JSON per second ,https://arxiv.org/abs/1902.08318,,23,github_api,simdjson(美团)
+openssl,organization,OpenSSL,github.com,https://github.com/openssl,1,鲲鹏,基础库&加速库,OpenSSL,https://www.openssl.org,,18,github_api,openssl(美团)
+brpc,organization,brpc,github.com,https://github.com/brpc,1,鲲鹏,基础库&加速库,brpc/brpc was moved to apache/incubator-brpc,,,1,github_api,brpc(美团)
+taskflow,organization,Taskflow,github.com,https://github.com/taskflow,1,鲲鹏,基础库&加速库,A General-purpose Task-parallel Programming System in C++,https://taskflow.github.io,United States of America,8,github_api,taskflow(字节)
+simd-everywhere,organization,SIMD Everywhere,github.com,https://github.com/simd-everywhere,1,鲲鹏,基础库&加速库,,,,7,github_api,simde（美团）
+rust-lang,organization,The Rust Programming Language,github.com,https://github.com/rust-lang,1,鲲鹏,基础库&加速库,,https://www.rust-lang.org,United States of America,237,github_api,rust（字节/腾讯）
+deepmodeling,organization,DeepModeling,github.com,https://github.com/deepmodeling,1,鲲鹏,HPC,Define the future of scientific computing together,https://deepmodeling.com,,67,github_api,DeePMD-kit
+LatticeQCD,organization,LatticeQCD,github.com,https://github.com/LatticeQCD,1,鲲鹏,HPC,,,,3,github_api,RHMC
+deepseek-ai,organization,DeepSeek,github.com,https://github.com/deepseek-ai,1,鲲鹏,HPC,,https://www.deepseek.com/,,32,github_api,deepseek
+QuantumPackage,organization,Quantum Package,github.com,https://github.com/QuantumPackage,1,鲲鹏,HPC,A programming environment for wave function methods,https://quantumpackage.github.io/qp2/,,5,github_api,Quantum Package
+abinit,organization,ABINIT,github.com,https://github.com/abinit,1,鲲鹏,HPC,,https://www.abinit.org,Belgium,52,github_api,Abinit
+CPMD-code,organization,Car-Parrinello Molecular Dynamics ,github.com,https://github.com/CPMD-code,1,鲲鹏,HPC,,,,7,github_api,CPMD
+psi4,organization,psi4,github.com,https://github.com/psi4,1,鲲鹏,HPC,,http://psicode.org,,26,github_api,PSI
+espressomd,organization,ESPResSo MD,github.com,https://github.com/espressomd,1,鲲鹏,HPC,,https://espressomd.org,,4,github_api,ESPResSOmd
+ccp5UK,organization,ccp5,github.com,https://github.com/ccp5UK,1,鲲鹏,HPC,,https://ccp5.ac.uk,United Kingdom,6,github_api,DL_POLY
+Mantevo,organization,The Mantevo Performance Co-design Project,github.com,https://github.com/Mantevo,1,鲲鹏,HPC,Enabling performance design space exploration for HPC,https://mantevo.org,,13,github_api,miniGhost
+idaholab,organization,Idaho National Laboratory,github.com,https://github.com/idaholab,1,鲲鹏,HPC,Open Source Software From Idaho National Laboratory,https://inl.gov,"Idaho, US",159,github_api,Moose Framework
+QMCPACK,organization,QMCPACK,github.com,https://github.com/QMCPACK,1,鲲鹏,HPC,"Open-source many-body ab initio Quantum Monte Carlo code for computing the electronic structure of atoms, molecules, and solids.",http://www.qmcpack.org,,17,github_api,QMCPACK
+Geant4,organization,Geant4,github.com,https://github.com/Geant4,1,鲲鹏,HPC,Geant4 toolkit for the simulation of the passage of particles through matter - NIM A 506 (2003) 250-303 - NIM A 835 (2016) 186-225,http://geant4.org,,1,github_api,Geant4
+JeffersonLab,organization,Jefferson Lab,github.com,https://github.com/JeffersonLab,1,鲲鹏,HPC,,http://www.jlab.org/,,674,github_api,Chroma
+milc-qcd,organization,milc-qcd,github.com,https://github.com/milc-qcd,1,鲲鹏,HPC,,,,6,github_api,MILC
+RBC-UKQCD,organization,RBC-UKQCD,github.com,https://github.com/RBC-UKQCD,1,鲲鹏,HPC,,,,4,github_api,CPS
+ElmerCSC,organization,ElmerCSC,github.com,https://github.com/ElmerCSC,1,鲲鹏,HPC,Elmer developer team,http://elmerfem.org/,,17,github_api,Elmer
+dealii,organization,dealii,github.com,https://github.com/dealii,1,鲲鹏,HPC,,,,10,github_api,Deal.II
+firemodels,organization,Fire Models,github.com,https://github.com/firemodels,1,鲲鹏,HPC,open source fire models,,,13,github_api,FDS
+su2code,organization,SU2 code,github.com,https://github.com/su2code,1,鲲鹏,HPC,SU2 is a suite of open-source software tools for the numerical solution of Computational Fluid Dynamics problems (including design),https://su2foundation.org,Netherlands,13,github_api,SU2
+code-saturne,organization,code_saturne,github.com,https://github.com/code-saturne,1,鲲鹏,HPC,code_saturne CFD tool developement team,code-saturne.org,,6,github_api,Code-Saturne
+myroms,organization,Regional Ocean Modeling System (ROMS),github.com,https://github.com/myroms,1,鲲鹏,HPC,,https://www.myroms.org/wiki,United States of America,7,github_api,ROMS
+HYCOM,organization,HYCOM.org,github.com,https://github.com/HYCOM,1,鲲鹏,HPC,HYbrid Coordinate Ocean Model,https://hycom.org/hycom/overview,"Tallahassee, FL",6,github_api,HYCOM
+Gaius-Augustus,organization,Gaius-Augustus,github.com,https://github.com/Gaius-Augustus,1,鲲鹏,HPC,,,,21,github_api,Augustus
+Chaste,organization,Chaste - Cancer Heart and Soft Tissue Environment,github.com,https://github.com/Chaste,1,鲲鹏,HPC,C++ library for computational biology and physiology simulations,https://chaste.github.io/,United Kingdom,63,github_api,Chaste
+abyzovlab,organization,Abyzov lab,github.com,https://github.com/abyzovlab,1,鲲鹏,HPC,Software packages developed in Abyzov's lab,http://abyzovlab.org,"Rochester, MN",11,github_api,CNVnator
+SeisSol,organization,SeisSol,github.com,https://github.com/SeisSol,1,鲲鹏,HPC,,http://www.seissol.org/,,24,github_api,SeisSol
+genetics-statistics,organization,genetics-statistics,github.com,https://github.com/genetics-statistics,1,鲲鹏,HPC,,,,7,github_api,GEMMA
+root-project,organization,ROOT,github.com,https://github.com/root-project,1,鲲鹏,HPC,A modular scientific software framework,https://root.cern,"Geneva, Switzerland",44,github_api,ROOT
+steineggerlab,organization,Steinegger Lab,github.com,https://github.com/steineggerlab,1,鲲鹏,HPC,Steinegger Lab Github repositories,steineggerlab.com,"Korea, South",35,github_api,Foldseek
+openbabel,organization,Open Babel,github.com,https://github.com/openbabel,1,鲲鹏,HPC,Interconverting chemical data since 2001,http://openbabel.org/,The Internet,10,github_api,openbabel
+bcgsc,organization,Canada's Michael Smith Genome Sciences Centre,github.com,https://github.com/bcgsc,1,鲲鹏,HPC,Sequencing Centre for Genomics and Bioinformatics Research,http://www.bcgsc.ca/,"Vancouver, BC, Canada",30,github_api,Abyss
+scverse,organization,scverse,github.com,https://github.com/scverse,1,鲲鹏,HPC,Foundational tools for omics data in the life sciences,https://scverse.org,,78,github_api,scanpy
+satijalab,organization,satijalab,github.com,https://github.com/satijalab,1,鲲鹏,HPC,,https://satijalab.org,,26,github_api,Seurat
+copasi,organization,COPASI,github.com,https://github.com/copasi,1,鲲鹏,HPC,,http://www.copasi.org,,22,github_api,COPASI
+Molcas,organization,Molcas,github.com,https://github.com/Molcas,1,鲲鹏,HPC,,,,1,github_api,OpenMolcas
+ComparativeGenomicsToolkit,organization,ComparativeGenomicsToolkit,github.com,https://github.com/ComparativeGenomicsToolkit,1,鲲鹏,HPC,,,,32,github_api,Cactus
+macs3-project,organization,MACS3 project team,github.com,https://github.com/macs3-project,1,鲲鹏,HPC,Working group on MACS version 3,,,9,github_api,MACS3
+ebi-pf-team,organization,ebi-pf-team,github.com,https://github.com/ebi-pf-team,1,鲲鹏,HPC,,,,8,github_api,interproscan
+deweylab,organization,Dewey Lab,github.com,https://github.com/deweylab,1,鲲鹏,HPC,The research group of Dr. Colin Dewey @ University of Wisconsin-Madison,http://deweylab.biostat.wisc.edu,"Madison, WI",8,github_api,RSEM
+OpenGene,organization,OpenGene - Open Source Genomics Toolbox,github.com,https://github.com/OpenGene,1,鲲鹏,HPC,Open source tools for NGS data analysis,,,31,github_api,fastp
+trinityrnaseq,organization,trinityrnaseq,github.com,https://github.com/trinityrnaseq,1,鲲鹏,HPC,,,,47,github_api,Trinity
+pysam-developers,organization,pysam-developers,github.com,https://github.com/pysam-developers,1,鲲鹏,HPC,,,,3,github_api,pysam
+biobakery,organization,bioBakery,github.com,https://github.com/biobakery,1,鲲鹏,HPC,"Software, documentation, and tutorials for microbial community profiling.",http://huttenhower.sph.harvard.edu/,,130,github_api,phylophlan
+Ensembl,organization,Ensembl Project,github.com,https://github.com/Ensembl,1,鲲鹏,HPC,,http://www.ensembl.org,EMBL-EBI and Wellcome Trust Sanger Institute,224,github_api,VEP
+cole-trapnell-lab,organization,cole-trapnell-lab,github.com,https://github.com/cole-trapnell-lab,1,鲲鹏,HPC,,,,36,github_api,Cufflinks
+rdkit,organization,RDKit,github.com,https://github.com/rdkit,1,鲲鹏,HPC,,https://www.rdkit.org,,43,github_api,RDKit
+beast-dev,organization,Bayesian Evolutionary Analysis Sampling Trees,github.com,https://github.com/beast-dev,1,鲲鹏,HPC,,http://beast.community,,9,github_api,BEAST
+psipred,organization,UCL Bioinformatics Group,github.com,https://github.com/psipred,1,鲲鹏,HPC,UCL bioinformatics group repositories,http://bioinf.cs.ucl.ac.uk/psipred/,,51,github_api,psipred
+NCAR,organization,NSF National Center for Atmospheric Research,github.com,https://github.com/NCAR,1,鲲鹏,HPC,NSF NCAR is sponsored by the U.S. National Science Foundation and managed by the University Corporation for Atmospheric Research.,http://ncar.ucar.edu,"Boulder, CO",1178,github_api,NCL
+gulpjs,organization,gulp,github.com,https://github.com/gulpjs,1,鲲鹏,基础库&加速库,A toolkit to automate & enhance your workflow,https://gulpjs.com,,72,github_api,gulp
+towhee-io,organization,Towhee,github.com,https://github.com/towhee-io,1,鲲鹏,基础库&加速库,Open source platform for generating embedding vectors.,https://towhee.io/,,9,github_api,Towhee
+jax-ml,organization,jax-ml,github.com,https://github.com/jax-ml,1,鲲鹏,HPC,Pushing back the limits on numerical computing.,https://docs.jax.dev,,15,github_api,Jax
+gadget-framework,organization,gadget-framework,github.com,https://github.com/gadget-framework,1,鲲鹏,HPC,,,,15,github_api,GADGET-2
+parafem,organization,parafem,github.com,https://github.com/parafem,1,鲲鹏,HPC,,,,5,github_api,paraFEM
+qnap-dev,organization,qnap-dev,github.com,https://github.com/qnap-dev,1,鲲鹏,基础库&加速库,,,,13,github_api,QDK
+nco,organization,netCDF Operators,github.com,https://github.com/nco,1,鲲鹏,HPC,,,,8,github_api,NCO
+qgis,organization,QGIS,github.com,https://github.com/qgis,1,鲲鹏,基础库&加速库,,http://qgis.org/,Global,67,github_api,qgis
+wannier-developers,organization,Wannier90 developers,github.com,https://github.com/wannier-developers,1,鲲鹏,基础库&加速库,,http://www.wannier.org,,5,github_api,Wannier90
+Unidata,organization,NSF Unidata,github.com,https://github.com/Unidata,1,鲲鹏,基础库&加速库,"Our mission is to transform the geosciences community, research, and education by providing innovative data services and tools.",https://www.unidata.ucar.edu/,"Boulder, Colorado, USA",141,github_api,udunits
+iem-projects,organization,iem@kug,github.com,https://github.com/iem-projects,1,鲲鹏,HPC,,http://iem.at,"Graz, Austria",32,github_api,ncview
+apptainer,organization,The Apptainer Container Project,github.com,https://github.com/apptainer,1,鲲鹏,基础库&加速库,,http://www.apptainer.org,,12,github_api,apptainer
+weathersource,organization,Weather Source,github.com,https://github.com/weathersource,1,鲲鹏,HPC,,https://weathersource.com,US,35,github_api,grib_api
+plumed,organization,plumed,github.com,https://github.com/plumed,1,鲲鹏,基础库&加速库,,www.plumed.org,,58,github_api,plumed
+Reference-ScaLAPACK,organization,Reference-ScaLAPACK,github.com,https://github.com/Reference-ScaLAPACK,1,鲲鹏,基础库&加速库,,,,2,github_api,SCALAPACK
+ampl,organization,AMPL,github.com,https://github.com/ampl,1,鲲鹏,HPC,A modeling language for mathematical programming,https://ampl.com,,25,github_api,gsl
+FFTW,organization,FFTW,github.com,https://github.com/FFTW,1,鲲鹏,基础库&加速库,,http://www.fftw.org/,,2,github_api,FFTW
+obspy,organization,ObsPy,github.com,https://github.com/obspy,1,鲲鹏,基础库&加速库,,https://github.com/obspy/obspy/wiki,,22,github_api,ObsPy
+KarypisLab,organization,Karypis Lab @ UMN-CS&E,github.com,https://github.com/KarypisLab,1,鲲鹏,基础库&加速库,Used to distribute software developed by Prof. George Karypis' research group,https://karypis.github.io/,"Minneapolis, MN, 55455",11,github_api,Metis
+spack,organization,Spack,github.com,https://github.com/spack,1,鲲鹏,基础库&加速库,"A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",https://spack.io,,74,github_api,SPACK
+gperftools,organization,gperftools,github.com,https://github.com/gperftools,1,鲲鹏,基础库&加速库,,,,2,github_api,gperftools
+mpi4py,organization,MPI for Python,github.com,https://github.com/mpi4py,1,鲲鹏,基础库&加速库,Python bindings for MPI,,,7,github_api,mpi4py
+petsc,organization,Portable Extensible Toolkit for Scientific computing,github.com,https://github.com/petsc,1,鲲鹏,基础库&加速库,PETSc is a suite of composable data structures and algorithms for scalable (parallel) solution of scientific applications modeled by PDEs.,http://mcs.anl.gov/petsc,,18,github_api,PETSc
+mfem,organization,MFEM,github.com,https://github.com/mfem,1,鲲鹏,HPC,"a lightweight, general, scalable C++ library for finite element methods",https://mfem.org,Lawrence Livermore National Laboratory,12,github_api,mfem
+kokkos,organization,Kokkos,github.com,https://github.com/kokkos,1,鲲鹏,基础库&加速库,Kokkos C++ Performance Portability Programming Ecosystem,https://kokkos.org,,32,github_api,kokkos
+SchedMD,organization,SchedMD,github.com,https://github.com/SchedMD,1,鲲鹏,基础库&加速库,SchedMD - The Slurm Company,https://www.schedmd.com,"Lehi, UT, USA",3,github_api,slurm

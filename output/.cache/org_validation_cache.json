@@ -1,0 +1,1737 @@
+{
+ "dotnet": {
+  "total_repos": 277,
+  "star_gt100": 156,
+  "active_repos": 173
+ },
+ "3dem": {
+  "total_repos": 20,
+  "star_gt100": 2,
+  "active_repos": 12
+ },
+ "3fs": {
+  "total_repos": 40,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "mirror": {
+  "total_repos": 125,
+  "star_gt100": 19,
+  "active_repos": 6
+ },
+ "abinit": {
+  "total_repos": 52,
+  "star_gt100": 2,
+  "active_repos": 45
+ },
+ "ampl": {
+  "total_repos": 25,
+  "star_gt100": 2,
+  "active_repos": 12
+ },
+ "agent-network-protocol": {
+  "total_repos": 16,
+  "star_gt100": 2,
+  "active_repos": 11
+ },
+ "abyzovlab": {
+  "total_repos": 11,
+  "star_gt100": 2,
+  "active_repos": 4
+ },
+ "a2aproject": {
+  "total_repos": 11,
+  "star_gt100": 8,
+  "active_repos": 11
+ },
+ "aidenlab": {
+  "total_repos": 38,
+  "star_gt100": 3,
+  "active_repos": 10
+ },
+ "aomediacodec": {
+  "total_repos": 24,
+  "star_gt100": 7,
+  "active_repos": 12
+ },
+ "alluxio": {
+  "total_repos": 13,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "amber-md": {
+  "total_repos": 6,
+  "star_gt100": 2,
+  "active_repos": 3
+ },
+ "ansible": {
+  "total_repos": 301,
+  "star_gt100": 39,
+  "active_repos": 119
+ },
+ "axolotl-ai-cloud": {
+  "total_repos": 18,
+  "star_gt100": 1,
+  "active_repos": 6
+ },
+ "beast-dev": {
+  "total_repos": 9,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "bvlc": {
+  "total_repos": 4,
+  "star_gt100": 2,
+  "active_repos": 0
+ },
+ "biod": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "boostorg": {
+  "total_repos": 200,
+  "star_gt100": 52,
+  "active_repos": 181
+ },
+ "bytedance-seed": {
+  "total_repos": 54,
+  "star_gt100": 26,
+  "active_repos": 51
+ },
+ "combine-lab": {
+  "total_repos": 137,
+  "star_gt100": 4,
+  "active_repos": 28
+ },
+ "copasi": {
+  "total_repos": 22,
+  "star_gt100": 1,
+  "active_repos": 10
+ },
+ "cp2k": {
+  "total_repos": 10,
+  "star_gt100": 2,
+  "active_repos": 8
+ },
+ "bcgsc": {
+  "total_repos": 30,
+  "star_gt100": 0,
+  "active_repos": 13
+ },
+ "cpmd-code": {
+  "total_repos": 7,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "ceph": {
+  "total_repos": 201,
+  "star_gt100": 16,
+  "active_repos": 33
+ },
+ "chaste": {
+  "total_repos": 63,
+  "star_gt100": 1,
+  "active_repos": 18
+ },
+ "cisco": {
+  "total_repos": 84,
+  "star_gt100": 13,
+  "active_repos": 16
+ },
+ "clickhouse": {
+  "total_repos": 308,
+  "star_gt100": 34,
+  "active_repos": 99
+ },
+ "cloudwego": {
+  "total_repos": 46,
+  "star_gt100": 24,
+  "active_repos": 37
+ },
+ "clusterlabs": {
+  "total_repos": 28,
+  "star_gt100": 8,
+  "active_repos": 17
+ },
+ "coinbase": {
+  "total_repos": 169,
+  "star_gt100": 47,
+  "active_repos": 58
+ },
+ "comfy-org": {
+  "total_repos": 61,
+  "star_gt100": 10,
+  "active_repos": 45
+ },
+ "csdms": {
+  "total_repos": 125,
+  "star_gt100": 0,
+  "active_repos": 40
+ },
+ "comparativegenomicstoolkit": {
+  "total_repos": 32,
+  "star_gt100": 3,
+  "active_repos": 8
+ },
+ "coredns": {
+  "total_repos": 36,
+  "star_gt100": 4,
+  "active_repos": 7
+ },
+ "coreos": {
+  "total_repos": 275,
+  "star_gt100": 43,
+  "active_repos": 54
+ },
+ "cryoem": {
+  "total_repos": 24,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "cubefs": {
+  "total_repos": 25,
+  "star_gt100": 3,
+  "active_repos": 4
+ },
+ "daos-stack": {
+  "total_repos": 93,
+  "star_gt100": 1,
+  "active_repos": 31
+ },
+ "dpdk": {
+  "total_repos": 3,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "datajuicer": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 6
+ },
+ "databricks": {
+  "total_repos": 255,
+  "star_gt100": 52,
+  "active_repos": 55
+ },
+ "dreichlab": {
+  "total_repos": 12,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "deepmodeling": {
+  "total_repos": 67,
+  "star_gt100": 11,
+  "active_repos": 37
+ },
+ "deweylab": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "dmlc": {
+  "total_repos": 51,
+  "star_gt100": 30,
+  "active_repos": 10
+ },
+ "django": {
+  "total_repos": 30,
+  "star_gt100": 12,
+  "active_repos": 22
+ },
+ "e2b-dev": {
+  "total_repos": 54,
+  "star_gt100": 16,
+  "active_repos": 24
+ },
+ "espressomd": {
+  "total_repos": 4,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "esnet": {
+  "total_repos": 135,
+  "star_gt100": 5,
+  "active_repos": 39
+ },
+ "escomp": {
+  "total_repos": 71,
+  "star_gt100": 2,
+  "active_repos": 29
+ },
+ "eclipse-ee4j": {
+  "total_repos": 102,
+  "star_gt100": 11,
+  "active_repos": 62
+ },
+ "eclipse": {
+  "total_repos": 9,
+  "star_gt100": 0,
+  "active_repos": 2
+ },
+ "eleutherai": {
+  "total_repos": 182,
+  "star_gt100": 18,
+  "active_repos": 24
+ },
+ "elmercsc": {
+  "total_repos": 17,
+  "star_gt100": 1,
+  "active_repos": 8
+ },
+ "ensembl": {
+  "total_repos": 224,
+  "star_gt100": 4,
+  "active_repos": 89
+ },
+ "envoyproxy": {
+  "total_repos": 35,
+  "star_gt100": 13,
+  "active_repos": 19
+ },
+ "erlang": {
+  "total_repos": 23,
+  "star_gt100": 7,
+  "active_repos": 9
+ },
+ "eventual-inc": {
+  "total_repos": 32,
+  "star_gt100": 1,
+  "active_repos": 13
+ },
+ "libexpat": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "fftw": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "fla-org": {
+  "total_repos": 13,
+  "star_gt100": 3,
+  "active_repos": 8
+ },
+ "fmrib-software-library": {
+  "total_repos": 1,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "falconry": {
+  "total_repos": 11,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "fastcgi-archives": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "firemodels": {
+  "total_repos": 13,
+  "star_gt100": 1,
+  "active_repos": 11
+ },
+ "flagos-ai": {
+  "total_repos": 37,
+  "star_gt100": 7,
+  "active_repos": 30
+ },
+ "libgeos": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "gnome": {
+  "total_repos": 322,
+  "star_gt100": 39,
+  "active_repos": 283
+ },
+ "gnutools": {
+  "total_repos": 4,
+  "star_gt100": 0,
+  "active_repos": 3
+ },
+ "gpustack": {
+  "total_repos": 15,
+  "star_gt100": 4,
+  "active_repos": 13
+ },
+ "gaius-augustus": {
+  "total_repos": 21,
+  "star_gt100": 4,
+  "active_repos": 8
+ },
+ "geant4": {
+  "total_repos": 1,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "git": {
+  "total_repos": 9,
+  "star_gt100": 6,
+  "active_repos": 4
+ },
+ "gluster": {
+  "total_repos": 107,
+  "star_gt100": 6,
+  "active_repos": 2
+ },
+ "golang": {
+  "total_repos": 61,
+  "star_gt100": 51,
+  "active_repos": 42
+ },
+ "google-agentic-commerce": {
+  "total_repos": 2,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "google-deepmind": {
+  "total_repos": 382,
+  "star_gt100": 164,
+  "active_repos": 157
+ },
+ "gradle": {
+  "total_repos": 249,
+  "star_gt100": 17,
+  "active_repos": 85
+ },
+ "grafana": {
+  "total_repos": 981,
+  "star_gt100": 97,
+  "active_repos": 467
+ },
+ "gromacs": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "haproxy": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "hpcaitech": {
+  "total_repos": 33,
+  "star_gt100": 9,
+  "active_repos": 5
+ },
+ "hycom": {
+  "total_repos": 6,
+  "star_gt100": 0,
+  "active_repos": 3
+ },
+ "goharbor": {
+  "total_repos": 28,
+  "star_gt100": 5,
+  "active_repos": 13
+ },
+ "hashicorp": {
+  "total_repos": 930,
+  "star_gt100": 152,
+  "active_repos": 571
+ },
+ "fmtlib": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "hewlettpackard": {
+  "total_repos": 481,
+  "star_gt100": 14,
+  "active_repos": 148
+ },
+ "horovod": {
+  "total_repos": 4,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "idaholab": {
+  "total_repos": 159,
+  "star_gt100": 2,
+  "active_repos": 92
+ },
+ "istio": {
+  "total_repos": 41,
+  "star_gt100": 12,
+  "active_repos": 14
+ },
+ "jd-opensource": {
+  "total_repos": 116,
+  "star_gt100": 28,
+  "active_repos": 33
+ },
+ "junit-team": {
+  "total_repos": 18,
+  "star_gt100": 3,
+  "active_repos": 12
+ },
+ "jeffersonlab": {
+  "total_repos": 674,
+  "star_gt100": 0,
+  "active_repos": 218
+ },
+ "jenkinsci": {
+  "total_repos": 2731,
+  "star_gt100": 102,
+  "active_repos": 802
+ },
+ "kserve": {
+  "total_repos": 15,
+  "star_gt100": 4,
+  "active_repos": 15
+ },
+ "karypislab": {
+  "total_repos": 11,
+  "star_gt100": 3,
+  "active_repos": 3
+ },
+ "kata-containers": {
+  "total_repos": 32,
+  "star_gt100": 9,
+  "active_repos": 7
+ },
+ "kitware": {
+  "total_repos": 275,
+  "star_gt100": 21,
+  "active_repos": 109
+ },
+ "kokkos": {
+  "total_repos": 32,
+  "star_gt100": 7,
+  "active_repos": 20
+ },
+ "kong": {
+  "total_repos": 567,
+  "star_gt100": 34,
+  "active_repos": 124
+ },
+ "kubeflow": {
+  "total_repos": 47,
+  "star_gt100": 20,
+  "active_repos": 22
+ },
+ "lammps": {
+  "total_repos": 13,
+  "star_gt100": 1,
+  "active_repos": 7
+ },
+ "linbit": {
+  "total_repos": 91,
+  "star_gt100": 4,
+  "active_repos": 33
+ },
+ "lmcache": {
+  "total_repos": 20,
+  "star_gt100": 1,
+  "active_repos": 16
+ },
+ "lm-sys": {
+  "total_repos": 5,
+  "star_gt100": 3,
+  "active_repos": 2
+ },
+ "lancedb": {
+  "total_repos": 46,
+  "star_gt100": 3,
+  "active_repos": 29
+ },
+ "langchain-ai": {
+  "total_repos": 235,
+  "star_gt100": 96,
+  "active_repos": 175
+ },
+ "langgenius": {
+  "total_repos": 27,
+  "star_gt100": 10,
+  "active_repos": 21
+ },
+ "reference-lapack": {
+  "total_repos": 4,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "latticeqcd": {
+  "total_repos": 3,
+  "star_gt100": 0,
+  "active_repos": 3
+ },
+ "libvirt": {
+  "total_repos": 49,
+  "star_gt100": 4,
+  "active_repos": 22
+ },
+ "linkedin": {
+  "total_repos": 136,
+  "star_gt100": 61,
+  "active_repos": 46
+ },
+ "torvalds": {
+  "total_repos": 0,
+  "star_gt100": 8,
+  "active_repos": 6
+ },
+ "linuxmint": {
+  "total_repos": 157,
+  "star_gt100": 29,
+  "active_repos": 79
+ },
+ "lizardfs": {
+  "total_repos": 6,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "lua": {
+  "total_repos": 4,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "macs3-project": {
+  "total_repos": 9,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "mfem": {
+  "total_repos": 12,
+  "star_gt100": 2,
+  "active_repos": 8
+ },
+ "mne-tools": {
+  "total_repos": 47,
+  "star_gt100": 7,
+  "active_repos": 23
+ },
+ "openmopac": {
+  "total_repos": 14,
+  "star_gt100": 1,
+  "active_repos": 11
+ },
+ "mpi4py": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 7
+ },
+ "mrtrix3": {
+  "total_repos": 20,
+  "star_gt100": 1,
+  "active_repos": 7
+ },
+ "mariadb": {
+  "total_repos": 31,
+  "star_gt100": 3,
+  "active_repos": 15
+ },
+ "mesa3d": {
+  "total_repos": 1,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "meta-pytorch": {
+  "total_repos": 54,
+  "star_gt100": 31,
+  "active_repos": 49
+ },
+ "facebookresearch": {
+  "total_repos": 1367,
+  "star_gt100": 604,
+  "active_repos": 398
+ },
+ "minio": {
+  "total_repos": 128,
+  "star_gt100": 38,
+  "active_repos": 45
+ },
+ "openstack": {
+  "total_repos": 670,
+  "star_gt100": 61,
+  "active_repos": 481
+ },
+ "modelcontextprotocol": {
+  "total_repos": 39,
+  "star_gt100": 22,
+  "active_repos": 36
+ },
+ "modeltc": {
+  "total_repos": 72,
+  "star_gt100": 9,
+  "active_repos": 30
+ },
+ "molcas": {
+  "total_repos": 1,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "moosefs": {
+  "total_repos": 6,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "mysql": {
+  "total_repos": 23,
+  "star_gt100": 14,
+  "active_repos": 13
+ },
+ "distrotech": {
+  "total_repos": 976,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "nbisweden": {
+  "total_repos": 365,
+  "star_gt100": 5,
+  "active_repos": 105
+ },
+ "ncar": {
+  "total_repos": 1178,
+  "star_gt100": 14,
+  "active_repos": 373
+ },
+ "unidata": {
+  "total_repos": 141,
+  "star_gt100": 11,
+  "active_repos": 58
+ },
+ "nagiosenterprises": {
+  "total_repos": 19,
+  "star_gt100": 3,
+  "active_repos": 5
+ },
+ "nbcrrolls": {
+  "total_repos": 43,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "neo4j": {
+  "total_repos": 94,
+  "star_gt100": 20,
+  "active_repos": 62
+ },
+ "nextcloud": {
+  "total_repos": 364,
+  "star_gt100": 75,
+  "active_repos": 280
+ },
+ "nodejs": {
+  "total_repos": 231,
+  "star_gt100": 80,
+  "active_repos": 77
+ },
+ "numpy": {
+  "total_repos": 33,
+  "star_gt100": 7,
+  "active_repos": 18
+ },
+ "o3de": {
+  "total_repos": 64,
+  "star_gt100": 3,
+  "active_repos": 27
+ },
+ "obspy": {
+  "total_repos": 22,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "oceanbase": {
+  "total_repos": 118,
+  "star_gt100": 9,
+  "active_repos": 83
+ },
+ "ollama": {
+  "total_repos": 3,
+  "star_gt100": 3,
+  "active_repos": 3
+ },
+ "openbabel": {
+  "total_repos": 10,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "oisf": {
+  "total_repos": 7,
+  "star_gt100": 4,
+  "active_repos": 6
+ },
+ "opencv": {
+  "total_repos": 17,
+  "star_gt100": 8,
+  "active_repos": 11
+ },
+ "opencloudos": {
+  "total_repos": 30,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "open-compass": {
+  "total_repos": 47,
+  "star_gt100": 13,
+  "active_repos": 28
+ },
+ "openfoam": {
+  "total_repos": 0,
+  "star_gt100": 5,
+  "active_repos": 6
+ },
+ "opengene": {
+  "total_repos": 31,
+  "star_gt100": 10,
+  "active_repos": 6
+ },
+ "openhpc": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "openjdk": {
+  "total_repos": 135,
+  "star_gt100": 25,
+  "active_repos": 75
+ },
+ "openmathlib": {
+  "total_repos": 9,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "openrlhf": {
+  "total_repos": 3,
+  "star_gt100": 2,
+  "active_repos": 3
+ },
+ "openssl": {
+  "total_repos": 18,
+  "star_gt100": 2,
+  "active_repos": 12
+ },
+ "openxla": {
+  "total_repos": 9,
+  "star_gt100": 6,
+  "active_repos": 5
+ },
+ "orientechnologies": {
+  "total_repos": 51,
+  "star_gt100": 4,
+  "active_repos": 9
+ },
+ "orocos-toolchain": {
+  "total_repos": 19,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "pcre2project": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "paddlepaddle": {
+  "total_repos": 107,
+  "star_gt100": 66,
+  "active_repos": 42
+ },
+ "papenfusslab": {
+  "total_repos": 43,
+  "star_gt100": 3,
+  "active_repos": 3
+ },
+ "percona": {
+  "total_repos": 203,
+  "star_gt100": 24,
+  "active_repos": 69
+ },
+ "pingcap": {
+  "total_repos": 165,
+  "star_gt100": 36,
+  "active_repos": 48
+ },
+ "petsc": {
+  "total_repos": 18,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "postgres": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "prestodb": {
+  "total_repos": 74,
+  "star_gt100": 5,
+  "active_repos": 19
+ },
+ "primer3-org": {
+  "total_repos": 6,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "projectcalico": {
+  "total_repos": 77,
+  "star_gt100": 10,
+  "active_repos": 7
+ },
+ "prometheus": {
+  "total_repos": 56,
+  "star_gt100": 33,
+  "active_repos": 47
+ },
+ "protocolbuffers": {
+  "total_repos": 15,
+  "star_gt100": 7,
+  "active_repos": 7
+ },
+ "pyg-team": {
+  "total_repos": 5,
+  "star_gt100": 3,
+  "active_repos": 4
+ },
+ "pyca": {
+  "total_repos": 7,
+  "star_gt100": 5,
+  "active_repos": 7
+ },
+ "qemu": {
+  "total_repos": 28,
+  "star_gt100": 1,
+  "active_repos": 10
+ },
+ "qgis": {
+  "total_repos": 67,
+  "star_gt100": 10,
+  "active_repos": 30
+ },
+ "qmcpack": {
+  "total_repos": 17,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "quantumpackage": {
+  "total_repos": 5,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "quartz-scheduler": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "rbc-ukqcd": {
+  "total_repos": 4,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "rdkit": {
+  "total_repos": 43,
+  "star_gt100": 4,
+  "active_repos": 12
+ },
+ "root-project": {
+  "total_repos": 44,
+  "star_gt100": 5,
+  "active_repos": 16
+ },
+ "rabbitmq": {
+  "total_repos": 254,
+  "star_gt100": 33,
+  "active_repos": 67
+ },
+ "reference-scalapack": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "myroms": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "scons": {
+  "total_repos": 14,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "simd-everywhere": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "sonic-net": {
+  "total_repos": 47,
+  "star_gt100": 5,
+  "active_repos": 41
+ },
+ "su2code": {
+  "total_repos": 13,
+  "star_gt100": 1,
+  "active_repos": 8
+ },
+ "schedmd": {
+  "total_repos": 3,
+  "star_gt100": 2,
+  "active_repos": 1
+ },
+ "seissol": {
+  "total_repos": 24,
+  "star_gt100": 1,
+  "active_repos": 16
+ },
+ "sheepdog": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "shilab-bioinformatics": {
+  "total_repos": 0,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "slicer": {
+  "total_repos": 105,
+  "star_gt100": 4,
+  "active_repos": 24
+ },
+ "snort3": {
+  "total_repos": 6,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "spack": {
+  "total_repos": 74,
+  "star_gt100": 2,
+  "active_repos": 30
+ },
+ "inab": {
+  "total_repos": 229,
+  "star_gt100": 1,
+  "active_repos": 47
+ },
+ "sphinx-doc": {
+  "total_repos": 23,
+  "star_gt100": 3,
+  "active_repos": 11
+ },
+ "squid-cache": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "starrocks": {
+  "total_repos": 47,
+  "star_gt100": 5,
+  "active_repos": 21
+ },
+ "steineggerlab": {
+  "total_repos": 35,
+  "star_gt100": 5,
+  "active_repos": 20
+ },
+ "spdk": {
+  "total_repos": 14,
+  "star_gt100": 1,
+  "active_repos": 7
+ },
+ "swagger-api": {
+  "total_repos": 37,
+  "star_gt100": 17,
+  "active_repos": 16
+ },
+ "taosdata": {
+  "total_repos": 67,
+  "star_gt100": 1,
+  "active_repos": 29
+ },
+ "taskflow": {
+  "total_repos": 8,
+  "star_gt100": 3,
+  "active_repos": 5
+ },
+ "tencent": {
+  "total_repos": 245,
+  "star_gt100": 171,
+  "active_repos": 147
+ },
+ "apptainer": {
+  "total_repos": 12,
+  "star_gt100": 2,
+  "active_repos": 7
+ },
+ "chromium": {
+  "total_repos": 39,
+  "star_gt100": 17,
+  "active_repos": 11
+ },
+ "eddyrivaslab": {
+  "total_repos": 14,
+  "star_gt100": 2,
+  "active_repos": 9
+ },
+ "mantevo": {
+  "total_repos": 13,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "milvus-io": {
+  "total_repos": 67,
+  "star_gt100": 10,
+  "active_repos": 23
+ },
+ "netty": {
+  "total_repos": 16,
+  "star_gt100": 5,
+  "active_repos": 11
+ },
+ "perl": {
+  "total_repos": 8,
+  "star_gt100": 2,
+  "active_repos": 5
+ },
+ "ruby": {
+  "total_repos": 185,
+  "star_gt100": 46,
+  "active_repos": 145
+ },
+ "rust-lang": {
+  "total_repos": 237,
+  "star_gt100": 113,
+  "active_repos": 127
+ },
+ "scala": {
+  "total_repos": 62,
+  "star_gt100": 23,
+  "active_repos": 38
+ },
+ "zeromq": {
+  "total_repos": 87,
+  "star_gt100": 38,
+  "active_repos": 17
+ },
+ "deeptools": {
+  "total_repos": 13,
+  "star_gt100": 4,
+  "active_repos": 4
+ },
+ "tinkertools": {
+  "total_repos": 12,
+  "star_gt100": 1,
+  "active_repos": 8
+ },
+ "towhee-io": {
+  "total_repos": 9,
+  "star_gt100": 2,
+  "active_repos": 0
+ },
+ "treangenlab": {
+  "total_repos": 25,
+  "star_gt100": 0,
+  "active_repos": 17
+ },
+ "psipred": {
+  "total_repos": 51,
+  "star_gt100": 0,
+  "active_repos": 12
+ },
+ "ultravideo": {
+  "total_repos": 29,
+  "star_gt100": 4,
+  "active_repos": 9
+ },
+ "unslothai": {
+  "total_repos": 9,
+  "star_gt100": 4,
+  "active_repos": 3
+ },
+ "varnishcache": {
+  "total_repos": 10,
+  "star_gt100": 2,
+  "active_repos": 10
+ },
+ "vchitect": {
+  "total_repos": 37,
+  "star_gt100": 14,
+  "active_repos": 21
+ },
+ "vercel": {
+  "total_repos": 230,
+  "star_gt100": 103,
+  "active_repos": 120
+ },
+ "videolan": {
+  "total_repos": 18,
+  "star_gt100": 11,
+  "active_repos": 12
+ },
+ "volcengine": {
+  "total_repos": 191,
+  "star_gt100": 18,
+  "active_repos": 97
+ },
+ "vuejs": {
+  "total_repos": 124,
+  "star_gt100": 83,
+  "active_repos": 32
+ },
+ "wannier-developers": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "wenet-e2e": {
+  "total_repos": 23,
+  "star_gt100": 12,
+  "active_repos": 13
+ },
+ "weathersource": {
+  "total_repos": 35,
+  "star_gt100": 0,
+  "active_repos": 13
+ },
+ "webmproject": {
+  "total_repos": 25,
+  "star_gt100": 4,
+  "active_repos": 9
+ },
+ "wildfly": {
+  "total_repos": 99,
+  "star_gt100": 4,
+  "active_repos": 77
+ },
+ "wireshark": {
+  "total_repos": 6,
+  "star_gt100": 2,
+  "active_repos": 1
+ },
+ "xinglab": {
+  "total_repos": 37,
+  "star_gt100": 3,
+  "active_repos": 10
+ },
+ "xiph": {
+  "total_repos": 36,
+  "star_gt100": 16,
+  "active_repos": 19
+ },
+ "aigw-project": {
+  "total_repos": 4,
+  "star_gt100": 0,
+  "active_repos": 2
+ },
+ "benson-genomics-lab": {
+  "total_repos": 4,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "biobakery": {
+  "total_repos": 130,
+  "star_gt100": 8,
+  "active_repos": 24
+ },
+ "bioinformatics-centre": {
+  "total_repos": 4,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "bitsandbytes-foundation": {
+  "total_repos": 3,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "bminor": {
+  "total_repos": 1,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "brpc": {
+  "total_repos": 1,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "ccp5uk": {
+  "total_repos": 6,
+  "star_gt100": 0,
+  "active_repos": 4
+ },
+ "code-saturne": {
+  "total_repos": 6,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "cole-trapnell-lab": {
+  "total_repos": 36,
+  "star_gt100": 4,
+  "active_repos": 8
+ },
+ "connor-lab": {
+  "total_repos": 25,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "containerd": {
+  "total_repos": 38,
+  "star_gt100": 20,
+  "active_repos": 28
+ },
+ "coze-dev": {
+  "total_repos": 22,
+  "star_gt100": 6,
+  "active_repos": 18
+ },
+ "curl": {
+  "total_repos": 24,
+  "star_gt100": 11,
+  "active_repos": 11
+ },
+ "dealii": {
+  "total_repos": 10,
+  "star_gt100": 1,
+  "active_repos": 8
+ },
+ "decodegenetics": {
+  "total_repos": 31,
+  "star_gt100": 2,
+  "active_repos": 1
+ },
+ "deepseek-ai": {
+  "total_repos": 32,
+  "star_gt100": 32,
+  "active_repos": 21
+ },
+ "deepspeedai": {
+  "total_repos": 6,
+  "star_gt100": 3,
+  "active_repos": 3
+ },
+ "delimitrou": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "ebi-pf-team": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "eigenteam": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "etcd-io": {
+  "total_repos": 18,
+  "star_gt100": 11,
+  "active_repos": 10
+ },
+ "ffmpeg": {
+  "total_repos": 9,
+  "star_gt100": 6,
+  "active_repos": 6
+ },
+ "fluid-cloudnative": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 6
+ },
+ "gadget-framework": {
+  "total_repos": 15,
+  "star_gt100": 0,
+  "active_repos": 8
+ },
+ "gcc-mirror": {
+  "total_repos": 1,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "genetics-statistics": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "gnuplot": {
+  "total_repos": 11,
+  "star_gt100": 2,
+  "active_repos": 0
+ },
+ "gperftools": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "gulpjs": {
+  "total_repos": 72,
+  "star_gt100": 12,
+  "active_repos": 8
+ },
+ "happyfish100": {
+  "total_repos": 0,
+  "star_gt100": 7,
+  "active_repos": 14
+ },
+ "veg": {
+  "total_repos": 104,
+  "star_gt100": 2,
+  "active_repos": 27
+ },
+ "iem-projects": {
+  "total_repos": 32,
+  "star_gt100": 0,
+  "active_repos": 4
+ },
+ "inclusionai": {
+  "total_repos": 45,
+  "star_gt100": 21,
+  "active_repos": 44
+ },
+ "jax-ml": {
+  "total_repos": 15,
+  "star_gt100": 9,
+  "active_repos": 12
+ },
+ "jemalloc": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "juicefs": {
+  "total_repos": 0,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "k8snetworkplumbingwg": {
+  "total_repos": 42,
+  "star_gt100": 6,
+  "active_repos": 26
+ },
+ "kupferlauncher": {
+  "total_repos": 5,
+  "star_gt100": 2,
+  "active_repos": 1
+ },
+ "libevent": {
+  "total_repos": 7,
+  "star_gt100": 2,
+  "active_repos": 3
+ },
+ "libjpeg-turbo": {
+  "total_repos": 12,
+  "star_gt100": 1,
+  "active_repos": 9
+ },
+ "linux-rdma": {
+  "total_repos": 7,
+  "star_gt100": 2,
+  "active_repos": 3
+ },
+ "llm-d": {
+  "total_repos": 16,
+  "star_gt100": 4,
+  "active_repos": 16
+ },
+ "lustre": {
+  "total_repos": 7,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "lz4": {
+  "total_repos": 2,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "meituan": {
+  "total_repos": 60,
+  "star_gt100": 5,
+  "active_repos": 6
+ },
+ "memcached": {
+  "total_repos": 11,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "meteorhacks": {
+  "total_repos": 75,
+  "star_gt100": 11,
+  "active_repos": 0
+ },
+ "milc-qcd": {
+  "total_repos": 6,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "mlfoundations": {
+  "total_repos": 35,
+  "star_gt100": 12,
+  "active_repos": 8
+ },
+ "mongodb": {
+  "total_repos": 299,
+  "star_gt100": 52,
+  "active_repos": 163
+ },
+ "mummer4": {
+  "total_repos": 2,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "nco": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "netdata": {
+  "total_repos": 74,
+  "star_gt100": 3,
+  "active_repos": 19
+ },
+ "nginx": {
+  "total_repos": 60,
+  "star_gt100": 16,
+  "active_repos": 52
+ },
+ "nmslib": {
+  "total_repos": 2,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "ntop": {
+  "total_repos": 24,
+  "star_gt100": 13,
+  "active_repos": 13
+ },
+ "nwchemgit": {
+  "total_repos": 0,
+  "star_gt100": 1,
+  "active_repos": 4
+ },
+ "ovirt": {
+  "total_repos": 178,
+  "star_gt100": 4,
+  "active_repos": 62
+ },
+ "oneapi-src": {
+  "total_repos": 51,
+  "star_gt100": 4,
+  "active_repos": 15
+ },
+ "open-mpi": {
+  "total_repos": 27,
+  "star_gt100": 2,
+  "active_repos": 9
+ },
+ "opencurve": {
+  "total_repos": 29,
+  "star_gt100": 1,
+  "active_repos": 0
+ },
+ "openvelinux": {
+  "total_repos": 15,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "openvswitch": {
+  "total_repos": 8,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "pandas-dev": {
+  "total_repos": 16,
+  "star_gt100": 2,
+  "active_repos": 4
+ },
+ "parafem": {
+  "total_repos": 5,
+  "star_gt100": 0,
+  "active_repos": 1
+ },
+ "php": {
+  "total_repos": 151,
+  "star_gt100": 14,
+  "active_repos": 66
+ },
+ "plumed": {
+  "total_repos": 58,
+  "star_gt100": 1,
+  "active_repos": 11
+ },
+ "popgenmethods": {
+  "total_repos": 12,
+  "star_gt100": 2,
+  "active_repos": 4
+ },
+ "posit-pbc": {
+  "total_repos": 0,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "psi4": {
+  "total_repos": 26,
+  "star_gt100": 2,
+  "active_repos": 8
+ },
+ "pysam-developers": {
+  "total_repos": 3,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "qnap-dev": {
+  "total_repos": 13,
+  "star_gt100": 2,
+  "active_repos": 3
+ },
+ "rabitq": {
+  "total_repos": 0,
+  "star_gt100": 0,
+  "active_repos": 0
+ },
+ "ranger": {
+  "total_repos": 5,
+  "star_gt100": 1,
+  "active_repos": 3
+ },
+ "rsyslog": {
+  "total_repos": 22,
+  "star_gt100": 3,
+  "active_repos": 13
+ },
+ "satijalab": {
+  "total_repos": 26,
+  "star_gt100": 5,
+  "active_repos": 12
+ },
+ "scikit-learn": {
+  "total_repos": 16,
+  "star_gt100": 1,
+  "active_repos": 5
+ },
+ "scverse": {
+  "total_repos": 78,
+  "star_gt100": 16,
+  "active_repos": 65
+ },
+ "seaweedfs": {
+  "total_repos": 17,
+  "star_gt100": 3,
+  "active_repos": 8
+ },
+ "simdjson": {
+  "total_repos": 23,
+  "star_gt100": 2,
+  "active_repos": 8
+ },
+ "simpleitk": {
+  "total_repos": 25,
+  "star_gt100": 2,
+  "active_repos": 9
+ },
+ "sqlite": {
+  "total_repos": 0,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "strongswan": {
+  "total_repos": 12,
+  "star_gt100": 2,
+  "active_repos": 8
+ },
+ "tesseract-ocr": {
+  "total_repos": 14,
+  "star_gt100": 9,
+  "active_repos": 4
+ },
+ "thudm": {
+  "total_repos": 127,
+  "star_gt100": 43,
+  "active_repos": 26
+ },
+ "tianocore": {
+  "total_repos": 34,
+  "star_gt100": 5,
+  "active_repos": 15
+ },
+ "tile-ai": {
+  "total_repos": 18,
+  "star_gt100": 4,
+  "active_repos": 13
+ },
+ "tornadoweb": {
+  "total_repos": 1,
+  "star_gt100": 1,
+  "active_repos": 1
+ },
+ "trinityrnaseq": {
+  "total_repos": 47,
+  "star_gt100": 1,
+  "active_repos": 2
+ },
+ "triton-lang": {
+  "total_repos": 8,
+  "star_gt100": 3,
+  "active_repos": 5
+ },
+ "usadellab": {
+  "total_repos": 28,
+  "star_gt100": 2,
+  "active_repos": 13
+ },
+ "xdit-project": {
+  "total_repos": 7,
+  "star_gt100": 2,
+  "active_repos": 2
+ },
+ "yambo-code": {
+  "total_repos": 11,
+  "star_gt100": 1,
+  "active_repos": 7
+ },
+ "zlib-ng": {
+  "total_repos": 6,
+  "star_gt100": 2,
+  "active_repos": 3
+ },
+ "lbcb-sci": {
+  "total_repos": 30,
+  "star_gt100": 4,
+  "active_repos": 10
+ },
+ "vipshop": {
+  "total_repos": 36,
+  "star_gt100": 11,
+  "active_repos": 3
+ },
+ "tongsuo-project": {
+  "total_repos": 24,
+  "star_gt100": 2,
+  "active_repos": 6
+ },
+ "android": {
+  "total_repos": 143,
+  "star_gt100": 72,
+  "active_repos": 88
+ },
+ "bioconda": {
+  "total_repos": 16,
+  "star_gt100": 2,
+  "active_repos": 7
+ },
+ "opea-project": {
+  "total_repos": 26,
+  "star_gt100": 2,
+  "active_repos": 14
+ },
+ "open-mmlab": {
+  "total_repos": 54,
+  "star_gt100": 42,
+  "active_repos": 10
+ },
+ "python": {
+  "total_repos": 91,
+  "star_gt100": 30,
+  "active_repos": 55
+ },
+ "qwenlm": {
+  "total_repos": 40,
+  "star_gt100": 28,
+  "active_repos": 27
+ },
+ "spring-cloud": {
+  "total_repos": 39,
+  "star_gt100": 24,
+  "active_repos": 25
+ }
+}

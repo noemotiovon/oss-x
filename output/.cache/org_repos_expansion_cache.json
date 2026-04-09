@@ -1,0 +1,2464 @@
+{
+ "opea-project": [
+  {
+   "name": "GenAIExamples",
+   "full_name": "opea-project/GenAIExamples",
+   "url": "https://github.com/opea-project/GenAIExamples",
+   "stars": 729,
+   "pushed_at": "2026-04-08T08:38:16Z",
+   "description": "Generative AI Examples is a collection of GenAI examples such as ChatQnA, Copilot, which illustrate the pipeline capabilities of the Open Platform for Enterprise AI (OPEA) project.",
+   "language": "Shell"
+  },
+  {
+   "name": "GenAIComps",
+   "full_name": "opea-project/GenAIComps",
+   "url": "https://github.com/opea-project/GenAIComps",
+   "stars": 195,
+   "pushed_at": "2026-04-07T11:39:44Z",
+   "description": "GenAI components at micro-service level; GenAI service composer to create mega-service",
+   "language": "Python"
+  }
+ ],
+ "open-mmlab": [
+  {
+   "name": "Amphion",
+   "full_name": "open-mmlab/Amphion",
+   "url": "https://github.com/open-mmlab/Amphion",
+   "stars": 9743,
+   "pushed_at": "2026-03-25T14:11:57Z",
+   "description": "Amphion (/æmˈfaɪən/) is a toolkit for Audio, Music, and Speech Generation. Its purpose is to support reproducible research and help junior researchers and engineers get started in the field of audio, ",
+   "language": "Python"
+  },
+  {
+   "name": "mmpose",
+   "full_name": "open-mmlab/mmpose",
+   "url": "https://github.com/open-mmlab/mmpose",
+   "stars": 7497,
+   "pushed_at": "2025-08-04T07:30:50Z",
+   "description": "OpenMMLab Pose Estimation Toolbox and Benchmark.",
+   "language": "Python"
+  },
+  {
+   "name": "mmcv",
+   "full_name": "open-mmlab/mmcv",
+   "url": "https://github.com/open-mmlab/mmcv",
+   "stars": 6428,
+   "pushed_at": "2026-01-29T17:08:43Z",
+   "description": "OpenMMLab Computer Vision Foundation",
+   "language": "Python"
+  },
+  {
+   "name": "OpenPCDet",
+   "full_name": "open-mmlab/OpenPCDet",
+   "url": "https://github.com/open-mmlab/OpenPCDet",
+   "stars": 5527,
+   "pushed_at": "2025-10-08T10:56:40Z",
+   "description": "OpenPCDet Toolbox for LiDAR-based 3D Object Detection.",
+   "language": "Python"
+  },
+  {
+   "name": "mmaction2",
+   "full_name": "open-mmlab/mmaction2",
+   "url": "https://github.com/open-mmlab/mmaction2",
+   "stars": 4973,
+   "pushed_at": "2026-03-18T04:04:49Z",
+   "description": "OpenMMLab's Next Generation Video Understanding Toolbox and Benchmark",
+   "language": "Python"
+  },
+  {
+   "name": "mmengine",
+   "full_name": "open-mmlab/mmengine",
+   "url": "https://github.com/open-mmlab/mmengine",
+   "stars": 1465,
+   "pushed_at": "2025-12-23T04:41:48Z",
+   "description": "OpenMMLab Foundational Library for Training Deep Learning Models",
+   "language": "Python"
+  },
+  {
+   "name": "PowerPaint",
+   "full_name": "open-mmlab/PowerPaint",
+   "url": "https://github.com/open-mmlab/PowerPaint",
+   "stars": 1066,
+   "pushed_at": "2025-12-20T14:19:00Z",
+   "description": "[ECCV 2024] PowerPaint, a versatile image inpainting model that supports text-guided object inpainting, object removal, image outpainting and shape-guided object inpainting with only a single model. 一",
+   "language": "Python"
+  },
+  {
+   "name": "StyleShot",
+   "full_name": "open-mmlab/StyleShot",
+   "url": "https://github.com/open-mmlab/StyleShot",
+   "stars": 458,
+   "pushed_at": "2025-06-30T02:10:48Z",
+   "description": "StyleShot: A SnapShot on Any Style. 一款可以迁移任意风格到任意内容的模型，无需针对图片微调，即能生成高质量的个性风格化图片!",
+   "language": "Python"
+  },
+  {
+   "name": "labelbee",
+   "full_name": "open-mmlab/labelbee",
+   "url": "https://github.com/open-mmlab/labelbee",
+   "stars": 300,
+   "pushed_at": "2026-03-27T08:29:45Z",
+   "description": "LabelBee is an annotation Library",
+   "language": "TypeScript"
+  }
+ ],
+ "modelscope": [
+  {
+   "name": "FunASR",
+   "full_name": "modelscope/FunASR",
+   "url": "https://github.com/modelscope/FunASR",
+   "stars": 15592,
+   "pushed_at": "2026-03-17T12:14:01Z",
+   "description": "A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Recognition, Voice Activity Detection, Text Post-processing etc.",
+   "language": "Python"
+  },
+  {
+   "name": "ms-swift",
+   "full_name": "modelscope/ms-swift",
+   "url": "https://github.com/modelscope/ms-swift",
+   "stars": 13608,
+   "pushed_at": "2026-04-09T06:58:20Z",
+   "description": "Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.5, DeepSeek-R1, GLM-5, InternLM3, Llama4, ...) and 300+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, GLM4.5v, Llava, Phi4, ...) (A",
+   "language": "Python"
+  },
+  {
+   "name": "DiffSynth-Studio",
+   "full_name": "modelscope/DiffSynth-Studio",
+   "url": "https://github.com/modelscope/DiffSynth-Studio",
+   "stars": 12200,
+   "pushed_at": "2026-04-08T07:25:47Z",
+   "description": "Enjoy the magic of Diffusion models!",
+   "language": "Python"
+  },
+  {
+   "name": "facechain",
+   "full_name": "modelscope/facechain",
+   "url": "https://github.com/modelscope/facechain",
+   "stars": 9498,
+   "pushed_at": "2025-06-06T09:32:00Z",
+   "description": "FaceChain is a deep-learning toolchain for generating your Digital-Twin.",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "modelscope",
+   "full_name": "modelscope/modelscope",
+   "url": "https://github.com/modelscope/modelscope",
+   "stars": 8843,
+   "pushed_at": "2026-04-01T06:28:33Z",
+   "description": "ModelScope: bring the notion of Model-as-a-Service to life.",
+   "language": "Python"
+  },
+  {
+   "name": "FunClip",
+   "full_name": "modelscope/FunClip",
+   "url": "https://github.com/modelscope/FunClip",
+   "stars": 5502,
+   "pushed_at": "2025-07-11T08:05:02Z",
+   "description": "Open-source, accurate and easy-to-use video speech recognition & clipping tool, LLM based AI clipping intergrated.",
+   "language": "Python"
+  },
+  {
+   "name": "ms-agent",
+   "full_name": "modelscope/ms-agent",
+   "url": "https://github.com/modelscope/ms-agent",
+   "stars": 4141,
+   "pushed_at": "2026-03-24T08:00:05Z",
+   "description": "MS-Agent: a lightweight framework to empower agentic execution of complex tasks",
+   "language": "Python"
+  },
+  {
+   "name": "ClearerVoice-Studio",
+   "full_name": "modelscope/ClearerVoice-Studio",
+   "url": "https://github.com/modelscope/ClearerVoice-Studio",
+   "stars": 4028,
+   "pushed_at": "2025-08-14T08:26:31Z",
+   "description": "An AI-Powered Speech Processing Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Enhancement, Separation, and Target Speaker Extraction, etc.",
+   "language": "Python"
+  },
+  {
+   "name": "3D-Speaker",
+   "full_name": "modelscope/3D-Speaker",
+   "url": "https://github.com/modelscope/3D-Speaker",
+   "stars": 2876,
+   "pushed_at": "2025-12-08T07:20:17Z",
+   "description": "A Repository for Single- and Multi-modal Speaker Verification, Speaker Recognition and Speaker Diarization",
+   "language": "Python"
+  },
+  {
+   "name": "evalscope",
+   "full_name": "modelscope/evalscope",
+   "url": "https://github.com/modelscope/evalscope",
+   "stars": 2635,
+   "pushed_at": "2026-04-09T03:30:12Z",
+   "description": "A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.",
+   "language": "Python"
+  },
+  {
+   "name": "modelscope-classroom",
+   "full_name": "modelscope/modelscope-classroom",
+   "url": "https://github.com/modelscope/modelscope-classroom",
+   "stars": 1362,
+   "pushed_at": "2026-03-24T13:12:03Z",
+   "description": "",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "AgentEvolver",
+   "full_name": "modelscope/AgentEvolver",
+   "url": "https://github.com/modelscope/AgentEvolver",
+   "stars": 1354,
+   "pushed_at": "2026-04-01T08:47:19Z",
+   "description": "AgentEvolver: Towards Efficient Self-Evolving Agent System",
+   "language": "Python"
+  },
+  {
+   "name": "sirchmunk",
+   "full_name": "modelscope/sirchmunk",
+   "url": "https://github.com/modelscope/sirchmunk",
+   "stars": 859,
+   "pushed_at": "2026-04-09T03:47:45Z",
+   "description": "🐿️ Sirchmunk:  Raw data to self-evolving intelligence, real-time.",
+   "language": "Python"
+  },
+  {
+   "name": "awesome-deep-reasoning",
+   "full_name": "modelscope/awesome-deep-reasoning",
+   "url": "https://github.com/modelscope/awesome-deep-reasoning",
+   "stars": 430,
+   "pushed_at": "2025-05-02T03:10:49Z",
+   "description": "Collect every awesome work about r1!",
+   "language": "Python"
+  },
+  {
+   "name": "DiffSynth-Engine",
+   "full_name": "modelscope/DiffSynth-Engine",
+   "url": "https://github.com/modelscope/DiffSynth-Engine",
+   "stars": 390,
+   "pushed_at": "2026-04-09T02:36:47Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "easydistill",
+   "full_name": "modelscope/easydistill",
+   "url": "https://github.com/modelscope/easydistill",
+   "stars": 305,
+   "pushed_at": "2026-03-10T06:23:52Z",
+   "description": "a toolkit on knowledge distillation for large language models",
+   "language": "Python"
+  },
+  {
+   "name": "Nexus-Gen",
+   "full_name": "modelscope/Nexus-Gen",
+   "url": "https://github.com/modelscope/Nexus-Gen",
+   "stars": 289,
+   "pushed_at": "2025-07-29T05:50:23Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "dash-infer",
+   "full_name": "modelscope/dash-infer",
+   "url": "https://github.com/modelscope/dash-infer",
+   "stars": 273,
+   "pushed_at": "2025-08-06T15:59:28Z",
+   "description": "DashInfer is a native LLM inference engine aiming to deliver industry-leading performance atop various hardware architectures, including CUDA,  x86 and ARMv9.",
+   "language": "C"
+  },
+  {
+   "name": "MCPBench",
+   "full_name": "modelscope/MCPBench",
+   "url": "https://github.com/modelscope/MCPBench",
+   "stars": 243,
+   "pushed_at": "2025-09-03T02:11:07Z",
+   "description": "The evaluation benchmark on MCP servers",
+   "language": "Python"
+  },
+  {
+   "name": "twinkle",
+   "full_name": "modelscope/twinkle",
+   "url": "https://github.com/modelscope/twinkle",
+   "stars": 209,
+   "pushed_at": "2026-04-08T15:39:12Z",
+   "description": "Twinkle✨: Training workbench to make your model glow.",
+   "language": "Python"
+  },
+  {
+   "name": "AgentJet",
+   "full_name": "modelscope/AgentJet",
+   "url": "https://github.com/modelscope/AgentJet",
+   "stars": 184,
+   "pushed_at": "2026-04-08T09:36:14Z",
+   "description": "Cutting-edge platform for LLM agent tuning. Deliver RL tuning with flexibility, reliability, speed, multi-agent optimization and realtime community benchmarking.",
+   "language": "Python"
+  },
+  {
+   "name": "modelscope-studio",
+   "full_name": "modelscope/modelscope-studio",
+   "url": "https://github.com/modelscope/modelscope-studio",
+   "stars": 141,
+   "pushed_at": "2026-03-27T10:34:24Z",
+   "description": "A third-party component library based on Gradio. Integrates Ant Design, Ant Design X, Monaco Editor and more advanced components  to help you build applications efficiently.",
+   "language": "TypeScript"
+  }
+ ],
+ "vllm-project": [
+  {
+   "name": "vllm",
+   "full_name": "vllm-project/vllm",
+   "url": "https://github.com/vllm-project/vllm",
+   "stars": 75818,
+   "pushed_at": "2026-04-09T06:12:24Z",
+   "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+   "language": "Python"
+  },
+  {
+   "name": "aibrix",
+   "full_name": "vllm-project/aibrix",
+   "url": "https://github.com/vllm-project/aibrix",
+   "stars": 4714,
+   "pushed_at": "2026-04-08T17:01:13Z",
+   "description": "Cost-efficient and pluggable Infrastructure components for GenAI inference",
+   "language": "Go"
+  },
+  {
+   "name": "vllm-omni",
+   "full_name": "vllm-project/vllm-omni",
+   "url": "https://github.com/vllm-project/vllm-omni",
+   "stars": 4238,
+   "pushed_at": "2026-04-09T07:08:09Z",
+   "description": "A framework for efficient model inference with omni-modality models",
+   "language": "Python"
+  },
+  {
+   "name": "semantic-router",
+   "full_name": "vllm-project/semantic-router",
+   "url": "https://github.com/vllm-project/semantic-router",
+   "stars": 3670,
+   "pushed_at": "2026-04-09T02:46:55Z",
+   "description": "System Level Intelligent Router for Mixture-of-Models at Cloud, Data Center and Edge",
+   "language": "Go"
+  },
+  {
+   "name": "llm-compressor",
+   "full_name": "vllm-project/llm-compressor",
+   "url": "https://github.com/vllm-project/llm-compressor",
+   "stars": 2996,
+   "pushed_at": "2026-04-09T03:45:24Z",
+   "description": "Transformers-compatible library for applying various compression algorithms to LLMs for optimized deployment with vLLM",
+   "language": "Python"
+  },
+  {
+   "name": "production-stack",
+   "full_name": "vllm-project/production-stack",
+   "url": "https://github.com/vllm-project/production-stack",
+   "stars": 2264,
+   "pushed_at": "2026-03-31T20:42:30Z",
+   "description": "vLLM’s reference system for K8S-native cluster-wide deployment with community-driven performance optimization",
+   "language": "Python"
+  },
+  {
+   "name": "vllm-ascend",
+   "full_name": "vllm-project/vllm-ascend",
+   "url": "https://github.com/vllm-project/vllm-ascend",
+   "stars": 1893,
+   "pushed_at": "2026-04-09T07:02:18Z",
+   "description": "Community maintained hardware plugin for vLLM on Ascend",
+   "language": "Python"
+  },
+  {
+   "name": "guidellm",
+   "full_name": "vllm-project/guidellm",
+   "url": "https://github.com/vllm-project/guidellm",
+   "stars": 984,
+   "pushed_at": "2026-04-09T01:56:31Z",
+   "description": "Evaluate and Enhance Your LLM Deployments for Real-World Inference Needs",
+   "language": "Python"
+  },
+  {
+   "name": "vllm-metal",
+   "full_name": "vllm-project/vllm-metal",
+   "url": "https://github.com/vllm-project/vllm-metal",
+   "stars": 858,
+   "pushed_at": "2026-04-09T04:55:33Z",
+   "description": "Community maintained hardware plugin for vLLM on Apple Silicon",
+   "language": "Python"
+  },
+  {
+   "name": "recipes",
+   "full_name": "vllm-project/recipes",
+   "url": "https://github.com/vllm-project/recipes",
+   "stars": 638,
+   "pushed_at": "2026-04-08T23:41:40Z",
+   "description": "Common recipes to run vLLM",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "speculators",
+   "full_name": "vllm-project/speculators",
+   "url": "https://github.com/vllm-project/speculators",
+   "stars": 329,
+   "pushed_at": "2026-04-08T23:58:11Z",
+   "description": "A unified library for building, evaluating, and storing speculative decoding algorithms for LLM inference in vLLM",
+   "language": "Python"
+  },
+  {
+   "name": "tpu-inference",
+   "full_name": "vllm-project/tpu-inference",
+   "url": "https://github.com/vllm-project/tpu-inference",
+   "stars": 286,
+   "pushed_at": "2026-04-09T06:59:37Z",
+   "description": "TPU inference for vLLM, with unified JAX and PyTorch support.",
+   "language": "Python"
+  },
+  {
+   "name": "compressed-tensors",
+   "full_name": "vllm-project/compressed-tensors",
+   "url": "https://github.com/vllm-project/compressed-tensors",
+   "stars": 270,
+   "pushed_at": "2026-04-09T06:37:50Z",
+   "description": "A safetensors extension to efficiently store sparse quantized tensors on disk",
+   "language": "Python"
+  },
+  {
+   "name": "router",
+   "full_name": "vllm-project/router",
+   "url": "https://github.com/vllm-project/router",
+   "stars": 182,
+   "pushed_at": "2026-03-31T03:03:21Z",
+   "description": "A high-performance and light-weight router for vLLM large scale deployment",
+   "language": "Rust"
+  }
+ ],
+ "sgl-project": [
+  {
+   "name": "sglang",
+   "full_name": "sgl-project/sglang",
+   "url": "https://github.com/sgl-project/sglang",
+   "stars": 25604,
+   "pushed_at": "2026-04-09T06:58:29Z",
+   "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+   "language": "Python"
+  },
+  {
+   "name": "mini-sglang",
+   "full_name": "sgl-project/mini-sglang",
+   "url": "https://github.com/sgl-project/mini-sglang",
+   "stars": 3937,
+   "pushed_at": "2026-03-13T06:32:39Z",
+   "description": "A compact implementation of SGLang, designed to demystify the complexities of modern LLM serving systems.",
+   "language": "Python"
+  },
+  {
+   "name": "sgl-learning-materials",
+   "full_name": "sgl-project/sgl-learning-materials",
+   "url": "https://github.com/sgl-project/sgl-learning-materials",
+   "stars": 793,
+   "pushed_at": "2026-01-05T04:55:34Z",
+   "description": "Materials for learning SGLang",
+   "language": ""
+  },
+  {
+   "name": "SpecForge",
+   "full_name": "sgl-project/SpecForge",
+   "url": "https://github.com/sgl-project/SpecForge",
+   "stars": 766,
+   "pushed_at": "2026-04-02T07:52:00Z",
+   "description": "Train speculative decoding models effortlessly and port them smoothly to SGLang serving.",
+   "language": "Python"
+  },
+  {
+   "name": "ome",
+   "full_name": "sgl-project/ome",
+   "url": "https://github.com/sgl-project/ome",
+   "stars": 413,
+   "pushed_at": "2026-04-09T06:56:51Z",
+   "description": "Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton",
+   "language": "Go"
+  },
+  {
+   "name": "genai-bench",
+   "full_name": "sgl-project/genai-bench",
+   "url": "https://github.com/sgl-project/genai-bench",
+   "stars": 287,
+   "pushed_at": "2026-04-02T01:43:53Z",
+   "description": "Genai-bench is a powerful benchmark tool designed for comprehensive token-level performance evaluation of large language model (LLM) serving systems.",
+   "language": "Python"
+  },
+  {
+   "name": "sglang-jax",
+   "full_name": "sgl-project/sglang-jax",
+   "url": "https://github.com/sgl-project/sglang-jax",
+   "stars": 263,
+   "pushed_at": "2026-04-09T03:40:55Z",
+   "description": "JAX backend for SGL",
+   "language": "Python"
+  },
+  {
+   "name": "rbg",
+   "full_name": "sgl-project/rbg",
+   "url": "https://github.com/sgl-project/rbg",
+   "stars": 199,
+   "pushed_at": "2026-04-07T12:34:45Z",
+   "description": "A workload for deploying LLM inference services on Kubernetes",
+   "language": "Go"
+  },
+  {
+   "name": "sglang-omni",
+   "full_name": "sgl-project/sglang-omni",
+   "url": "https://github.com/sgl-project/sglang-omni",
+   "stars": 174,
+   "pushed_at": "2026-04-09T04:29:38Z",
+   "description": "SGLang Omni: High-Performance Multi-Stage Pipeline Framework for Omni Models",
+   "language": "Python"
+  },
+  {
+   "name": "sgl-project.github.io",
+   "full_name": "sgl-project/sgl-project.github.io",
+   "url": "https://github.com/sgl-project/sgl-project.github.io",
+   "stars": 122,
+   "pushed_at": "2026-04-09T05:45:38Z",
+   "description": "This is the documentation repository for SGLang. It is auto-generated from https://github.com/sgl-project/sglang",
+   "language": "HTML"
+  },
+  {
+   "name": "sgl-cookbook",
+   "full_name": "sgl-project/sgl-cookbook",
+   "url": "https://github.com/sgl-project/sgl-cookbook",
+   "stars": 114,
+   "pushed_at": "2026-04-08T18:26:34Z",
+   "description": "Cookbook of SGLang - Recipe",
+   "language": "JavaScript"
+  },
+  {
+   "name": "sgl-kernel-npu",
+   "full_name": "sgl-project/sgl-kernel-npu",
+   "url": "https://github.com/sgl-project/sgl-kernel-npu",
+   "stars": 113,
+   "pushed_at": "2026-04-09T07:06:59Z",
+   "description": "SGLang kernel library for NPU",
+   "language": "C++"
+  }
+ ],
+ "pytorch": [
+  {
+   "name": "pytorch",
+   "full_name": "pytorch/pytorch",
+   "url": "https://github.com/pytorch/pytorch",
+   "stars": 98941,
+   "pushed_at": "2026-04-09T07:07:06Z",
+   "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+   "language": "Python"
+  },
+  {
+   "name": "examples",
+   "full_name": "pytorch/examples",
+   "url": "https://github.com/pytorch/examples",
+   "stars": 23832,
+   "pushed_at": "2025-09-01T17:21:47Z",
+   "description": "A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc.",
+   "language": "Python"
+  },
+  {
+   "name": "vision",
+   "full_name": "pytorch/vision",
+   "url": "https://github.com/pytorch/vision",
+   "stars": 17618,
+   "pushed_at": "2026-04-08T18:25:08Z",
+   "description": "Datasets, Transforms and Models specific to Computer Vision",
+   "language": "Python"
+  },
+  {
+   "name": "tutorials",
+   "full_name": "pytorch/tutorials",
+   "url": "https://github.com/pytorch/tutorials",
+   "stars": 9101,
+   "pushed_at": "2026-04-08T20:07:19Z",
+   "description": "PyTorch tutorials.",
+   "language": "Python"
+  },
+  {
+   "name": "torchtitan",
+   "full_name": "pytorch/torchtitan",
+   "url": "https://github.com/pytorch/torchtitan",
+   "stars": 5217,
+   "pushed_at": "2026-04-09T07:02:30Z",
+   "description": "A PyTorch native platform for training generative AI models",
+   "language": "Python"
+  },
+  {
+   "name": "ignite",
+   "full_name": "pytorch/ignite",
+   "url": "https://github.com/pytorch/ignite",
+   "stars": 4752,
+   "pushed_at": "2026-04-08T21:09:11Z",
+   "description": "High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently.",
+   "language": "Python"
+  },
+  {
+   "name": "executorch",
+   "full_name": "pytorch/executorch",
+   "url": "https://github.com/pytorch/executorch",
+   "stars": 4487,
+   "pushed_at": "2026-04-09T05:43:41Z",
+   "description": "On-device AI across mobile, embedded and edge for PyTorch",
+   "language": "Python"
+  },
+  {
+   "name": "serve",
+   "full_name": "pytorch/serve",
+   "url": "https://github.com/pytorch/serve",
+   "stars": 4361,
+   "pushed_at": "2025-08-06T19:17:08Z",
+   "description": "Serve, optimize and scale PyTorch models in production",
+   "language": "Java"
+  },
+  {
+   "name": "torchchat",
+   "full_name": "pytorch/torchchat",
+   "url": "https://github.com/pytorch/torchchat",
+   "stars": 3620,
+   "pushed_at": "2025-09-10T22:22:42Z",
+   "description": "Run PyTorch LLMs locally on servers, desktop and mobile",
+   "language": "Python"
+  },
+  {
+   "name": "text",
+   "full_name": "pytorch/text",
+   "url": "https://github.com/pytorch/text",
+   "stars": 3564,
+   "pushed_at": "2025-09-10T21:39:02Z",
+   "description": "Models, data loaders and abstractions for language processing, powered by PyTorch",
+   "language": "Python"
+  },
+  {
+   "name": "rl",
+   "full_name": "pytorch/rl",
+   "url": "https://github.com/pytorch/rl",
+   "stars": 3379,
+   "pushed_at": "2026-04-08T18:27:17Z",
+   "description": "A modular, primitive-first, python-first PyTorch library for Reinforcement Learning.",
+   "language": "Python"
+  },
+  {
+   "name": "TensorRT",
+   "full_name": "pytorch/TensorRT",
+   "url": "https://github.com/pytorch/TensorRT",
+   "stars": 2962,
+   "pushed_at": "2026-04-08T21:37:04Z",
+   "description": "PyTorch/TorchScript/FX compiler for NVIDIA GPUs using TensorRT",
+   "language": "Python"
+  },
+  {
+   "name": "audio",
+   "full_name": "pytorch/audio",
+   "url": "https://github.com/pytorch/audio",
+   "stars": 2861,
+   "pushed_at": "2026-04-08T11:49:36Z",
+   "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
+   "language": "Python"
+  },
+  {
+   "name": "ao",
+   "full_name": "pytorch/ao",
+   "url": "https://github.com/pytorch/ao",
+   "stars": 2763,
+   "pushed_at": "2026-04-09T06:13:12Z",
+   "description": "PyTorch native quantization and sparsity for training and inference",
+   "language": "Python"
+  },
+  {
+   "name": "xla",
+   "full_name": "pytorch/xla",
+   "url": "https://github.com/pytorch/xla",
+   "stars": 2762,
+   "pushed_at": "2025-12-18T18:36:49Z",
+   "description": "Enabling PyTorch on XLA Devices (e.g. Google TPU)",
+   "language": "C++"
+  },
+  {
+   "name": "FBGEMM",
+   "full_name": "pytorch/FBGEMM",
+   "url": "https://github.com/pytorch/FBGEMM",
+   "stars": 1550,
+   "pushed_at": "2026-04-09T07:11:51Z",
+   "description": "FB (Facebook) + GEMM (General Matrix-Matrix Multiplication) - https://code.fb.com/ml-applications/fbgemm/",
+   "language": "C++"
+  },
+  {
+   "name": "functorch",
+   "full_name": "pytorch/functorch",
+   "url": "https://github.com/pytorch/functorch",
+   "stars": 1436,
+   "pushed_at": "2025-08-21T00:53:01Z",
+   "description": "functorch is JAX-like composable function transforms for PyTorch.",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "gloo",
+   "full_name": "pytorch/gloo",
+   "url": "https://github.com/pytorch/gloo",
+   "stars": 1414,
+   "pushed_at": "2026-03-20T02:49:43Z",
+   "description": "Collective communications library with various primitives for multi-machine training.",
+   "language": "C++"
+  },
+  {
+   "name": "extension-cpp",
+   "full_name": "pytorch/extension-cpp",
+   "url": "https://github.com/pytorch/extension-cpp",
+   "stars": 1185,
+   "pushed_at": "2026-01-13T16:13:29Z",
+   "description": "C++ extensions in PyTorch",
+   "language": "Python"
+  },
+  {
+   "name": "cpuinfo",
+   "full_name": "pytorch/cpuinfo",
+   "url": "https://github.com/pytorch/cpuinfo",
+   "stars": 1165,
+   "pushed_at": "2026-03-12T01:02:42Z",
+   "description": "CPU INFOrmation library (x86/x86-64/ARM/ARM64, Linux/Windows/Android/macOS/iOS)",
+   "language": "C"
+  },
+  {
+   "name": "benchmark",
+   "full_name": "pytorch/benchmark",
+   "url": "https://github.com/pytorch/benchmark",
+   "stars": 1024,
+   "pushed_at": "2026-04-08T16:45:30Z",
+   "description": "TorchBench is a collection of open source benchmarks used to evaluate PyTorch performance.",
+   "language": "Python"
+  },
+  {
+   "name": "tensordict",
+   "full_name": "pytorch/tensordict",
+   "url": "https://github.com/pytorch/tensordict",
+   "stars": 1019,
+   "pushed_at": "2026-04-09T06:41:28Z",
+   "description": "TensorDict is a pytorch dedicated tensor container.",
+   "language": "Python"
+  },
+  {
+   "name": "kineto",
+   "full_name": "pytorch/kineto",
+   "url": "https://github.com/pytorch/kineto",
+   "stars": 942,
+   "pushed_at": "2026-04-08T23:35:39Z",
+   "description": "A CPU+GPU Profiling library that provides access to timeline traces and hardware performance counters. ",
+   "language": "HTML"
+  },
+  {
+   "name": "helion",
+   "full_name": "pytorch/helion",
+   "url": "https://github.com/pytorch/helion",
+   "stars": 824,
+   "pushed_at": "2026-04-09T06:51:02Z",
+   "description": "A Python-embedded DSL that makes it easy to write fast, scalable ML kernels with minimal boilerplate.",
+   "language": "Python"
+  },
+  {
+   "name": "ort",
+   "full_name": "pytorch/ort",
+   "url": "https://github.com/pytorch/ort",
+   "stars": 370,
+   "pushed_at": "2026-02-05T17:02:51Z",
+   "description": "Accelerate PyTorch models with ONNX Runtime",
+   "language": "Python"
+  },
+  {
+   "name": "builder",
+   "full_name": "pytorch/builder",
+   "url": "https://github.com/pytorch/builder",
+   "stars": 357,
+   "pushed_at": "2025-08-12T21:30:34Z",
+   "description": "Continuous builder and binary build scripts for pytorch",
+   "language": "Python"
+  },
+  {
+   "name": "tensorpipe",
+   "full_name": "pytorch/tensorpipe",
+   "url": "https://github.com/pytorch/tensorpipe",
+   "stars": 286,
+   "pushed_at": "2025-12-17T22:52:36Z",
+   "description": "A tensor-aware point-to-point communication primitive for machine learning",
+   "language": "C++"
+  },
+  {
+   "name": "pytorch.github.io",
+   "full_name": "pytorch/pytorch.github.io",
+   "url": "https://github.com/pytorch/pytorch.github.io",
+   "stars": 279,
+   "pushed_at": "2026-04-08T19:04:10Z",
+   "description": "The website for PyTorch",
+   "language": "HTML"
+  },
+  {
+   "name": "cppdocs",
+   "full_name": "pytorch/cppdocs",
+   "url": "https://github.com/pytorch/cppdocs",
+   "stars": 248,
+   "pushed_at": "2026-04-09T01:01:46Z",
+   "description": "PyTorch C++ API Documentation",
+   "language": "HTML"
+  },
+  {
+   "name": "rfcs",
+   "full_name": "pytorch/rfcs",
+   "url": "https://github.com/pytorch/rfcs",
+   "stars": 144,
+   "pushed_at": "2026-03-27T15:19:15Z",
+   "description": "PyTorch RFCs (experimental)",
+   "language": ""
+  },
+  {
+   "name": "test-infra",
+   "full_name": "pytorch/test-infra",
+   "url": "https://github.com/pytorch/test-infra",
+   "stars": 108,
+   "pushed_at": "2026-04-09T06:22:32Z",
+   "description": "This repository hosts code that supports the testing infrastructure for the PyTorch organization. For example, this repo hosts the logic to track disabled tests and slow tests, as well as our continua",
+   "language": "TypeScript"
+  },
+  {
+   "name": "pytorch_sphinx_theme",
+   "full_name": "pytorch/pytorch_sphinx_theme",
+   "url": "https://github.com/pytorch/pytorch_sphinx_theme",
+   "stars": 105,
+   "pushed_at": "2026-04-08T21:22:12Z",
+   "description": "PyTorch Sphinx Theme",
+   "language": "CSS"
+  }
+ ],
+ "meituan": [
+  {
+   "name": "WMRouter",
+   "full_name": "meituan/WMRouter",
+   "url": "https://github.com/meituan/WMRouter",
+   "stars": 2365,
+   "pushed_at": "2026-04-02T08:13:28Z",
+   "description": "WMRouter是一款Android路由框架，基于组件化的设计思路，有功能灵活、使用简单的特点。",
+   "language": "Java"
+  },
+  {
+   "name": "EvoCUA",
+   "full_name": "meituan/EvoCUA",
+   "url": "https://github.com/meituan/EvoCUA",
+   "stars": 305,
+   "pushed_at": "2026-03-31T05:16:39Z",
+   "description": "EvoCUA: Evolving Computer Use Agent",
+   "language": "Python"
+  },
+  {
+   "name": "Meituan-INFORMS-TSL-Research-Challenge",
+   "full_name": "meituan/Meituan-INFORMS-TSL-Research-Challenge",
+   "url": "https://github.com/meituan/Meituan-INFORMS-TSL-Research-Challenge",
+   "stars": 143,
+   "pushed_at": "2025-12-03T07:03:17Z",
+   "description": "",
+   "language": ""
+  }
+ ],
+ "inclusionai": [
+  {
+   "name": "AReaL",
+   "full_name": "inclusionAI/AReaL",
+   "url": "https://github.com/inclusionAI/AReaL",
+   "stars": 5007,
+   "pushed_at": "2026-04-09T00:55:08Z",
+   "description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
+   "language": "Python"
+  },
+  {
+   "name": "AWorld",
+   "full_name": "inclusionAI/AWorld",
+   "url": "https://github.com/inclusionAI/AWorld",
+   "stars": 1173,
+   "pushed_at": "2026-04-08T14:07:25Z",
+   "description": "Search, understand, reproduce, and improve an idea with ease",
+   "language": "Python"
+  },
+  {
+   "name": "UI-Venus",
+   "full_name": "inclusionAI/UI-Venus",
+   "url": "https://github.com/inclusionAI/UI-Venus",
+   "stars": 1141,
+   "pushed_at": "2026-04-08T05:47:24Z",
+   "description": "UI-Venus is a native UI agent designed to perform precise GUI element grounding and effective navigation using only screenshots as input.",
+   "language": "Python"
+  },
+  {
+   "name": "Ming",
+   "full_name": "inclusionAI/Ming",
+   "url": "https://github.com/inclusionAI/Ming",
+   "stars": 647,
+   "pushed_at": "2026-03-17T11:55:16Z",
+   "description": "Ming - facilitating advanced multimodal understanding and generation capabilities built upon the Ling LLM.",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "ASearcher",
+   "full_name": "inclusionAI/ASearcher",
+   "url": "https://github.com/inclusionAI/ASearcher",
+   "stars": 574,
+   "pushed_at": "2025-11-26T06:28:16Z",
+   "description": "An Open-Source Large-Scale Reinforcement Learning Project for Search Agents",
+   "language": "Python"
+  },
+  {
+   "name": "TwinFlow",
+   "full_name": "inclusionAI/TwinFlow",
+   "url": "https://github.com/inclusionAI/TwinFlow",
+   "stars": 506,
+   "pushed_at": "2026-02-24T02:19:59Z",
+   "description": "[ICLR 2026] Taming large-scale few-step training with self-adversarial flows! 👏🏻",
+   "language": "Python"
+  },
+  {
+   "name": "dInfer",
+   "full_name": "inclusionAI/dInfer",
+   "url": "https://github.com/inclusionAI/dInfer",
+   "stars": 450,
+   "pushed_at": "2026-02-11T03:10:42Z",
+   "description": "dInfer: An Efficient Inference Framework for Diffusion Language Models",
+   "language": "Python"
+  },
+  {
+   "name": "Ming-UniAudio",
+   "full_name": "inclusionAI/Ming-UniAudio",
+   "url": "https://github.com/inclusionAI/Ming-UniAudio",
+   "stars": 441,
+   "pushed_at": "2025-11-27T02:51:18Z",
+   "description": "Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation",
+   "language": "Python"
+  },
+  {
+   "name": "cuLA",
+   "full_name": "inclusionAI/cuLA",
+   "url": "https://github.com/inclusionAI/cuLA",
+   "stars": 405,
+   "pushed_at": "2026-04-09T03:47:40Z",
+   "description": "CUDA kernels for linear attention variants, written in CuTe DSL and CUTLASS C++.",
+   "language": "Python"
+  },
+  {
+   "name": "LLaDA2.X",
+   "full_name": "inclusionAI/LLaDA2.X",
+   "url": "https://github.com/inclusionAI/LLaDA2.X",
+   "stars": 392,
+   "pushed_at": "2026-02-12T16:33:03Z",
+   "description": "LLaDA2.0 is the diffusion language model series developed by InclusionAI team, Ant Group.",
+   "language": ""
+  },
+  {
+   "name": "AEnvironment",
+   "full_name": "inclusionAI/AEnvironment",
+   "url": "https://github.com/inclusionAI/AEnvironment",
+   "stars": 291,
+   "pushed_at": "2026-03-25T13:49:51Z",
+   "description": "Standardized environment infrastructure for Agentic AI development.",
+   "language": "Python"
+  },
+  {
+   "name": "Ling-V2",
+   "full_name": "inclusionAI/Ling-V2",
+   "url": "https://github.com/inclusionAI/Ling-V2",
+   "stars": 264,
+   "pushed_at": "2025-10-04T06:15:38Z",
+   "description": "Ling-V2 is a MoE LLM provided and open-sourced by InclusionAI.",
+   "language": "Python"
+  },
+  {
+   "name": "Ling",
+   "full_name": "inclusionAI/Ling",
+   "url": "https://github.com/inclusionAI/Ling",
+   "stars": 244,
+   "pushed_at": "2025-05-14T06:34:57Z",
+   "description": "Ling is a MoE LLM provided and open-sourced by InclusionAI. ",
+   "language": "Python"
+  },
+  {
+   "name": "dFactory",
+   "full_name": "inclusionAI/dFactory",
+   "url": "https://github.com/inclusionAI/dFactory",
+   "stars": 238,
+   "pushed_at": "2026-03-02T06:00:00Z",
+   "description": "Easy and Efficient dLLM Fine-Tuning",
+   "language": "Python"
+  },
+  {
+   "name": "Ming-omni-tts",
+   "full_name": "inclusionAI/Ming-omni-tts",
+   "url": "https://github.com/inclusionAI/Ming-omni-tts",
+   "stars": 217,
+   "pushed_at": "2026-02-26T12:06:53Z",
+   "description": "Ming-omni-tts: Simple and Efficient Unified Generation of Speech, Music, and Sound with Precise Control",
+   "language": "Python"
+  },
+  {
+   "name": "asystem-awex",
+   "full_name": "inclusionAI/asystem-awex",
+   "url": "https://github.com/inclusionAI/asystem-awex",
+   "stars": 145,
+   "pushed_at": "2026-03-23T06:55:40Z",
+   "description": "A high-performance RL training-inference weight synchronization framework, designed to enable second-level parameter updates from training to inference in RL workflows",
+   "language": "Python"
+  },
+  {
+   "name": "Ming-UniVision",
+   "full_name": "inclusionAI/Ming-UniVision",
+   "url": "https://github.com/inclusionAI/Ming-UniVision",
+   "stars": 141,
+   "pushed_at": "2025-10-14T13:38:52Z",
+   "description": "Code release for Ming-UniVision: Joint Image Understanding and Geneation with a Continuous Unified Tokenizer",
+   "language": "Python"
+  },
+  {
+   "name": "PromptCoT",
+   "full_name": "inclusionAI/PromptCoT",
+   "url": "https://github.com/inclusionAI/PromptCoT",
+   "stars": 134,
+   "pushed_at": "2026-01-31T06:55:27Z",
+   "description": "A unified suite for generating elite reasoning problems and training high-performance LLMs, including pioneering attention-free architectures",
+   "language": "Python"
+  },
+  {
+   "name": "Zooming-without-Zooming",
+   "full_name": "inclusionAI/Zooming-without-Zooming",
+   "url": "https://github.com/inclusionAI/Zooming-without-Zooming",
+   "stars": 118,
+   "pushed_at": "2026-03-09T02:10:22Z",
+   "description": "ZwZ model family: SOTA fine-grained perception performace; ZoomBench: a new challenging perception benchmark",
+   "language": "Python"
+  },
+  {
+   "name": "Ring",
+   "full_name": "inclusionAI/Ring",
+   "url": "https://github.com/inclusionAI/Ring",
+   "stars": 107,
+   "pushed_at": "2025-08-05T05:48:56Z",
+   "description": "Ring is a reasoning MoE LLM provided and open-sourced by InclusionAI, derived from Ling. ",
+   "language": "Python"
+  },
+  {
+   "name": "asystem-amem",
+   "full_name": "inclusionAI/asystem-amem",
+   "url": "https://github.com/inclusionAI/asystem-amem",
+   "stars": 103,
+   "pushed_at": "2025-12-17T08:38:28Z",
+   "description": "A NCCL extension library, designed to efficiently offload GPU memory allocated by the NCCL communication library.",
+   "language": "C++"
+  }
+ ],
+ "deepseek-ai": [
+  {
+   "name": "DeepSeek-V3",
+   "full_name": "deepseek-ai/DeepSeek-V3",
+   "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+   "stars": 102533,
+   "pushed_at": "2025-08-28T03:24:37Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "DeepSeek-R1",
+   "full_name": "deepseek-ai/DeepSeek-R1",
+   "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+   "stars": 91963,
+   "pushed_at": "2025-06-27T08:35:54Z",
+   "description": "",
+   "language": ""
+  },
+  {
+   "name": "awesome-deepseek-integration",
+   "full_name": "deepseek-ai/awesome-deepseek-integration",
+   "url": "https://github.com/deepseek-ai/awesome-deepseek-integration",
+   "stars": 36208,
+   "pushed_at": "2026-02-23T16:27:47Z",
+   "description": "Integrate the DeepSeek API into popular software",
+   "language": ""
+  },
+  {
+   "name": "DeepSeek-Coder",
+   "full_name": "deepseek-ai/DeepSeek-Coder",
+   "url": "https://github.com/deepseek-ai/DeepSeek-Coder",
+   "stars": 23007,
+   "pushed_at": "2025-11-11T06:44:56Z",
+   "description": "DeepSeek Coder: Let the Code Write Itself",
+   "language": "Python"
+  },
+  {
+   "name": "DeepSeek-OCR",
+   "full_name": "deepseek-ai/DeepSeek-OCR",
+   "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+   "stars": 22802,
+   "pushed_at": "2026-01-27T03:45:14Z",
+   "description": "Contexts Optical Compression",
+   "language": "Python"
+  },
+  {
+   "name": "FlashMLA",
+   "full_name": "deepseek-ai/FlashMLA",
+   "url": "https://github.com/deepseek-ai/FlashMLA",
+   "stars": 12558,
+   "pushed_at": "2026-04-07T03:02:45Z",
+   "description": "FlashMLA: Efficient Multi-head Latent Attention Kernels",
+   "language": "C++"
+  },
+  {
+   "name": "3FS",
+   "full_name": "deepseek-ai/3FS",
+   "url": "https://github.com/deepseek-ai/3FS",
+   "stars": 9797,
+   "pushed_at": "2026-03-30T02:41:21Z",
+   "description": " A high-performance distributed file system designed to address the challenges of AI training and inference workloads. ",
+   "language": "C++"
+  },
+  {
+   "name": "DeepEP",
+   "full_name": "deepseek-ai/DeepEP",
+   "url": "https://github.com/deepseek-ai/DeepEP",
+   "stars": 9106,
+   "pushed_at": "2026-03-31T02:34:01Z",
+   "description": "DeepEP: an efficient expert-parallel communication library",
+   "language": "Cuda"
+  },
+  {
+   "name": "open-infra-index",
+   "full_name": "deepseek-ai/open-infra-index",
+   "url": "https://github.com/deepseek-ai/open-infra-index",
+   "stars": 7972,
+   "pushed_at": "2025-05-15T02:00:43Z",
+   "description": "Production-tested AI infrastructure tools for efficient AGI development and community-driven innovation",
+   "language": ""
+  },
+  {
+   "name": "DeepSeek-Coder-V2",
+   "full_name": "deepseek-ai/DeepSeek-Coder-V2",
+   "url": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+   "stars": 6596,
+   "pushed_at": "2025-11-11T06:44:45Z",
+   "description": "DeepSeek-Coder-V2: Breaking the Barrier of Closed-Source Models in Code Intelligence",
+   "language": ""
+  },
+  {
+   "name": "DeepGEMM",
+   "full_name": "deepseek-ai/DeepGEMM",
+   "url": "https://github.com/deepseek-ai/DeepGEMM",
+   "stars": 6315,
+   "pushed_at": "2026-03-22T08:41:28Z",
+   "description": "DeepGEMM: clean and efficient FP8 GEMM kernels with fine-grained scaling",
+   "language": "Cuda"
+  },
+  {
+   "name": "Engram",
+   "full_name": "deepseek-ai/Engram",
+   "url": "https://github.com/deepseek-ai/Engram",
+   "stars": 4253,
+   "pushed_at": "2026-01-14T01:13:02Z",
+   "description": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+   "language": "Python"
+  },
+  {
+   "name": "DreamCraft3D",
+   "full_name": "deepseek-ai/DreamCraft3D",
+   "url": "https://github.com/deepseek-ai/DreamCraft3D",
+   "stars": 3006,
+   "pushed_at": "2025-04-22T11:09:39Z",
+   "description": "[ICLR 2024] Official implementation of DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior",
+   "language": "Python"
+  },
+  {
+   "name": "DualPipe",
+   "full_name": "deepseek-ai/DualPipe",
+   "url": "https://github.com/deepseek-ai/DualPipe",
+   "stars": 2937,
+   "pushed_at": "2026-01-14T06:34:59Z",
+   "description": "A bidirectional pipeline parallelism algorithm for computation-communication overlap in DeepSeek V3/R1 training.",
+   "language": "Python"
+  },
+  {
+   "name": "DeepSeek-OCR-2",
+   "full_name": "deepseek-ai/DeepSeek-OCR-2",
+   "url": "https://github.com/deepseek-ai/DeepSeek-OCR-2",
+   "stars": 2671,
+   "pushed_at": "2026-02-03T00:34:18Z",
+   "description": "Visual Causal Flow",
+   "language": "Python"
+  },
+  {
+   "name": "DeepSeek-Math-V2",
+   "full_name": "deepseek-ai/DeepSeek-Math-V2",
+   "url": "https://github.com/deepseek-ai/DeepSeek-Math-V2",
+   "stars": 1568,
+   "pushed_at": "2025-12-01T07:01:42Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "DeepSeek-V3.2-Exp",
+   "full_name": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "url": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp",
+   "stars": 1552,
+   "pushed_at": "2025-11-18T02:57:11Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "DeepSeek-Prover-V2",
+   "full_name": "deepseek-ai/DeepSeek-Prover-V2",
+   "url": "https://github.com/deepseek-ai/DeepSeek-Prover-V2",
+   "stars": 1251,
+   "pushed_at": "2025-07-18T08:11:37Z",
+   "description": "",
+   "language": ""
+  },
+  {
+   "name": "awesome-deepseek-coder",
+   "full_name": "deepseek-ai/awesome-deepseek-coder",
+   "url": "https://github.com/deepseek-ai/awesome-deepseek-coder",
+   "stars": 770,
+   "pushed_at": "2025-11-11T06:45:15Z",
+   "description": "A curated list of open-source projects related to DeepSeek Coder",
+   "language": ""
+  },
+  {
+   "name": "ESFT",
+   "full_name": "deepseek-ai/ESFT",
+   "url": "https://github.com/deepseek-ai/ESFT",
+   "stars": 730,
+   "pushed_at": "2025-05-22T07:47:15Z",
+   "description": "Expert Specialized Fine-Tuning",
+   "language": "Python"
+  },
+  {
+   "name": "LPLB",
+   "full_name": "deepseek-ai/LPLB",
+   "url": "https://github.com/deepseek-ai/LPLB",
+   "stars": 497,
+   "pushed_at": "2025-11-19T07:20:35Z",
+   "description": "An early research stage expert-parallel load balancer for MoE models based on linear programming.",
+   "language": "Python"
+  }
+ ],
+ "qwenlm": [
+  {
+   "name": "Qwen3",
+   "full_name": "QwenLM/Qwen3",
+   "url": "https://github.com/QwenLM/Qwen3",
+   "stars": 27074,
+   "pushed_at": "2026-01-09T03:05:47Z",
+   "description": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud.",
+   "language": "Python"
+  },
+  {
+   "name": "qwen-code",
+   "full_name": "QwenLM/qwen-code",
+   "url": "https://github.com/QwenLM/qwen-code",
+   "stars": 22184,
+   "pushed_at": "2026-04-09T07:07:43Z",
+   "description": "An open-source AI agent that lives in your terminal.",
+   "language": "TypeScript"
+  },
+  {
+   "name": "Qwen",
+   "full_name": "QwenLM/Qwen",
+   "url": "https://github.com/QwenLM/Qwen",
+   "stars": 20949,
+   "pushed_at": "2026-03-05T13:55:17Z",
+   "description": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud.",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen3-VL",
+   "full_name": "QwenLM/Qwen3-VL",
+   "url": "https://github.com/QwenLM/Qwen3-VL",
+   "stars": 18921,
+   "pushed_at": "2026-01-30T04:47:30Z",
+   "description": "Qwen3-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud.",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "Qwen3-Coder",
+   "full_name": "QwenLM/Qwen3-Coder",
+   "url": "https://github.com/QwenLM/Qwen3-Coder",
+   "stars": 16315,
+   "pushed_at": "2026-03-24T08:22:10Z",
+   "description": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team.",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen-Agent",
+   "full_name": "QwenLM/Qwen-Agent",
+   "url": "https://github.com/QwenLM/Qwen-Agent",
+   "stars": 15936,
+   "pushed_at": "2026-03-04T08:15:07Z",
+   "description": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen3-TTS",
+   "full_name": "QwenLM/Qwen3-TTS",
+   "url": "https://github.com/QwenLM/Qwen3-TTS",
+   "stars": 10464,
+   "pushed_at": "2026-03-17T06:38:41Z",
+   "description": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cl",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen-Image",
+   "full_name": "QwenLM/Qwen-Image",
+   "url": "https://github.com/QwenLM/Qwen-Image",
+   "stars": 7741,
+   "pushed_at": "2026-02-10T07:37:37Z",
+   "description": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing.",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen2.5-Omni",
+   "full_name": "QwenLM/Qwen2.5-Omni",
+   "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+   "stars": 3977,
+   "pushed_at": "2025-06-12T11:03:07Z",
+   "description": "Qwen2.5-Omni is an end-to-end multimodal model by Qwen team at Alibaba Cloud, capable of understanding text, audio, vision, video, and performing real-time speech generation.",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "Qwen3-Omni",
+   "full_name": "QwenLM/Qwen3-Omni",
+   "url": "https://github.com/QwenLM/Qwen3-Omni",
+   "stars": 3656,
+   "pushed_at": "2026-01-08T07:04:48Z",
+   "description": "Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of understanding text, audio, images, and video, as well as generating speech in real time.",
+   "language": "Jupyter Notebook"
+  },
+  {
+   "name": "Qwen3.5",
+   "full_name": "QwenLM/Qwen3.5",
+   "url": "https://github.com/QwenLM/Qwen3.5",
+   "stars": 2524,
+   "pushed_at": "2026-03-02T12:48:07Z",
+   "description": "Qwen3.5 is the large language model series developed by Qwen team, Alibaba Cloud.",
+   "language": ""
+  },
+  {
+   "name": "Qwen3-ASR",
+   "full_name": "QwenLM/Qwen3-ASR",
+   "url": "https://github.com/QwenLM/Qwen3-ASR",
+   "stars": 2342,
+   "pushed_at": "2026-01-30T03:24:24Z",
+   "description": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction.",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen2-Audio",
+   "full_name": "QwenLM/Qwen2-Audio",
+   "url": "https://github.com/QwenLM/Qwen2-Audio",
+   "stars": 2060,
+   "pushed_at": "2025-04-21T08:50:49Z",
+   "description": "The official repo of Qwen2-Audio chat & pretrained large audio language model proposed by Alibaba Cloud.",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen3-Embedding",
+   "full_name": "QwenLM/Qwen3-Embedding",
+   "url": "https://github.com/QwenLM/Qwen3-Embedding",
+   "stars": 1889,
+   "pushed_at": "2025-09-30T06:10:27Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen-Image-Layered",
+   "full_name": "QwenLM/Qwen-Image-Layered",
+   "url": "https://github.com/QwenLM/Qwen-Image-Layered",
+   "stars": 1759,
+   "pushed_at": "2025-12-31T11:40:35Z",
+   "description": "Qwen-Image-Layered: Layered Decomposition for Inherent Editablity",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen3-VL-Embedding",
+   "full_name": "QwenLM/Qwen3-VL-Embedding",
+   "url": "https://github.com/QwenLM/Qwen3-VL-Embedding",
+   "stars": 1168,
+   "pushed_at": "2026-04-08T05:01:00Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen3-ASR-Toolkit",
+   "full_name": "QwenLM/Qwen3-ASR-Toolkit",
+   "url": "https://github.com/QwenLM/Qwen3-ASR-Toolkit",
+   "stars": 926,
+   "pushed_at": "2026-02-05T05:35:03Z",
+   "description": "Official Python toolkit for the Qwen3-ASR API. Parallel high‑throughput calls, robust long‑audio transcription, multi‑sample‑rate support.",
+   "language": "Python"
+  },
+  {
+   "name": "ParScale",
+   "full_name": "QwenLM/ParScale",
+   "url": "https://github.com/QwenLM/ParScale",
+   "stars": 478,
+   "pushed_at": "2025-05-17T18:06:25Z",
+   "description": "Parallel Scaling Law for Language Model — Beyond Parameter and Inference Time Scaling",
+   "language": "Python"
+  },
+  {
+   "name": "Qwen3Guard",
+   "full_name": "QwenLM/Qwen3Guard",
+   "url": "https://github.com/QwenLM/Qwen3Guard",
+   "stars": 443,
+   "pushed_at": "2025-10-21T02:27:12Z",
+   "description": "Qwen3Guard is a multilingual guardrail model series developed by the Qwen team at Alibaba Cloud.",
+   "language": "Python"
+  },
+  {
+   "name": "ProcessBench",
+   "full_name": "QwenLM/ProcessBench",
+   "url": "https://github.com/QwenLM/ProcessBench",
+   "stars": 189,
+   "pushed_at": "2025-05-20T06:43:45Z",
+   "description": "Official repository for ACL 2025 paper \"ProcessBench: Identifying Process Errors in Mathematical Reasoning\"",
+   "language": "Python"
+  },
+  {
+   "name": "qwen-code-examples",
+   "full_name": "QwenLM/qwen-code-examples",
+   "url": "https://github.com/QwenLM/qwen-code-examples",
+   "stars": 111,
+   "pushed_at": "2026-03-25T14:54:28Z",
+   "description": "A collection of practical examples and best practices for Qwen Code",
+   "language": "TypeScript"
+  },
+  {
+   "name": "qwenlm.github.io",
+   "full_name": "QwenLM/qwenlm.github.io",
+   "url": "https://github.com/QwenLM/qwenlm.github.io",
+   "stars": 105,
+   "pushed_at": "2026-01-21T12:15:45Z",
+   "description": "👑 Qwen Blog. Visit https://qwen.ai/research for the latest news.",
+   "language": "HTML"
+  }
+ ],
+ "thudm": [
+  {
+   "name": "slime",
+   "full_name": "THUDM/slime",
+   "url": "https://github.com/THUDM/slime",
+   "stars": 5197,
+   "pushed_at": "2026-04-07T16:58:26Z",
+   "description": "slime is an LLM post-training framework for RL Scaling.",
+   "language": "Python"
+  },
+  {
+   "name": "AgentBench",
+   "full_name": "THUDM/AgentBench",
+   "url": "https://github.com/THUDM/AgentBench",
+   "stars": 3310,
+   "pushed_at": "2026-02-08T17:01:05Z",
+   "description": "A Comprehensive Benchmark to Evaluate LLMs as Agents (ICLR'24)",
+   "language": "Python"
+  },
+  {
+   "name": "LongWriter",
+   "full_name": "THUDM/LongWriter",
+   "url": "https://github.com/THUDM/LongWriter",
+   "stars": 1851,
+   "pushed_at": "2025-06-24T06:41:41Z",
+   "description": "[ICLR 2025] LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs",
+   "language": "Python"
+  },
+  {
+   "name": "INFTY",
+   "full_name": "THUDM/INFTY",
+   "url": "https://github.com/THUDM/INFTY",
+   "stars": 566,
+   "pushed_at": "2025-09-13T03:54:19Z",
+   "description": "INFTY Engine: An Optimization Toolkit to Support Continual AI",
+   "language": "Python"
+  },
+  {
+   "name": "WebRL",
+   "full_name": "THUDM/WebRL",
+   "url": "https://github.com/THUDM/WebRL",
+   "stars": 515,
+   "pushed_at": "2025-06-06T03:19:56Z",
+   "description": "Building Open LLM Web Agents with Self-Evolving Online Curriculum RL",
+   "language": "Python"
+  },
+  {
+   "name": "AlignBench",
+   "full_name": "THUDM/AlignBench",
+   "url": "https://github.com/THUDM/AlignBench",
+   "stars": 425,
+   "pushed_at": "2025-10-25T04:14:14Z",
+   "description": "大模型多维度中文对齐评测基准 (ACL 2024)",
+   "language": "Python"
+  },
+  {
+   "name": "Android-Lab",
+   "full_name": "THUDM/Android-Lab",
+   "url": "https://github.com/THUDM/Android-Lab",
+   "stars": 311,
+   "pushed_at": "2025-08-18T13:58:42Z",
+   "description": "",
+   "language": "Python"
+  },
+  {
+   "name": "DeepDive",
+   "full_name": "THUDM/DeepDive",
+   "url": "https://github.com/THUDM/DeepDive",
+   "stars": 294,
+   "pushed_at": "2025-10-02T09:24:51Z",
+   "description": "DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL",
+   "language": "Python"
+  },
+  {
+   "name": "AgentRL",
+   "full_name": "THUDM/AgentRL",
+   "url": "https://github.com/THUDM/AgentRL",
+   "stars": 266,
+   "pushed_at": "2026-01-17T07:55:04Z",
+   "description": "Scaling Agentic Reinforcement Learning with a Multi-Turn, Multi-Task Framework",
+   "language": "Python"
+  },
+  {
+   "name": "VisualAgentBench",
+   "full_name": "THUDM/VisualAgentBench",
+   "url": "https://github.com/THUDM/VisualAgentBench",
+   "stars": 263,
+   "pushed_at": "2025-04-24T14:59:48Z",
+   "description": "Towards Large Multimodal Models as Visual Foundation Agents",
+   "language": "Python"
+  },
+  {
+   "name": "CogKit",
+   "full_name": "THUDM/CogKit",
+   "url": "https://github.com/THUDM/CogKit",
+   "stars": 123,
+   "pushed_at": "2025-05-14T13:20:45Z",
+   "description": "Finetuning and inference tools for the CogView4 and CogVideoX model series.",
+   "language": "Python"
+  }
+ ],
+ "spring-cloud": [
+  {
+   "name": "spring-cloud-netflix",
+   "full_name": "spring-cloud/spring-cloud-netflix",
+   "url": "https://github.com/spring-cloud/spring-cloud-netflix",
+   "stars": 4960,
+   "pushed_at": "2026-04-02T18:55:42Z",
+   "description": "Integration with Netflix OSS components",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-gateway",
+   "full_name": "spring-cloud/spring-cloud-gateway",
+   "url": "https://github.com/spring-cloud/spring-cloud-gateway",
+   "stars": 4852,
+   "pushed_at": "2026-04-09T00:37:29Z",
+   "description": "An API Gateway built on Spring Framework and Spring Boot providing routing and more.",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-kubernetes",
+   "full_name": "spring-cloud/spring-cloud-kubernetes",
+   "url": "https://github.com/spring-cloud/spring-cloud-kubernetes",
+   "stars": 3532,
+   "pushed_at": "2026-04-06T11:46:56Z",
+   "description": "Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc...",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-config",
+   "full_name": "spring-cloud/spring-cloud-config",
+   "url": "https://github.com/spring-cloud/spring-cloud-config",
+   "stars": 2030,
+   "pushed_at": "2026-04-08T09:55:05Z",
+   "description": "External configuration (server and client) for Spring Cloud",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-sleuth",
+   "full_name": "spring-cloud/spring-cloud-sleuth",
+   "url": "https://github.com/spring-cloud/spring-cloud-sleuth",
+   "stars": 1792,
+   "pushed_at": "2025-11-13T18:31:22Z",
+   "description": "Distributed tracing for spring cloud",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-openfeign",
+   "full_name": "spring-cloud/spring-cloud-openfeign",
+   "url": "https://github.com/spring-cloud/spring-cloud-openfeign",
+   "stars": 1301,
+   "pushed_at": "2026-04-03T19:51:29Z",
+   "description": "Support for using OpenFeign in Spring Cloud apps",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-function",
+   "full_name": "spring-cloud/spring-cloud-function",
+   "url": "https://github.com/spring-cloud/spring-cloud-function",
+   "stars": 1064,
+   "pushed_at": "2026-04-01T20:22:41Z",
+   "description": "",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-stream",
+   "full_name": "spring-cloud/spring-cloud-stream",
+   "url": "https://github.com/spring-cloud/spring-cloud-stream",
+   "stars": 1062,
+   "pushed_at": "2026-04-07T16:27:47Z",
+   "description": "Framework for building Event-Driven Microservices",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-release",
+   "full_name": "spring-cloud/spring-cloud-release",
+   "url": "https://github.com/spring-cloud/spring-cloud-release",
+   "stars": 941,
+   "pushed_at": "2026-04-02T13:29:38Z",
+   "description": "Spring Cloud Release Train - dependency management across a wide range of Spring Cloud projects.",
+   "language": ""
+  },
+  {
+   "name": "spring-cloud-consul",
+   "full_name": "spring-cloud/spring-cloud-consul",
+   "url": "https://github.com/spring-cloud/spring-cloud-consul",
+   "stars": 824,
+   "pushed_at": "2026-04-01T21:45:01Z",
+   "description": "Spring Cloud Consul",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-commons",
+   "full_name": "spring-cloud/spring-cloud-commons",
+   "url": "https://github.com/spring-cloud/spring-cloud-commons",
+   "stars": 748,
+   "pushed_at": "2026-04-01T21:14:22Z",
+   "description": "Common classes used in different Spring Cloud implementations",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-contract",
+   "full_name": "spring-cloud/spring-cloud-contract",
+   "url": "https://github.com/spring-cloud/spring-cloud-contract",
+   "stars": 729,
+   "pushed_at": "2026-04-02T11:39:53Z",
+   "description": "Support for Consumer Driven Contracts in Spring",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-zookeeper",
+   "full_name": "spring-cloud/spring-cloud-zookeeper",
+   "url": "https://github.com/spring-cloud/spring-cloud-zookeeper",
+   "stars": 573,
+   "pushed_at": "2026-04-01T22:27:18Z",
+   "description": "Spring Cloud Zookeeper",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-bus",
+   "full_name": "spring-cloud/spring-cloud-bus",
+   "url": "https://github.com/spring-cloud/spring-cloud-bus",
+   "stars": 438,
+   "pushed_at": "2026-03-25T19:57:17Z",
+   "description": "Spring Cloud event bus",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-task",
+   "full_name": "spring-cloud/spring-cloud-task",
+   "url": "https://github.com/spring-cloud/spring-cloud-task",
+   "stars": 437,
+   "pushed_at": "2026-03-25T20:17:28Z",
+   "description": "Short lived microservices with Spring Batch",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-circuitbreaker",
+   "full_name": "spring-cloud/spring-cloud-circuitbreaker",
+   "url": "https://github.com/spring-cloud/spring-cloud-circuitbreaker",
+   "stars": 353,
+   "pushed_at": "2026-04-01T21:51:27Z",
+   "description": "Spring Cloud Circuit Breaker API and Implementations",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-vault",
+   "full_name": "spring-cloud/spring-cloud-vault",
+   "url": "https://github.com/spring-cloud/spring-cloud-vault",
+   "stars": 289,
+   "pushed_at": "2026-04-02T15:18:35Z",
+   "description": "Configuration Integration with HashiCorp Vault",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-dataflow-samples",
+   "full_name": "spring-cloud/spring-cloud-dataflow-samples",
+   "url": "https://github.com/spring-cloud/spring-cloud-dataflow-samples",
+   "stars": 228,
+   "pushed_at": "2025-10-23T21:56:30Z",
+   "description": "Sample starter applications and code for use with the Spring Cloud Data Flow project ",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-build",
+   "full_name": "spring-cloud/spring-cloud-build",
+   "url": "https://github.com/spring-cloud/spring-cloud-build",
+   "stars": 220,
+   "pushed_at": "2026-04-03T14:13:28Z",
+   "description": "Common build concerns, shared plugin configuration, etc. for Spring Cloud modules",
+   "language": "Shell"
+  },
+  {
+   "name": "spring-cloud-open-service-broker",
+   "full_name": "spring-cloud/spring-cloud-open-service-broker",
+   "url": "https://github.com/spring-cloud/spring-cloud-open-service-broker",
+   "stars": 189,
+   "pushed_at": "2026-04-08T05:25:11Z",
+   "description": "Spring Cloud project for creating service brokers that conform to the Open Server Broker API specification",
+   "language": "Java"
+  },
+  {
+   "name": "spring-cloud-core-tests",
+   "full_name": "spring-cloud/spring-cloud-core-tests",
+   "url": "https://github.com/spring-cloud/spring-cloud-core-tests",
+   "stars": 155,
+   "pushed_at": "2025-08-08T23:06:09Z",
+   "description": "Integration tests for Spring Cloud (small projects testing classpath combinations)",
+   "language": "Java"
+  }
+ ],
+ "python": [
+  {
+   "name": "cpython",
+   "full_name": "python/cpython",
+   "url": "https://github.com/python/cpython",
+   "stars": 72223,
+   "pushed_at": "2026-04-09T05:20:31Z",
+   "description": "The Python programming language",
+   "language": "Python"
+  },
+  {
+   "name": "mypy",
+   "full_name": "python/mypy",
+   "url": "https://github.com/python/mypy",
+   "stars": 20353,
+   "pushed_at": "2026-04-08T09:46:41Z",
+   "description": "Optional static typing for Python",
+   "language": "Python"
+  },
+  {
+   "name": "typeshed",
+   "full_name": "python/typeshed",
+   "url": "https://github.com/python/typeshed",
+   "stars": 5039,
+   "pushed_at": "2026-04-09T01:41:03Z",
+   "description": "Collection of library stubs for Python, with static types",
+   "language": "Python"
+  },
+  {
+   "name": "peps",
+   "full_name": "python/peps",
+   "url": "https://github.com/python/peps",
+   "stars": 4901,
+   "pushed_at": "2026-04-08T18:11:50Z",
+   "description": "Python Enhancement Proposals",
+   "language": "reStructuredText"
+  },
+  {
+   "name": "devguide",
+   "full_name": "python/devguide",
+   "url": "https://github.com/python/devguide",
+   "stars": 2065,
+   "pushed_at": "2026-03-31T18:31:30Z",
+   "description": "The Python developer's guide",
+   "language": "Python"
+  },
+  {
+   "name": "typing",
+   "full_name": "python/typing",
+   "url": "https://github.com/python/typing",
+   "stars": 1744,
+   "pushed_at": "2026-04-08T21:50:22Z",
+   "description": "Python static typing home. Hosts the documentation and a user help forum.",
+   "language": "Python"
+  },
+  {
+   "name": "pythondotorg",
+   "full_name": "python/pythondotorg",
+   "url": "https://github.com/python/pythondotorg",
+   "stars": 1627,
+   "pushed_at": "2026-04-08T20:10:26Z",
+   "description": "Source code for python.org",
+   "language": "Python"
+  },
+  {
+   "name": "pyperformance",
+   "full_name": "python/pyperformance",
+   "url": "https://github.com/python/pyperformance",
+   "stars": 1009,
+   "pushed_at": "2026-04-07T17:34:33Z",
+   "description": "Python Performance Benchmark Suite",
+   "language": "Python"
+  },
+  {
+   "name": "typing_extensions",
+   "full_name": "python/typing_extensions",
+   "url": "https://github.com/python/typing_extensions",
+   "stars": 563,
+   "pushed_at": "2026-04-06T21:55:42Z",
+   "description": "Backported and experimental type hints for Python",
+   "language": "Python"
+  },
+  {
+   "name": "python-docs-zh-cn",
+   "full_name": "python/python-docs-zh-cn",
+   "url": "https://github.com/python/python-docs-zh-cn",
+   "stars": 458,
+   "pushed_at": "2026-04-08T15:43:56Z",
+   "description": "Simplified Chinese translation of the Python documentation",
+   "language": ""
+  },
+  {
+   "name": "python-docs-es",
+   "full_name": "python/python-docs-es",
+   "url": "https://github.com/python/python-docs-es",
+   "stars": 362,
+   "pushed_at": "2026-03-26T22:46:21Z",
+   "description": "Spanish translation of the Python documentation.",
+   "language": "Python"
+  },
+  {
+   "name": "python-docs-fr",
+   "full_name": "python/python-docs-fr",
+   "url": "https://github.com/python/python-docs-fr",
+   "stars": 355,
+   "pushed_at": "2025-11-22T13:30:01Z",
+   "description": "Mirroir de https://git.afpy.org/AFPy/python-docs-fr",
+   "language": ""
+  },
+  {
+   "name": "python-docs-zh-tw",
+   "full_name": "python/python-docs-zh-tw",
+   "url": "https://github.com/python/python-docs-zh-tw",
+   "stars": 279,
+   "pushed_at": "2026-04-09T00:27:35Z",
+   "description": "Traditional Chinese (zh-tw) translation of the Python Documentation",
+   "language": "Python"
+  },
+  {
+   "name": "pymanager",
+   "full_name": "python/pymanager",
+   "url": "https://github.com/python/pymanager",
+   "stars": 261,
+   "pushed_at": "2026-03-31T22:25:37Z",
+   "description": "The Python Install Manager (for Windows)",
+   "language": "Python"
+  },
+  {
+   "name": "steering-council",
+   "full_name": "python/steering-council",
+   "url": "https://github.com/python/steering-council",
+   "stars": 178,
+   "pushed_at": "2026-03-23T19:25:15Z",
+   "description": "Communications from the Steering Council",
+   "language": "Makefile"
+  },
+  {
+   "name": "mypy_extensions",
+   "full_name": "python/mypy_extensions",
+   "url": "https://github.com/python/mypy_extensions",
+   "stars": 155,
+   "pushed_at": "2025-04-22T15:04:03Z",
+   "description": "Extensions for mypy",
+   "language": "Python"
+  },
+  {
+   "name": "python-docs-pt-br",
+   "full_name": "python/python-docs-pt-br",
+   "url": "https://github.com/python/python-docs-pt-br",
+   "stars": 156,
+   "pushed_at": "2026-04-09T00:36:34Z",
+   "description": "Brazilian Portuguese translation of the Python Documentation",
+   "language": "Python"
+  },
+  {
+   "name": "planet",
+   "full_name": "python/planet",
+   "url": "https://github.com/python/planet",
+   "stars": 144,
+   "pushed_at": "2026-04-01T09:49:06Z",
+   "description": "Configuration for Python planets",
+   "language": "Python"
+  },
+  {
+   "name": "importlib_metadata",
+   "full_name": "python/importlib_metadata",
+   "url": "https://github.com/python/importlib_metadata",
+   "stars": 141,
+   "pushed_at": "2026-03-20T20:20:31Z",
+   "description": "Library to access metadata for Python packages",
+   "language": "Python"
+  },
+  {
+   "name": "bedevere",
+   "full_name": "python/bedevere",
+   "url": "https://github.com/python/bedevere",
+   "stars": 134,
+   "pushed_at": "2026-04-01T21:53:22Z",
+   "description": "A bot to help identify missing information for CPython pull requests",
+   "language": "Python"
+  },
+  {
+   "name": "python-docs-tr",
+   "full_name": "python/python-docs-tr",
+   "url": "https://github.com/python/python-docs-tr",
+   "stars": 126,
+   "pushed_at": "2026-04-01T00:39:01Z",
+   "description": "Turkish Translation of the Python Documentation",
+   "language": "Python"
+  },
+  {
+   "name": "psf-salt",
+   "full_name": "python/psf-salt",
+   "url": "https://github.com/python/psf-salt",
+   "stars": 122,
+   "pushed_at": "2026-04-07T16:39:00Z",
+   "description": "PSF infrastructure configuration",
+   "language": "Hurl"
+  },
+  {
+   "name": "miss-islington",
+   "full_name": "python/miss-islington",
+   "url": "https://github.com/python/miss-islington",
+   "stars": 115,
+   "pushed_at": "2026-04-01T17:48:18Z",
+   "description": "🐍🍒⛏🤖 - A bot for backporting and merging CPython pull requests",
+   "language": "Python"
+  },
+  {
+   "name": "pythoncapi-compat",
+   "full_name": "python/pythoncapi-compat",
+   "url": "https://github.com/python/pythoncapi-compat",
+   "stars": 106,
+   "pushed_at": "2026-03-19T11:10:30Z",
+   "description": "  The pythoncapi-compat project can be used to write a C extension supporting a wide range of Python versions with a single code base.",
+   "language": "C++"
+  },
+  {
+   "name": "core-workflow",
+   "full_name": "python/core-workflow",
+   "url": "https://github.com/python/core-workflow",
+   "stars": 104,
+   "pushed_at": "2025-10-01T09:32:20Z",
+   "description": "Issue tracker for CPython's workflow",
+   "language": "Python"
+  },
+  {
+   "name": "tzdata",
+   "full_name": "python/tzdata",
+   "url": "https://github.com/python/tzdata",
+   "stars": 102,
+   "pushed_at": "2026-04-03T11:19:13Z",
+   "description": "Python package wrapping the IANA time zone database",
+   "language": "Python"
+  }
+ ],
+ "bioconda": [
+  {
+   "name": "bioconda-recipes",
+   "full_name": "bioconda/bioconda-recipes",
+   "url": "https://github.com/bioconda/bioconda-recipes",
+   "stars": 1798,
+   "pushed_at": "2026-04-09T07:09:39Z",
+   "description": "Conda recipes for the bioconda channel.",
+   "language": "Shell"
+  },
+  {
+   "name": "bioconda-utils",
+   "full_name": "bioconda/bioconda-utils",
+   "url": "https://github.com/bioconda/bioconda-utils",
+   "stars": 104,
+   "pushed_at": "2026-04-09T06:10:14Z",
+   "description": "Utilities for building and managing bioconda recipes",
+   "language": "Python"
+  }
+ ],
+ "bioconductor": [
+  {
+   "name": "Contributions",
+   "full_name": "Bioconductor/Contributions",
+   "url": "https://github.com/Bioconductor/Contributions",
+   "stars": 147,
+   "pushed_at": "2025-04-10T18:26:59Z",
+   "description": "Contribute Packages to Bioconductor",
+   "language": ""
+  },
+  {
+   "name": "BiocStickers",
+   "full_name": "Bioconductor/BiocStickers",
+   "url": "https://github.com/Bioconductor/BiocStickers",
+   "stars": 136,
+   "pushed_at": "2026-03-23T09:27:16Z",
+   "description": "Stickers for some Bioconductor packages - feel free to contribute and/or modify.",
+   "language": "R"
+  }
+ ],
+ "android": [
+  {
+   "name": "architecture-samples",
+   "full_name": "android/architecture-samples",
+   "url": "https://github.com/android/architecture-samples",
+   "stars": 45635,
+   "pushed_at": "2026-04-08T19:13:19Z",
+   "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "compose-samples",
+   "full_name": "android/compose-samples",
+   "url": "https://github.com/android/compose-samples",
+   "stars": 23058,
+   "pushed_at": "2026-04-08T15:34:15Z",
+   "description": "Official Jetpack Compose samples.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "nowinandroid",
+   "full_name": "android/nowinandroid",
+   "url": "https://github.com/android/nowinandroid",
+   "stars": 20980,
+   "pushed_at": "2026-04-09T05:05:40Z",
+   "description": "A fully functional Android app built entirely with Kotlin and Jetpack Compose",
+   "language": "Kotlin"
+  },
+  {
+   "name": "uamp",
+   "full_name": "android/uamp",
+   "url": "https://github.com/android/uamp",
+   "stars": 13225,
+   "pushed_at": "2026-01-09T15:17:00Z",
+   "description": "A sample audio app for Android",
+   "language": "Kotlin"
+  },
+  {
+   "name": "ndk-samples",
+   "full_name": "android/ndk-samples",
+   "url": "https://github.com/android/ndk-samples",
+   "stars": 10500,
+   "pushed_at": "2026-02-20T03:19:39Z",
+   "description": "Android NDK samples with Android Studio",
+   "language": "C++"
+  },
+  {
+   "name": "testing-samples",
+   "full_name": "android/testing-samples",
+   "url": "https://github.com/android/testing-samples",
+   "stars": 9295,
+   "pushed_at": "2025-07-18T16:19:23Z",
+   "description": "A collection of samples demonstrating different frameworks and techniques for automated testing",
+   "language": "Java"
+  },
+  {
+   "name": "camera-samples",
+   "full_name": "android/camera-samples",
+   "url": "https://github.com/android/camera-samples",
+   "stars": 5413,
+   "pushed_at": "2026-03-25T18:24:32Z",
+   "description": "Multiple samples showing the best practices in camera APIs on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "views-widgets-samples",
+   "full_name": "android/views-widgets-samples",
+   "url": "https://github.com/android/views-widgets-samples",
+   "stars": 5178,
+   "pushed_at": "2025-07-11T13:00:08Z",
+   "description": "Multiple samples showing the best practices in views-widgets on Android.",
+   "language": "Java"
+  },
+  {
+   "name": "user-interface-samples",
+   "full_name": "android/user-interface-samples",
+   "url": "https://github.com/android/user-interface-samples",
+   "stars": 4629,
+   "pushed_at": "2025-07-11T12:56:53Z",
+   "description": "Multiple samples showing the best practices in the user interface on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "architecture-templates",
+   "full_name": "android/architecture-templates",
+   "url": "https://github.com/android/architecture-templates",
+   "stars": 3120,
+   "pushed_at": "2026-04-08T19:03:04Z",
+   "description": "",
+   "language": ""
+  },
+  {
+   "name": "gradle-recipes",
+   "full_name": "android/gradle-recipes",
+   "url": "https://github.com/android/gradle-recipes",
+   "stars": 2338,
+   "pushed_at": "2026-04-08T10:50:10Z",
+   "description": "Ready-to-use recipes for common build customizations that showcase the Android Gradle plugin's public APIs and DSL.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "ndk",
+   "full_name": "android/ndk",
+   "url": "https://github.com/android/ndk",
+   "stars": 2275,
+   "pushed_at": "2026-03-12T20:33:34Z",
+   "description": "The Android Native Development Kit",
+   "language": ""
+  },
+  {
+   "name": "androidify",
+   "full_name": "android/androidify",
+   "url": "https://github.com/android/androidify",
+   "stars": 1920,
+   "pushed_at": "2026-03-31T07:51:51Z",
+   "description": "Sample app for Androidify",
+   "language": "Kotlin"
+  },
+  {
+   "name": "connectivity-samples",
+   "full_name": "android/connectivity-samples",
+   "url": "https://github.com/android/connectivity-samples",
+   "stars": 1780,
+   "pushed_at": "2025-07-10T15:23:23Z",
+   "description": "Multiple samples showing the best practices in connectivity on Android.",
+   "language": "Java"
+  },
+  {
+   "name": "databinding-samples",
+   "full_name": "android/databinding-samples",
+   "url": "https://github.com/android/databinding-samples",
+   "stars": 1694,
+   "pushed_at": "2025-07-10T13:58:03Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "codelab-android-compose",
+   "full_name": "android/codelab-android-compose",
+   "url": "https://github.com/android/codelab-android-compose",
+   "stars": 1685,
+   "pushed_at": "2026-03-27T14:26:17Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "platform-samples",
+   "full_name": "android/platform-samples",
+   "url": "https://github.com/android/platform-samples",
+   "stars": 1670,
+   "pushed_at": "2026-04-08T19:06:01Z",
+   "description": "A collection of samples of different Android OS platform APIs.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "storage-samples",
+   "full_name": "android/storage-samples",
+   "url": "https://github.com/android/storage-samples",
+   "stars": 1650,
+   "pushed_at": "2025-08-29T19:43:40Z",
+   "description": "Multiple samples showing the best practices in storage APIs on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "performance-samples",
+   "full_name": "android/performance-samples",
+   "url": "https://github.com/android/performance-samples",
+   "stars": 1421,
+   "pushed_at": "2026-04-09T03:44:52Z",
+   "description": "Samples to show APIs and best practices in Performance on Android",
+   "language": "Kotlin"
+  },
+  {
+   "name": "media-samples",
+   "full_name": "android/media-samples",
+   "url": "https://github.com/android/media-samples",
+   "stars": 1358,
+   "pushed_at": "2026-01-09T16:21:12Z",
+   "description": "Multiple samples showing the best practices in media APIs on Android (audio, video, etc.).",
+   "language": "Kotlin"
+  },
+  {
+   "name": "wear-os-samples",
+   "full_name": "android/wear-os-samples",
+   "url": "https://github.com/android/wear-os-samples",
+   "stars": 1347,
+   "pushed_at": "2026-04-08T18:44:35Z",
+   "description": "Multiple samples showing best practices in app and watch face development on Wear OS.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "kotlin-multiplatform-samples",
+   "full_name": "android/kotlin-multiplatform-samples",
+   "url": "https://github.com/android/kotlin-multiplatform-samples",
+   "stars": 1284,
+   "pushed_at": "2026-04-08T19:01:36Z",
+   "description": "Samples showcasing the Kotlin Multiplatform Jetpack libraries",
+   "language": "Kotlin"
+  },
+  {
+   "name": "tv-samples",
+   "full_name": "android/tv-samples",
+   "url": "https://github.com/android/tv-samples",
+   "stars": 1248,
+   "pushed_at": "2026-03-29T22:31:37Z",
+   "description": "Multiple samples showing best practices in app development on Android TV.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "nav3-recipes",
+   "full_name": "android/nav3-recipes",
+   "url": "https://github.com/android/nav3-recipes",
+   "stars": 1239,
+   "pushed_at": "2026-04-04T17:49:42Z",
+   "description": "Implement common use cases with Jetpack Navigation 3",
+   "language": "Kotlin"
+  },
+  {
+   "name": "android-test",
+   "full_name": "android/android-test",
+   "url": "https://github.com/android/android-test",
+   "stars": 1215,
+   "pushed_at": "2026-04-07T23:05:17Z",
+   "description": "An extensive framework for testing Android apps",
+   "language": "Java"
+  },
+  {
+   "name": "snippets",
+   "full_name": "android/snippets",
+   "url": "https://github.com/android/snippets",
+   "stars": 1019,
+   "pushed_at": "2026-04-08T23:41:04Z",
+   "description": "Main repository for snippets surfaced on developer.android.com.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "security-samples",
+   "full_name": "android/security-samples",
+   "url": "https://github.com/android/security-samples",
+   "stars": 986,
+   "pushed_at": "2025-10-22T15:14:32Z",
+   "description": "Multiple samples showing the best practices in security APIs on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "app-bundle-samples",
+   "full_name": "android/app-bundle-samples",
+   "url": "https://github.com/android/app-bundle-samples",
+   "stars": 735,
+   "pushed_at": "2026-03-31T18:01:05Z",
+   "description": "Multiple samples showing the best practices in app bundles on Android.",
+   "language": "C++"
+  },
+  {
+   "name": "socialite",
+   "full_name": "android/socialite",
+   "url": "https://github.com/android/socialite",
+   "stars": 693,
+   "pushed_at": "2026-03-31T10:48:54Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "codelab-android-workmanager",
+   "full_name": "android/codelab-android-workmanager",
+   "url": "https://github.com/android/codelab-android-workmanager",
+   "stars": 558,
+   "pushed_at": "2025-12-08T13:58:24Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "ai-samples",
+   "full_name": "android/ai-samples",
+   "url": "https://github.com/android/ai-samples",
+   "stars": 543,
+   "pushed_at": "2026-04-06T16:43:11Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "codelab-android-paging",
+   "full_name": "android/codelab-android-paging",
+   "url": "https://github.com/android/codelab-android-paging",
+   "stars": 513,
+   "pushed_at": "2025-12-08T13:53:00Z",
+   "description": "Jetpack Paging codelab",
+   "language": "Kotlin"
+  },
+  {
+   "name": "identity-samples",
+   "full_name": "android/identity-samples",
+   "url": "https://github.com/android/identity-samples",
+   "stars": 506,
+   "pushed_at": "2026-04-08T19:56:12Z",
+   "description": "Multiple samples showing the best practices in identity on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "enterprise-samples",
+   "full_name": "android/enterprise-samples",
+   "url": "https://github.com/android/enterprise-samples",
+   "stars": 441,
+   "pushed_at": "2026-03-31T09:39:42Z",
+   "description": "Multiple samples showing the best practices in enterprise on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "car-samples",
+   "full_name": "android/car-samples",
+   "url": "https://github.com/android/car-samples",
+   "stars": 442,
+   "pushed_at": "2025-07-17T06:16:25Z",
+   "description": "Multiple samples showing best practices for car app development on both Android Auto and Android Automotive OS.",
+   "language": "Java"
+  },
+  {
+   "name": "xr-samples",
+   "full_name": "android/xr-samples",
+   "url": "https://github.com/android/xr-samples",
+   "stars": 438,
+   "pushed_at": "2026-01-29T19:18:10Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "health-samples",
+   "full_name": "android/health-samples",
+   "url": "https://github.com/android/health-samples",
+   "stars": 337,
+   "pushed_at": "2025-08-20T01:10:03Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "input-samples",
+   "full_name": "android/input-samples",
+   "url": "https://github.com/android/input-samples",
+   "stars": 328,
+   "pushed_at": "2025-07-10T15:36:39Z",
+   "description": "Multiple samples showing the best practices in input on Android.",
+   "language": "Java"
+  },
+  {
+   "name": "cahier",
+   "full_name": "android/cahier",
+   "url": "https://github.com/android/cahier",
+   "stars": 328,
+   "pushed_at": "2026-03-27T08:48:33Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "graphics-samples",
+   "full_name": "android/graphics-samples",
+   "url": "https://github.com/android/graphics-samples",
+   "stars": 327,
+   "pushed_at": "2025-07-08T14:25:50Z",
+   "description": "Multiple samples showing the best practices in graphics on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "games-samples",
+   "full_name": "android/games-samples",
+   "url": "https://github.com/android/games-samples",
+   "stars": 285,
+   "pushed_at": "2026-03-06T07:39:28Z",
+   "description": "A collection of samples to discuss and showcase games in Android apps.",
+   "language": "C++"
+  },
+  {
+   "name": "codelab-android-datastore",
+   "full_name": "android/codelab-android-datastore",
+   "url": "https://github.com/android/codelab-android-datastore",
+   "stars": 241,
+   "pushed_at": "2025-12-08T13:52:45Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "codelab-exoplayer-intro",
+   "full_name": "android/codelab-exoplayer-intro",
+   "url": "https://github.com/android/codelab-exoplayer-intro",
+   "stars": 236,
+   "pushed_at": "2026-01-09T16:13:52Z",
+   "description": "Media Streaming with ExoPlayer codelab",
+   "language": "Kotlin"
+  },
+  {
+   "name": "privacy-sandbox-samples",
+   "full_name": "android/privacy-sandbox-samples",
+   "url": "https://github.com/android/privacy-sandbox-samples",
+   "stars": 205,
+   "pushed_at": "2025-05-07T17:30:14Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "codelab-mlkit-android",
+   "full_name": "android/codelab-mlkit-android",
+   "url": "https://github.com/android/codelab-mlkit-android",
+   "stars": 188,
+   "pushed_at": "2025-12-08T13:57:28Z",
+   "description": "",
+   "language": "Kotlin"
+  },
+  {
+   "name": "fit-samples",
+   "full_name": "android/fit-samples",
+   "url": "https://github.com/android/fit-samples",
+   "stars": 156,
+   "pushed_at": "2025-07-08T14:26:43Z",
+   "description": "Multiple samples showing the best practices using the Fit APIs on Android.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "sensors-samples",
+   "full_name": "android/sensors-samples",
+   "url": "https://github.com/android/sensors-samples",
+   "stars": 138,
+   "pushed_at": "2025-07-11T11:43:01Z",
+   "description": "Multiple samples showing the best practices in sensors on Android.",
+   "language": "Java"
+  },
+  {
+   "name": "project-replicator",
+   "full_name": "android/project-replicator",
+   "url": "https://github.com/android/project-replicator",
+   "stars": 135,
+   "pushed_at": "2025-12-08T13:57:03Z",
+   "description": "This project contains a Gradle plugin and a small command-line app that allows replicating the structure of a given Gradle project.",
+   "language": "Kotlin"
+  },
+  {
+   "name": "android.github.io",
+   "full_name": "android/android.github.io",
+   "url": "https://github.com/android/android.github.io",
+   "stars": 114,
+   "pushed_at": "2025-12-10T06:49:44Z",
+   "description": "",
+   "language": "HTML"
+  },
+  {
+   "name": "keyattestation",
+   "full_name": "android/keyattestation",
+   "url": "https://github.com/android/keyattestation",
+   "stars": 107,
+   "pushed_at": "2026-04-07T16:41:57Z",
+   "description": "Kotlin library for evaluating Android Key Attestation certification chains.",
+   "language": "Kotlin"
+  }
+ ]
+}

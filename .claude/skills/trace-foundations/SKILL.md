@@ -1,96 +1,100 @@
 ---
 name: trace-foundations
-description: Trace repos/organizations to their parent foundations, output foundations.csv
+description: Use LLM Web Search to determine foundation affiliation for each repo
 user-invocable: true
 ---
 
-# Foundation Tracing Skill (Step ⑤)
+# Foundation Tracing Skill (Step ⑨)
 
-Trace each repo/organization to its parent open-source foundation using known mappings, LLM research, and human confirmation.
+Determine which repos belong to open-source foundations. Uses a 3-layer strategy: cache → heuristics → LLM.
 
 ## Input
 
-- `output/all_repos.csv` — full repo pool (from merge step)
-- `output/organizations.csv` — verified organizations (from step ③)
+- `output/repo_exp.csv` — expanded repo list (from step ⑧)
 
 ## Procedure
 
-### Step 1: Run the prep script
+### Step 1: Build foundation project cache (LLM Web Search)
+
+For each major foundation, **use Web Search** to find their complete project list. Save results to `output/.cache/foundation_projects.json`.
+
+Search each foundation's official project list:
+
+| Foundation | Search Query |
+|-----------|-------------|
+| Apache Software Foundation | `site:projects.apache.org list` |
+| CNCF | `CNCF projects landscape graduated incubating sandbox` |
+| Linux Foundation | `Linux Foundation projects list` |
+| LF AI & Data | `LF AI Data Foundation projects` |
+| Eclipse Foundation | `Eclipse Foundation projects list` |
+| OpenJS Foundation | `OpenJS Foundation projects list` |
+| OpenInfra Foundation | `OpenInfra Foundation projects` |
+| Python Software Foundation | `Python Software Foundation projects` |
+| Rust Foundation | `Rust Foundation members projects` |
+| NumFOCUS | `NumFOCUS sponsored projects list` |
+| GNOME Foundation | `GNOME Foundation projects` |
+| Mozilla Foundation | `Mozilla Foundation projects` |
+| Blender Foundation | `Blender Foundation projects` |
+| OpenCV Foundation | `OpenCV Foundation projects` |
+
+For each foundation, record in the cache:
+```json
+{
+  "Foundation Name": {
+    "projects": ["owner/repo", "owner/repo2", ...],
+    "evidence": "source URL where project list was found"
+  }
+}
+```
+
+Save cache to `output/.cache/foundation_projects.json`.
+
+### Step 2: Run the matching script
 
 ```bash
-python3 scripts/trace_foundations.py output/all_repos.csv output/organizations.csv \
-    --summary -o output/foundations_candidates.csv
+python3 scripts/trace_foundations.py output/repo_exp.csv -o output/foundation.csv --summary
 ```
 
-- If exit code is **0** — all owners have known foundation mappings, go to Step 3.
-- If exit code is **1** — some owners need LLM research, proceed to Step 2.
+The script applies 3 layers:
+1. **Cache match**: Check each repo against foundation_projects.json (by owner/repo or project name)
+2. **Org heuristics**: Map known GitHub orgs to foundations (e.g., `apache/*` → Apache, `kubernetes/*` → CNCF)
+3. **Mark unmatched**: Remaining repos are marked `foundation_name=unknown` for LLM processing
 
-### Step 2: LLM research for unknown foundation affiliations
+### Step 3: LLM Web Search for unmatched repos
 
-For each row in `output/foundations_candidates.csv` where `confidence=unknown`, research the foundation affiliation.
+For repos still marked `unknown`:
 
-#### Research methodology
+1. **Batch by GitHub org** — repos in the same org likely share the same foundation
+2. **Web Search** for each unmatched org/repo: `"{project_name}" foundation OR governance`
+3. Determine: which foundation (if any) does this project belong to?
+4. Record:
+   - `foundation_name` — foundation name, or `none` if not affiliated
+   - `evidence` — actual URLs and facts from search
+   - `confidence` — S/A/B/C
 
-For each unknown owner/org:
+**IMPORTANT**: If LLM discovers a previously unknown large foundation with many projects:
+1. Add the foundation and its projects to `output/.cache/foundation_projects.json`
+2. Add the org mapping to `scripts/trace_foundations.py`'s `ORG_FOUNDATION_MAP`
+3. Re-run the script to batch-match remaining repos
 
-1. **Check CNCF landscape** — search `"{project_name}" site:landscape.cncf.io` or `"{project_name}" CNCF`
-2. **Check Apache incubator** — search `"{project_name}" site:apache.org`
-3. **Check Linux Foundation projects** — search `"{project_name}" site:linuxfoundation.org`
-4. **General search** — `"{project_name}" foundation OR "open source foundation" OR governance`
+### Step 4: Present to user
 
-#### Decision criteria
-
-- **Has parent foundation**: The project is officially under a foundation's governance
-  - Set `foundation` to the foundation name, `confidence` to `high`, `source` to `LLM研究: {evidence}`
-- **No foundation**: Independent/community project or corporate-controlled
-  - Set `foundation` to empty, `confidence` to `none`, `source` to `LLM研究: 独立项目`
-- **Ambiguous**: May be in incubation or transitioning
-  - Set `foundation` to best guess, `confidence` to `low`, `source` to `LLM研究: {details}`
-
-#### Key foundations to check
-
-- **CNCF** (Cloud Native Computing Foundation) — Kubernetes ecosystem
-- **Apache Software Foundation** — Big data, middleware
-- **Linux Foundation** — Kernel, networking, AI/ML (LF AI & Data, PyTorch Foundation)
-- **Eclipse Foundation** — IDE, IoT, Jakarta EE
-- **OpenInfra Foundation** — OpenStack, StarlingX
-- **OpenJS Foundation** — Node.js, jQuery, webpack, Electron
-- **Python Software Foundation** — CPython, pip, PyPI
-- **Rust Foundation** — Rust compiler, Cargo
-- **GNOME Foundation**, **KDE e.V.**, **Mozilla Foundation**, etc.
-
-#### Batch optimization
-
-- CNCF has a public landscape — check it first for cloud-native projects
-- Apache projects always have `apache.org` domains
-- LF sub-foundations (LF AI, LF Edge, LF Networking) are under the Linux Foundation umbrella
-
-After research, update `output/foundations_candidates.csv` with findings.
-
-### Step 3: Generate foundations.csv
-
-From the completed candidates file, produce the final deduplicated foundation list.
-
-**Present candidates to the user for review** before generating the final file. Group by foundation and show:
+Show results grouped by foundation:
 - Foundation name
-- Associated orgs/repos
-- Evidence/source
+- Repos under this foundation
+- Evidence and confidence for each
 
-After user confirmation, generate `output/foundations.csv` with columns:
+User reviews and may correct assignments. Update `output/foundation.csv` with corrections.
 
-```
-foundation,url,associated_orgs,associated_repos,evidence
-```
+### Step 5: Output summary
 
-Where:
-- `foundation` — Foundation name
-- `url` — Foundation website
-- `associated_orgs` — Semicolon-joined list of GitHub orgs under this foundation
-- `associated_repos` — Semicolon-joined list of key repos
-- `evidence` — How the affiliation was determined
+Print:
+- Total repos processed
+- Repos matched by cache / heuristics / LLM
+- Repos with foundation affiliation (count by foundation)
+- Repos with no foundation (`none`)
+- Count by confidence level
 
-Deduplicate by foundation name (case-insensitive).
+### Next step
 
-### Step 4: Self-improvement
-
-If you identified new foundation → org mappings, add them to `KNOWN_FOUNDATIONS` in `scripts/trace_foundations.py` so future runs auto-classify them. Ask the user before making changes.
+→ Can run in parallel with `/trace-companies`

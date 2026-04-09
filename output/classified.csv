@@ -93,7 +93,7 @@
 鲲鹏,1,Glibc,基础库&加速库,https://github.com/bminor/glibc,repo,脚本分类: github.com/bminor/glibc
 鲲鹏,2,Hyperscan,基础库&加速库,https://github.com/est31/cargo-udeps,repo,脚本分类: github.com/est31/cargo-udeps
 鲲鹏,3,openMPI,基础库&加速库,"https://www.open-mpi.org/
-https://openucx.org/",organization,LLM分类: 上游地址包含两个独立项目URL(OpenMPI和OpenUCX)，属于多项目组织
+https://openucx.org/",unknown,"非git托管平台URL (https://www.open-mpi.org/, https://openucx.org/)"
 鲲鹏,4,Zlib,基础库&加速库,https://github.com/madler/zlib,repo,脚本分类: github.com/madler/zlib
 鲲鹏,5,LZ4,基础库&加速库,https://github.com/lz4/lz4,repo,脚本分类: github.com/lz4/lz4
 鲲鹏,6,zlib-ng,基础库&加速库,https://github.com/zlib-ng/zlib-ng,repo,脚本分类: github.com/zlib-ng/zlib-ng
@@ -169,7 +169,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,75,Kyuubi,大数据,https://github.com/yaooqinn/kyuubi,repo,脚本分类: github.com/yaooqinn/kyuubi
 鲲鹏,76,Ceph,分布式存储,https://github.com/ceph/ceph,repo,脚本分类: github.com/ceph/ceph
 鲲鹏,77,GlusterFS,分布式存储,https://github.com/gluster/glusterfs,repo,脚本分类: github.com/gluster/glusterfs
-鲲鹏,78,Lustre,分布式存储,https://git.whamcloud.com/,repo,LLM分类: Lustre是单一分布式文件系统项目，git.whamcloud.com托管其源码仓库
+鲲鹏,78,Lustre,分布式存储,https://git.whamcloud.com/,unknown,非git托管平台URL (https://git.whamcloud.com/)
 鲲鹏,79,FastDFS,分布式存储,https://github.com/greduan/emacs-theme-gruvbox,repo,脚本分类: github.com/greduan/emacs-theme-gruvbox
 鲲鹏,80,MinIO,分布式存储,https://github.com/minio/minio,repo,脚本分类: github.com/minio/minio
 鲲鹏,81,MooseFS,分布式存储,https://github.com/moosefs/moosefs,repo,脚本分类: github.com/moosefs/moosefs
@@ -222,7 +222,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,128,Spring Framework,Web,https://github.com/spring-projects/spring-framework,repo,脚本分类: github.com/spring-projects/spring-framework
 鲲鹏,129,Spring Boot,Web,https://github.com/spring-projects/spring-boot,repo,脚本分类: github.com/spring-projects/spring-boot
 鲲鹏,130,Tengine,Web,https://github.com/alibaba/tengine,repo,脚本分类: github.com/alibaba/tengine
-鲲鹏,131,LVS,Web,在内核集成,repo,LLM分类: Linux Virtual Server是Linux内核子系统(IPVS)，属于单一代码组件
+鲲鹏,131,LVS,Web,在内核集成,unknown,无URL
 鲲鹏,132,MySQL,数据库,https://github.com/mysql/mysql-server,repo,脚本分类: github.com/mysql/mysql-server
 鲲鹏,133,MariaDB,数据库,https://github.com/mariadb/server,repo,脚本分类: github.com/mariadb/server
 鲲鹏,134,PostgreSQL,数据库,https://github.com/postgres/postgres,repo,脚本分类: github.com/postgres/postgres
@@ -264,9 +264,9 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,170,busybox,基础库&加速库,https://github.com/mirror/busybox,repo,脚本分类: github.com/mirror/busybox
 鲲鹏,171,Expat,基础库&加速库,https://github.com/libexpat/libexpat,repo,脚本分类: github.com/libexpat/libexpat
 鲲鹏,172,FlatBuffers,基础库&加速库,https://github.com/google/flatbuffers,repo,脚本分类: github.com/google/flatbuffers
-鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/,repo,LLM分类: GNU Multiple Precision Arithmetic Library，单一数学库项目
+鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/,unknown,非git托管平台URL (https://gmplib.org/repo/)
 鲲鹏,174,Hiredis,基础库&加速库,https://github.com/redis/hiredis,repo,脚本分类: github.com/redis/hiredis
-鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/,repo,LLM分类: GNU MPC是单一任意精度复数运算库
+鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/,unknown,非git托管平台URL (http://www.multiprecision.org/)
 鲲鹏,176,Libxml2,基础库&加速库,https://github.com/gnome/libxml2,repo,脚本分类: github.com/gnome/libxml2
 鲲鹏,177,MPFR,基础库&加速库,https://gitlab.inria.fr/mpfr/mpfr,repo,脚本分类: gitlab.inria.fr/mpfr/mpfr
 鲲鹏,178,Next.js,基础库&加速库,https://github.com/vercel/next.js,repo,脚本分类: github.com/vercel/next.js
@@ -294,7 +294,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,200,fmt,基础库&加速库,https://github.com/fmtlib/fmt,repo,脚本分类: github.com/fmtlib/fmt
 鲲鹏,201,Geos,基础库&加速库,https://github.com/libgeos/geos,repo,脚本分类: github.com/libgeos/geos
 鲲鹏,202,libconfig,基础库&加速库,https://github.com/hyperrealm/libconfig,repo,脚本分类: github.com/hyperrealm/libconfig
-鲲鹏,203,Memtester,基础库&加速库,https://pyropus.ca./software/memtester/,repo,LLM分类: 单一内存测试工具软件
+鲲鹏,203,Memtester,基础库&加速库,https://pyropus.ca./software/memtester/,unknown,非git托管平台URL (https://pyropus.ca./software/memtester/)
 鲲鹏,204,Netdata,基础库&加速库,https://github.com/netdata/netdata,repo,脚本分类: github.com/netdata/netdata
 鲲鹏,205,psutil,基础库&加速库,https://github.com/giampaolo/psutil,repo,脚本分类: github.com/giampaolo/psutil
 鲲鹏,206,RE2,基础库&加速库,https://github.com/google/re2,repo,脚本分类: github.com/google/re2
@@ -309,7 +309,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,215,Grafana,基础库&加速库,https://github.com/grafana/grafana,repo,脚本分类: github.com/grafana/grafana
 鲲鹏,216,Guacamole,基础库&加速库,https://github.com/apache/guacamole-server,repo,脚本分类: github.com/apache/guacamole-server
 鲲鹏,217,log4cpp,基础库&加速库,https://github.com/orocos-toolchain/log4cpp,repo,脚本分类: github.com/orocos-toolchain/log4cpp
-鲲鹏,218,LZO,基础库&加速库,http://www.oberhumer.com/opensource/lzo/,repo,LLM分类: 单一数据压缩库
+鲲鹏,218,LZO,基础库&加速库,http://www.oberhumer.com/opensource/lzo/,unknown,非git托管平台URL (http://www.oberhumer.com/opensource/lzo/)
 鲲鹏,219,PaceMaker,基础库&加速库,https://github.com/clusterlabs/pacemaker,repo,脚本分类: github.com/clusterlabs/pacemaker
 鲲鹏,220,pigz,基础库&加速库,https://github.com/madler/pigz,repo,脚本分类: github.com/madler/pigz
 鲲鹏,221,Quartz,基础库&加速库,https://github.com/quartz-scheduler/quartz,repo,脚本分类: github.com/quartz-scheduler/quartz
@@ -342,22 +342,22 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,248,HMMER,HPC,https://github.com/eddyrivaslab/hmmer,repo,脚本分类: github.com/eddyrivaslab/hmmer
 鲲鹏,249,OpenHPC,HPC,https://github.com/openhpc/ohpc,repo,脚本分类: github.com/openhpc/ohpc
 鲲鹏,250,Lammps,HPC,https://github.com/lammps/lammps,repo,脚本分类: github.com/lammps/lammps
-鲲鹏,251,VASP,HPC,https://www.vasp.at/,repo,LLM分类: Vienna Ab initio Simulation Package，单一量子力学计算软件包
+鲲鹏,251,VASP,HPC,https://www.vasp.at/,unknown,非git托管平台URL (https://www.vasp.at/)
 鲲鹏,252,CP2K,HPC,https://github.com/cp2k/cp2k,repo,脚本分类: github.com/cp2k/cp2k
 鲲鹏,253,QuantumEspresso,HPC,https://github.com/qef/q-e,repo,脚本分类: github.com/qef/q-e
 鲲鹏,254,GROMACS,HPC,https://github.com/gromacs/gromacs,repo,脚本分类: github.com/gromacs/gromacs
 鲲鹏,255,Nwchem,HPC,https://github.com/nwchemgit/nwchem,repo,脚本分类: github.com/nwchemgit/nwchem
-鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php,repo,LLM分类: AmberTools是单一分子动力学模拟工具包
+鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php,unknown,非git托管平台URL (https://ambermd.org/index.php)
 鲲鹏,257,WRF,HPC,https://github.com/wrf-model/wrf,repo,脚本分类: github.com/wrf-model/wrf
 鲲鹏,258,CESM,HPC,https://github.com/escomp/cesm,repo,脚本分类: github.com/escomp/cesm
 鲲鹏,259,NEMO,HPC,https://github.com/linuxmint/nemo,repo,脚本分类: github.com/linuxmint/nemo
 鲲鹏,260,WAVEWATCH III,HPC,https://github.com/csdms/bmi-wavewatch3,repo,脚本分类: github.com/csdms/bmi-wavewatch3
 鲲鹏,261,LASTZ,HPC,https://github.com/lastz/lastz,repo,脚本分类: github.com/lastz/lastz
-鲲鹏,262,OpenFOAM,HPC,https://openfoam.org/release/,repo,LLM分类: 单一计算流体力学(CFD)开源软件
+鲲鹏,262,OpenFOAM,HPC,https://openfoam.org/release/,unknown,非git托管平台URL (https://openfoam.org/release/)
 鲲鹏,263,eman2,HPC,https://github.com/cryoem/eman2,repo,脚本分类: github.com/cryoem/eman2
-鲲鹏,264,genewise,HPC,https://www.ebi.ac.uk/~birney/wise2/,repo,LLM分类: EBI开发的单一基因预测生物信息学工具
+鲲鹏,264,genewise,HPC,https://www.ebi.ac.uk/~birney/wise2/,unknown,非git托管平台URL (https://www.ebi.ac.uk/~birney/wise2/)
 鲲鹏,265,FSL,HPC,https://git.fmrib.ox.ac.uk/fsl/fslpy,repo,脚本分类: git.fmrib.ox.ac.uk/fsl/fslpy
-鲲鹏,266,OpenLB,HPC,https://www.openlb.net/,repo,LLM分类: 单一开源格子玻尔兹曼方法库
+鲲鹏,266,OpenLB,HPC,https://www.openlb.net/,unknown,非git托管平台URL (https://www.openlb.net/)
 鲲鹏,267,SimpleITK,HPC,https://github.com/simpleitk/simpleitk,repo,脚本分类: github.com/simpleitk/simpleitk
 鲲鹏,268,3DSlicer,HPC,https://github.com/slicer/slicer,repo,脚本分类: github.com/slicer/slicer
 鲲鹏,269,bismark,HPC,https://github.com/felixkrueger/bismark,repo,脚本分类: github.com/felixkrueger/bismark
@@ -385,7 +385,7 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,291,Falcon,HPC,https://github.com/falconry/falcon,repo,脚本分类: github.com/falconry/falcon
 鲲鹏,292,AutoDock vina,HPC,https://github.com/ccsb-scripps/autodock-vina,repo,脚本分类: github.com/ccsb-scripps/autodock-vina
 鲲鹏,293,Tinker,HPC,https://github.com/tinkertools/tinker,repo,脚本分类: github.com/tinkertools/tinker
-鲲鹏,294,repeatmasker,HPC,http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz,repo,LLM分类: 单一基因组重复序列屏蔽工具，URL指向tarball下载
+鲲鹏,294,repeatmasker,HPC,http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz,unknown,非git托管平台URL (http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz)
 鲲鹏,295,sambamba,HPC,https://github.com/biod/sambamba,repo,脚本分类: github.com/biod/sambamba
 鲲鹏,296,Cutadapt,HPC,https://github.com/marcelm/cutadapt,repo,脚本分类: github.com/marcelm/cutadapt
 鲲鹏,297,hyphy,HPC,https://github.com/veg/hyphy,repo,脚本分类: github.com/veg/hyphy
@@ -417,10 +417,10 @@ https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-pr
 鲲鹏,323,Graphtyper2,HPC,https://github.com/decodegenetics/graphtyper,repo,脚本分类: github.com/decodegenetics/graphtyper
 鲲鹏,324,TensorRT,HPC,https://github.com/nvidia/tensorrt,repo,脚本分类: github.com/nvidia/tensorrt
 鲲鹏,325,jvarkit,HPC,https://github.com/lindenb/jvarkit,repo,脚本分类: github.com/lindenb/jvarkit
-鲲鹏,326,Meraculous,HPC,https://jgi.doe.gov/data-and-tools/meraculous/,repo,LLM分类: JGI开发的单一基因组组装器
+鲲鹏,326,Meraculous,HPC,https://jgi.doe.gov/data-and-tools/meraculous/,unknown,非git托管平台URL (https://jgi.doe.gov/data-and-tools/meraculous/)
 鲲鹏,327,RepeatScout,HPC,https://github.com/dfam-consortium/repeatscout,repo,脚本分类: github.com/dfam-consortium/repeatscout
 鲲鹏,328,MOPAC,HPC,https://github.com/openmopac/mopac,repo,脚本分类: github.com/openmopac/mopac
-鲲鹏,329,Yambo,HPC,http://www.yambo-code.org/,repo,LLM分类: 单一电子结构计算软件(yambo-code.org)
+鲲鹏,329,Yambo,HPC,http://www.yambo-code.org/,unknown,非git托管平台URL (http://www.yambo-code.org/)
 鲲鹏,330,Cubep3m,HPC,https://github.com/jharno/cubep3m,repo,脚本分类: github.com/jharno/cubep3m
 鲲鹏,331,SWAN,HPC,https://swanmodel.sourceforge.io/,repo,脚本分类: swanmodel.sourceforge (project site)
 鲲鹏,332,dnacopy,HPC,https://bioconductor.org/packages/3.20/bioc/html/DNAcopy.html,repo,脚本分类: bioconductor.org package: DNAcopy

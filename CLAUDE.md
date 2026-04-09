@@ -13,31 +13,35 @@ output/         — Pipeline output files (CSV)
 ## Pipeline Overview
 
 ```
-data.csv → ① /classify → ② /merge-repos → ③ /resolve-orgs → ⑥ /expand-orgs
-                                          → ④ /trace-companies
-                                          → ⑤ /trace-foundations → ⑦ /expand-foundations
-                                          → ⑧ /merge-final
+data.csv → ① /classify → ② /classify-unknown → ③ /split-merge
+         → ④ /resolve-orgs → ⑤ /resolve-unknown-orgs → ⑥ /merge-orgs
+         → ⑦ /validate-orgs → ⑧ /expand-repos
+         → ⑨ /trace-foundations  (parallel)
+         → ⑩ /trace-companies   (parallel)
 ```
 
 | Step | Skill | Script | Input → Output |
 |------|-------|--------|----------------|
-| ① 输入分类 | `/classify` | `scripts/classify.py` | `data.csv` → `classified.csv`, `repos.csv`, `non_repos.csv` |
-| ② 合并 Repo 池 | `/merge-repos` | `scripts/merge_repos.py` | `repos.csv` + `non_repos_classified.csv` → `all_repos.csv` |
-| ③ 溯源组织 | `/resolve-orgs` | `scripts/resolve_orgs.py` | `all_repos.csv` → `organizations.csv` |
-| ④ 溯源公司 | `/trace-companies` | `scripts/trace_companies.py` | `all_repos.csv` + `organizations.csv` → `companies.csv` |
-| ⑤ 溯源基金会 | `/trace-foundations` | `scripts/trace_foundations.py` | `all_repos.csv` + `organizations.csv` → `foundations.csv` |
-| ⑥ 组织扩展 | `/expand-orgs` | `scripts/expand_orgs.py` | `organizations.csv` → `org_expanded_repos.csv` |
-| ⑦ 基金会扩展 | `/expand-foundations` | `scripts/dedup_foundations.py` | `foundations.csv` → `foundations_deduped.csv` + `foundation_expanded_repos.csv` |
-| ⑧ 最终整合 | `/merge-final` | `scripts/merge_final.py` | all outputs → `final.csv` |
+| ① 输入分类 | `/classify` | `scripts/classify.py` | `data.csv` → `classified.csv` |
+| ② Unknown 分类 | `/classify-unknown` | — | `classified.csv` → `unknown.csv` |
+| ③ 拆分合并 | `/split-merge` | `scripts/split_merge.py` | `classified.csv` + `unknown.csv` → `repo.csv`, `organization.csv` |
+| ④ Repo 溯源组织 | `/resolve-orgs` | `scripts/resolve_orgs.py` | `repo.csv` → `repo_known_org.csv`, `repo_unknown_org.csv` |
+| ⑤ Unknown Org 补全 | `/resolve-unknown-orgs` | — | `repo_unknown_org.csv` → `repo_unknown_org.csv`(更新) |
+| ⑥ 组织合并去重 | `/merge-orgs` | `scripts/merge_orgs.py` | `organization.csv` + `repo_known_org.csv` + `repo_unknown_org.csv` → `org_exp.csv` |
+| ⑦ 组织有效性验证 | `/validate-orgs` | `scripts/validate_orgs.py` | `org_exp.csv` → `org_exp_val.csv` |
+| ⑧ Repo 扩展 | `/expand-repos` | `scripts/expand_repos.py` | `repo.csv` + `organization.csv` → `repo_exp.csv` |
+| ⑨ 溯源基金会 | `/trace-foundations` | `scripts/trace_foundations.py` | `repo_exp.csv` → `foundation.csv` |
+| ⑩ 溯源公司 | `/trace-companies` | — | `repo_exp.csv` → `company.csv` |
 
 ## Key Design Principles
 
-- **Waterfall strategy**: Script auto-classifies what it can → LLM handles unknowns → human confirms
-- **Known-entity lookup**: Curated lists in scripts (`KNOWN_COMPANIES`, `KNOWN_FOUNDATIONS`) for instant classification
-- **Continuous improvement**: When LLM discovers new patterns, update the scripts' known lists
+- **Single responsibility**: Each step does one thing with clear inputs and outputs
+- **Real data only**: LLM uses Web Search for real information, no guessing
+- **Confidence tracking**: LLM judgments include S/A/B/C confidence with evidence
+- **Human in the loop**: All LLM outputs require human verification
 - **No data mutation**: Each step reads upstream files and generates new files; never modifies original CSV
 
 ## Requirements
 
-- `GITHUB_TOKEN` env var for GitHub API access (optional but recommended to avoid rate limits)
+- `GITHUB_TOKEN` env var for GitHub API access (required)
 - Python 3.10+

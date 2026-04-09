@@ -23,6 +23,7 @@ import os
 import re
 import sys
 import time
+from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -33,9 +34,46 @@ from urllib.error import HTTPError, URLError
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-# Rate limit tracking
+CACHE_DIR = Path("output/.cache")
+CACHE_FILE = CACHE_DIR / "github_owners_cache.json"
+
 _rate_remaining = None
 _rate_reset = None
+
+
+def _interruptible_wait(seconds: int, label: str = "Rate limit reset") -> None:
+    """Sleep in small increments with countdown, allowing Ctrl-C to interrupt."""
+    end_time = time.time() + seconds
+    while True:
+        remaining = int(end_time - time.time())
+        if remaining <= 0:
+            break
+        print(f"\r  ⏳ {label}: {remaining}s remaining (Ctrl-C to abort)  ",
+              end="", file=sys.stderr, flush=True)
+        time.sleep(min(5, remaining))
+    print(f"\r  ✓ {label} complete.{' ' * 40}", file=sys.stderr)
+
+
+def _load_cache() -> dict:
+    """Load previously resolved owners from disk cache."""
+    if CACHE_FILE.exists():
+        try:
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            print(f"  Loaded {len(data)} cached owner resolutions from {CACHE_FILE}", file=sys.stderr)
+            return data
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"  Warning: cache file corrupt ({e}), ignoring", file=sys.stderr)
+    return {}
+
+
+def _save_cache(cache: dict) -> None:
+    """Persist resolved owners to disk cache."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    tmp = CACHE_FILE.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1)
+    tmp.replace(CACHE_FILE)
 
 
 def github_api(endpoint: str) -> dict | list | None:
@@ -50,12 +88,10 @@ def github_api(endpoint: str) -> dict | list | None:
     if GITHUB_TOKEN:
         headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
 
-    # Proactive rate limit wait
     if _rate_remaining is not None and _rate_remaining <= 1 and _rate_reset:
         wait = _rate_reset - int(time.time()) + 1
         if wait > 0:
-            print(f"  Rate limit nearly exhausted, waiting {wait}s...", file=sys.stderr)
-            time.sleep(wait)
+            _interruptible_wait(wait)
 
     req = Request(url, headers=headers)
     try:
@@ -68,11 +104,13 @@ def github_api(endpoint: str) -> dict | list | None:
             reset = e.headers.get("X-RateLimit-Reset")
             if reset:
                 wait = int(reset) - int(time.time()) + 1
-                print(f"  Rate limited. Reset in {wait}s", file=sys.stderr)
+                if wait > 0:
+                    _interruptible_wait(wait, "403 rate-limit retry")
+                    return github_api(endpoint)
             else:
                 print(f"  403 Forbidden: {url}", file=sys.stderr)
         elif e.code == 404:
-            return None  # Not found — expected for users when querying /orgs/
+            return None
         else:
             print(f"  HTTP {e.code}: {url}", file=sys.stderr)
         return None
@@ -148,54 +186,25 @@ def extract_owner_from_non_github(url: str) -> str | None:
 def resolve_github_owner(owner: str) -> dict:
     """
     Query GitHub API to determine if owner is an org or user.
-    Returns dict with type and metadata.
+
+    Uses `/users/{owner}` which works for both users and orgs and returns a
+    `type` field — this halves the API calls compared to trying /orgs/ first.
     """
-    # Try as organization first
-    org_data = github_api(f"/orgs/{owner}")
-    if org_data and isinstance(org_data, dict):
+    data = github_api(f"/users/{owner}")
+    if data and isinstance(data, dict):
+        is_org = data.get("type", "User") == "Organization"
         return {
             "owner": owner,
-            "owner_type": "organization",
-            "name": org_data.get("name") or owner,
-            "description": org_data.get("description") or "",
-            "blog": org_data.get("blog") or "",
-            "location": org_data.get("location") or "",
-            "public_repos": org_data.get("public_repos", 0),
+            "owner_type": "organization" if is_org else "user",
+            "name": data.get("name") or owner,
+            "description": data.get("bio") or data.get("description") or "",
+            "blog": data.get("blog") or "",
+            "location": data.get("location") or "",
+            "public_repos": data.get("public_repos", 0),
             "url": f"https://github.com/{owner}",
             "source": "github_api",
         }
 
-    # Try as user
-    user_data = github_api(f"/users/{owner}")
-    if user_data and isinstance(user_data, dict):
-        user_type = user_data.get("type", "User")
-        # Some orgs respond to /users/ but not /orgs/
-        if user_type == "Organization":
-            return {
-                "owner": owner,
-                "owner_type": "organization",
-                "name": user_data.get("name") or owner,
-                "description": user_data.get("bio") or "",
-                "blog": user_data.get("blog") or "",
-                "location": user_data.get("location") or "",
-                "public_repos": user_data.get("public_repos", 0),
-                "url": f"https://github.com/{owner}",
-                "source": "github_api",
-            }
-        else:
-            return {
-                "owner": owner,
-                "owner_type": "user",
-                "name": user_data.get("name") or owner,
-                "description": user_data.get("bio") or "",
-                "blog": user_data.get("blog") or "",
-                "location": user_data.get("location") or "",
-                "public_repos": user_data.get("public_repos", 0),
-                "url": f"https://github.com/{owner}",
-                "source": "github_api",
-            }
-
-    # API failed for both
     return {
         "owner": owner,
         "owner_type": "unknown",
@@ -221,6 +230,7 @@ def main():
     parser.add_argument("--output", "-o", help="Output CSV path (default: stdout)")
     parser.add_argument("--summary", action="store_true", help="Print summary to stderr")
     parser.add_argument("--json", action="store_true", help="Output as JSON")
+    parser.add_argument("--no-cache", action="store_true", help="Ignore disk cache, re-resolve all owners")
     args = parser.parse_args()
 
     # --- Read repo.csv ---
@@ -288,14 +298,38 @@ def main():
     github_owners = {k: v for k, v in owner_map.items() if v["platform"] == "github.com"}
     non_github_owners = {k: v for k, v in owner_map.items() if v["platform"] != "github.com"}
 
-    print(f"\nResolving {len(github_owners)} GitHub owners via API...", file=sys.stderr)
+    cache = {} if args.no_cache else _load_cache()
     resolved = {}
-    for i, (key, info) in enumerate(github_owners.items(), 1):
+    cache_hits = 0
+    to_resolve = []
+
+    for key, info in github_owners.items():
+        if key in cache:
+            resolved[key] = cache[key]
+            cache_hits += 1
+        else:
+            to_resolve.append((key, info))
+
+    print(f"\nResolving GitHub owners: {len(github_owners)} total, "
+          f"{cache_hits} cached, {len(to_resolve)} to query via API...", file=sys.stderr)
+
+    save_interval = 20
+    for i, (key, info) in enumerate(to_resolve, 1):
         owner = info["owner"]
-        if i % 50 == 0 or i == len(github_owners):
-            print(f"  Progress: {i}/{len(github_owners)}", file=sys.stderr)
-        result = resolve_github_owner(owner)
+        if i % 10 == 0 or i == len(to_resolve):
+            rl_info = f" [rate_remaining={_rate_remaining}]" if _rate_remaining is not None else ""
+            print(f"  Progress: {i}/{len(to_resolve)}{rl_info}", file=sys.stderr)
+        try:
+            result = resolve_github_owner(owner)
+        except KeyboardInterrupt:
+            print(f"\n  Interrupted at {i}/{len(to_resolve)}. Saving progress...", file=sys.stderr)
+            _save_cache(cache)
+            sys.exit(130)
         resolved[key] = result
+        cache[key] = result
+        if i % save_interval == 0:
+            _save_cache(cache)
+    _save_cache(cache)
 
     # --- Build output rows ---
     output_fieldnames = [
@@ -385,18 +419,27 @@ def main():
     # --- Output ---
     if args.json:
         print(json.dumps(output_rows, ensure_ascii=False, indent=2))
-    else:
-        out = sys.stdout
-        if args.output:
-            out = open(args.output, "w", encoding="utf-8", newline="")
+    elif args.output:
+        # -o is a directory: write repo_known_org.csv and repo_unknown_org.csv
+        out_dir = args.output
+        os.makedirs(out_dir, exist_ok=True)
 
-        writer = csv.DictWriter(out, fieldnames=output_fieldnames)
+        known_rows = [r for r in output_rows if r["owner_type"] == "organization"]
+        unknown_rows = [r for r in output_rows if r["owner_type"] != "organization"]
+
+        for fname, rows_subset in [("repo_known_org.csv", known_rows), ("repo_unknown_org.csv", unknown_rows)]:
+            path = os.path.join(out_dir, fname)
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=output_fieldnames)
+                writer.writeheader()
+                for row in rows_subset:
+                    writer.writerow(row)
+            print(f"  Wrote {path}: {len(rows_subset)} entries", file=sys.stderr)
+    else:
+        writer = csv.DictWriter(sys.stdout, fieldnames=output_fieldnames)
         writer.writeheader()
         for row in output_rows:
             writer.writerow(row)
-
-        if args.output:
-            out.close()
 
     # --- Summary ---
     if args.summary:

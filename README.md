@@ -1,24 +1,25 @@
 # OSS-X: Open Source Ecosystem Discovery Pipeline
 
-OSS-X is an AI-assisted pipeline that takes a seed list of open-source projects and systematically discovers the full ecosystem around them — tracing each project **upward** to its parent organizations, companies, and foundations, then **expanding downward** to find popular sibling projects. The final output is a unified table cross-referencing repos, organizations, companies, and foundations.
+OSS-X is an AI-assisted pipeline that takes a seed list of open-source projects and systematically discovers the full ecosystem around them — tracing each project **upward** to its parent organizations, companies, and foundations, then **expanding downward** to find popular sibling projects.
 
 ## How It Works
 
-The pipeline combines three roles at each step:
+The pipeline combines four roles:
 
 | Role | Responsibility |
 |------|---------------|
-| **Python scripts** | Deterministic logic: URL parsing, GitHub API calls, deduplication, merging |
-| **LLM (Claude)** | Handles ambiguous cases the scripts can't resolve: web research, classification, entity tracing |
-| **Human** | Final confirmation on key decisions: entity types, org validity, company/foundation affiliations |
+| **Python scripts** | Deterministic logic: URL parsing, CSV merging/splitting, deduplication |
+| **GitHub API** | Verify repos/orgs, fetch owner info, query org statistics |
+| **LLM (Claude Code Web Search)** | Research ambiguous cases with real web data — no guessing allowed |
+| **Human** | Final confirmation on all LLM judgments |
 
-Each step follows the same pattern: **script auto-classifies what it can → LLM handles unknowns → human confirms**.
+Every LLM judgment includes a **confidence level** (S/A/B/C) and **evidence** from web search results.
 
 ## Prerequisites
 
 - **Python 3.10+**
-- **`GITHUB_TOKEN`** environment variable (recommended to avoid GitHub API rate limits)
-- **Claude Code** or **Cursor** with Claude agent mode (to run the `/skill` commands)
+- **`GITHUB_TOKEN`** environment variable (required for GitHub API)
+- **Claude Code** (to run `/skill` commands)
 
 ```bash
 export GITHUB_TOKEN=ghp_your_token_here
@@ -29,18 +30,9 @@ export GITHUB_TOKEN=ghp_your_token_here
 Place your seed data in `data.csv` at the project root:
 
 ```csv
-页签,序号,项目名称,分类,上游地址
+页签,序号,项目名称,*分类,*上游地址
 昇腾,1,transformers,训练加速,https://github.com/huggingface/transformers
-昇腾,2,accelerate,训练加速,https://github.com/huggingface/accelerate
 ```
-
-| Column | Description |
-|--------|-------------|
-| 页签 | Source tab/category group |
-| 序号 | Row number within the tab |
-| 项目名称 | Project name |
-| 分类 | Sub-category (e.g., 训练加速, 推理加速) |
-| 上游地址 | Upstream URL (typically GitHub) |
 
 ## Pipeline Steps
 
@@ -48,223 +40,177 @@ Place your seed data in `data.csv` at the project root:
 data.csv
   │
   ▼
-① /classify ──────────────► classified.csv, repos.csv, non_repos.csv
+① /classify ──────────► classified.csv          (GitHub API + script)
   │
   ▼
-② /merge-repos ───────────► all_repos.csv
-  │
-  ├─► ③ /resolve-orgs ───► organizations.csv
-  ├─► ④ /trace-companies ► companies.csv
-  ├─► ⑤ /trace-foundations ► foundations.csv
+② /classify-unknown ──► unknown.csv             (LLM + human)
   │
   ▼
-⑥ /expand-orgs ──────────► org_expanded_repos.csv
+③ /split-merge ───────► repo.csv                (script)
+                       ► organization.csv
   │
   ▼
-⑦ /expand-foundations ────► foundations_deduped.csv + foundation_expanded_repos.csv
+④ /resolve-orgs ──────► repo_known_org.csv      (GitHub API + script)
+                       ► repo_unknown_org.csv
   │
   ▼
-⑧ /merge-final ──────────► final.csv
+⑤ /resolve-unknown-orgs ► repo_unknown_org.csv  (LLM + human)
+  │
+  ▼
+⑥ /merge-orgs ────────► org_exp.csv             (script)
+  │
+  ▼
+⑦ /validate-orgs ─────► org_exp_val.csv         (script + GitHub API + LLM + human)
+  │
+  ▼
+⑧ /expand-repos ──────► repo_exp.csv            (GitHub API + LLM + human)
+  │
+  ├─────────────────────────┐
+  ▼                         ▼
+⑨ /trace-foundations      ⑩ /trace-companies
+  ► foundation.csv          ► company.csv
+  (LLM + human)             (LLM + human)
 ```
 
 ### Step ① — Classify (`/classify`)
 
-Classify each entry in `data.csv` as **repo**, **organization**, **foundation**, or **company**.
+Classify each entry using GitHub API: **repo**, **organization**, or **unknown**.
 
 ```bash
-# Runs automatically via the skill:
-python3 scripts/classify.py data.csv --summary -o output/classified.csv --output-dir output
+python3 scripts/classify.py data.csv -o output/classified.csv
 ```
 
-- The script parses URLs and uses the GitHub API to verify repos
-- Items it can't classify are marked `unknown` for LLM research
-- **Output**: `output/classified.csv`, `output/repos.csv`, `output/non_repos.csv`
+- Parses URLs and calls GitHub API to verify type
+- **Output**: `output/classified.csv`
 
-### Step ② — Merge Repos (`/merge-repos`)
+### Step ② — Classify Unknown (`/classify-unknown`)
 
-Merge confirmed repos from Step ① with any items reclassified as `repo` by the LLM.
+Use LLM Web Search to classify items the API couldn't resolve.
+
+- LLM provides: type judgment, evidence, confidence (S/A/B/C)
+- Human reviews and corrects
+- **Output**: `output/unknown.csv`
+
+### Step ③ — Split & Merge (`/split-merge`)
+
+Split classified + unknown results by type into separate files.
 
 ```bash
-python3 scripts/merge_repos.py output/repos.csv output/non_repos_classified.csv \
-    -o output/all_repos.csv --summary
+python3 scripts/split_merge.py output/classified.csv output/unknown.csv -o output
 ```
 
-- **Output**: `output/all_repos.csv` — the full repo pool used by all subsequent steps
+- **Output**: `output/repo.csv`, `output/organization.csv`
 
-### Step ③ — Resolve Organizations (`/resolve-orgs`)
+### Step ④ — Resolve Repo Organizations (`/resolve-orgs`)
 
-Resolve each repo to its parent GitHub organization/owner.
+Query GitHub API to find which organization each repo belongs to.
 
 ```bash
-python3 scripts/resolve_orgs.py output/all_repos.csv --summary -o output/organizations.csv
+python3 scripts/resolve_orgs.py output/repo.csv -o output
 ```
 
-- Uses GitHub API to determine `owner` and `owner.type`
-- LLM handles non-GitHub URLs and ambiguous cases
-- Human verifies org validity (filters out personal namespaces, abandoned orgs)
-- **Output**: `output/organizations.csv`
+- Known orgs: aggregate repos by org → `repo_known_org.csv`
+- Unknown orgs: keep as-is → `repo_unknown_org.csv`
+- **Output**: `output/repo_known_org.csv`, `output/repo_unknown_org.csv`
 
-### Step ④ — Trace Companies (`/trace-companies`)
+### Step ⑤ — Resolve Unknown Orgs (`/resolve-unknown-orgs`)
 
-Determine which repos/organizations are backed by commercial companies.
+Use LLM Web Search to find org info for repos without GitHub org.
+
+- LLM provides: org name, evidence, confidence (S/A/B/C)
+- Human reviews and corrects
+- **Output**: `output/repo_unknown_org.csv` (updated with org info)
+
+### Step ⑥ — Merge Organizations (`/merge-orgs`)
+
+Merge all organization sources and deduplicate.
 
 ```bash
-python3 scripts/trace_companies.py output/all_repos.csv output/organizations.csv \
-    --summary -o output/companies_candidates.csv
+python3 scripts/merge_orgs.py output/organization.csv output/repo_known_org.csv output/repo_unknown_org.csv -o output/org_exp.csv
 ```
 
-- Known company mappings are applied automatically
-- LLM researches unknown affiliations via web search
-- Human confirms company assignments
-- **Output**: `output/companies.csv`
+- **Output**: `output/org_exp.csv`
 
-### Step ⑤ — Trace Foundations (`/trace-foundations`)
+### Step ⑦ — Validate Organizations (`/validate-orgs`)
 
-Determine which repos/organizations belong to open-source foundations.
+Determine whether each organization is a valid, meaningful open-source org.
 
 ```bash
-python3 scripts/trace_foundations.py output/all_repos.csv output/organizations.csv \
-    --summary -o output/foundations_candidates.csv
+python3 scripts/validate_orgs.py output/org_exp.csv -o output/org_exp_val.csv
 ```
 
-- Checks CNCF, Apache, Linux Foundation, Eclipse, OpenJS, etc.
-- LLM researches unknown affiliations
-- Human confirms foundation assignments
-- **Output**: `output/foundations.csv`
+- Auto-valid if repo count > 1
+- GitHub API: check total repos, star>100 count, active count → human decides
+- LLM Web Search for non-GitHub orgs → human decides
+- **Output**: `output/org_exp_val.csv`
 
-> Steps ③④⑤ can run in parallel — they all read from `output/all_repos.csv`.
+### Step ⑧ — Expand Repos (`/expand-repos`)
 
-### Step ⑥ — Expand Organizations (`/expand-orgs`)
-
-For each verified organization, discover their other popular repos.
+Discover popular and active repos from original organizations (`organization.csv`).
 
 ```bash
-python3 scripts/expand_orgs.py output/organizations.csv \
-    --existing output/all_repos.csv --summary -o output/org_expanded_repos.csv
+python3 scripts/expand_repos.py output/repo.csv output/organization.csv -o output/repo_exp.csv
 ```
 
-- Fetches org repos via GitHub API, filtered by stars and activity
-- Human reviews candidate repos for relevance
-- **Output**: `output/org_expanded_repos.csv`
+- GitHub API: fetch repos with **stars > 100 AND active in last year** from original orgs
+- LLM Web Search: find popular repos for non-GitHub orgs
+- Tags each row with `source` (repo / org_expansion)
+- **Output**: `output/repo_exp.csv`
 
-### Step ⑦ — Expand Foundations (`/expand-foundations`)
+### Step ⑨ — Trace Foundations (`/trace-foundations`)
 
-Deduplicate foundations, then discover their notable projects.
+Determine foundation affiliation using a 3-layer strategy: cache → heuristics → LLM.
 
 ```bash
-python3 scripts/dedup_foundations.py output/foundations.csv \
-    -o output/foundations_deduped.csv --summary
+python3 scripts/trace_foundations.py output/repo_exp.csv -o output/foundation.csv
 ```
 
-- LLM researches each foundation's project portfolio
-- Human reviews candidate projects
-- **Output**: `output/foundations_deduped.csv`, `output/foundation_expanded_repos.csv`
+1. **Build cache**: LLM searches each major foundation's project list → `output/.cache/foundation_projects.json`
+2. **Script match**: Match repos against cache + built-in org→foundation mapping
+3. **LLM fallback**: Web Search for unmatched repos; if new large foundations found, update cache and re-run
+- All LLM results include confidence (S/A/B/C) and require human review
+- **Output**: `output/foundation.csv`
 
-### Step ⑧ — Final Merge (`/merge-final`)
+### Step ⑩ — Trace Companies (`/trace-companies`)
 
-Merge all pipeline outputs into a single unified table.
+Use LLM Web Search to determine company affiliation for each repo.
 
-```bash
-python3 scripts/merge_final.py -o output/final.csv --summary
-```
+- Provides: company name, evidence, confidence (S/A/B/C)
+- `unknown` if not affiliated
+- **Output**: `output/company.csv`
 
-- Deduplicates by URL, cross-references repos with orgs/companies/foundations
-- **Output**: `output/final.csv`
+> Steps ⑨ and ⑩ can run in parallel — they both read from `output/repo_exp.csv`.
 
-## Usage Guide
+## Confidence Levels
 
-### Running with Claude Code
+All LLM judgments include a confidence rating:
 
-In Claude Code, invoke each skill as a slash command:
+| Level | Meaning |
+|-------|---------|
+| **S** | Certain — clear official source |
+| **A** | High confidence — multiple reliable sources |
+| **B** | Medium confidence — partial or less authoritative sources |
+| **C** | Low confidence — based on indirect information |
 
-```
-/classify
-/merge-repos
-/resolve-orgs
-/trace-companies
-/trace-foundations
-/expand-orgs
-/expand-foundations
-/merge-final
-```
-
-### Running with Cursor
-
-In Cursor with agent mode, reference the skill name in your prompt. For example:
-
-```
-Please run the /classify skill on data.csv
-```
-
-or
-
-```
-Please run /merge-repos to generate all_repos.csv
-```
-
-Cursor will read the corresponding skill file from `.claude/skills/` and execute the procedure.
-
-### Recommended Execution Order
+## Recommended Execution Order
 
 **Phase 1 — Classification**
-1. `/classify` — Classify all entries
-2. Review `output/non_repos.csv`, confirm LLM classifications
-3. `/merge-repos` — Generate the full repo pool
+1. `/classify` — API-based classification
+2. `/classify-unknown` — LLM + human review for unknowns
+3. `/split-merge` — Split into repo.csv and organization.csv
 
-**Phase 2 — Tracing (can run in parallel)**
-4. `/resolve-orgs` — Find parent organizations
-5. `/trace-companies` — Find parent companies
-6. `/trace-foundations` — Find parent foundations
+**Phase 2 — Organization Resolution**
+4. `/resolve-orgs` — GitHub API org lookup
+5. `/resolve-unknown-orgs` — LLM + human review for unknown orgs
+6. `/merge-orgs` — Merge all org sources
 
-**Phase 3 — Expansion**
-7. `/expand-orgs` — Discover popular repos from each org
-8. `/expand-foundations` — Discover notable projects from each foundation
+**Phase 3 — Validation & Expansion**
+7. `/validate-orgs` — Validate org effectiveness
+8. `/expand-repos` — Expand repos from valid orgs
 
-**Phase 4 — Assembly**
-9. `/merge-final` — Produce the final unified table
-
-## Output Schema
-
-The final output `output/final.csv` contains:
-
-| Column | Description |
-|--------|-------------|
-| `name` | Entity name |
-| `url` | Standardized URL |
-| `type` | `repo` / `organization` / `company` / `foundation` |
-| `category` | Original sub-category (e.g., 训练加速) |
-| `organization` | Parent GitHub organization |
-| `company` | Parent company (may be empty) |
-| `foundation` | Parent foundation (may be empty) |
-| `stars` | GitHub stars (repos only) |
-| `last_active` | Last push date (repos only) |
-| `description` | Entity description |
-| `evidence` | Source/evidence for classifications |
-
-## File Dependency Map
-
-```
-data.csv
-  → output/classified.csv              (Step ①)
-  → output/repos.csv                   (Step ①)
-  → output/non_repos.csv               (Step ①)
-     → output/non_repos_classified.csv  (Step ① LLM fallback)
-  → output/all_repos.csv               (Step ②)
-     → output/organizations.csv        (Step ③)
-     → output/companies.csv            (Step ④)
-     → output/foundations.csv           (Step ⑤)
-     → output/org_expanded_repos.csv   (Step ⑥)
-     → output/foundations_deduped.csv   (Step ⑦)
-     → output/foundation_expanded_repos.csv (Step ⑦)
-  → output/final.csv                   (Step ⑧)
-```
-
-## Design Principles
-
-- **Waterfall strategy**: Script handles deterministic cases → LLM handles ambiguous cases → human confirms
-- **Known-entity lookup**: Curated lists in scripts (`KNOWN_COMPANIES`, `KNOWN_FOUNDATIONS`) enable instant classification without API calls
-- **Continuous improvement**: When the LLM discovers new patterns or entities, it updates the scripts' known lists so future runs are faster and more accurate
-- **No data mutation**: Each step reads upstream files and writes new files; original input is never modified
+**Phase 4 — Tracing (can run in parallel)**
+9. `/trace-foundations` — Find foundation affiliations
+10. `/trace-companies` — Find company affiliations
 
 ## Project Structure
 
@@ -273,22 +219,31 @@ data.csv
 ├── CLAUDE.md                # Project context for Claude
 ├── design.md                # Detailed implementation guide (Chinese)
 ├── scripts/
-│   ├── classify.py          # Step ① — Entity classification
-│   ├── merge_repos.py       # Step ② — Merge repo sources
-│   ├── resolve_orgs.py      # Step ③ — Resolve organizations
-│   ├── trace_companies.py   # Step ④ — Trace companies
-│   ├── trace_foundations.py  # Step ⑤ — Trace foundations
-│   ├── expand_orgs.py       # Step ⑥ — Expand org repos
-│   ├── dedup_foundations.py  # Step ⑦ — Dedup & expand foundations
-│   └── merge_final.py       # Step ⑧ — Final merge
+│   ├── classify.py          # Step ① — GitHub API classification
+│   ├── split_merge.py       # Step ③ — Split by type
+│   ├── resolve_orgs.py      # Step ④ — Resolve repo orgs
+│   ├── merge_orgs.py        # Step ⑥ — Merge organizations
+│   ├── validate_orgs.py     # Step ⑦ — Validate organizations
+│   └── expand_repos.py      # Step ⑧ — Expand repos
 ├── .claude/skills/
-│   ├── classify/SKILL.md
-│   ├── merge-repos/SKILL.md
-│   ├── resolve-orgs/SKILL.md
-│   ├── trace-companies/SKILL.md
-│   ├── trace-foundations/SKILL.md
-│   ├── expand-orgs/SKILL.md
-│   ├── expand-foundations/SKILL.md
-│   └── merge-final/SKILL.md
+│   ├── classify/            # Step ①
+│   ├── classify-unknown/    # Step ②
+│   ├── split-merge/         # Step ③
+│   ├── resolve-orgs/        # Step ④
+│   ├── resolve-unknown-orgs/# Step ⑤
+│   ├── merge-orgs/          # Step ⑥
+│   ├── validate-orgs/       # Step ⑦
+│   ├── expand-repos/        # Step ⑧
+│   ├── trace-foundations/    # Step ⑨
+│   └── trace-companies/     # Step ⑩
 └── output/                  # All generated CSV files
 ```
+
+## Design Principles
+
+- **Single responsibility**: Each step does one thing with clear inputs and outputs
+- **Real data only**: LLM must use Web Search for real information — no guessing or hallucinating
+- **Confidence tracking**: All LLM judgments include S/A/B/C confidence levels with evidence
+- **Human in the loop**: All LLM outputs require human verification
+- **No data mutation**: Each step reads upstream files and writes new files; never modifies originals
+- **Continuous improvement**: Patterns discovered during runs should be codified into scripts

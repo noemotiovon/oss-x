@@ -1,0 +1,282 @@
+{
+ "Apache Software Foundation": {
+  "projects": [
+   "apache/hadoop",
+   "apache/spark",
+   "apache/kafka",
+   "apache/flink",
+   "apache/hbase",
+   "apache/hive",
+   "apache/storm",
+   "apache/zookeeper",
+   "apache/cassandra",
+   "apache/lucene",
+   "apache/solr",
+   "apache/tomcat",
+   "apache/httpd",
+   "apache/maven",
+   "apache/ant",
+   "apache/dubbo",
+   "apache/arrow",
+   "apache/beam",
+   "apache/camel",
+   "apache/druid",
+   "apache/ignite",
+   "apache/impala",
+   "apache/kylin",
+   "apache/mesos",
+   "apache/orc",
+   "apache/parquet-mr",
+   "apache/phoenix",
+   "apache/pig",
+   "apache/thrift",
+   "apache/tez",
+   "apache/avro",
+   "apache/accumulo",
+   "apache/atlas",
+   "apache/livy",
+   "apache/oozie",
+   "apache/flume",
+   "apache/kudu",
+   "apache/drill",
+   "apache/activemq",
+   "apache/incubator-kyuubi",
+   "apache/doris",
+   "apache/incubator-gluten",
+   "apache/iceberg",
+   "apache/hudi",
+   "apache/celeborn",
+   "apache/incubator-brpc",
+   "apache/tvm",
+   "apache/ambari",
+   "apache/incubator-answer",
+   "apache/shardingsphere",
+   "apache/skywalking",
+   "apache/apisix",
+   "apache/rocketmq",
+   "apache/pulsar",
+   "apache/airflow",
+   "apache/superset",
+   "apache/echarts",
+   "apache/seatunnel",
+   "apache/dolphinscheduler",
+   "apache/incubator-paimon",
+   "apache/guacamole-server",
+   "apache/apr",
+   "apache/apr-util",
+   "apache/trafficserver"
+  ],
+  "evidence": "https://projects.apache.org/projects.html"
+ },
+ "CNCF": {
+  "projects": [
+   "kubernetes/kubernetes",
+   "prometheus/prometheus",
+   "envoyproxy/envoy",
+   "coredns/coredns",
+   "containerd/containerd",
+   "etcd-io/etcd",
+   "grpc/grpc",
+   "open-telemetry/opentelemetry-collector",
+   "argoproj/argo-cd",
+   "argoproj/argo-workflows",
+   "fluxcd/flux2",
+   "helm/helm",
+   "jaegertracing/jaeger",
+   "linkerd/linkerd2",
+   "vitessio/vitess",
+   "tikv/tikv",
+   "falcosecurity/falco",
+   "fluent/fluentd",
+   "fluent/fluent-bit",
+   "goharbor/harbor",
+   "open-policy-agent/opa",
+   "rook/rook",
+   "nats-io/nats-server",
+   "buildpacks/pack",
+   "dragonflyoss/Dragonfly2",
+   "istio/istio",
+   "spiffe/spire",
+   "kubeedge/kubeedge",
+   "kubevirt/kubevirt",
+   "longhorn/longhorn",
+   "kedacore/keda",
+   "strimzi/strimzi-kafka-operator",
+   "thanos-io/thanos",
+   "operator-framework/operator-sdk",
+   "projectcontour/contour",
+   "cert-manager/cert-manager",
+   "crossplane/crossplane",
+   "dapr/dapr",
+   "emissary-ingress/emissary",
+   "in-toto/in-toto",
+   "knative/serving",
+   "kyverno/kyverno",
+   "notaryproject/notation",
+   "OpenFeature/openfeature",
+   "backstage/backstage",
+   "chaos-mesh/chaos-mesh",
+   "cloudevents/spec",
+   "cni-cncf/cni",
+   "volcano-sh/volcano",
+   "openyurtio/openyurt",
+   "lima-vm/lima",
+   "cilium/cilium",
+   "cubeFS/cubefs"
+  ],
+  "evidence": "https://www.cncf.io/projects/ https://landscape.cncf.io"
+ },
+ "Linux Foundation": {
+  "projects": [
+   "torvalds/linux",
+   "nodejs/node"
+  ],
+  "evidence": "https://www.linuxfoundation.org/projects"
+ },
+ "LF AI & Data": {
+  "projects": [
+   "onnx/onnx",
+   "milvus-io/milvus",
+   "Angel-ML/angel",
+   "flyteorg/flyte",
+   "delta-io/delta",
+   "amundsen-io/amundsen",
+   "lfai/egeria",
+   "horovod/horovod",
+   "feast-dev/feast",
+   "IBM/claimed",
+   "ludwig-ai/ludwig"
+  ],
+  "evidence": "https://lfaidata.foundation/projects/"
+ },
+ "PyTorch Foundation": {
+  "projects": [
+   "pytorch/pytorch",
+   "pytorch/vision",
+   "pytorch/audio",
+   "pytorch/text",
+   "pytorch/serve",
+   "pytorch/xla",
+   "pytorch/executorch"
+  ],
+  "evidence": "https://pytorch.org/foundation"
+ },
+ "OpenJS Foundation": {
+  "projects": [
+   "nodejs/node",
+   "electron/electron",
+   "webpack/webpack",
+   "jquery/jquery",
+   "expressjs/express",
+   "jestjs/jest",
+   "mochajs/mocha",
+   "lodash/lodash",
+   "appium/appium",
+   "node-red/node-red",
+   "gruntjs/grunt",
+   "eslint/eslint",
+   "esprima/esprima",
+   "nvm-sh/nvm"
+  ],
+  "evidence": "https://openjsf.org/projects"
+ },
+ "Eclipse Foundation": {
+  "projects": [
+   "eclipse/che",
+   "eclipse-theia/theia",
+   "eclipse-vertx/vert.x",
+   "eclipse/mosquitto",
+   "eclipse-ee4j/jersey",
+   "adoptium/temurin-build",
+   "eclipse-jkube/jkube",
+   "eclipse/paho.mqtt.c"
+  ],
+  "evidence": "https://projects.eclipse.org/"
+ },
+ "OpenInfra Foundation": {
+  "projects": [
+   "openstack/nova",
+   "openstack/neutron",
+   "openstack/cinder",
+   "openstack/keystone",
+   "openstack/swift",
+   "openstack/glance",
+   "openstack/horizon",
+   "starlingx/config"
+  ],
+  "evidence": "https://openinfra.dev/projects/"
+ },
+ "Python Software Foundation": {
+  "projects": [
+   "python/cpython",
+   "pypa/pip",
+   "pypa/setuptools",
+   "python/mypy",
+   "psf/requests"
+  ],
+  "evidence": "https://www.python.org/psf/"
+ },
+ "Rust Foundation": {
+  "projects": [
+   "rust-lang/rust",
+   "rust-lang/cargo",
+   "rust-lang/rustup",
+   "rust-lang/rust-analyzer"
+  ],
+  "evidence": "https://foundation.rust-lang.org/"
+ },
+ "NumFOCUS": {
+  "projects": [
+   "numpy/numpy",
+   "pandas-dev/pandas",
+   "matplotlib/matplotlib",
+   "scipy/scipy",
+   "jupyter/notebook",
+   "jupyter/jupyterlab",
+   "scikit-learn/scikit-learn",
+   "scikit-image/scikit-image",
+   "sympy/sympy",
+   "bokeh/bokeh",
+   "pymc-devs/pymc",
+   "stan-dev/stan",
+   "julialang/julia",
+   "zarr-developers/zarr-python",
+   "dask/dask",
+   "networkx/networkx",
+   "astropy/astropy"
+  ],
+  "evidence": "https://numfocus.org/sponsored-projects"
+ },
+ "GNOME Foundation": {
+  "projects": [
+   "GNOME/gtk",
+   "GNOME/glib",
+   "GNOME/gnome-shell",
+   "GNOME/mutter",
+   "GNOME/nautilus"
+  ],
+  "evidence": "https://www.gnome.org/"
+ },
+ "Mozilla Foundation": {
+  "projects": [
+   "mozilla/gecko-dev",
+   "nicothin/servo",
+   "nicothin/rust",
+   "nicothin/webextensions-examples"
+  ],
+  "evidence": "https://foundation.mozilla.org/"
+ },
+ "Blender Foundation": {
+  "projects": [
+   "blender/blender"
+  ],
+  "evidence": "https://www.blender.org/about/foundation/"
+ },
+ "OpenCV Foundation": {
+  "projects": [
+   "opencv/opencv",
+   "opencv/opencv_contrib"
+  ],
+  "evidence": "https://opencv.org/"
+ }
+}
