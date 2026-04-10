@@ -1,6 +1,6 @@
 ---
 name: trace-foundations
-description: Use LLM Web Search to determine foundation affiliation for each repo
+description: Trace foundation affiliation for each repo using script (cache + heuristics) and LLM Web Search for remaining unknowns
 user-invocable: true
 ---
 
@@ -14,40 +14,25 @@ Determine which repos belong to open-source foundations. Uses a 3-layer strategy
 
 ## Procedure
 
-### Step 1: Build foundation project cache (LLM Web Search)
+### Step 1: Build foundation project cache (script)
 
-For each major foundation, **use Web Search** to find their complete project list. Save results to `output/.cache/foundation_projects.json`.
+Run the cache builder script to fetch project lists from structured data sources (official APIs and curated lists):
 
-Search each foundation's official project list:
-
-| Foundation | Search Query |
-|-----------|-------------|
-| Apache Software Foundation | `site:projects.apache.org list` |
-| CNCF | `CNCF projects landscape graduated incubating sandbox` |
-| Linux Foundation | `Linux Foundation projects list` |
-| LF AI & Data | `LF AI Data Foundation projects` |
-| Eclipse Foundation | `Eclipse Foundation projects list` |
-| OpenJS Foundation | `OpenJS Foundation projects list` |
-| OpenInfra Foundation | `OpenInfra Foundation projects` |
-| Python Software Foundation | `Python Software Foundation projects` |
-| Rust Foundation | `Rust Foundation members projects` |
-| NumFOCUS | `NumFOCUS sponsored projects list` |
-| GNOME Foundation | `GNOME Foundation projects` |
-| Mozilla Foundation | `Mozilla Foundation projects` |
-| Blender Foundation | `Blender Foundation projects` |
-| OpenCV Foundation | `OpenCV Foundation projects` |
-
-For each foundation, record in the cache:
-```json
-{
-  "Foundation Name": {
-    "projects": ["owner/repo", "owner/repo2", ...],
-    "evidence": "source URL where project list was found"
-  }
-}
+```bash
+python3 scripts/build_foundation_cache.py -o output/.cache/foundation_projects.json --summary
 ```
 
-Save cache to `output/.cache/foundation_projects.json`.
+The script fetches from:
+- **Apache**: `projects.apache.org/projects.json` (official JSON API)
+- **CNCF**: `landscape.cncf.io/api/items` (Landscape API)
+- **Eclipse**: `projects.eclipse.org/api/projects` (Eclipse API)
+- **Others**: Curated static lists from official sources (LF, NumFOCUS, OpenJS, PyTorch Foundation, etc.)
+
+To merge new projects with an existing cache (preserving LLM-discovered entries):
+
+```bash
+python3 scripts/build_foundation_cache.py --merge -o output/.cache/foundation_projects.json --summary
+```
 
 ### Step 2: Run the matching script
 
@@ -72,9 +57,9 @@ For repos still marked `unknown`:
    - `evidence` — actual URLs and facts from search
    - `confidence` — S/A/B/C
 
-**IMPORTANT**: If LLM discovers a previously unknown large foundation with many projects:
+**IMPORTANT**: If LLM discovers a previously unknown foundation with projects:
 1. Add the foundation and its projects to `output/.cache/foundation_projects.json`
-2. Add the org mapping to `scripts/trace_foundations.py`'s `ORG_FOUNDATION_MAP`
+2. Consider adding the org mapping to `scripts/trace_foundations.py`'s `ORG_FOUNDATION_MAP`
 3. Re-run the script to batch-match remaining repos
 
 ### Step 4: Present to user

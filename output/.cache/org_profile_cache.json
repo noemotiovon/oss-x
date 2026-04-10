@@ -1,0 +1,1718 @@
+{
+ "3dem": {
+  "company": null,
+  "evidence": null
+ },
+ "3fs": {
+  "company": null,
+  "evidence": null
+ },
+ "a2aproject": {
+  "company": null,
+  "evidence": null
+ },
+ "abinit": {
+  "company": null,
+  "evidence": null
+ },
+ "abyzovlab": {
+  "company": null,
+  "evidence": null
+ },
+ "acassen": {
+  "company": null,
+  "evidence": null
+ },
+ "agent-network-protocol": {
+  "company": null,
+  "evidence": null
+ },
+ "agordon": {
+  "company": null,
+  "evidence": null
+ },
+ "aidenlab": {
+  "company": null,
+  "evidence": null
+ },
+ "aigw-project": {
+  "company": null,
+  "evidence": null
+ },
+ "akalikong": {
+  "company": null,
+  "evidence": null
+ },
+ "akopytov": {
+  "company": null,
+  "evidence": null
+ },
+ "alexdobin": {
+  "company": null,
+  "evidence": null
+ },
+ "alluxio": {
+  "company": null,
+  "evidence": null
+ },
+ "ampl": {
+  "company": null,
+  "evidence": null
+ },
+ "android": {
+  "company": null,
+  "evidence": null
+ },
+ "ansible": {
+  "company": null,
+  "evidence": null
+ },
+ "aomediacodec": {
+  "company": null,
+  "evidence": null
+ },
+ "apache": {
+  "company": null,
+  "evidence": null
+ },
+ "apptainer": {
+  "company": null,
+  "evidence": null
+ },
+ "arq5x": {
+  "company": null,
+  "evidence": null
+ },
+ "automatic1111": {
+  "company": null,
+  "evidence": null
+ },
+ "automattic": {
+  "company": null,
+  "evidence": null
+ },
+ "axboe": {
+  "company": null,
+  "evidence": null
+ },
+ "axolotl-ai-cloud": {
+  "company": null,
+  "evidence": null
+ },
+ "bbuchfink": {
+  "company": null,
+  "evidence": null
+ },
+ "bcgsc": {
+  "company": null,
+  "evidence": null
+ },
+ "beast-dev": {
+  "company": null,
+  "evidence": null
+ },
+ "benlangmead": {
+  "company": null,
+  "evidence": null
+ },
+ "benson-genomics-lab": {
+  "company": null,
+  "evidence": null
+ },
+ "biobakery": {
+  "company": null,
+  "evidence": null
+ },
+ "bioconda": {
+  "company": null,
+  "evidence": null
+ },
+ "bioconductor": {
+  "company": null,
+  "evidence": null
+ },
+ "biod": {
+  "company": null,
+  "evidence": null
+ },
+ "bioinformatics-centre": {
+  "company": null,
+  "evidence": null
+ },
+ "bitsandbytes-foundation": {
+  "company": null,
+  "evidence": null
+ },
+ "bminor": {
+  "company": null,
+  "evidence": null
+ },
+ "boostorg": {
+  "company": null,
+  "evidence": null
+ },
+ "broadinstitute": {
+  "company": null,
+  "evidence": null
+ },
+ "brpc": {
+  "company": null,
+  "evidence": null
+ },
+ "bvlc": {
+  "company": null,
+  "evidence": null
+ },
+ "bytedance-seed": {
+  "company": "字节跳动",
+  "evidence": "GitHub org blog域名: https://seed.bytedance.com/ → 字节跳动"
+ },
+ "ccp5uk": {
+  "company": null,
+  "evidence": null
+ },
+ "ccsb-scripps": {
+  "company": null,
+  "evidence": null
+ },
+ "ceph": {
+  "company": null,
+  "evidence": null
+ },
+ "chaste": {
+  "company": null,
+  "evidence": null
+ },
+ "chrchang": {
+  "company": null,
+  "evidence": null
+ },
+ "chrislusf": {
+  "company": null,
+  "evidence": null
+ },
+ "chromium": {
+  "company": null,
+  "evidence": null
+ },
+ "cisco": {
+  "company": null,
+  "evidence": null
+ },
+ "cloudwego": {
+  "company": null,
+  "evidence": null
+ },
+ "clusterlabs": {
+  "company": null,
+  "evidence": null
+ },
+ "coddec": {
+  "company": null,
+  "evidence": null
+ },
+ "code-saturne": {
+  "company": null,
+  "evidence": null
+ },
+ "coinbase": {
+  "company": null,
+  "evidence": null
+ },
+ "cole-trapnell-lab": {
+  "company": null,
+  "evidence": null
+ },
+ "combine-lab": {
+  "company": null,
+  "evidence": null
+ },
+ "comfyanonymous": {
+  "company": null,
+  "evidence": null
+ },
+ "comparativegenomicstoolkit": {
+  "company": null,
+  "evidence": null
+ },
+ "connor-lab": {
+  "company": null,
+  "evidence": null
+ },
+ "containerd": {
+  "company": null,
+  "evidence": null
+ },
+ "copasi": {
+  "company": null,
+  "evidence": null
+ },
+ "coredns": {
+  "company": null,
+  "evidence": null
+ },
+ "coreos": {
+  "company": null,
+  "evidence": null
+ },
+ "coze-dev": {
+  "company": null,
+  "evidence": null
+ },
+ "cp2k": {
+  "company": null,
+  "evidence": null
+ },
+ "cpmd-code": {
+  "company": null,
+  "evidence": null
+ },
+ "crow-misia": {
+  "company": null,
+  "evidence": null
+ },
+ "cryoem": {
+  "company": null,
+  "evidence": null
+ },
+ "csdms": {
+  "company": null,
+  "evidence": null
+ },
+ "cubefs": {
+  "company": null,
+  "evidence": null
+ },
+ "curl": {
+  "company": null,
+  "evidence": null
+ },
+ "daehwankimlab": {
+  "company": null,
+  "evidence": null
+ },
+ "daos-stack": {
+  "company": null,
+  "evidence": null
+ },
+ "datajuicer": {
+  "company": null,
+  "evidence": null
+ },
+ "dauparas": {
+  "company": null,
+  "evidence": null
+ },
+ "davegamble": {
+  "company": null,
+  "evidence": null
+ },
+ "ddarriba": {
+  "company": null,
+  "evidence": null
+ },
+ "dealii": {
+  "company": null,
+  "evidence": null
+ },
+ "decodegenetics": {
+  "company": null,
+  "evidence": null
+ },
+ "deepmodeling": {
+  "company": null,
+  "evidence": null
+ },
+ "deepspeedai": {
+  "company": null,
+  "evidence": null
+ },
+ "deeptools": {
+  "company": null,
+  "evidence": null
+ },
+ "delimitrou": {
+  "company": null,
+  "evidence": null
+ },
+ "derrickwood": {
+  "company": null,
+  "evidence": null
+ },
+ "deweylab": {
+  "company": null,
+  "evidence": null
+ },
+ "dfam-consortium": {
+  "company": null,
+  "evidence": null
+ },
+ "distrotech": {
+  "company": null,
+  "evidence": null
+ },
+ "django": {
+  "company": null,
+  "evidence": null
+ },
+ "dmlc": {
+  "company": null,
+  "evidence": null
+ },
+ "dpdk": {
+  "company": null,
+  "evidence": null
+ },
+ "dreichlab": {
+  "company": null,
+  "evidence": null
+ },
+ "dzerbino": {
+  "company": null,
+  "evidence": null
+ },
+ "e2b-dev": {
+  "company": null,
+  "evidence": null
+ },
+ "ebi-pf-team": {
+  "company": null,
+  "evidence": null
+ },
+ "ebylaska": {
+  "company": null,
+  "evidence": null
+ },
+ "eclipse": {
+  "company": null,
+  "evidence": null
+ },
+ "eclipse-ee4j": {
+  "company": null,
+  "evidence": null
+ },
+ "ecmwf": {
+  "company": null,
+  "evidence": null
+ },
+ "eddyrivaslab": {
+  "company": null,
+  "evidence": null
+ },
+ "efremidze": {
+  "company": null,
+  "evidence": null
+ },
+ "eigenteam": {
+  "company": null,
+  "evidence": null
+ },
+ "ekg": {
+  "company": null,
+  "evidence": null
+ },
+ "eleutherai": {
+  "company": null,
+  "evidence": null
+ },
+ "elmercsc": {
+  "company": null,
+  "evidence": null
+ },
+ "ensembl": {
+  "company": null,
+  "evidence": null
+ },
+ "envoyproxy": {
+  "company": null,
+  "evidence": null
+ },
+ "erlang": {
+  "company": null,
+  "evidence": null
+ },
+ "escomp": {
+  "company": null,
+  "evidence": null
+ },
+ "esnet": {
+  "company": null,
+  "evidence": null
+ },
+ "espressomd": {
+  "company": null,
+  "evidence": null
+ },
+ "est31": {
+  "company": null,
+  "evidence": null
+ },
+ "etcd-io": {
+  "company": null,
+  "evidence": null
+ },
+ "eventual-inc": {
+  "company": null,
+  "evidence": null
+ },
+ "ewels": {
+  "company": null,
+  "evidence": null
+ },
+ "ezlippi": {
+  "company": null,
+  "evidence": null
+ },
+ "falconry": {
+  "company": null,
+  "evidence": null
+ },
+ "fastcgi-archives": {
+  "company": null,
+  "evidence": null
+ },
+ "felixkrueger": {
+  "company": null,
+  "evidence": null
+ },
+ "fenderglass": {
+  "company": null,
+  "evidence": null
+ },
+ "ffmpeg": {
+  "company": null,
+  "evidence": null
+ },
+ "fftw": {
+  "company": null,
+  "evidence": null
+ },
+ "firemodels": {
+  "company": null,
+  "evidence": null
+ },
+ "fla-org": {
+  "company": null,
+  "evidence": null
+ },
+ "flagos-ai": {
+  "company": null,
+  "evidence": null
+ },
+ "fluid-cloudnative": {
+  "company": null,
+  "evidence": null
+ },
+ "fmtlib": {
+  "company": null,
+  "evidence": null
+ },
+ "foxtran": {
+  "company": null,
+  "evidence": null
+ },
+ "fritzsedlazeck": {
+  "company": null,
+  "evidence": null
+ },
+ "fvcom-github": {
+  "company": null,
+  "evidence": null
+ },
+ "g2p": {
+  "company": null,
+  "evidence": null
+ },
+ "gadget-framework": {
+  "company": null,
+  "evidence": null
+ },
+ "gaius-augustus": {
+  "company": null,
+  "evidence": null
+ },
+ "gcc-mirror": {
+  "company": null,
+  "evidence": null
+ },
+ "geant4": {
+  "company": null,
+  "evidence": null
+ },
+ "genetics-statistics": {
+  "company": null,
+  "evidence": null
+ },
+ "ggerganov": {
+  "company": null,
+  "evidence": null
+ },
+ "ggml-org": {
+  "company": null,
+  "evidence": null
+ },
+ "giampaolo": {
+  "company": null,
+  "evidence": null
+ },
+ "git": {
+  "company": null,
+  "evidence": null
+ },
+ "gluster": {
+  "company": null,
+  "evidence": null
+ },
+ "gmarcais": {
+  "company": null,
+  "evidence": null
+ },
+ "gnome": {
+  "company": null,
+  "evidence": null
+ },
+ "goharbor": {
+  "company": null,
+  "evidence": null
+ },
+ "golang": {
+  "company": null,
+  "evidence": null
+ },
+ "google-agentic-commerce": {
+  "company": null,
+  "evidence": null
+ },
+ "gperftools": {
+  "company": null,
+  "evidence": null
+ },
+ "gpustack": {
+  "company": null,
+  "evidence": null
+ },
+ "gradle": {
+  "company": null,
+  "evidence": null
+ },
+ "greduan": {
+  "company": null,
+  "evidence": null
+ },
+ "gregoryfaust": {
+  "company": null,
+  "evidence": null
+ },
+ "gromacs": {
+  "company": null,
+  "evidence": null
+ },
+ "grpc": {
+  "company": null,
+  "evidence": null
+ },
+ "gulpjs": {
+  "company": null,
+  "evidence": null
+ },
+ "haproxy": {
+  "company": null,
+  "evidence": null
+ },
+ "hewlettpackard": {
+  "company": null,
+  "evidence": null
+ },
+ "hiyouga": {
+  "company": null,
+  "evidence": null
+ },
+ "horovod": {
+  "company": null,
+  "evidence": null
+ },
+ "hql287": {
+  "company": null,
+  "evidence": null
+ },
+ "hyattpd": {
+  "company": null,
+  "evidence": null
+ },
+ "hycom": {
+  "company": null,
+  "evidence": null
+ },
+ "hyperrealm": {
+  "company": null,
+  "evidence": null
+ },
+ "icebert": {
+  "company": null,
+  "evidence": null
+ },
+ "idaholab": {
+  "company": null,
+  "evidence": null
+ },
+ "iem-projects": {
+  "company": null,
+  "evidence": null
+ },
+ "inab": {
+  "company": null,
+  "evidence": null
+ },
+ "infphilo": {
+  "company": null,
+  "evidence": null
+ },
+ "insomniacslk": {
+  "company": null,
+  "evidence": null
+ },
+ "internlm": {
+  "company": null,
+  "evidence": null
+ },
+ "istio": {
+  "company": null,
+  "evidence": null
+ },
+ "j-m-adams": {
+  "company": null,
+  "evidence": null
+ },
+ "jax-ml": {
+  "company": null,
+  "evidence": null
+ },
+ "jeffersonlab": {
+  "company": null,
+  "evidence": null
+ },
+ "jemalloc": {
+  "company": null,
+  "evidence": null
+ },
+ "jenkinsci": {
+  "company": null,
+  "evidence": null
+ },
+ "jharno": {
+  "company": null,
+  "evidence": null
+ },
+ "jlsteenwyk": {
+  "company": null,
+  "evidence": null
+ },
+ "joedog": {
+  "company": null,
+  "evidence": null
+ },
+ "juicefs": {
+  "company": null,
+  "evidence": null
+ },
+ "junit-team": {
+  "company": null,
+  "evidence": null
+ },
+ "k8snetworkplumbingwg": {
+  "company": null,
+  "evidence": null
+ },
+ "karypislab": {
+  "company": null,
+  "evidence": null
+ },
+ "kata-containers": {
+  "company": null,
+  "evidence": null
+ },
+ "kdlucas": {
+  "company": null,
+  "evidence": null
+ },
+ "kitware": {
+  "company": null,
+  "evidence": null
+ },
+ "klauspost": {
+  "company": null,
+  "evidence": null
+ },
+ "kokkos": {
+  "company": null,
+  "evidence": null
+ },
+ "kong": {
+  "company": null,
+  "evidence": null
+ },
+ "kserve": {
+  "company": null,
+  "evidence": null
+ },
+ "kubeflow": {
+  "company": null,
+  "evidence": null
+ },
+ "kubernetes": {
+  "company": null,
+  "evidence": null
+ },
+ "kupferlauncher": {
+  "company": null,
+  "evidence": null
+ },
+ "kvcache-ai": {
+  "company": null,
+  "evidence": null
+ },
+ "lammps": {
+  "company": null,
+  "evidence": null
+ },
+ "lancedb": {
+  "company": null,
+  "evidence": null
+ },
+ "langgenius": {
+  "company": null,
+  "evidence": null
+ },
+ "lastz": {
+  "company": null,
+  "evidence": null
+ },
+ "latticeqcd": {
+  "company": null,
+  "evidence": null
+ },
+ "lbcb-sci": {
+  "company": null,
+  "evidence": null
+ },
+ "leethomason": {
+  "company": null,
+  "evidence": null
+ },
+ "lh3": {
+  "company": null,
+  "evidence": null
+ },
+ "libevent": {
+  "company": null,
+  "evidence": null
+ },
+ "libexpat": {
+  "company": null,
+  "evidence": null
+ },
+ "libgeos": {
+  "company": null,
+  "evidence": null
+ },
+ "libjpeg-turbo": {
+  "company": null,
+  "evidence": null
+ },
+ "libvirt": {
+  "company": "GitLab",
+  "evidence": "GitHub org blog域名: https://gitlab.com/libvirt/ → GitLab"
+ },
+ "linbit": {
+  "company": null,
+  "evidence": null
+ },
+ "lindenb": {
+  "company": null,
+  "evidence": null
+ },
+ "linux-rdma": {
+  "company": null,
+  "evidence": null
+ },
+ "linuxmint": {
+  "company": null,
+  "evidence": null
+ },
+ "lizardfs": {
+  "company": null,
+  "evidence": null
+ },
+ "llm-d": {
+  "company": null,
+  "evidence": null
+ },
+ "llnl": {
+  "company": null,
+  "evidence": null
+ },
+ "llvm": {
+  "company": null,
+  "evidence": null
+ },
+ "lm-sys": {
+  "company": null,
+  "evidence": null
+ },
+ "lmcache": {
+  "company": null,
+  "evidence": null
+ },
+ "loneknightpy": {
+  "company": null,
+  "evidence": null
+ },
+ "lua": {
+  "company": null,
+  "evidence": null
+ },
+ "lz4": {
+  "company": null,
+  "evidence": null
+ },
+ "macs3-project": {
+  "company": null,
+  "evidence": null
+ },
+ "madler": {
+  "company": null,
+  "evidence": null
+ },
+ "mantevo": {
+  "company": null,
+  "evidence": null
+ },
+ "marbl": {
+  "company": null,
+  "evidence": null
+ },
+ "marcelm": {
+  "company": null,
+  "evidence": null
+ },
+ "mariadb": {
+  "company": null,
+  "evidence": null
+ },
+ "memcached": {
+  "company": null,
+  "evidence": null
+ },
+ "mesa3d": {
+  "company": null,
+  "evidence": null
+ },
+ "meta-pytorch": {
+  "company": null,
+  "evidence": null
+ },
+ "meteorhacks": {
+  "company": null,
+  "evidence": null
+ },
+ "mfem": {
+  "company": null,
+  "evidence": null
+ },
+ "milc-qcd": {
+  "company": null,
+  "evidence": null
+ },
+ "minio": {
+  "company": null,
+  "evidence": null
+ },
+ "mirror": {
+  "company": null,
+  "evidence": null
+ },
+ "mlfoundations": {
+  "company": null,
+  "evidence": null
+ },
+ "mne-tools": {
+  "company": null,
+  "evidence": null
+ },
+ "modelcontextprotocol": {
+  "company": null,
+  "evidence": null
+ },
+ "modeltc": {
+  "company": null,
+  "evidence": null
+ },
+ "molcas": {
+  "company": null,
+  "evidence": null
+ },
+ "mongodb": {
+  "company": null,
+  "evidence": null
+ },
+ "mooncake-ai": {
+  "company": null,
+  "evidence": null
+ },
+ "moosefs": {
+  "company": null,
+  "evidence": null
+ },
+ "morgannprice": {
+  "company": null,
+  "evidence": null
+ },
+ "mpi4py": {
+  "company": null,
+  "evidence": null
+ },
+ "mrtrix3": {
+  "company": null,
+  "evidence": null
+ },
+ "mummer4": {
+  "company": null,
+  "evidence": null
+ },
+ "myroms": {
+  "company": null,
+  "evidence": null
+ },
+ "mysql": {
+  "company": null,
+  "evidence": null
+ },
+ "nagiosenterprises": {
+  "company": null,
+  "evidence": null
+ },
+ "nanocomp": {
+  "company": null,
+  "evidence": null
+ },
+ "nbcrrolls": {
+  "company": null,
+  "evidence": null
+ },
+ "nbisweden": {
+  "company": null,
+  "evidence": null
+ },
+ "ncar": {
+  "company": null,
+  "evidence": null
+ },
+ "nco": {
+  "company": null,
+  "evidence": null
+ },
+ "ndierckx": {
+  "company": null,
+  "evidence": null
+ },
+ "neo4j": {
+  "company": null,
+  "evidence": null
+ },
+ "netdata": {
+  "company": null,
+  "evidence": null
+ },
+ "netty": {
+  "company": null,
+  "evidence": null
+ },
+ "newpfordelta": {
+  "company": null,
+  "evidence": null
+ },
+ "nextcloud": {
+  "company": null,
+  "evidence": null
+ },
+ "nginx": {
+  "company": null,
+  "evidence": null
+ },
+ "nmslib": {
+  "company": null,
+  "evidence": null
+ },
+ "noaa-emc": {
+  "company": null,
+  "evidence": null
+ },
+ "nodejs": {
+  "company": null,
+  "evidence": null
+ },
+ "ntop": {
+  "company": null,
+  "evidence": null
+ },
+ "numpy": {
+  "company": null,
+  "evidence": null
+ },
+ "nwchemgit": {
+  "company": null,
+  "evidence": null
+ },
+ "o3de": {
+  "company": null,
+  "evidence": null
+ },
+ "obspy": {
+  "company": null,
+  "evidence": null
+ },
+ "oceanbase": {
+  "company": null,
+  "evidence": null
+ },
+ "oisf": {
+  "company": null,
+  "evidence": null
+ },
+ "ollama": {
+  "company": null,
+  "evidence": null
+ },
+ "opea-project": {
+  "company": null,
+  "evidence": null
+ },
+ "open-compass": {
+  "company": null,
+  "evidence": null
+ },
+ "openbabel": {
+  "company": null,
+  "evidence": null
+ },
+ "opencloudos": {
+  "company": null,
+  "evidence": null
+ },
+ "opencurve": {
+  "company": null,
+  "evidence": null
+ },
+ "opencv": {
+  "company": null,
+  "evidence": null
+ },
+ "opengene": {
+  "company": null,
+  "evidence": null
+ },
+ "openhpc": {
+  "company": null,
+  "evidence": null
+ },
+ "openjdk": {
+  "company": null,
+  "evidence": null
+ },
+ "openmopac": {
+  "company": null,
+  "evidence": null
+ },
+ "openrlhf": {
+  "company": null,
+  "evidence": null
+ },
+ "openssl": {
+  "company": null,
+  "evidence": null
+ },
+ "openstack": {
+  "company": null,
+  "evidence": null
+ },
+ "openvelinux": {
+  "company": null,
+  "evidence": null
+ },
+ "openvswitch": {
+  "company": null,
+  "evidence": null
+ },
+ "openxla": {
+  "company": null,
+  "evidence": null
+ },
+ "orientechnologies": {
+  "company": null,
+  "evidence": null
+ },
+ "orocos-toolchain": {
+  "company": null,
+  "evidence": null
+ },
+ "osgeo": {
+  "company": null,
+  "evidence": null
+ },
+ "ovirt": {
+  "company": null,
+  "evidence": null
+ },
+ "pachterlab": {
+  "company": null,
+  "evidence": null
+ },
+ "pandas-dev": {
+  "company": null,
+  "evidence": null
+ },
+ "papenfusslab": {
+  "company": null,
+  "evidence": null
+ },
+ "parafem": {
+  "company": null,
+  "evidence": null
+ },
+ "pcre2project": {
+  "company": null,
+  "evidence": null
+ },
+ "percona": {
+  "company": null,
+  "evidence": null
+ },
+ "perl": {
+  "company": null,
+  "evidence": null
+ },
+ "petsc": {
+  "company": null,
+  "evidence": null
+ },
+ "pezmaster31": {
+  "company": null,
+  "evidence": null
+ },
+ "phonopy": {
+  "company": null,
+  "evidence": null
+ },
+ "php": {
+  "company": null,
+  "evidence": null
+ },
+ "plumed": {
+  "company": null,
+  "evidence": null
+ },
+ "popgenmethods": {
+  "company": null,
+  "evidence": null
+ },
+ "postgres": {
+  "company": null,
+  "evidence": null
+ },
+ "prestodb": {
+  "company": null,
+  "evidence": null
+ },
+ "primer3-org": {
+  "company": null,
+  "evidence": null
+ },
+ "projectcalico": {
+  "company": null,
+  "evidence": null
+ },
+ "prometheus": {
+  "company": null,
+  "evidence": null
+ },
+ "protocolbuffers": {
+  "company": "Google",
+  "evidence": "GitHub org blog域名: https://developers.google.com/protocol-buffers/ → Google"
+ },
+ "psi4": {
+  "company": null,
+  "evidence": null
+ },
+ "psipred": {
+  "company": null,
+  "evidence": null
+ },
+ "pyca": {
+  "company": null,
+  "evidence": null
+ },
+ "pyg-team": {
+  "company": null,
+  "evidence": null
+ },
+ "pysam-developers": {
+  "company": null,
+  "evidence": null
+ },
+ "python": {
+  "company": null,
+  "evidence": null
+ },
+ "pytorch": {
+  "company": null,
+  "evidence": null
+ },
+ "qef": {
+  "company": null,
+  "evidence": null
+ },
+ "qemu": {
+  "company": null,
+  "evidence": null
+ },
+ "qgis": {
+  "company": null,
+  "evidence": null
+ },
+ "qijingzheng": {
+  "company": null,
+  "evidence": null
+ },
+ "qmcpack": {
+  "company": null,
+  "evidence": null
+ },
+ "qnap-dev": {
+  "company": null,
+  "evidence": null
+ },
+ "quanshengwu": {
+  "company": null,
+  "evidence": null
+ },
+ "quantumpackage": {
+  "company": null,
+  "evidence": null
+ },
+ "quartz-scheduler": {
+  "company": null,
+  "evidence": null
+ },
+ "rabbitmq": {
+  "company": null,
+  "evidence": null
+ },
+ "rabitq": {
+  "company": null,
+  "evidence": null
+ },
+ "ralic": {
+  "company": null,
+  "evidence": null
+ },
+ "rambaut": {
+  "company": null,
+  "evidence": null
+ },
+ "ranger": {
+  "company": null,
+  "evidence": null
+ },
+ "rbc-ukqcd": {
+  "company": null,
+  "evidence": null
+ },
+ "rcedgar": {
+  "company": null,
+  "evidence": null
+ },
+ "rdkit": {
+  "company": null,
+  "evidence": null
+ },
+ "redis": {
+  "company": null,
+  "evidence": null
+ },
+ "reference-lapack": {
+  "company": null,
+  "evidence": null
+ },
+ "reference-scalapack": {
+  "company": null,
+  "evidence": null
+ },
+ "root-project": {
+  "company": null,
+  "evidence": null
+ },
+ "rosettacommons": {
+  "company": null,
+  "evidence": null
+ },
+ "rsyslog": {
+  "company": null,
+  "evidence": null
+ },
+ "ruanjue": {
+  "company": null,
+  "evidence": null
+ },
+ "ruby": {
+  "company": null,
+  "evidence": null
+ },
+ "rust-lang": {
+  "company": null,
+  "evidence": null
+ },
+ "samhocevar": {
+  "company": null,
+  "evidence": null
+ },
+ "samtools": {
+  "company": null,
+  "evidence": null
+ },
+ "satijalab": {
+  "company": null,
+  "evidence": null
+ },
+ "scala": {
+  "company": null,
+  "evidence": null
+ },
+ "schedmd": {
+  "company": null,
+  "evidence": null
+ },
+ "scikit-learn": {
+  "company": null,
+  "evidence": null
+ },
+ "scons": {
+  "company": null,
+  "evidence": null
+ },
+ "scverse": {
+  "company": null,
+  "evidence": null
+ },
+ "seissol": {
+  "company": null,
+  "evidence": null
+ },
+ "sgl-project": {
+  "company": null,
+  "evidence": null
+ },
+ "sheepdog": {
+  "company": null,
+  "evidence": null
+ },
+ "shenwei356": {
+  "company": null,
+  "evidence": null
+ },
+ "simd-everywhere": {
+  "company": null,
+  "evidence": null
+ },
+ "simdjson": {
+  "company": null,
+  "evidence": null
+ },
+ "simpleitk": {
+  "company": null,
+  "evidence": null
+ },
+ "slicer": {
+  "company": null,
+  "evidence": null
+ },
+ "smorabit": {
+  "company": null,
+  "evidence": null
+ },
+ "snort3": {
+  "company": null,
+  "evidence": null
+ },
+ "soedinglab": {
+  "company": null,
+  "evidence": null
+ },
+ "soheilpro": {
+  "company": null,
+  "evidence": null
+ },
+ "sonic-net": {
+  "company": null,
+  "evidence": null
+ },
+ "spack": {
+  "company": null,
+  "evidence": null
+ },
+ "spdk": {
+  "company": null,
+  "evidence": null
+ },
+ "specfem": {
+  "company": null,
+  "evidence": null
+ },
+ "sphinx-doc": {
+  "company": null,
+  "evidence": null
+ },
+ "spring-cloud": {
+  "company": null,
+  "evidence": null
+ },
+ "spring-projects": {
+  "company": null,
+  "evidence": null
+ },
+ "sqlite": {
+  "company": null,
+  "evidence": null
+ },
+ "squid-cache": {
+  "company": null,
+  "evidence": null
+ },
+ "starrocks": {
+  "company": null,
+  "evidence": null
+ },
+ "steineggerlab": {
+  "company": null,
+  "evidence": null
+ },
+ "strongswan": {
+  "company": null,
+  "evidence": null
+ },
+ "su2code": {
+  "company": null,
+  "evidence": null
+ },
+ "swagger-api": {
+  "company": null,
+  "evidence": null
+ },
+ "tanghaibao": {
+  "company": null,
+  "evidence": null
+ },
+ "taosdata": {
+  "company": null,
+  "evidence": null
+ },
+ "taskflow": {
+  "company": null,
+  "evidence": null
+ },
+ "tesseract-ocr": {
+  "company": null,
+  "evidence": null
+ },
+ "tianocore": {
+  "company": null,
+  "evidence": null
+ },
+ "tile-ai": {
+  "company": null,
+  "evidence": null
+ },
+ "timolassmann": {
+  "company": null,
+  "evidence": null
+ },
+ "tinkertools": {
+  "company": null,
+  "evidence": null
+ },
+ "tongsuo-project": {
+  "company": null,
+  "evidence": null
+ },
+ "tornadoweb": {
+  "company": null,
+  "evidence": null
+ },
+ "towhee-io": {
+  "company": null,
+  "evidence": null
+ },
+ "treangenlab": {
+  "company": null,
+  "evidence": null
+ },
+ "trinityrnaseq": {
+  "company": null,
+  "evidence": null
+ },
+ "triton-lang": {
+  "company": null,
+  "evidence": null
+ },
+ "ultravideo": {
+  "company": null,
+  "evidence": null
+ },
+ "unbit": {
+  "company": null,
+  "evidence": null
+ },
+ "unidata": {
+  "company": null,
+  "evidence": null
+ },
+ "usadellab": {
+  "company": null,
+  "evidence": null
+ },
+ "usepa": {
+  "company": null,
+  "evidence": null
+ },
+ "varnishcache": {
+  "company": null,
+  "evidence": null
+ },
+ "vaspkit": {
+  "company": null,
+  "evidence": null
+ },
+ "vchitect": {
+  "company": null,
+  "evidence": null
+ },
+ "veg": {
+  "company": null,
+  "evidence": null
+ },
+ "videolan": {
+  "company": null,
+  "evidence": null
+ },
+ "vigsterkr": {
+  "company": null,
+  "evidence": null
+ },
+ "vipshop": {
+  "company": null,
+  "evidence": null
+ },
+ "vllm-project": {
+  "company": null,
+  "evidence": null
+ },
+ "volcengine": {
+  "company": null,
+  "evidence": null
+ },
+ "voutcn": {
+  "company": null,
+  "evidence": null
+ },
+ "vuejs": {
+  "company": null,
+  "evidence": null
+ },
+ "wannier-developers": {
+  "company": null,
+  "evidence": null
+ },
+ "wch": {
+  "company": null,
+  "evidence": null
+ },
+ "wdecoster": {
+  "company": null,
+  "evidence": null
+ },
+ "weathersource": {
+  "company": null,
+  "evidence": null
+ },
+ "webmproject": {
+  "company": null,
+  "evidence": null
+ },
+ "weizhongli": {
+  "company": null,
+  "evidence": null
+ },
+ "wenet-e2e": {
+  "company": null,
+  "evidence": null
+ },
+ "wg": {
+  "company": null,
+  "evidence": null
+ },
+ "wildfly": {
+  "company": null,
+  "evidence": null
+ },
+ "wireshark": {
+  "company": null,
+  "evidence": null
+ },
+ "wrf-model": {
+  "company": null,
+  "evidence": null
+ },
+ "wyp1125": {
+  "company": null,
+  "evidence": null
+ },
+ "xapple": {
+  "company": null,
+  "evidence": null
+ },
+ "xdit-project": {
+  "company": null,
+  "evidence": null
+ },
+ "xianyi": {
+  "company": null,
+  "evidence": null
+ },
+ "xinglab": {
+  "company": null,
+  "evidence": null
+ },
+ "xiph": {
+  "company": null,
+  "evidence": null
+ },
+ "xmao": {
+  "company": null,
+  "evidence": null
+ },
+ "yaooqinn": {
+  "company": null,
+  "evidence": null
+ },
+ "zeromq": {
+  "company": null,
+  "evidence": null
+ },
+ "zjwang11": {
+  "company": null,
+  "evidence": null
+ },
+ "zlib-ng": {
+  "company": null,
+  "evidence": null
+ }
+}

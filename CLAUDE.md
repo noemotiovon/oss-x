@@ -24,20 +24,21 @@ data.csv → ① /classify → ② /classify-unknown → ③ /split-merge
 | Step | Skill | Script | Input → Output |
 |------|-------|--------|----------------|
 | ① 输入分类 | `/classify` | `scripts/classify.py` | `data.csv` → `classified.csv` |
-| ② Unknown 分类 | `/classify-unknown` | — | `classified.csv` → `unknown.csv` |
+| ② Unknown 分类 | `/classify-unknown` | `scripts/classify_unknown.py` | `classified.csv` → `unknown.csv` |
 | ③ 拆分合并 | `/split-merge` | `scripts/split_merge.py` | `classified.csv` + `unknown.csv` → `repo.csv`, `organization.csv` |
 | ④ Repo 溯源组织 | `/resolve-orgs` | `scripts/resolve_orgs.py` | `repo.csv` → `repo_known_org.csv`, `repo_unknown_org.csv` |
-| ⑤ Unknown Org 补全 | `/resolve-unknown-orgs` | — | `repo_unknown_org.csv` → `repo_unknown_org.csv`(更新) |
+| ⑤ Unknown Org 补全 | `/resolve-unknown-orgs` | `scripts/resolve_unknown_orgs.py` | `repo_unknown_org.csv` → `repo_unknown_org.csv`(更新) |
 | ⑥ 组织合并去重 | `/merge-orgs` | `scripts/merge_orgs.py` | `organization.csv` + `repo_known_org.csv` + `repo_unknown_org.csv` → `org_exp.csv` |
 | ⑦ 组织有效性验证 | `/validate-orgs` | `scripts/validate_orgs.py` | `org_exp.csv` → `org_exp_val.csv` |
 | ⑧ Repo 扩展 | `/expand-repos` | `scripts/expand_repos.py` | `repo.csv` + `organization.csv` → `repo_exp.csv` |
-| ⑨ 溯源基金会 | `/trace-foundations` | `scripts/trace_foundations.py` | `repo_exp.csv` → `foundation.csv` |
-| ⑩ 溯源公司 | `/trace-companies` | — | `repo_exp.csv` → `company.csv` |
+| ⑨ 溯源基金会 | `/trace-foundations` | `scripts/build_foundation_cache.py` + `scripts/trace_foundations.py` | `repo_exp.csv` → `foundation.csv` |
+| ⑩ 溯源公司 | `/trace-companies` | `scripts/trace_companies.py` | `repo_exp.csv` → `company.csv` |
 | ⑪ 汇总合并 | `/merge-results` | `scripts/merge_results.py` | `repo_exp.csv` + `foundation.csv` + `company.csv` → `result.csv` |
 
 ## Key Design Principles
 
 - **Single responsibility**: Each step does one thing with clear inputs and outputs
+- **Script first, LLM last**: Each step uses deterministic scripts (API queries, heuristics, static mappings) to resolve as much as possible; LLM Web Search is only used for remaining unknowns
 - **Real data only**: LLM uses Web Search for real information, no guessing
 - **Confidence tracking**: LLM judgments include S/A/B/C confidence with evidence
 - **Human in the loop**: All LLM outputs require human verification

@@ -1,12 +1,12 @@
 ---
 name: resolve-unknown-orgs
-description: Use LLM Web Search to find organization info for repos without known GitHub org
+description: Resolve unknown org affiliations using script (GitHub API fork/org lookup) and LLM Web Search for remaining
 user-invocable: true
 ---
 
 # Unknown Org Resolution Skill (Step ⑤)
 
-For repos in `repo_unknown_org.csv` that have no known GitHub organization, use Web Search to find their organization affiliation.
+For repos in `repo_unknown_org.csv` that have no known GitHub organization, find their org affiliation using automated methods first, then LLM for remaining.
 
 ## Input
 
@@ -14,55 +14,53 @@ For repos in `repo_unknown_org.csv` that have no known GitHub organization, use 
 
 ## Procedure
 
-### Step 1: Read unknown org repos
+### Step 1: Run the resolution script
 
-Read `output/repo_unknown_org.csv`. If empty, inform user and skip.
+```bash
+python3 scripts/resolve_unknown_orgs.py output/repo_unknown_org.csv \
+    -o output/repo_unknown_org.csv --summary
+```
 
-### Step 2: LLM Web Search for each repo
+The script applies 3 layers for `user` type owners:
 
-For each repo, **you MUST use Web Search** to find its parent organization. Do NOT guess.
+1. **Layer 1 — Fork source**: Check if any repo is a fork → use source repo's org
+2. **Layer 2 — User org membership**: Query `GET /users/{user}/orgs` → if user belongs to exactly 1 org, use it
+3. **Layer 3 — Repo migration**: Check if repo has been transferred to a different org
+
+### Step 2: Review script results
+
+Check the summary:
+- How many resolved by script?
+- How many remain unknown?
+
+If all resolved, skip to Step 4.
+
+### Step 3: LLM Web Search for remaining unknowns
+
+For repos still without org affiliation, **use Web Search**. Do NOT guess.
 
 #### For each repo:
 
-1. **Web search** for `"{project_name}" organization` or `"{project_name}" maintained by` or `"{project_name}" developed by`
-2. **Determine the parent organization**:
-   - Who maintains this project?
-   - Is it part of a larger organization or community?
-   - What GitHub org (if any) hosts related projects?
+1. **Web search** for `"{project_name}" organization` or `"{project_name}" maintained by`
+2. **Determine the parent organization**
 3. **Record**:
    - `org_name` — organization name
    - `org_url` — organization URL (GitHub preferred)
-   - `evidence` — actual facts and URLs found via search
-   - `confidence` — S/A/B/C rating
+   - `evidence` — actual facts and URLs
+   - `confidence` — S/A/B/C
 
-#### Confidence levels:
+### Step 4: Present to user
 
-- **S** — Official source confirms org (e.g., project README says "maintained by X")
-- **A** — Multiple reliable sources agree on the org
-- **B** — Partial evidence, reasonable inference
-- **C** — Weak evidence, best guess
+Show results in a table for review. The user may correct org assignments.
 
-### Step 3: Present to user
-
-Show results in a table for each repo:
-- Repo name and URL
-- Suggested org name and URL
-- Evidence summary
-- Confidence level
-
-The user will review and may correct org assignments.
-
-### Step 4: Save results
-
-After user confirmation, update `output/repo_unknown_org.csv` with the new columns:
-`org_name, org_url, evidence, confidence`
+After user confirmation, save updated `output/repo_unknown_org.csv`.
 
 ### Step 5: Output summary
 
 Print:
 - Total repos processed
+- Resolved by script vs LLM
 - Count by confidence level
-- Any entries the user corrected
 
 ### Next step
 
