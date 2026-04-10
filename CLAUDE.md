@@ -13,7 +13,7 @@ output/         — Pipeline output files (CSV)
 ## Pipeline Overview
 
 ```
-data.csv → ① /classify → ② /classify-unknown → ③ /split-merge
+data.csv → ⓪ /clean → ⓪-b /fix-urls → ① /classify → ② /classify-unknown → ③ /split-merge
          → ④ /resolve-orgs → ⑤ /resolve-unknown-orgs → ⑥ /merge-orgs
          → ⑦ /validate-orgs → ⑧ /expand-repos
          → ⑨ /trace-foundations  (parallel)
@@ -23,6 +23,8 @@ data.csv → ① /classify → ② /classify-unknown → ③ /split-merge
 
 | Step | Skill | Script | Input → Output |
 |------|-------|--------|----------------|
+| ⓪ 数据清洗 | `/clean` | `scripts/clean.py` | `data.csv` → `cleaned.csv` |
+| ⓪-b URL修复 | `/fix-urls` | `scripts/fix_urls.py` | `cleaned.csv` → `fix_urls.csv` → 更新 `cleaned.csv` |
 | ① 输入分类 | `/classify` | `scripts/classify.py` | `data.csv` → `classified.csv` |
 | ② Unknown 分类 | `/classify-unknown` | `scripts/classify_unknown.py` | `classified.csv` → `unknown.csv` |
 | ③ 拆分合并 | `/split-merge` | `scripts/split_merge.py` | `classified.csv` + `unknown.csv` → `repo.csv`, `organization.csv` |

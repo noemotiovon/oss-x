@@ -1,0 +1,151 @@
+{
+ "search:kubernetes dra": null,
+ "mirror:kubernetes/dynamic-resource-allocation": {
+  "resolved_url": "",
+  "evidence": "Not a mirror: description='None', homepage=''",
+  "confidence": "S",
+  "resolved_by": "layer4_not_mirror"
+ },
+ "search:x402": {
+  "resolved_url": "https://github.com/x402-foundation/x402",
+  "evidence": "GitHub Search: top match 'x402-foundation/x402' (5922 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:x265": null,
+ "mirror:videolan/x265": {
+  "resolved_url": "Mirror confirmed, upstream unknown",
+  "evidence": "description='https://bitbucket.org/multicoreware/x265/ git mirror', mirror_url='', homepage=''",
+  "confidence": "B",
+  "resolved_by": "layer4_mirror"
+ },
+ "search:impala": {
+  "resolved_url": "https://github.com/pythops/impala",
+  "evidence": "GitHub Search: top match 'pythops/impala' (2541 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:oozie": {
+  "resolved_url": "https://github.com/apache/oozie",
+  "evidence": "GitHub Search: top match 'apache/oozie' (728 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:pig": {
+  "resolved_url": "https://github.com/sqshq/piggymetrics",
+  "evidence": "GitHub Search: close match 'sqshq/piggymetrics' (13892 stars)",
+  "confidence": "B",
+  "resolved_by": "layer2_search"
+ },
+ "search:kudu": {
+  "resolved_url": "https://github.com/projectkudu/kudu",
+  "evidence": "GitHub Search: top match 'projectkudu/kudu' (3146 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:seaweedfs": {
+  "resolved_url": "https://github.com/seaweedfs/seaweedfs",
+  "evidence": "GitHub Search: top match 'seaweedfs/seaweedfs' (31433 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:openstack": {
+  "resolved_url": "https://github.com/openstack/openstack",
+  "evidence": "GitHub Search: top match 'openstack/openstack' (5884 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:apr-util": {
+  "resolved_url": "https://github.com/apache/apr-util",
+  "evidence": "GitHub Search: top match 'apache/apr-util' (81 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:libxml2": {
+  "resolved_url": "https://github.com/GNOME/libxml2",
+  "evidence": "GitHub Search: top match 'GNOME/libxml2' (730 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:apr": {
+  "resolved_url": "https://github.com/braydie/HowToBeAProgrammer",
+  "evidence": "GitHub Search: close match 'braydie/HowToBeAProgrammer' (16313 stars)",
+  "confidence": "B",
+  "resolved_by": "layer2_search"
+ },
+ "search:quantumespresso": null,
+ "mirror:QEF/q-e": {
+  "resolved_url": "Mirror confirmed, upstream unknown",
+  "evidence": "description='Mirror of the Quantum ESPRESSO repository. Please do not post Issues or pull requests here. Use gitlab.com/QEF/q-e instead.', mirror_url='', homepage=''",
+  "confidence": "B",
+  "resolved_by": "layer4_mirror"
+ },
+ "search:allhic": {
+  "resolved_url": "https://github.com/tangerzhang/ALLHiC",
+  "evidence": "GitHub Search: top match 'tangerzhang/ALLHiC' (179 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:softsv": null,
+ "search:glean": {
+  "resolved_url": "https://github.com/wix-incubator/vscode-glean",
+  "evidence": "GitHub Search: close match 'wix-incubator/vscode-glean' (1467 stars)",
+  "confidence": "B",
+  "resolved_by": "layer2_search"
+ },
+ "search:svseq2": null,
+ "search:meraculous": null,
+ "search:geneselectmmd": null,
+ "bioc:geneselectmmd": {
+  "resolved_url": "https://github.com/bioc/GeneSelectMMD",
+  "evidence": "Bioconductor: GitHub repo 'bioc/GeneSelectMMD' matches package 'GeneSelectMMD'",
+  "confidence": "A",
+  "resolved_by": "layer3_bioconductor"
+ },
+ "search:maigespack": null,
+ "bioc:maigespack": {
+  "resolved_url": "https://github.com/bioc/maigesPack",
+  "evidence": "Bioconductor: GitHub repo 'bioc/maigesPack' matches package 'maigesPack'",
+  "confidence": "A",
+  "resolved_by": "layer3_bioconductor"
+ },
+ "search:fastseg": {
+  "resolved_url": "https://github.com/ekzhang/fastseg",
+  "evidence": "GitHub Search: top match 'ekzhang/fastseg' (360 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:libwebp": {
+  "resolved_url": "https://github.com/webmproject/libwebp",
+  "evidence": "GitHub Search: top match 'webmproject/libwebp' (2301 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:newpfordelta": null,
+ "search:roms": null,
+ "mirror:myroms/roms": {
+  "resolved_url": "",
+  "evidence": "Not a mirror: description='Regional Ocean Modeling System (ROMS)', homepage='https://github.com/myroms/roms/wiki'",
+  "confidence": "S",
+  "resolved_by": "layer4_not_mirror"
+ },
+ "search:tophat2": null,
+ "mirror:infphilo/tophat": {
+  "resolved_url": "https://github.com/DaehwanKimLab/tophat",
+  "evidence": "GitHub fork of DaehwanKimLab/tophat",
+  "confidence": "S",
+  "resolved_by": "layer4_mirror"
+ },
+ "search:openmolcas": {
+  "resolved_url": "https://github.com/Molcas/OpenMolcas",
+  "evidence": "GitHub Search: top match 'Molcas/OpenMolcas' (73 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ },
+ "search:petsc": {
+  "resolved_url": "https://github.com/petsc/petsc",
+  "evidence": "GitHub Search: top match 'petsc/petsc' (510 stars)",
+  "confidence": "A",
+  "resolved_by": "layer2_search"
+ }
+}
