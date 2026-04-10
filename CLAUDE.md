@@ -18,6 +18,7 @@ data.csv → ① /classify → ② /classify-unknown → ③ /split-merge
          → ⑦ /validate-orgs → ⑧ /expand-repos
          → ⑨ /trace-foundations  (parallel)
          → ⑩ /trace-companies   (parallel)
+         → ⑪ /merge-results
 ```
 
 | Step | Skill | Script | Input → Output |
@@ -32,6 +33,7 @@ data.csv → ① /classify → ② /classify-unknown → ③ /split-merge
 | ⑧ Repo 扩展 | `/expand-repos` | `scripts/expand_repos.py` | `repo.csv` + `organization.csv` → `repo_exp.csv` |
 | ⑨ 溯源基金会 | `/trace-foundations` | `scripts/trace_foundations.py` | `repo_exp.csv` → `foundation.csv` |
 | ⑩ 溯源公司 | `/trace-companies` | — | `repo_exp.csv` → `company.csv` |
+| ⑪ 汇总合并 | `/merge-results` | `scripts/merge_results.py` | `repo_exp.csv` + `foundation.csv` + `company.csv` → `result.csv` |
 
 ## Key Design Principles
 

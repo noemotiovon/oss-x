@@ -90,7 +90,14 @@ data.csv
 │ ⑨ 溯源基金会      │  │ ⑩ 溯源公司       │
 │  (LLM + 人工)    │  │  (LLM + 人工)    │
 │  → foundation.csv│  │  → company.csv   │
-└─────────────────┘  └─────────────────┘
+└────────┬────────┘  └────────┬────────┘
+         │                    │
+         └─────────┬──────────┘
+                   ▼
+         ┌─────────────────────┐
+         │ ⑪ 汇总合并（脚本）     │
+         │   → result.csv       │
+         └─────────────────────┘
 ```
 
 ---
@@ -391,6 +398,7 @@ data.csv
 | ⑧ Repo 扩展 | `/expand-repos` | `scripts/expand_repos.py` | GitHub API + LLM + 人工 | 待实现 |
 | ⑨ 溯源基金会 | `/trace-foundations` | `scripts/trace_foundations.py` | 脚本 + LLM + 人工 | 待实现 |
 | ⑩ 溯源公司 | `/trace-companies` | — | LLM + 人工 | 待实现 |
+| ⑪ 汇总合并 | `/merge-results` | `scripts/merge_results.py` | 脚本 | 待实现 |
 
 ---
 

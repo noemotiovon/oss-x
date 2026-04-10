@@ -70,6 +70,12 @@ data.csv
 ⑨ /trace-foundations      ⑩ /trace-companies
   ► foundation.csv          ► company.csv
   (LLM + human)             (LLM + human)
+  │                         │
+  └──────────┬──────────────┘
+             ▼
+          ⑪ /merge-results
+            ► result.csv
+            (script)
 ```
 
 ### Step ① — Classify (`/classify`)
@@ -181,6 +187,22 @@ Use LLM Web Search to determine company affiliation for each repo.
 
 > Steps ⑨ and ⑩ can run in parallel — they both read from `output/repo_exp.csv`.
 
+### Step ⑪ — Merge Results (`/merge-results`)
+
+Merge `repo_exp.csv`, `foundation.csv`, and `company.csv` into a single summary table.
+
+```bash
+python3 scripts/merge_results.py \
+    output/repo_exp.csv \
+    output/foundation.csv \
+    output/company.csv \
+    -o output/result.csv
+```
+
+Output columns: `页签`, `项目名称`, `repo`, `organization`, `foundation`, `company`
+
+- **Output**: `output/result.csv` — the final deliverable
+
 ## Confidence Levels
 
 All LLM judgments include a confidence rating:
@@ -212,6 +234,9 @@ All LLM judgments include a confidence rating:
 9. `/trace-foundations` — Find foundation affiliations
 10. `/trace-companies` — Find company affiliations
 
+**Phase 5 — Final Merge**
+11. `/merge-results` — Combine into final summary table
+
 ## Project Structure
 
 ```
@@ -224,7 +249,8 @@ All LLM judgments include a confidence rating:
 │   ├── resolve_orgs.py      # Step ④ — Resolve repo orgs
 │   ├── merge_orgs.py        # Step ⑥ — Merge organizations
 │   ├── validate_orgs.py     # Step ⑦ — Validate organizations
-│   └── expand_repos.py      # Step ⑧ — Expand repos
+│   ├── expand_repos.py      # Step ⑧ — Expand repos
+│   └── merge_results.py     # Step ⑪ — Final summary merge
 ├── .claude/skills/
 │   ├── classify/            # Step ①
 │   ├── classify-unknown/    # Step ②
@@ -235,7 +261,8 @@ All LLM judgments include a confidence rating:
 │   ├── validate-orgs/       # Step ⑦
 │   ├── expand-repos/        # Step ⑧
 │   ├── trace-foundations/    # Step ⑨
-│   └── trace-companies/     # Step ⑩
+│   ├── trace-companies/     # Step ⑩
+│   └── merge-results/       # Step ⑪
 └── output/                  # All generated CSV files
 ```
 
