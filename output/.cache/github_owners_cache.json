@@ -5025,5 +5025,124 @@
   "public_repos": 3,
   "url": "https://github.com/SchedMD",
   "source": "github_api"
+ },
+ "verl-project": {
+  "owner_type": "organization",
+  "name": "verl-project",
+  "description": "",
+  "blog": "",
+  "location": ""
+ },
+ "comfy-org": {
+  "owner_type": "organization",
+  "name": "Comfy Org",
+  "description": "",
+  "blog": "https://comfy.org",
+  "location": ""
+ },
+ "x402-foundation": {
+  "owner_type": "organization",
+  "name": "x402 Foundation",
+  "description": "",
+  "blog": "https://x402.org",
+  "location": ""
+ },
+ "open-mpi": {
+  "owner_type": "organization",
+  "name": "Open MPI",
+  "description": "",
+  "blog": "https://www.open-mpi.org",
+  "location": ""
+ },
+ "openmathlib": {
+  "owner_type": "organization",
+  "name": "OpenMathLib",
+  "description": "",
+  "blog": "",
+  "location": ""
+ },
+ "seaweedfs": {
+  "owner_type": "organization",
+  "name": "SeaweedFS",
+  "description": "",
+  "blog": "",
+  "location": "San Francisco"
+ },
+ "flannel-io": {
+  "owner_type": "organization",
+  "name": "flannel-io",
+  "description": "",
+  "blog": "",
+  "location": ""
+ },
+ "jetty": {
+  "owner_type": "organization",
+  "name": "Eclipse Jetty",
+  "description": "The Eclipse Jetty Project",
+  "blog": "https://jetty.org",
+  "location": ""
+ },
+ "mikolmogorov": {
+  "owner_type": "user",
+  "name": "Mikhail Kolmogorov",
+  "description": "Tenure-track Investigator at NCI. I work on building algorithms for computational genomics.",
+  "blog": "https://ccr.cancer.gov/staff-directory/mikhail-kolmogorov",
+  "location": "Bethesda"
+ },
+ "pangenome": {
+  "owner_type": "organization",
+  "name": "pangenome",
+  "description": "graphical pangenomic methods",
+  "blog": "",
+  "location": ""
+ },
+ "juicedata": {
+  "owner_type": "organization",
+  "name": "juicedata",
+  "description": "Builds the best file system for cloud.",
+  "blog": "https://juicefs.com",
+  "location": ""
+ },
+ "fraunhoferhhi": {
+  "owner_type": "organization",
+  "name": "Fraunhofer HHI",
+  "description": "",
+  "blog": "https://www.hhi.fraunhofer.de/en/index.html",
+  "location": "Berlin, Germany"
+ },
+ "uxlfoundation": {
+  "owner_type": "organization",
+  "name": "Unified Acceleration (UXL) Foundation",
+  "description": "Building a multi-architecture and multi-vendor software ecosystem for all accelerators",
+  "blog": "https://uxlfoundation.org",
+  "location": "United States of America"
+ },
+ "google-research": {
+  "owner_type": "organization",
+  "name": "Google Research",
+  "description": "",
+  "blog": "https://research.google",
+  "location": "Earth"
+ },
+ "gaoj0017": {
+  "owner_type": "user",
+  "name": "Jianyang Gao",
+  "description": "",
+  "blog": "https://gaoj0017.github.io/",
+  "location": "Singapore"
+ },
+ "birollab": {
+  "owner_type": "organization",
+  "name": "Birol Lab",
+  "description": "Bioinformatics Technology Lab",
+  "blog": "https://www.birollab.ca",
+  "location": "Canada"
+ },
+ "multiqc": {
+  "owner_type": "organization",
+  "name": "MultiQC",
+  "description": "Organisation to hold repositories relating to MultiQC",
+  "blog": "https://seqera.io/multiqc/",
+  "location": ""
  }
 }
