@@ -185,7 +185,7 @@
 鲲鹏,93,Open vSwitch,虚拟化,https://github.com/openvswitch/ovs
 鲲鹏,94,QEMU,虚拟化,https://gitlab.com/qemu-project/qemu
 鲲鹏,95,Ovirt,虚拟化,https://github.com/oVirt/ovirt-engine
-鲲鹏,96,Stratovirt,虚拟化,https://gitee.com/openeuler/stratovirt
+鲲鹏,96,Stratovirt,虚拟化,https://atomgit.com/openeuler/stratovirt
 鲲鹏,97,Calico,虚拟化,https://github.com/projectcalico/calico
 鲲鹏,98,Flannel,虚拟化,https://github.com/flannel-io/flannel
 鲲鹏,99,CoreDNS,虚拟化,https://github.com/coredns/coredns
@@ -193,7 +193,7 @@
 鲲鹏,101,Prometheus,虚拟化,https://github.com/prometheus/prometheus
 鲲鹏,102,lstio,虚拟化,https://github.com/istio/istio
 鲲鹏,103,Envoy,虚拟化,https://github.com/envoyproxy/envoy
-鲲鹏,104,iSula,虚拟化,https://gitee.com/openeuler/iSulad
+鲲鹏,104,iSula,虚拟化,https://atomgit.com/openeuler/iSulad
 鲲鹏,105,harbor,虚拟化,https://github.com/goharbor/harbor
 鲲鹏,106,Apache HTTP Server,Web,https://github.com/apache/httpd
 鲲鹏,107,Tomcat,Web,https://github.com/apache/tomcat
