@@ -1,4 +1,4 @@
-页签,序号,项目名称,分类,上游地址
+页签,序号,项目名称,分类,上游地址,仓库是否删除
 昇腾,1,transformers,训练加速,https://github.com/huggingface/transformers
 昇腾,2,accelerate,训练加速,https://github.com/huggingface/accelerate
 昇腾,3,PEFT,训练加速,https://github.com/huggingface/peft
@@ -43,7 +43,7 @@
 昇腾,42,Coze,应用加速,https://github.com/coze-dev/coze-studio
 昇腾,43,MiniOneRec,应用加速,https://github.com/AkaliKong/MiniOneRec
 昇腾,44,MTGR,应用加速,https://github.com/meituan
-昇腾,45,X402,应用加速,https://github.com/coinbase/x402
+昇腾,45,X402,应用加速,https://github.com/x402-foundation/x402
 昇腾,46,AP2,应用加速,https://github.com/google-agentic-commerce/AP2
 昇腾,47,MCP,应用加速,https://github.com/modelcontextprotocol/modelcontextprotocol
 昇腾,48,A2A,应用加速,https://github.com/a2aproject/A2A
@@ -90,20 +90,20 @@
 昇腾,89,QwenLM,推理加速,https://github.com/QwenLM
 昇腾,90,THUDM,推理加速,https://github.com/THUDM
 昇腾,91,TileLang,算子库和编程,https://github.com/tile-ai/tilelang
-鲲鹏,1,Glibc,基础库&加速库,https://github.com/bminor/glibc
+鲲鹏,1,Glibc,基础库&加速库,https://sourceware.org/git/glibc.git
 鲲鹏,2,Hyperscan,基础库&加速库,https://github.com/est31/cargo-udeps
 鲲鹏,3,openMPI,基础库&加速库,https://github.com/open-mpi/ompi
 鲲鹏,4,Zlib,基础库&加速库,https://github.com/madler/zlib
 鲲鹏,5,LZ4,基础库&加速库,https://github.com/lz4/lz4
 鲲鹏,6,zlib-ng,基础库&加速库,https://github.com/zlib-ng/zlib-ng
 鲲鹏,7,edk2,基础库&加速库,https://github.com/tianocore/edk2
-鲲鹏,8,Suricata,基础库&加速库,https://github.com/OISF/suricata.git
+鲲鹏,8,Suricata,基础库&加速库,https://github.com/OISF/suricata
 鲲鹏,9,Snort,基础库&加速库,https://github.com/snort3/snort3
 鲲鹏,10,nDPI,基础库&加速库,https://github.com/ntop/nDPI
 鲲鹏,11,Gzip,基础库&加速库,https://github.com/Distrotech/gzip
 鲲鹏,12,Zstd,基础库&加速库,https://github.com/facebook/zstd
 鲲鹏,13,Snappy,基础库&加速库,https://github.com/google/snappy
-鲲鹏,14,X265,基础库&加速库,https://github.com/videolan/x265
+鲲鹏,14,X265,基础库&加速库,https://bitbucket.org/multicoreware/x265
 鲲鹏,15,DPDK,基础库&加速库,https://github.com/DPDK/dpdk
 鲲鹏,16,X264,基础库&加速库,https://code.videolan.org/videolan/x264
 鲲鹏,17,SPDK,基础库&加速库,https://github.com/spdk/spdk
@@ -113,7 +113,7 @@
 鲲鹏,21,Numpy,基础库&加速库,https://github.com/numpy/numpy
 鲲鹏,22,ISA-L,基础库&加速库,https://github.com/intel/isa-l
 鲲鹏,23,EMU,ARM应用支持,https://github.com/treangenlab/emu
-鲲鹏,24,Mesa,ARM应用支持,https://github.com/mesa3d/mesa
+鲲鹏,24,Mesa,ARM应用支持,https://gitlab.freedesktop.org/mesa/mesa
 鲲鹏,25,Binder,ARM应用支持,https://github.com/kupferlauncher/keybinder
 鲲鹏,26,LLVM,ARM应用支持,https://github.com/llvm/llvm-project
 鲲鹏,27,libdrm,ARM应用支持,https://gitlab.freedesktop.org/mesa/drm
@@ -124,7 +124,7 @@
 鲲鹏,32,libyuv-android,ARM应用支持,https://github.com/crow-misia/libyuv-android
 鲲鹏,33,benchmark,ARM应用支持,https://github.com/google/benchmark
 鲲鹏,34,OpenCV,ARM应用支持,https://github.com/opencv/opencv
-鲲鹏,35,Ffmpeg,ARM应用支持,https://github.com/FFmpeg/FFmpeg
+鲲鹏,35,Ffmpeg,ARM应用支持,https://git.ffmpeg.org/ffmpeg.git
 鲲鹏,36,libjpeg-turbo,ARM应用支持,https://github.com/libjpeg-turbo/libjpeg-turbo
 鲲鹏,37,Hadoop,大数据,https://github.com/apache/hadoop
 鲲鹏,38,Spark,大数据,https://github.com/apache/spark
@@ -176,14 +176,14 @@
 鲲鹏,84,DRBD,分布式存储,https://github.com/LINBIT/drbd
 鲲鹏,85,DAOS,分布式存储,https://github.com/daos-stack/daos
 鲲鹏,86,CURVE,分布式存储,https://github.com/opencurve/curve
-鲲鹏,87,SeaweedFS,分布式存储,https://github.com/chrislusf/seaweedfs
+鲲鹏,87,SeaweedFS,分布式存储,https://github.com/seaweedfs/seaweedfs
 鲲鹏,88,Docker,虚拟化,https://github.com/nextcloud/docker
 鲲鹏,89,Kubernetes,虚拟化,https://github.com/kubernetes/kubernetes
 鲲鹏,90,libvirt,虚拟化,https://github.com/libvirt/libvirt
-鲲鹏,91,OpenStack,虚拟化,https://github.com/openstack/openstack
+鲲鹏,91,OpenStack,虚拟化,https://opendev.org/openstack
 鲲鹏,92,KVM,虚拟化,https://git.kernel.org/pub/scm/virt/kvm/kvm.git
 鲲鹏,93,Open vSwitch,虚拟化,https://github.com/openvswitch/ovs
-鲲鹏,94,QEMU,虚拟化,https://github.com/qemu/qemu
+鲲鹏,94,QEMU,虚拟化,https://gitlab.com/qemu-project/qemu
 鲲鹏,95,Ovirt,虚拟化,https://github.com/oVirt/ovirt-engine
 鲲鹏,96,Stratovirt,虚拟化,https://gitee.com/openeuler/stratovirt
 鲲鹏,97,Calico,虚拟化,https://github.com/projectcalico/calico
@@ -211,7 +211,7 @@
 鲲鹏,119,Squid,Web,https://github.com/squid-cache/squid
 鲲鹏,120,Glassfish,Web,https://github.com/eclipse-ee4j/glassfish
 鲲鹏,121,Node.js,Web,https://github.com/nodejs/node
-鲲鹏,122,chromium,Web,https://github.com/chromium/chromium
+鲲鹏,122,chromium,Web,https://chromium.googlesource.com/chromium
 鲲鹏,123,Django,Web,https://github.com/django/django
 鲲鹏,124,fcgi,Web,https://github.com/FastCGI-Archives/fcgi2
 鲲鹏,125,Mongoose,Web,https://github.com/Automattic/mongoose
@@ -220,15 +220,15 @@
 鲲鹏,128,Spring Framework,Web,https://github.com/spring-projects/spring-framework
 鲲鹏,129,Spring Boot,Web,https://github.com/spring-projects/spring-boot
 鲲鹏,130,Tengine,Web,https://github.com/alibaba/tengine
-鲲鹏,131,LVS,Web,在内核集成
+鲲鹏,131,LVS,Web,https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 鲲鹏,132,MySQL,数据库,https://github.com/mysql/mysql-server
 鲲鹏,133,MariaDB,数据库,https://github.com/MariaDB/server
-鲲鹏,134,PostgreSQL,数据库,https://github.com/postgres/postgres
+鲲鹏,134,PostgreSQL,数据库,https://git.postgresql.org/git/postgresql.git
 鲲鹏,135,MongoDB,数据库,https://github.com/mongodb/mongo
 鲲鹏,136,RocksDB,数据库,https://github.com/facebook/rocksdb
 鲲鹏,137,TiDB,数据库,https://github.com/pingcap/tidb
 鲲鹏,138,InfluxDB,数据库,https://github.com/influxdata/influxdb
-鲲鹏,139,SQLite,数据库,https://github.com/sqlite/sqlite
+鲲鹏,139,SQLite,数据库,https://sqlite.org/src
 鲲鹏,140,Cassandra,数据库,https://github.com/apache/cassandra
 鲲鹏,141,etcd,数据库,https://github.com/etcd-io/etcd
 鲲鹏,142,LevelDB,数据库,https://github.com/google/leveldb
@@ -236,7 +236,7 @@
 鲲鹏,144,Neo4j,数据库,https://github.com/neo4j/neo4j
 鲲鹏,145,gcc,基础库&加速库,https://github.com/gcc-mirror/gcc
 鲲鹏,146,OpenJDK,基础库&加速库,https://github.com/openjdk/jdk
-鲲鹏,147,CMake,基础库&加速库,https://github.com/Kitware/CMake
+鲲鹏,147,CMake,基础库&加速库,https://gitlab.kitware.com/cmake/cmake
 鲲鹏,148,Clang,基础库&加速库,https://github.com/llvm/llvm-project
 鲲鹏,149,GDB,基础库&加速库,https://ftp.gnu.org/gnu/gdb/
 鲲鹏,150,Maven,基础库&加速库,https://github.com/apache/maven
@@ -244,10 +244,10 @@
 鲲鹏,152,Scala,基础库&加速库,https://github.com/scala/scala
 鲲鹏,153,Python,基础库&加速库,https://github.com/python
 鲲鹏,154,Golang,基础库&加速库,https://github.com/golang/go
-鲲鹏,155,Lua,基础库&加速库,https://github.com/lua/lua
+鲲鹏,155,Lua,基础库&加速库,https://www.lua.org/source/
 鲲鹏,156,Perl,基础库&加速库,https://github.com/Perl/perl5
 鲲鹏,157,Ruby,基础库&加速库,https://github.com/ruby/ruby
-鲲鹏,158,R,基础库&加速库,https://github.com/wch/r-source
+鲲鹏,158,R,基础库&加速库,https://svn.r-project.org/R/
 鲲鹏,159,Gradle,基础库&加速库,https://github.com/gradle/gradle
 鲲鹏,160,Erlang,基础库&加速库,https://github.com/erlang/otp
 鲲鹏,161,Google Test,基础库&加速库,https://github.com/google/googletest
@@ -265,7 +265,7 @@
 鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/
 鲲鹏,174,Hiredis,基础库&加速库,https://github.com/redis/hiredis
 鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/
-鲲鹏,176,Libxml2,基础库&加速库,https://github.com/GNOME/libxml2
+鲲鹏,176,Libxml2,基础库&加速库,https://gitlab.gnome.org/GNOME/libxml2
 鲲鹏,177,MPFR,基础库&加速库,https://gitlab.inria.fr/mpfr/mpfr
 鲲鹏,178,Next.js,基础库&加速库,https://github.com/vercel/next.js
 鲲鹏,179,pcre,基础库&加速库,https://github.com/PCRE2Project/pcre2
@@ -277,7 +277,7 @@
 鲲鹏,185,Boost,基础库&加速库,https://github.com/boostorg/boost
 鲲鹏,186,Protobuf,基础库&加速库,https://github.com/protocolbuffers/protobuf
 鲲鹏,187,Libevent,基础库&加速库,https://github.com/libevent/libevent
-鲲鹏,188,Wireshark,基础库&加速库,https://github.com/wireshark/wireshark
+鲲鹏,188,Wireshark,基础库&加速库,https://gitlab.com/wireshark/wireshark
 鲲鹏,189,JUnit,基础库&加速库,https://github.com/junit-team/junit-framework
 鲲鹏,190,DHCP,基础库&加速库,https://github.com/insomniacslk/dhcp
 鲲鹏,191,DNSmasq,基础库&加速库,https://github.com/coddec/Classic-Shell
@@ -342,8 +342,8 @@
 鲲鹏,250,Lammps,HPC,https://github.com/lammps/lammps
 鲲鹏,251,VASP,HPC,https://www.vasp.at/
 鲲鹏,252,CP2K,HPC,https://github.com/cp2k/cp2k
-鲲鹏,253,QuantumEspresso,HPC,https://github.com/QEF/q-e
-鲲鹏,254,GROMACS,HPC,https://github.com/gromacs/gromacs
+鲲鹏,253,QuantumEspresso,HPC,https://gitlab.com/QEF/q-e
+鲲鹏,254,GROMACS,HPC,https://gitlab.com/gromacs/gromacs
 鲲鹏,255,Nwchem,HPC,https://github.com/nwchemgit/nwchem
 鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php
 鲲鹏,257,WRF,HPC,https://github.com/wrf-model/WRF
@@ -457,14 +457,14 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,364,Lance（字节）,大数据,https://github.com/lancedb/lancedb
 鲲鹏,365,Ray（蚂蚁）,大数据,https://github.com/ray-project/ray
 鲲鹏,366,auron（快手）,大数据,https://github.com/apache/auron
-鲲鹏,367,3FS(Xsky),分布式存储,https://github.com/3fs/3fs
+鲲鹏,367,3FS(Xsky),分布式存储,https://github.com/deepseek-ai/3FS
 鲲鹏,368,reedsolomon(深信服),分布式存储,https://github.com/klauspost/reedsolomon
-鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicefs/juicefs
-鲲鹏,370,Mooncake(京东),分布式存储,https://github.com/mooncake-ai/mooncake
+鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicedata/juicefs
+鲲鹏,370,Mooncake(京东),分布式存储,https://github.com/kvcache-ai/Mooncake
 鲲鹏,371,Percona(字节),数据库,https://github.com/percona/percona-server
-鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux/openvelinux
-鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS/OpenCloudOS
-鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego/cloudwego
+鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux
+鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS
+鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego
 鲲鹏,375,DeathStarBench(字节/腾讯),虚拟化,https://github.com/delimitrou/DeathStarBench
 鲲鹏,376,fluid(字节),虚拟化,https://github.com/fluid-cloudnative/fluid
 鲲鹏,377,kubeflow(字节),虚拟化,https://github.com/kubeflow/kubeflow
@@ -473,21 +473,21 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,380,E2B(字节),虚拟化,https://github.com/e2b-dev/E2B
 鲲鹏,381,kata-containers(京东/腾讯),虚拟化,https://github.com/kata-containers/kata-containers
 鲲鹏,382,libavif(京东),ARM原生,https://github.com/AOMediaCodec/libavif
-鲲鹏,383,libwebp(京东),ARM原生,https://github.com/webmproject/libwebp
+鲲鹏,383,libwebp(京东),ARM原生,https://chromium.googlesource.com/webm/libwebp
 鲲鹏,384,torchvision(多模态大模型媒体库),ARM原生,https://github.com/pytorch/vision
 鲲鹏,385,Android(联通云),ARM原生,https://github.com/android/
-鲲鹏,386,vvenc(字节),ARM原生,https://github.com/ultravideo/vvenc
+鲲鹏,386,vvenc(字节),ARM原生,https://github.com/fraunhoferhhi/vvenc
 鲲鹏,387,tensorflow-serving(BOSS),搜广推,https://github.com/tensorflow/serving
 鲲鹏,388,onednn(京东),搜广推,https://github.com/uxlfoundation/oneDNN
 鲲鹏,389,Faiss(美团),搜广推,https://github.com/facebookresearch/faiss
 鲲鹏,390,hnswlib(美团),搜广推,https://github.com/nmslib/hnswlib
-鲲鹏,391,XLA(京东),搜广推,https://github.com/tensorflow/xla
-鲲鹏,392,ScaNN(美团),搜广推,https://github.com/google/scaNN
-鲲鹏,393,newpfordelta(美团),搜广推,https://github.com/newpfordelta/newpfordelta
-鲲鹏,394,RabitQ(字节),搜广推,https://github.com/rabitq/rabitq
+鲲鹏,391,XLA(京东),搜广推,https://github.com/openxla/xla
+鲲鹏,392,ScaNN(美团),搜广推,https://github.com/google-research/google-research/tree/master/scann
+鲲鹏,393,newpfordelta(美团),搜广推,https://github.com/newpfordelta/newpfordelta,是
+鲲鹏,394,RabitQ(字节),搜广推,https://github.com/gaoj0017/RaBitQ
 鲲鹏,395,DiskANN(字节),搜广推,https://github.com/microsoft/DiskANN
 鲲鹏,396,monolith(字节),搜广推,https://github.com/bytedance/monolith
-鲲鹏,397,Eigen(京东),搜广推,https://github.com/eigenteam/eigen-git-mirror （官方镜像）
+鲲鹏,397,Eigen(京东),搜广推,https://gitlab.com/libeigen/eigen
 鲲鹏,398,TVM(CBG),搜广推,https://github.com/apache/tvm
 鲲鹏,399,onnxruntime(CBG),搜广推,https://github.com/microsoft/onnxruntime
 鲲鹏,400,vLLM(蚂蚁/腾讯),搜广推,https://github.com/vllm-project/vllm
@@ -497,7 +497,7 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,404,TensorRT-LLM（京东）,搜广推,https://github.com/NVIDIA/TensorRT-LLM
 鲲鹏,405,protobuf(字节),基础库&加速库,https://github.com/protocolbuffers/protobuf
 鲲鹏,406,folly(字节),基础库&加速库,https://github.com/facebook/folly
-鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/sonic-net/sonic-cpp
+鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/bytedance/sonic-cpp
 鲲鹏,408,Tongsuo(蚂蚁),基础库&加速库,https://github.com/Tongsuo-Project/Tongsuo
 鲲鹏,409,rapidjson(字节/腾讯),基础库&加速库,https://github.com/Tencent/rapidjson
 鲲鹏,410,simdjson(美团),基础库&加速库,https://github.com/simdjson/simdjson
@@ -526,7 +526,7 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,433,ProteinMPNN,HPC,https://github.com/dauparas/ProteinMPNN
 鲲鹏,434,Moose Framework,HPC,https://github.com/idaholab/moose
 鲲鹏,435,QMCPACK,HPC,https://github.com/QMCPACK/qmcpack
-鲲鹏,436,Geant4,HPC,https://github.com/Geant4/geant4
+鲲鹏,436,Geant4,HPC,https://gitlab.cern.ch/geant4/geant4
 鲲鹏,437,Chroma,HPC,https://github.com/JeffersonLab/chroma
 鲲鹏,438,MILC,HPC,https://github.com/milc-qcd/milc_qcd
 鲲鹏,439,CPS,HPC,https://github.com/RBC-UKQCD/CPS_public
@@ -559,7 +559,7 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,466,Abyss,HPC,https://github.com/BirolLab/abyss
 鲲鹏,467,FVCOM,HPC,https://github.com/FVCOM-GitHub/FVCOM
 鲲鹏,468,Velvet,HPC,https://github.com/dzerbino/velvet
-鲲鹏,469,Tophat2,HPC,https://github.com/infphilo/tophat
+鲲鹏,469,Tophat2,HPC,https://github.com/DaehwanKimLab/tophat
 鲲鹏,470,NOVOPlasty,HPC,https://github.com/ndierckx/NOVOPlasty
 鲲鹏,471,PyRosetta,HPC,https://github.com/RosettaCommons/rosetta
 鲲鹏,472,scanpy,HPC,https://github.com/scverse/scanpy
@@ -567,7 +567,7 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,474,diamond,HPC,https://github.com/bbuchfink/diamond
 鲲鹏,475,prodigal,HPC,https://github.com/hyattpd/Prodigal
 鲲鹏,476,COPASI,HPC,https://github.com/copasi/COPASI
-鲲鹏,477,OpenMolcas,HPC,https://github.com/Molcas/OpenMolcas
+鲲鹏,477,OpenMolcas,HPC,https://gitlab.com/Molcas/OpenMolcas
 鲲鹏,478,Cactus,HPC,https://github.com/ComparativeGenomicsToolkit/cactus
 鲲鹏,479,Samtools,HPC,https://github.com/samtools/samtools
 鲲鹏,480,wtdbg2,HPC,https://github.com/ruanjue/wtdbg2
@@ -651,7 +651,7 @@ fuse内核优化部分：https://github.com/torvalds/linux"
 鲲鹏,558,gperftools,基础库&加速库,https://github.com/gperftools/gperftools
 鲲鹏,559,mpi4py,基础库&加速库,https://github.com/mpi4py/mpi4py
 鲲鹏,560,SWMM,基础库&加速库,https://github.com/USEPA/Stormwater-Management-Model
-鲲鹏,561,PETSc,基础库&加速库,https://github.com/petsc/petsc
+鲲鹏,561,PETSc,基础库&加速库,https://gitlab.com/petsc/petsc
 鲲鹏,562,mfem,HPC,https://github.com/mfem/mfem
 鲲鹏,563,kokkos,基础库&加速库,https://github.com/kokkos/kokkos
 鲲鹏,564,triton,基础库&加速库,https://github.com/triton-lang/triton

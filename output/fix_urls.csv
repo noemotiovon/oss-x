@@ -1,96 +1,48 @@
 页签,序号,项目名称,分类,上游地址,status,url_type,actual_url,reason,resolved_by,resolved_url,evidence,confidence
 昇腾,34,Kubernetes DRA,推理加速,https://github.com/kubernetes/dynamic-resource-allocation,valid,repo,,potential_mirror,layer4_not_mirror,,"Not a mirror: description='None', homepage=''",S
-昇腾,45,X402,应用加速,https://github.com/coinbase/x402,valid,repo,,potential_mirror,layer2_search,https://github.com/x402-foundation/x402,GitHub Search: top match 'x402-foundation/x402' (5922 stars),A
-鲲鹏,1,Glibc,基础库&加速库,https://github.com/bminor/glibc,valid,repo,,potential_mirror,layer0_known,https://sourceware.org/git/glibc.git,known mapping,S
-鲲鹏,3,openMPI,基础库&加速库,"https://www.open-mpi.org/
-https://openucx.org/",non_github,non_github,,non_github,layer0_known,https://github.com/open-mpi/ompi,known mapping,S
-鲲鹏,8,Suricata,基础库&加速库,https://github.com/OISF/suricata.git,not_found,repo,,not_found,layer0_known,https://github.com/OISF/suricata,known mapping,S
-鲲鹏,14,X265,基础库&加速库,https://github.com/videolan/x265,valid,repo,,potential_mirror,layer4_mirror,"Mirror confirmed, upstream unknown","description='https://bitbucket.org/multicoreware/x265/ git mirror', mirror_url='', homepage=''",B
-鲲鹏,16,X264,基础库&加速库,https://code.videolan.org/videolan/x264,non_github,non_github,,non_github,layer0_known,https://github.com/mirror/x264,known mapping,S
-鲲鹏,24,Mesa,ARM应用支持,https://github.com/mesa3d/mesa,not_found,repo,,not_found,layer0_known,https://gitlab.freedesktop.org/mesa/mesa,known mapping,S
-鲲鹏,26,LLVM,ARM应用支持,"https://llvm.org/
-https://github.com/llvm/llvm-project",non_github,non_github,,non_github,layer0_known,https://github.com/llvm/llvm-project,known mapping,S
-鲲鹏,27,libdrm,ARM应用支持,https://gitlab.freedesktop.org/mesa/drm,non_github,non_github,,non_github,layer0_known,https://github.com/gitlab-freedesktop-mirrors/drm,known mapping,S
-鲲鹏,28,musl,ARM应用支持,https://git.musl-libc.org/cgit/musl,non_github,non_github,,non_github,layer0_known,https://github.com/bminor/musl,known mapping,S
-鲲鹏,35,Ffmpeg,ARM应用支持,https://github.com/ffmpeg/ffmpeg,valid,repo,https://github.com/FFmpeg/FFmpeg,potential_mirror,layer0_known,https://git.ffmpeg.org/ffmpeg.git,known mapping,S
-鲲鹏,46,Impala,大数据,https://github.com/apache/impala,valid,repo,,potential_mirror,layer2_search,https://github.com/pythops/impala,GitHub Search: top match 'pythops/impala' (2541 stars),A
-鲲鹏,53,Oozie,大数据,https://github.com/apache/oozie,valid,repo,,potential_mirror,layer2_search,https://github.com/apache/oozie,GitHub Search: top match 'apache/oozie' (728 stars),A
-鲲鹏,62,Pig,大数据,https://github.com/apache/pig,valid,repo,,potential_mirror,layer2_search,https://github.com/sqshq/piggymetrics,GitHub Search: close match 'sqshq/piggymetrics' (13892 stars),B
-鲲鹏,74,Kudu,大数据,https://github.com/apache/kudu,valid,repo,,potential_mirror,layer2_search,https://github.com/projectkudu/kudu,GitHub Search: top match 'projectkudu/kudu' (3146 stars),A
-鲲鹏,78,Lustre,分布式存储,https://git.whamcloud.com/,non_github,non_github,,non_github,layer0_known,https://github.com/lustre/lustre-release,known mapping,S
-鲲鹏,87,SeaweedFS,分布式存储,https://github.com/chrislusf/seaweedfs,valid,repo,,potential_mirror,layer2_search,https://github.com/seaweedfs/seaweedfs,GitHub Search: top match 'seaweedfs/seaweedfs' (31433 stars),A
-鲲鹏,91,OpenStack,虚拟化,https://github.com/openstack/openstack,valid,repo,,potential_mirror,layer2_search,https://github.com/openstack/openstack,GitHub Search: top match 'openstack/openstack' (5884 stars),A
-鲲鹏,92,KVM,虚拟化,https://git.kernel.org/pub/scm/virt/kvm/kvm.git,non_github,non_github,,non_github,layer0_known,https://git.kernel.org/pub/scm/virt/kvm/kvm.git,known mapping,S
-鲲鹏,94,QEMU,虚拟化,https://github.com/qemu/qemu,valid,repo,,potential_mirror,layer0_known,https://gitlab.com/qemu-project/qemu,known mapping,S
-鲲鹏,96,Stratovirt,虚拟化,https://gitee.com/openeuler/stratovirt,non_github,non_github,,non_github,layer0_known,https://github.com/openeuler-mirror/stratovirt,known mapping,S
-鲲鹏,104,iSula,虚拟化,https://gitee.com/openeuler/iSulad,non_github,non_github,,non_github,layer0_known,https://github.com/openeuler-mirror/iSulad,known mapping,S
-鲲鹏,122,chromium,Web,https://github.com/chromium/chromium,valid,repo,,potential_mirror,layer0_known,https://chromium.googlesource.com/chromium/src,known mapping,S
-鲲鹏,131,LVS,Web,在内核集成,no_url,,,no_url,layer0_known,https://github.com/alibaba/LVS,known mapping,S
-鲲鹏,134,PostgreSQL,数据库,https://github.com/postgres/postgres,valid,repo,,potential_mirror,layer0_known,https://git.postgresql.org/gitweb/?p=postgresql.git,known mapping,S
-鲲鹏,139,SQLite,数据库,https://github.com/sqlite/sqlite,valid,repo,,potential_mirror,layer0_known,https://www.sqlite.org/src,known mapping,S
-鲲鹏,147,CMake,基础库&加速库,https://github.com/kitware/cmake,valid,repo,https://github.com/Kitware/CMake,potential_mirror,layer0_known,https://gitlab.kitware.com/cmake/cmake,known mapping,S
-鲲鹏,149,GDB,基础库&加速库,https://ftp.gnu.org/gnu/gdb/,non_github,non_github,,non_github,layer0_known,https://github.com/bminor/binutils-gdb,known mapping,S
-鲲鹏,155,Lua,基础库&加速库,https://github.com/lua/lua,valid,repo,,potential_mirror,layer0_known,https://www.lua.org/source/,known mapping,S
-鲲鹏,158,R,基础库&加速库,https://github.com/wch/r-source,valid,repo,,potential_mirror,layer0_known,https://svn.r-project.org/R/,known mapping,S
-鲲鹏,163,APR-util,基础库&加速库,https://github.com/apache/apr-util,valid,repo,,potential_mirror,layer2_search,https://github.com/apache/apr-util,GitHub Search: top match 'apache/apr-util' (81 stars),A
-鲲鹏,173,GMP,基础库&加速库,https://gmplib.org/repo/,non_github,non_github,,non_github,layer0_known,https://github.com/gmp-mirror/gmp,known mapping,S
-鲲鹏,175,libmpc,基础库&加速库,http://www.multiprecision.org/,non_github,non_github,,non_github,layer0_known,https://github.com/BrianGladman/mpc,known mapping,S
-鲲鹏,176,Libxml2,基础库&加速库,https://github.com/gnome/libxml2,valid,repo,https://github.com/GNOME/libxml2,potential_mirror,layer2_search,https://github.com/GNOME/libxml2,GitHub Search: top match 'GNOME/libxml2' (730 stars),A
-鲲鹏,177,MPFR,基础库&加速库,https://gitlab.inria.fr/mpfr/mpfr,non_github,non_github,,non_github,layer0_known,https://github.com/P-p-H-d/mpfr,known mapping,S
-鲲鹏,188,Wireshark,基础库&加速库,https://github.com/wireshark/wireshark,valid,repo,,potential_mirror,layer0_known,https://gitlab.com/wireshark/wireshark,known mapping,S
-鲲鹏,198,APR,基础库&加速库,https://github.com/apache/apr,valid,repo,,potential_mirror,layer2_search,https://github.com/braydie/HowToBeAProgrammer,GitHub Search: close match 'braydie/HowToBeAProgrammer' (16313 stars),B
-鲲鹏,203,Memtester,基础库&加速库,https://pyropus.ca./software/memtester/,non_github,non_github,,non_github,layer0_known,https://github.com/jnavila/memtester,known mapping,S
-鲲鹏,218,LZO,基础库&加速库,http://www.oberhumer.com/opensource/lzo/,non_github,non_github,,non_github,layer0_known,https://github.com/nemequ/lzo,known mapping,S
-鲲鹏,251,VASP,HPC,https://www.vasp.at/,non_github,non_github,,non_github,layer0_known,https://www.vasp.at/,known mapping,S
-鲲鹏,253,QuantumEspresso,HPC,https://github.com/qef/q-e,valid,repo,https://github.com/QEF/q-e,potential_mirror,layer4_mirror,"Mirror confirmed, upstream unknown","description='Mirror of the Quantum ESPRESSO repository. Please do not post Issues or pull requests here. Use gitlab.com/QEF/q-e instead.', mirror_url='', homepage=''",B
-鲲鹏,254,GROMACS,HPC,https://github.com/gromacs/gromacs,valid,repo,,potential_mirror,layer0_known,https://gitlab.com/gromacs/gromacs,known mapping,S
-鲲鹏,256,Amber tools,HPC,https://ambermd.org/index.php,non_github,non_github,,non_github,layer0_known,https://github.com/Amber-MD/AmberClassic,known mapping,S
-鲲鹏,262,OpenFOAM,HPC,https://openfoam.org/release/,non_github,non_github,,non_github,layer0_known,https://github.com/OpenFOAM/OpenFOAM-dev,known mapping,S
-鲲鹏,264,genewise,HPC,https://www.ebi.ac.uk/~birney/wise2/,non_github,non_github,,non_github,layer0_known,https://github.com/PlantandFoodResearch/wise2,known mapping,S
-鲲鹏,265,FSL,HPC,https://git.fmrib.ox.ac.uk/fsl/fslpy,non_github,non_github,,non_github,layer0_known,https://github.com/FMRIB-Software-Library,known mapping,S
-鲲鹏,266,OpenLB,HPC,https://www.openlb.net/,non_github,non_github,,non_github,layer0_known,https://github.com/openLB/openLB,known mapping,S
-鲲鹏,271,featureCounts,HPC,https://subread.sourceforge.net/,non_github,non_github,,non_github,layer0_known,https://github.com/ShiLab-Bioinformatics/subread,known mapping,S
-鲲鹏,284,ALLHiC,HPC,https://github.com/tanghaibao/allhic,valid,repo,,potential_mirror,layer2_search,https://github.com/tangerzhang/ALLHiC,GitHub Search: top match 'tangerzhang/ALLHiC' (179 stars),A
-鲲鹏,286,BUSCO,HPC,https://gitlab.com/ezlab/busco,non_github,non_github,,non_github,layer0_known,https://gitlab.com/ezlab/busco,known mapping,S
-鲲鹏,294,repeatmasker,HPC,http://www.repeatmasker.org/repeatmasker/repeatmasker-4.1.2-p1.tar.gz,non_github,non_github,,non_github,layer0_known,https://github.com/Dfam-consortium/RepeatMasker,known mapping,S
-鲲鹏,301,SoftSV,HPC,https://sourceforge.net/projects/softsv/,non_github,non_github,,non_github,,,,
-鲲鹏,303,glean,HPC,https://sourceforge.net/projects/glean-gene/,non_github,non_github,,non_github,layer2_search,https://github.com/wix-incubator/vscode-glean,GitHub Search: close match 'wix-incubator/vscode-glean' (1467 stars),B
-鲲鹏,315,gnuplot,HPC,https://sourceforge.net/p/gnuplot/gnuplot-main/ci/master/tree/,non_github,non_github,,non_github,layer0_known,https://github.com/gnuplot/gnuplot,known mapping,S
-鲲鹏,321,SVseq2,HPC,https://sourceforge.net/projects/svseq2/files/svseq2_2/,non_github,non_github,,non_github,,,,
-鲲鹏,326,Meraculous,HPC,https://jgi.doe.gov/data-and-tools/meraculous/,non_github,non_github,,non_github,,,,
-鲲鹏,329,Yambo,HPC,http://www.yambo-code.org/,non_github,non_github,,non_github,layer0_known,https://github.com/yambo-code/yambo,known mapping,S
-鲲鹏,331,SWAN,HPC,https://swanmodel.sourceforge.io/,non_github,non_github,,non_github,layer0_known,https://github.com/nerdalize/swan,known mapping,S
-鲲鹏,332,dnacopy,HPC,https://bioconductor.org/packages/3.20/bioc/html/DNAcopy.html,non_github,non_github,,non_github,layer0_known,https://github.com/veseshan/DNAcopy,known mapping,S
-鲲鹏,333,metapod,HPC,https://bioconductor.org/packages/3.20/bioc/html/metapod.html,non_github,non_github,,non_github,layer0_known,https://github.com/LTLA/metapod,known mapping,S
-鲲鹏,334,geneselectmmd,HPC,https://bioconductor.org/packages/3.20/bioc/html/GeneSelectMMD.html,non_github,non_github,,non_github,layer3_bioconductor,https://github.com/bioc/GeneSelectMMD,Bioconductor: GitHub repo 'bioc/GeneSelectMMD' matches package 'GeneSelectMMD',A
-鲲鹏,335,maigespack,HPC,https://bioconductor.org/packages/3.17/bioc/html/maigesPack.html,non_github,non_github,,non_github,layer3_bioconductor,https://github.com/bioc/maigesPack,Bioconductor: GitHub repo 'bioc/maigesPack' matches package 'maigesPack',A
-鲲鹏,336,fastseg,HPC,https://bioconductor.org/packages/3.20/bioc/html/fastseg.html,non_github,non_github,,non_github,layer2_search,https://github.com/ekzhang/fastseg,GitHub Search: top match 'ekzhang/fastseg' (360 stars),A
-鲲鹏,337,batchelor,HPC,https://bioconductor.org/packages/3.20/bioc/html/batchelor.html,non_github,non_github,,non_github,layer0_known,https://github.com/LTLA/batchelor,known mapping,S
-鲲鹏,338,methylkit,HPC,https://bioconductor.org/packages/3.20/bioc/html/methylKit.html,non_github,non_github,,non_github,layer0_known,https://github.com/al2na/methylKit,known mapping,S
-鲲鹏,339,monocle,HPC,https://bioconductor.org/packages/3.20/bioc/html/monocle.html,non_github,non_github,,non_github,layer0_known,https://github.com/cole-trapnell-lab/monocle3,known mapping,S
-鲲鹏,340,biovizbase,HPC,https://bioconductor.org/packages/3.20/bioc/html/biovizBase.html,non_github,non_github,,non_github,layer0_known,https://github.com/jorainer/biovizBase,known mapping,S
-鲲鹏,341,genomation,HPC,https://bioconductor.org/packages/3.20/bioc/html/genomation.html,non_github,non_github,,non_github,layer0_known,https://github.com/BIMSBbioinfo/genomation,known mapping,S
-鲲鹏,342,kebabs,HPC,https://bioconductor.org/packages/3.20/bioc/html/kebabs.html,non_github,non_github,,non_github,layer0_known,https://github.com/UBod/kebabs,known mapping,S
-鲲鹏,351,DELFT3D,HPC,https://svn.oss.deltares.nl/repos/delft3d,non_github,non_github,,non_github,layer0_known,https://svn.oss.deltares.nl/repos/delft3d,known mapping,S
-鲲鹏,367,3FS(Xsky),分布式存储,https://github.com/3fs/3fs,not_found,repo,,not_found,layer0_known,https://github.com/deepseek-ai/3FS,known mapping,S
-鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicefs/juicefs,not_found,repo,,not_found,layer0_known,https://github.com/juicedata/juicefs,known mapping,S
-鲲鹏,370,Mooncake(京东),分布式存储,https://github.com/mooncake-ai/mooncake,not_found,repo,,not_found,layer0_known,https://github.com/kvcache-ai/Mooncake,known mapping,S
-鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux/openvelinux,not_found,repo,,not_found,layer0_known,https://github.com/openvelinux,known mapping,S
-鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS/OpenCloudOS,not_found,repo,,not_found,layer0_known,https://github.com/OpenCloudOS,known mapping,S
-鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego/cloudwego,not_found,repo,,not_found,layer0_known,https://github.com/cloudwego,known mapping,S
-鲲鹏,383,libwebp(京东),ARM原生,https://github.com/webmproject/libwebp,valid,repo,,potential_mirror,layer2_search,https://github.com/webmproject/libwebp,GitHub Search: top match 'webmproject/libwebp' (2301 stars),A
-鲲鹏,386,vvenc(字节),ARM原生,https://github.com/ultravideo/vvenc,not_found,repo,,not_found,layer0_known,https://github.com/fraunhoferhhi/vvenc,known mapping,S
-鲲鹏,391,XLA(京东),搜广推,https://github.com/tensorflow/xla,not_found,repo,,not_found,layer0_known,https://github.com/openxla/xla,known mapping,S
-鲲鹏,392,ScaNN(美团),搜广推,https://github.com/google/scaNN,not_found,repo,,not_found,layer0_known,https://github.com/google-research/google-research/tree/master/scann,known mapping,S
-鲲鹏,393,newpfordelta(美团),搜广推,https://github.com/newpfordelta/newpfordelta,not_found,repo,,not_found,,,,
-鲲鹏,394,RabitQ(字节),搜广推,https://github.com/rabitq/rabitq,not_found,repo,,not_found,layer0_known,https://github.com/gaoj0017/RaBitQ,known mapping,S
-鲲鹏,397,Eigen(京东),搜广推,https://github.com/eigenteam/eigen-git-mirror （官方镜像）,valid,repo,,potential_mirror,layer0_known,https://github.com/eigen-mirror/eigen,known mapping,S
-鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/sonic-net/sonic-cpp,not_found,repo,,not_found,layer0_known,https://github.com/bytedance/sonic-cpp,known mapping,S
-鲲鹏,432,siesta,HPC,https://gitlab.com/siesta-project/siesta,non_github,non_github,,non_github,layer0_known,https://github.com/siesta-project,known mapping,S
-鲲鹏,436,Geant4,HPC,https://github.com/Geant4/geant4,valid,repo,,potential_mirror,layer0_known,https://gitlab.cern.ch/geant4/geant4,known mapping,S
-鲲鹏,447,PALABOS,HPC,https://gitlab.com/unigespc/palabos,non_github,non_github,,non_github,layer0_known,https://github.com/omalaspinas/palabos,known mapping,S
+昇腾,45,X402,应用加速,https://github.com/coinbase/x402,valid,repo,,potential_mirror,L3-mirror,https://github.com/x402-foundation/x402,GitHub fork of x402-foundation/x402,S
+鲲鹏,1,Glibc,基础库&加速库,https://github.com/bminor/glibc,valid,repo,,potential_mirror,L0-known,https://sourceware.org/git/glibc.git,official upstream is sourceware.org,S
+鲲鹏,8,Suricata,基础库&加速库,https://github.com/OISF/suricata.git,not_found,repo,,not_found,L0-known,https://github.com/OISF/suricata,.git suffix caused 404,S
+鲲鹏,14,X265,基础库&加速库,https://github.com/videolan/x265,valid,repo,,potential_mirror,L0-known,https://bitbucket.org/multicoreware/x265_git,official upstream is MulticoreWare Bitbucket,S
+鲲鹏,24,Mesa,ARM应用支持,https://github.com/mesa3d/mesa,not_found,repo,,not_found,L0-known,https://gitlab.freedesktop.org/mesa/mesa,official upstream is on freedesktop GitLab,S
+鲲鹏,35,Ffmpeg,ARM应用支持,https://github.com/ffmpeg/ffmpeg,valid,repo,https://github.com/FFmpeg/FFmpeg,potential_mirror,L0-known,https://git.ffmpeg.org/ffmpeg.git,official upstream is git.ffmpeg.org,S
+鲲鹏,46,Impala,大数据,https://github.com/apache/impala,valid,repo,,potential_mirror,L0-known,https://github.com/apache/impala,"Apache official mirror, dev on Apache infra",S
+鲲鹏,53,Oozie,大数据,https://github.com/apache/oozie,valid,repo,,potential_mirror,L0-known,https://github.com/apache/oozie,"Apache official mirror, archived",S
+鲲鹏,62,Pig,大数据,https://github.com/apache/pig,valid,repo,,potential_mirror,L0-known,https://github.com/apache/pig,"Apache official mirror, dev on Apache infra",S
+鲲鹏,74,Kudu,大数据,https://github.com/apache/kudu,valid,repo,,potential_mirror,L0-known,https://github.com/apache/kudu,"Apache official mirror, dev on Apache infra",S
+鲲鹏,87,SeaweedFS,分布式存储,https://github.com/chrislusf/seaweedfs,valid,repo,,potential_mirror,L3-mirror,https://github.com/seaweedfs/seaweedfs,GitHub fork of seaweedfs/seaweedfs,S
+鲲鹏,91,OpenStack,虚拟化,https://github.com/openstack/openstack,valid,repo,,potential_mirror,L0-known,https://opendev.org/openstack,official upstream is OpenDev,S
+鲲鹏,94,QEMU,虚拟化,https://github.com/qemu/qemu,valid,repo,,potential_mirror,L0-known,https://gitlab.com/qemu-project/qemu,official upstream is QEMU GitLab,S
+鲲鹏,122,chromium,Web,https://github.com/chromium/chromium,valid,repo,,potential_mirror,L0-known,https://chromium.googlesource.com/chromium/src,official upstream is Chromium Googlesource,S
+鲲鹏,131,LVS,Web,在内核集成,no_url,,,no_url,L0-known,https://github.com/alibaba/LVS,LVS is kernel-integrated; alibaba/LVS is the main open-source fork,S
+鲲鹏,134,PostgreSQL,数据库,https://github.com/postgres/postgres,valid,repo,,potential_mirror,L0-known,https://git.postgresql.org/gitweb/?p=postgresql.git,official upstream is git.postgresql.org,S
+鲲鹏,139,SQLite,数据库,https://github.com/sqlite/sqlite,valid,repo,,potential_mirror,L0-known,https://www.sqlite.org/src,official upstream is sqlite.org Fossil,S
+鲲鹏,147,CMake,基础库&加速库,https://github.com/kitware/cmake,valid,repo,https://github.com/Kitware/CMake,potential_mirror,L0-known,https://gitlab.kitware.com/cmake/cmake,official upstream is Kitware GitLab,S
+鲲鹏,155,Lua,基础库&加速库,https://github.com/lua/lua,valid,repo,,potential_mirror,L0-known,https://www.lua.org/source/,official upstream is lua.org,S
+鲲鹏,158,R,基础库&加速库,https://github.com/wch/r-source,valid,repo,,potential_mirror,L0-known,https://svn.r-project.org/R/,official upstream is R project SVN,S
+鲲鹏,163,APR-util,基础库&加速库,https://github.com/apache/apr-util,valid,repo,,potential_mirror,L0-known,https://github.com/apache/apr-util,Apache official mirror,S
+鲲鹏,176,Libxml2,基础库&加速库,https://github.com/gnome/libxml2,valid,repo,https://github.com/GNOME/libxml2,potential_mirror,L0-known,https://gitlab.gnome.org/GNOME/libxml2,official upstream is GNOME GitLab,S
+鲲鹏,188,Wireshark,基础库&加速库,https://github.com/wireshark/wireshark,valid,repo,,potential_mirror,L0-known,https://gitlab.com/wireshark/wireshark,official upstream is Wireshark GitLab,S
+鲲鹏,198,APR,基础库&加速库,https://github.com/apache/apr,valid,repo,,potential_mirror,L0-known,https://github.com/apache/apr,Apache official mirror,S
+鲲鹏,253,QuantumEspresso,HPC,https://github.com/qef/q-e,valid,repo,https://github.com/QEF/q-e,potential_mirror,L0-known,https://gitlab.com/QEF/q-e,official upstream is QEF GitLab,S
+鲲鹏,254,GROMACS,HPC,https://github.com/gromacs/gromacs,valid,repo,,potential_mirror,L0-known,https://gitlab.com/gromacs/gromacs,official upstream is GROMACS GitLab,S
+鲲鹏,284,ALLHiC,HPC,https://github.com/tanghaibao/allhic,valid,repo,,potential_mirror,L3-not_mirror,,"not confirmed as mirror: desc='Genome scaffolding based on HiC data in heterozygous and high ploidy genomes', homepage=''",S
+鲲鹏,367,3FS(Xsky),分布式存储,https://github.com/3fs/3fs,not_found,repo,,not_found,L0-known,https://github.com/deepseek-ai/3FS,"repo is under deepseek-ai, not 3fs org",S
+鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicefs/juicefs,not_found,repo,,not_found,L0-known,https://github.com/juicedata/juicefs,"repo is under juicedata, not juicefs org",S
+鲲鹏,370,Mooncake(京东),分布式存储,https://github.com/mooncake-ai/mooncake,not_found,repo,,not_found,L0-known,https://github.com/kvcache-ai/Mooncake,"repo is under kvcache-ai, not mooncake-ai",S
+鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux/openvelinux,not_found,repo,,not_found,L0-known,https://github.com/openvelinux,"is an org (openvelinux), not a single repo",S
+鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS/OpenCloudOS,not_found,repo,,not_found,L0-known,https://github.com/OpenCloudOS,"is an org, not a single repo named OpenCloudOS",S
+鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego/cloudwego,not_found,repo,,not_found,L0-known,https://github.com/cloudwego,"is an org (kitex/hertz/etc), not a single repo",S
+鲲鹏,383,libwebp(京东),ARM原生,https://github.com/webmproject/libwebp,valid,repo,,potential_mirror,L3-mirror,https://chromium.googlesource.com/webm/libwebp,GitHub mirror_url field: 'https://chromium.googlesource.com/webm/libwebp',S
+鲲鹏,386,vvenc(字节),ARM原生,https://github.com/ultravideo/vvenc,not_found,repo,,not_found,L0-known,https://github.com/fraunhoferhhi/vvenc,"repo is under fraunhoferhhi, not ultravideo",S
+鲲鹏,391,XLA(京东),搜广推,https://github.com/tensorflow/xla,not_found,repo,,not_found,L0-known,https://github.com/openxla/xla,moved from tensorflow/xla to openxla/xla,S
+鲲鹏,392,ScaNN(美团),搜广推,https://github.com/google/scaNN,not_found,repo,,not_found,L0-known,https://github.com/google-research/google-research/tree/master/scann,"ScaNN is a subdirectory inside google-research, not a standalone repo",S
+鲲鹏,393,newpfordelta(美团),搜广推,https://github.com/newpfordelta/newpfordelta,not_found,repo,,not_found,LLM-WebSearch,,"Web Search: no repo found under Meituan or Meituan-Dianping orgs; project name not located",C
+鲲鹏,394,RabitQ(字节),搜广推,https://github.com/rabitq/rabitq,not_found,repo,,not_found,L0-known,https://github.com/gaoj0017/RaBitQ,correct case is RaBitQ under gaoj0017,S
+鲲鹏,397,Eigen(京东),搜广推,https://github.com/eigenteam/eigen-git-mirror （官方镜像）,valid,repo,,potential_mirror,L3-mirror,"mirror confirmed, upstream unknown","description: 'THIS MIRROR IS DEPRECATED -- New url: https://gitlab.com/libeigen/eigen', homepage: ''",B
+鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/sonic-net/sonic-cpp,not_found,repo,,not_found,L0-known,https://github.com/bytedance/sonic-cpp,"repo is under bytedance, not sonic-net",S
+鲲鹏,436,Geant4,HPC,https://github.com/Geant4/geant4,valid,repo,,potential_mirror,L0-known,https://gitlab.cern.ch/geant4/geant4,official upstream is CERN GitLab,S
 鲲鹏,451,ROMS,HPC,https://github.com/myroms/roms,valid,repo,,potential_mirror,layer4_not_mirror,,"Not a mirror: description='Regional Ocean Modeling System (ROMS)', homepage='https://github.com/myroms/roms/wiki'",S
-鲲鹏,469,Tophat2,HPC,https://github.com/infphilo/tophat,valid,repo,,potential_mirror,layer4_mirror,https://github.com/DaehwanKimLab/tophat,GitHub fork of DaehwanKimLab/tophat,S
-鲲鹏,477,OpenMolcas,HPC,https://github.com/Molcas/OpenMolcas,valid,repo,,potential_mirror,layer2_search,https://github.com/Molcas/OpenMolcas,GitHub Search: top match 'Molcas/OpenMolcas' (73 stars),A
-鲲鹏,554,Eigen,基础库&加速库,https://gitlab.com/libeigen/eigen,non_github,non_github,,non_github,layer0_known,https://github.com/eigen-mirror/eigen,known mapping,S
-鲲鹏,561,PETSc,基础库&加速库,https://github.com/petsc/petsc,valid,repo,,potential_mirror,layer2_search,https://github.com/petsc/petsc,GitHub Search: top match 'petsc/petsc' (510 stars),A
+鲲鹏,469,Tophat2,HPC,https://github.com/infphilo/tophat,valid,repo,,potential_mirror,L0-known,https://ccb.jhu.edu/software/tophat/,"official site is JHU CCB, repo is unmaintained",S
+鲲鹏,477,OpenMolcas,HPC,https://github.com/Molcas/OpenMolcas,valid,repo,,potential_mirror,L0-known,https://gitlab.com/Molcas/OpenMolcas,official upstream is Molcas GitLab,S
+鲲鹏,561,PETSc,基础库&加速库,https://github.com/petsc/petsc,valid,repo,,potential_mirror,L0-known,https://gitlab.com/petsc/petsc,official upstream is PETSc GitLab,S

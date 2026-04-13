@@ -147,5 +147,35 @@
   "evidence": "GitHub Search: top match 'petsc/petsc' (510 stars)",
   "confidence": "A",
   "resolved_by": "layer2_search"
+ },
+ "mirror:coinbase/x402": {
+  "resolved_url": "https://github.com/x402-foundation/x402",
+  "evidence": "GitHub fork of x402-foundation/x402",
+  "confidence": "S",
+  "resolved_by": "L3-mirror"
+ },
+ "mirror:chrislusf/seaweedfs": {
+  "resolved_url": "https://github.com/seaweedfs/seaweedfs",
+  "evidence": "GitHub fork of seaweedfs/seaweedfs",
+  "confidence": "S",
+  "resolved_by": "L3-mirror"
+ },
+ "mirror:tanghaibao/allhic": {
+  "resolved_url": "",
+  "evidence": "not confirmed as mirror: desc='Genome scaffolding based on HiC data in heterozygous and high ploidy genomes', homepage=''",
+  "confidence": "S",
+  "resolved_by": "L3-not_mirror"
+ },
+ "mirror:webmproject/libwebp": {
+  "resolved_url": "https://chromium.googlesource.com/webm/libwebp",
+  "evidence": "GitHub mirror_url field: 'https://chromium.googlesource.com/webm/libwebp'",
+  "confidence": "S",
+  "resolved_by": "L3-mirror"
+ },
+ "mirror:eigenteam/eigen-git-mirror": {
+  "resolved_url": "mirror confirmed, upstream unknown",
+  "evidence": "description: 'THIS MIRROR IS DEPRECATED -- New url: https://gitlab.com/libeigen/eigen', homepage: ''",
+  "confidence": "B",
+  "resolved_by": "L3-mirror"
  }
 }
