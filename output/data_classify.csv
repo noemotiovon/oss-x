@@ -180,7 +180,7 @@
 鲲鹏,88,Docker,虚拟化,https://github.com/nextcloud/docker,,repo,github.com/nextcloud/docker
 鲲鹏,89,Kubernetes,虚拟化,https://github.com/kubernetes/kubernetes,,repo,github.com/kubernetes/kubernetes
 鲲鹏,90,libvirt,虚拟化,https://github.com/libvirt/libvirt,,repo,github.com/libvirt/libvirt
-鲲鹏,91,OpenStack,虚拟化,https://opendev.org/openstack,,organization,"opendev.org/openstack (单段路径, 视为组织/用户根)"
+鲲鹏,91,OpenStack,虚拟化,https://opendev.org/openstack/openstack,,repo,URL: https://opendev.org/openstack/openstack
 鲲鹏,92,KVM,虚拟化,https://git.kernel.org/pub/scm/virt/kvm/kvm.git,,repo,.git URL: https://git.kernel.org/pub/scm/virt/kvm/kvm.git
 鲲鹏,93,Open vSwitch,虚拟化,https://github.com/openvswitch/ovs,,repo,github.com/openvswitch/ovs
 鲲鹏,94,QEMU,虚拟化,https://gitlab.com/qemu-project/qemu,,repo,gitlab.com/qemu-project/qemu

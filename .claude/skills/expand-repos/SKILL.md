@@ -1,70 +1,61 @@
 ---
 name: expand-repos
-description: Expand repos from original organizations using GitHub API and LLM Web Search
+description: Expand repos from orgs in data_classify.csv using GitHub API + scoring (top 20 per org)
 user-invocable: true
 ---
 
-# Repo Expansion Skill (Step ⑧)
+# Repo Expansion Skill
 
-Starting from the original repo list and original organizations (from `organization.csv`), discover additional popular and active repositories.
+Starting from `output/data_classify.csv`, expand organizations into their top repos and merge with the original repos.
 
 ## Input
 
-- `output/repo.csv` — original repo list (from step ③)
-- `output/organization.csv` — original organization list (from step ③)
+- `output/data_classify.csv` — must contain `entity_type` column (`repo` / `organization` / `unknown`) and `上游地址`.
+
+## Output
+
+- `output/repos.csv` — merged list of original repos + top-N repos per org (deduplicated, originals win on collision).
 
 ## Procedure
 
 ### Step 1: Run the expansion script
 
 ```bash
-python3 scripts/expand_repos.py output/repo.csv output/organization.csv \
-    -o output/repo_exp.csv --summary
+python3 scripts/expand_repos.py output/data_classify.csv \
+    -o output/repos.csv --top 20 --summary
 ```
 
-The script:
-1. Copies all `repo.csv` entries with `source=repo`
-2. For each GitHub org in `organization.csv`:
-   - Calls GitHub Search API to find repos with **stars > 100 AND pushed in last year**
-   - Adds them with `source=org_expansion`
-3. Deduplicates: if a repo exists in both repo.csv and expansion, keeps `source=repo` (original takes priority)
+Requires `GITHUB_TOKEN` env var.
 
-### Step 2: LLM expansion for non-GitHub orgs
+### Scoring formula
 
-For organizations NOT on GitHub:
+For each repo under a GitHub org, the script fetches `stars`, `forks`, `pushed_at` via `/orgs/{login}/repos` (falls back to `/users/{login}/repos`) and scores:
 
-1. **Use Web Search** to find their popular repositories
-2. Search for: `"{org_name}" popular repositories` or `"{org_name}" open source projects`
-3. Add found repos with:
-   - `source=org_expansion`
-   - `llm_note=LLM搜集` (to mark these were found via LLM, not API)
-4. Present LLM-found repos to user for review before adding
+```
+score = 2 * log10(stars + 1)
+      + 1 * log10(forks + 1)
+      + 3 * exp(-days_since_last_push / 180)
+```
 
-### Step 3: Present expansion results to user
+- Log terms keep popularity on a comparable scale across orders of magnitude.
+- The recency term (half-life ~125d) rewards actively pushed projects; stale repos decay toward 0.
 
-Show:
-- Original repos count (from repo.csv)
-- New repos discovered (from org expansion)
-- Repos by organization
-- Filter criteria applied (stars > 100, active in last year)
+Forks and archived repos are excluded. Top `--top` (default 20) repos per org are kept.
 
-The user reviews and may remove irrelevant repos.
+### Step 2: Merge & dedupe
 
-### Step 4: Save final output
+- All `entity_type=repo` rows from `data_classify.csv` are emitted first with `source=repo`.
+- Expanded rows are emitted with `source=org_expansion` and their `score`, `stars`, `forks`, `pushed_at`, `expanded_from_org`.
+- URL-normalized dedup: if an expanded repo already exists as an original, the original wins.
 
-After user confirmation, save `output/repo_exp.csv` with columns:
-- All original columns from repo.csv
-- `source` — `repo` (original) or `org_expansion` (expanded)
-- `llm_note` — notes for LLM-discovered repos (empty for API-discovered)
-- `expanded_from_org` — which org this was expanded from (empty for original repos)
+### Output columns
 
-### Step 5: Output summary
+`页签, 序号, 项目名称, 分类, 上游地址, entity_type, source, expanded_from_org, stars, forks, pushed_at, score, language, description, reason`
 
-Print:
-- Total repos in repo_exp.csv
-- Original repos vs expanded repos
-- Repos by organization
+### Caching
+
+Org repo listings are cached in `output/.cache/org_repos_expansion_cache.json`. Use `--no-cache` to force refresh.
 
 ### Next step
 
-→ `/trace-foundations` and `/trace-companies` (can run in parallel)
+→ `/trace-foundations` and `/trace-companies` (parallel)

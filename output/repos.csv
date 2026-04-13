@@ -1,630 +1,951 @@
-页签,序号,项目名称,分类,上游地址,entity_type,reason
-昇腾,1,transformers,训练加速,https://github.com/huggingface/transformers,repo,脚本分类: github.com/huggingface/transformers
-昇腾,2,accelerate,训练加速,https://github.com/huggingface/accelerate,repo,脚本分类: github.com/huggingface/accelerate
-昇腾,3,PEFT,训练加速,https://github.com/huggingface/peft,repo,脚本分类: github.com/huggingface/peft
-昇腾,4,TRL,训练加速,https://github.com/huggingface/trl,repo,脚本分类: github.com/huggingface/trl
-昇腾,5,diffusers,推理加速,https://github.com/huggingface/diffusers,repo,脚本分类: github.com/huggingface/diffusers
-昇腾,6,timm,推理加速,https://github.com/huggingface/pytorch-image-models,repo,脚本分类: github.com/huggingface/pytorch-image-models
-昇腾,7,TGI,推理加速,https://github.com/huggingface/text-generation-inference,repo,脚本分类: github.com/huggingface/text-generation-inference
-昇腾,8,LlamaFactory,训练加速,https://github.com/hiyouga/LLaMA-Factory,repo,脚本分类: github.com/hiyouga/LLaMA-Factory
-昇腾,9,FastChat,推理加速,https://github.com/lm-sys/FastChat,repo,脚本分类: github.com/lm-sys/FastChat
-昇腾,10,stable-diffusion-webui,推理加速,https://github.com/AUTOMATIC1111/stable-diffusion-webui,repo,脚本分类: github.com/AUTOMATIC1111/stable-diffusion-webui
-昇腾,11,lm-eval-harness,推理加速,https://github.com/EleutherAI/lm-evaluation-harness,repo,脚本分类: github.com/EleutherAI/lm-evaluation-harness
-昇腾,12,opencompass,推理加速,https://github.com/open-compass/opencompass,repo,脚本分类: github.com/open-compass/opencompass
-昇腾,13,axolotl,训练加速,https://github.com/axolotl-ai-cloud/axolotl,repo,脚本分类: github.com/axolotl-ai-cloud/axolotl
-昇腾,14,openclip,推理加速,https://github.com/mlfoundations/open_clip,repo,脚本分类: github.com/mlfoundations/open_clip
-昇腾,15,InternLM,推理加速,https://github.com/InternLM/InternLM,repo,脚本分类: github.com/InternLM/InternLM
-昇腾,16,Ollama,推理加速,https://github.com/ollama/ollama,repo,脚本分类: github.com/ollama/ollama
-昇腾,18,unsolth,训练加速,https://github.com/unslothai/unsloth,repo,脚本分类: github.com/unslothai/unsloth
-昇腾,19,OpenRLHF,训练加速,https://github.com/OpenRLHF/OpenRLHF,repo,脚本分类: github.com/OpenRLHF/OpenRLHF
-昇腾,20,veRL,训练加速,https://github.com/volcengine/verl,repo,脚本分类: github.com/volcengine/verl
-昇腾,21,ChatLearn,训练加速,https://github.com/alibaba/ChatLearn,repo,脚本分类: github.com/alibaba/ChatLearn
-昇腾,24,ComfyUI,推理加速,https://github.com/comfyanonymous/ComfyUI,repo,脚本分类: github.com/comfyanonymous/ComfyUI
-昇腾,25,DeepSpeed,训练加速,https://github.com/deepspeedai/DeepSpeed,repo,脚本分类: github.com/deepspeedai/DeepSpeed
-昇腾,26,OpenCV,推理加速,https://github.com/opencv/opencv,repo,脚本分类: github.com/opencv/opencv
-昇腾,27,ONNXRuntime,推理加速,https://github.com/microsoft/onnxruntime,repo,脚本分类: github.com/microsoft/onnxruntime
-昇腾,28,llama.cpp,推理加速,https://github.com/ggml-org/llama.cpp,repo,脚本分类: github.com/ggml-org/llama.cpp
-昇腾,29,whisper,推理加速,https://github.com/ggerganov/whisper.cpp,repo,脚本分类: github.com/ggerganov/whisper.cpp
-昇腾,30,wenet,推理加速,https://github.com/wenet-e2e/wenet,repo,脚本分类: github.com/wenet-e2e/wenet
-昇腾,33,Kserver,推理加速,https://github.com/kserve/kserve,repo,脚本分类: github.com/kserve/kserve
-昇腾,34,Kubernetes DRA,推理加速,https://github.com/kubernetes/dynamic-resource-allocation,repo,脚本分类: github.com/kubernetes/dynamic-resource-allocation
-昇腾,35,Ray,推理加速,https://github.com/ray-project/ray,repo,脚本分类: github.com/ray-project/ray
-昇腾,36,OpenXLA,推理加速,https://github.com/openxla/xla,repo,脚本分类: github.com/openxla/xla
-昇腾,37,bitsandbytes,推理加速,https://github.com/bitsandbytes-foundation/bitsandbytes,repo,脚本分类: github.com/bitsandbytes-foundation/bitsandbytes
-昇腾,39,TensorFlow,AI框架,https://github.com/tensorflow/tensorflow,repo,脚本分类: github.com/tensorflow/tensorflow
-昇腾,40,Triton,算子库和编程,https://github.com/triton-lang/triton,repo,脚本分类: github.com/triton-lang/triton
-昇腾,41,Dify,应用加速,https://github.com/langgenius/dify,repo,脚本分类: github.com/langgenius/dify
-昇腾,42,Coze,应用加速,https://github.com/coze-dev/coze-studio,repo,脚本分类: github.com/coze-dev/coze-studio
-昇腾,43,MiniOneRec,应用加速,https://github.com/AkaliKong/MiniOneRec,repo,脚本分类: github.com/AkaliKong/MiniOneRec
-昇腾,45,X402,应用加速,https://github.com/coinbase/x402,repo,脚本分类: github.com/coinbase/x402
-昇腾,46,AP2,应用加速,https://github.com/google-agentic-commerce/AP2,repo,脚本分类: github.com/google-agentic-commerce/AP2
-昇腾,47,MCP,应用加速,https://github.com/modelcontextprotocol/modelcontextprotocol,repo,脚本分类: github.com/modelcontextprotocol/modelcontextprotocol
-昇腾,48,A2A,应用加速,https://github.com/a2aproject/A2A,repo,脚本分类: github.com/a2aproject/A2A
-昇腾,49,A2UI,应用加速,https://github.com/google/A2UI,repo,脚本分类: github.com/google/A2UI
-昇腾,50,ANP,应用加速,https://github.com/agent-network-protocol/AgentNetworkProtocol,repo,脚本分类: github.com/agent-network-protocol/AgentNetworkProtocol
-昇腾,51,Magatron,训练加速,https://github.com/NVIDIA/Megatron-LM,repo,脚本分类: github.com/NVIDIA/Megatron-LM
-昇腾,52,torchtitan,训练加速,https://github.com/pytorch/torchtitan,repo,脚本分类: github.com/pytorch/torchtitan
-昇腾,53,VeOmni,训练加速,https://github.com/ByteDance-Seed/VeOmni,repo,脚本分类: github.com/ByteDance-Seed/VeOmni
-昇腾,54,torchtune,训练加速,https://github.com/meta-pytorch/torchtune,repo,脚本分类: github.com/meta-pytorch/torchtune
-昇腾,55,xtuner,训练加速,https://github.com/InternLM/xtuner,repo,脚本分类: github.com/InternLM/xtuner
-昇腾,56,ms-swift,训练加速,https://github.com/modelscope/ms-swift,repo,脚本分类: github.com/modelscope/ms-swift
-昇腾,57,Areal,训练加速,https://github.com/inclusionAI/AReaL,repo,脚本分类: github.com/inclusionAI/AReaL
-昇腾,58,Slime,训练加速,https://github.com/THUDM/slime,repo,脚本分类: github.com/THUDM/slime
-昇腾,59,ROLL,训练加速,https://github.com/alibaba/ROLL,repo,脚本分类: github.com/alibaba/ROLL
-昇腾,60,speculators,训练加速,https://github.com/vllm-project/speculators,repo,脚本分类: github.com/vllm-project/speculators
-昇腾,61,SpecForge,训练加速,https://github.com/sgl-project/SpecForge,repo,脚本分类: github.com/sgl-project/SpecForge
-昇腾,62,tensordict,训练加速,https://github.com/pytorch/tensordict,repo,脚本分类: github.com/pytorch/tensordict
-昇腾,63,torchvision,训练加速,https://github.com/pytorch/vision,repo,脚本分类: github.com/pytorch/vision
-昇腾,64,Liger-Kernel,训练加速,https://github.com/linkedin/Liger-Kernel,repo,脚本分类: github.com/linkedin/Liger-Kernel
-昇腾,65,flash-linear-attention,训练加速,https://github.com/fla-org/flash-linear-attention,repo,脚本分类: github.com/fla-org/flash-linear-attention
-昇腾,66,dgl,训练加速,https://github.com/dmlc/dgl,repo,脚本分类: github.com/dmlc/dgl
-昇腾,67,pyg,训练加速,https://github.com/pyg-team/pytorch_geometric,repo,脚本分类: github.com/pyg-team/pytorch_geometric
-昇腾,68,megablocks,训练加速,https://github.com/databricks/megablocks,repo,脚本分类: github.com/databricks/megablocks
-昇腾,70,Mooncake,推理加速,https://github.com/kvcache-ai/Mooncake,repo,脚本分类: github.com/kvcache-ai/Mooncake
-昇腾,71,cache-dit,推理加速,https://github.com/vipshop/cache-dit,repo,脚本分类: github.com/vipshop/cache-dit
-昇腾,72,LMCache,推理加速,https://github.com/LMCache/LMCache,repo,脚本分类: github.com/LMCache/LMCache
-昇腾,73,rtp-llm,推理加速,https://github.com/alibaba/rtp-llm,repo,脚本分类: github.com/alibaba/rtp-llm
-昇腾,74,xllm,推理加速,https://github.com/jd-opensource/xllm,repo,脚本分类: github.com/jd-opensource/xllm
-昇腾,75,router,推理加速,https://github.com/vllm-project/router,repo,脚本分类: github.com/vllm-project/router
-昇腾,76,Ktransformers,推理加速,https://github.com/kvcache-ai/ktransformers,repo,脚本分类: github.com/kvcache-ai/ktransformers
-昇腾,77,AIGW,推理加速,https://github.com/aigw-project/aigw,repo,脚本分类: github.com/aigw-project/aigw
-昇腾,78,llm-d,推理加速,https://github.com/llm-d/llm-d,repo,脚本分类: github.com/llm-d/llm-d
-昇腾,79,AIBrix,推理加速,https://github.com/vllm-project/aibrix,repo,脚本分类: github.com/vllm-project/aibrix
-昇腾,80,GPUStack,推理加速,https://github.com/gpustack/gpustack,repo,脚本分类: github.com/gpustack/gpustack
-昇腾,81,DiffSynth-Studio,推理加速,https://github.com/modelscope/DiffSynth-Studio,repo,脚本分类: github.com/modelscope/DiffSynth-Studio
-昇腾,82,FlagScale,推理加速,https://github.com/flagos-ai/FlagScale,repo,脚本分类: github.com/flagos-ai/FlagScale
-昇腾,83,ColossalAI,推理加速,https://github.com/hpcaitech/ColossalAI,repo,脚本分类: github.com/hpcaitech/ColossalAI
-昇腾,84,Vbench,推理加速,https://github.com/Vchitect/VBench,repo,脚本分类: github.com/Vchitect/VBench
-昇腾,85,llm-compressor,推理加速,https://github.com/vllm-project/llm-compressor,repo,脚本分类: github.com/vllm-project/llm-compressor
-昇腾,86,LightX2V,推理加速,https://github.com/ModelTC/LightX2V,repo,脚本分类: github.com/ModelTC/LightX2V
-昇腾,87,xDiT,推理加速,https://github.com/xdit-project/xDiT,repo,脚本分类: github.com/xdit-project/xDiT
-昇腾,91,TileLang,算子库和编程,https://github.com/tile-ai/tilelang,repo,脚本分类: github.com/tile-ai/tilelang
-鲲鹏,1,Glibc,基础库&加速库,https://github.com/bminor/glibc,repo,脚本分类: github.com/bminor/glibc
-鲲鹏,2,Hyperscan,基础库&加速库,https://github.com/est31/cargo-udeps,repo,脚本分类: github.com/est31/cargo-udeps
-鲲鹏,4,Zlib,基础库&加速库,https://github.com/madler/zlib,repo,脚本分类: github.com/madler/zlib
-鲲鹏,5,LZ4,基础库&加速库,https://github.com/lz4/lz4,repo,脚本分类: github.com/lz4/lz4
-鲲鹏,6,zlib-ng,基础库&加速库,https://github.com/zlib-ng/zlib-ng,repo,脚本分类: github.com/zlib-ng/zlib-ng
-鲲鹏,7,edk2,基础库&加速库,https://github.com/tianocore/edk2,repo,脚本分类: github.com/tianocore/edk2
-鲲鹏,8,Suricata,基础库&加速库,https://github.com/OISF/suricata.git,repo,脚本分类: github.com/OISF/suricata.git
-鲲鹏,9,Snort,基础库&加速库,https://github.com/snort3/snort3,repo,脚本分类: github.com/snort3/snort3
-鲲鹏,10,nDPI,基础库&加速库,https://github.com/ntop/nDPI,repo,脚本分类: github.com/ntop/nDPI
-鲲鹏,11,Gzip,基础库&加速库,https://github.com/distrotech/gzip,repo,脚本分类: github.com/distrotech/gzip
-鲲鹏,12,Zstd,基础库&加速库,https://github.com/facebook/zstd,repo,脚本分类: github.com/facebook/zstd
-鲲鹏,13,Snappy,基础库&加速库,https://github.com/google/snappy,repo,脚本分类: github.com/google/snappy
-鲲鹏,14,X265,基础库&加速库,https://github.com/videolan/x265,repo,脚本分类: github.com/videolan/x265
-鲲鹏,15,DPDK,基础库&加速库,https://github.com/dpdk/dpdk,repo,脚本分类: github.com/dpdk/dpdk
-鲲鹏,16,X264,基础库&加速库,https://code.videolan.org/videolan/x264,repo,脚本分类: code.videolan.org/videolan/x264
-鲲鹏,17,SPDK,基础库&加速库,https://github.com/spdk/spdk,repo,脚本分类: github.com/spdk/spdk
-鲲鹏,18,Bcache,基础库&加速库,https://github.com/g2p/bcache-tools,repo,脚本分类: github.com/g2p/bcache-tools
-鲲鹏,19,OpenBLAS,基础库&加速库,https://github.com/xianyi/openblas,repo,脚本分类: github.com/xianyi/openblas
-鲲鹏,20,lapack,基础库&加速库,https://github.com/reference-lapack/lapack,repo,脚本分类: github.com/reference-lapack/lapack
-鲲鹏,21,Numpy,基础库&加速库,https://github.com/numpy/numpy,repo,脚本分类: github.com/numpy/numpy
-鲲鹏,22,ISA-L,基础库&加速库,https://github.com/intel/isa-l,repo,脚本分类: github.com/intel/isa-l
-鲲鹏,23,EMU,ARM应用支持,https://github.com/treangenlab/emu,repo,脚本分类: github.com/treangenlab/emu
-鲲鹏,24,Mesa,ARM应用支持,https://github.com/mesa3d/mesa,repo,脚本分类: github.com/mesa3d/mesa
-鲲鹏,25,Binder,ARM应用支持,https://github.com/kupferlauncher/keybinder,repo,脚本分类: github.com/kupferlauncher/keybinder
-鲲鹏,26,LLVM,ARM应用支持,"https://llvm.org/
-https://github.com/llvm/llvm-project",repo,脚本分类: github.com/llvm/llvm-project
-鲲鹏,27,libdrm,ARM应用支持,https://gitlab.freedesktop.org/mesa/drm,repo,脚本分类: gitlab.freedesktop.org/mesa/drm
-鲲鹏,28,musl,ARM应用支持,https://git.musl-libc.org/cgit/musl,repo,脚本分类: git.musl-libc.org/cgit/musl
-鲲鹏,29,OpenH264,ARM应用支持,https://github.com/cisco/openh264,repo,脚本分类: github.com/cisco/openh264
-鲲鹏,30,Opus,ARM应用支持,https://github.com/xiph/opus,repo,脚本分类: github.com/xiph/opus
-鲲鹏,31,cJSON,ARM应用支持,https://github.com/davegamble/cjson,repo,脚本分类: github.com/davegamble/cjson
-鲲鹏,32,libyuv-android,ARM应用支持,https://github.com/crow-misia/libyuv-android,repo,脚本分类: github.com/crow-misia/libyuv-android
-鲲鹏,33,benchmark,ARM应用支持,https://github.com/google/benchmark,repo,脚本分类: github.com/google/benchmark
-鲲鹏,34,OpenCV,ARM应用支持,https://github.com/opencv/opencv,repo,脚本分类: github.com/opencv/opencv
-鲲鹏,35,Ffmpeg,ARM应用支持,https://github.com/ffmpeg/ffmpeg,repo,脚本分类: github.com/ffmpeg/ffmpeg
-鲲鹏,36,libjpeg-turbo,ARM应用支持,https://github.com/libjpeg-turbo/libjpeg-turbo,repo,脚本分类: github.com/libjpeg-turbo/libjpeg-turbo
-鲲鹏,37,Hadoop,大数据,https://github.com/apache/hadoop,repo,脚本分类: github.com/apache/hadoop
-鲲鹏,38,Spark,大数据,https://github.com/apache/spark,repo,脚本分类: github.com/apache/spark
-鲲鹏,39,Hive,大数据,https://github.com/apache/hive,repo,脚本分类: github.com/apache/hive
-鲲鹏,40,HBase,大数据,https://github.com/apache/hbase,repo,脚本分类: github.com/apache/hbase
-鲲鹏,41,ElasticSearch,大数据,https://github.com/elastic/elasticsearch,repo,脚本分类: github.com/elastic/elasticsearch
-鲲鹏,42,Flink,大数据,https://github.com/apache/flink,repo,脚本分类: github.com/apache/flink
-鲲鹏,43,Kafka,大数据,https://github.com/apache/kafka,repo,脚本分类: github.com/apache/kafka
-鲲鹏,44,Storm,大数据,https://github.com/apache/storm,repo,脚本分类: github.com/apache/storm
-鲲鹏,45,Redis,大数据,https://github.com/redis/redis,repo,脚本分类: github.com/redis/redis
-鲲鹏,46,Impala,大数据,https://github.com/apache/impala,repo,脚本分类: github.com/apache/impala
-鲲鹏,47,Zookeeper,大数据,https://github.com/apache/zookeeper,repo,脚本分类: github.com/apache/zookeeper
-鲲鹏,48,ClickHouse,大数据,https://github.com/clickhouse/clickhouse,repo,脚本分类: github.com/clickhouse/clickhouse
-鲲鹏,49,Alluxio,大数据,https://github.com/alluxio/alluxio,repo,脚本分类: github.com/alluxio/alluxio
-鲲鹏,50,Ranger,大数据,https://github.com/ranger/ranger,repo,脚本分类: github.com/ranger/ranger
-鲲鹏,51,Tez,大数据,https://github.com/apache/tez,repo,脚本分类: github.com/apache/tez
-鲲鹏,52,Flume,大数据,https://github.com/apache/flume,repo,脚本分类: github.com/apache/flume
-鲲鹏,53,Oozie,大数据,https://github.com/apache/oozie,repo,脚本分类: github.com/apache/oozie
-鲲鹏,54,Solr,大数据,https://github.com/apache/solr,repo,脚本分类: github.com/apache/solr
-鲲鹏,55,Presto,大数据,https://github.com/prestodb/presto,repo,脚本分类: github.com/prestodb/presto
-鲲鹏,56,Kylin,大数据,https://github.com/apache/kylin,repo,脚本分类: github.com/apache/kylin
-鲲鹏,57,Accumulo,大数据,https://github.com/apache/accumulo,repo,脚本分类: github.com/apache/accumulo
-鲲鹏,58,Avro,大数据,https://github.com/apache/avro,repo,脚本分类: github.com/apache/avro
-鲲鹏,59,logstash,大数据,https://github.com/elastic/logstash,repo,脚本分类: github.com/elastic/logstash
-鲲鹏,60,Kibana,大数据,https://github.com/elastic/kibana,repo,脚本分类: github.com/elastic/kibana
-鲲鹏,61,Knox,大数据,https://github.com/automattic/knox,repo,脚本分类: github.com/automattic/knox
-鲲鹏,62,Pig,大数据,https://github.com/apache/pig,repo,脚本分类: github.com/apache/pig
-鲲鹏,63,Atlas,大数据,https://github.com/apache/atlas,repo,脚本分类: github.com/apache/atlas
-鲲鹏,64,Livy,大数据,https://github.com/apache/incubator-livy,repo,脚本分类: github.com/apache/incubator-livy
-鲲鹏,65,Parquet,大数据,https://github.com/apache/parquet-java/,repo,脚本分类: github.com/apache/parquet-java
-鲲鹏,66,Mesos,大数据,https://github.com/apache/mesos,repo,脚本分类: github.com/apache/mesos
-鲲鹏,67,Thrift,大数据,https://github.com/apache/thrift,repo,脚本分类: github.com/apache/thrift
-鲲鹏,68,Drill,大数据,https://github.com/apache/drill,repo,脚本分类: github.com/apache/drill
-鲲鹏,69,Druid,大数据,https://github.com/apache/druid,repo,脚本分类: github.com/apache/druid
-鲲鹏,70,Phoenix,大数据,https://github.com/apache/phoenix,repo,脚本分类: github.com/apache/phoenix
-鲲鹏,71,Lucene,大数据,https://github.com/apache/lucene,repo,脚本分类: github.com/apache/lucene
-鲲鹏,72,TDengine,大数据,https://github.com/taosdata/tdengine,repo,脚本分类: github.com/taosdata/tdengine
-鲲鹏,73,Arrow,大数据,https://github.com/apache/arrow,repo,脚本分类: github.com/apache/arrow
-鲲鹏,74,Kudu,大数据,https://github.com/apache/kudu,repo,脚本分类: github.com/apache/kudu
-鲲鹏,75,Kyuubi,大数据,https://github.com/yaooqinn/kyuubi,repo,脚本分类: github.com/yaooqinn/kyuubi
-鲲鹏,76,Ceph,分布式存储,https://github.com/ceph/ceph,repo,脚本分类: github.com/ceph/ceph
-鲲鹏,77,GlusterFS,分布式存储,https://github.com/gluster/glusterfs,repo,脚本分类: github.com/gluster/glusterfs
-鲲鹏,79,FastDFS,分布式存储,https://github.com/greduan/emacs-theme-gruvbox,repo,脚本分类: github.com/greduan/emacs-theme-gruvbox
-鲲鹏,80,MinIO,分布式存储,https://github.com/minio/minio,repo,脚本分类: github.com/minio/minio
-鲲鹏,81,MooseFS,分布式存储,https://github.com/moosefs/moosefs,repo,脚本分类: github.com/moosefs/moosefs
-鲲鹏,82,LizardFS,分布式存储,https://github.com/lizardfs/lizardfs,repo,脚本分类: github.com/lizardfs/lizardfs
-鲲鹏,83,Sheepdog,分布式存储,https://github.com/sheepdog/sheepdog,repo,脚本分类: github.com/sheepdog/sheepdog
-鲲鹏,84,DRBD,分布式存储,https://github.com/linbit/drbd,repo,脚本分类: github.com/linbit/drbd
-鲲鹏,85,DAOS,分布式存储,https://github.com/daos-stack/daos,repo,脚本分类: github.com/daos-stack/daos
-鲲鹏,86,CURVE,分布式存储,https://github.com/opencurve/curve,repo,脚本分类: github.com/opencurve/curve
-鲲鹏,87,SeaweedFS,分布式存储,https://github.com/chrislusf/seaweedfs,repo,脚本分类: github.com/chrislusf/seaweedfs
-鲲鹏,88,Docker,虚拟化,https://github.com/nextcloud/docker,repo,脚本分类: github.com/nextcloud/docker
-鲲鹏,89,Kubernetes,虚拟化,https://github.com/kubernetes/kubernetes,repo,脚本分类: github.com/kubernetes/kubernetes
-鲲鹏,90,libvirt,虚拟化,https://github.com/libvirt/libvirt,repo,脚本分类: github.com/libvirt/libvirt
-鲲鹏,91,OpenStack,虚拟化,https://github.com/openstack/openstack,repo,脚本分类: github.com/openstack/openstack
-鲲鹏,92,KVM,虚拟化,https://git.kernel.org/pub/scm/virt/kvm/kvm.git,repo,脚本分类: git.kernel.org/pub/scm
-鲲鹏,93,Open vSwitch,虚拟化,https://github.com/openvswitch/ovs,repo,脚本分类: github.com/openvswitch/ovs
-鲲鹏,94,QEMU,虚拟化,https://github.com/qemu/qemu,repo,脚本分类: github.com/qemu/qemu
-鲲鹏,95,Ovirt,虚拟化,https://github.com/ovirt/ovirt-engine,repo,脚本分类: github.com/ovirt/ovirt-engine
-鲲鹏,96,Stratovirt,虚拟化,https://gitee.com/openeuler/stratovirt,repo,脚本分类: gitee.com/openeuler/stratovirt
-鲲鹏,97,Calico,虚拟化,https://github.com/projectcalico/calico,repo,脚本分类: github.com/projectcalico/calico
-鲲鹏,98,Flannel,虚拟化,https://github.com/coreos/flannel,repo,脚本分类: github.com/coreos/flannel
-鲲鹏,99,CoreDNS,虚拟化,https://github.com/coredns/coredns,repo,脚本分类: github.com/coredns/coredns
-鲲鹏,100,Containerd,虚拟化,https://github.com/containerd/containerd,repo,脚本分类: github.com/containerd/containerd
-鲲鹏,101,Prometheus,虚拟化,https://github.com/prometheus/prometheus,repo,脚本分类: github.com/prometheus/prometheus
-鲲鹏,102,lstio,虚拟化,https://github.com/istio/istio,repo,脚本分类: github.com/istio/istio
-鲲鹏,103,Envoy,虚拟化,https://github.com/envoyproxy/envoy,repo,脚本分类: github.com/envoyproxy/envoy
-鲲鹏,104,iSula,虚拟化,https://gitee.com/openeuler/iSulad,repo,脚本分类: gitee.com/openeuler/iSulad
-鲲鹏,105,harbor,虚拟化,https://github.com/goharbor/harbor,repo,脚本分类: github.com/goharbor/harbor
-鲲鹏,106,Apache HTTP Server,Web,https://github.com/apache/httpd,repo,脚本分类: github.com/apache/httpd
-鲲鹏,107,Tomcat,Web,https://github.com/apache/tomcat,repo,脚本分类: github.com/apache/tomcat
-鲲鹏,108,Varnish,Web,https://github.com/varnishcache/varnish-cache,repo,脚本分类: github.com/varnishcache/varnish-cache
-鲲鹏,109,JBOSS,Web,https://github.com/wildfly/wildfly,repo,脚本分类: github.com/wildfly/wildfly
-鲲鹏,110,HAProxy,Web,https://github.com/haproxy/haproxy,repo,脚本分类: github.com/haproxy/haproxy
-鲲鹏,111,Memcached,Web,https://github.com/memcached/memcached,repo,脚本分类: github.com/memcached/memcached
-鲲鹏,112,Nginx,Web,https://github.com/nginx/nginx,repo,脚本分类: github.com/nginx/nginx
-鲲鹏,113,.NET Core,Web,https://github.com/dotnet/core,repo,脚本分类: github.com/dotnet/core
-鲲鹏,114,ATS,Web,https://github.com/apache/trafficserver,repo,脚本分类: github.com/apache/trafficserver
-鲲鹏,115,Jetty,Web,https://github.com/eclipse/jetty.project,repo,脚本分类: github.com/eclipse/jetty.project
-鲲鹏,116,Keepalived,Web,https://github.com/acassen/keepalived,repo,脚本分类: github.com/acassen/keepalived
-鲲鹏,118,Dubbo,Web,https://github.com/apache/dubbo,repo,脚本分类: github.com/apache/dubbo
-鲲鹏,119,Squid,Web,https://github.com/squid-cache/squid,repo,脚本分类: github.com/squid-cache/squid
-鲲鹏,120,Glassfish,Web,https://github.com/eclipse-ee4j/glassfish,repo,脚本分类: github.com/eclipse-ee4j/glassfish
-鲲鹏,121,Node.js,Web,https://github.com/nodejs/node,repo,脚本分类: github.com/nodejs/node
-鲲鹏,122,chromium,Web,https://github.com/chromium/chromium,repo,脚本分类: github.com/chromium/chromium
-鲲鹏,123,Django,Web,https://github.com/django/django,repo,脚本分类: github.com/django/django
-鲲鹏,124,fcgi,Web,https://github.com/fastcgi-archives/fcgi2,repo,脚本分类: github.com/fastcgi-archives/fcgi2
-鲲鹏,125,Mongoose,Web,https://github.com/automattic/mongoose,repo,脚本分类: github.com/automattic/mongoose
-鲲鹏,126,Nagios,Web,https://github.com/nagiosenterprises/nagioscore,repo,脚本分类: github.com/nagiosenterprises/nagioscore
-鲲鹏,127,uWSGI,Web,https://github.com/unbit/uwsgi,repo,脚本分类: github.com/unbit/uwsgi
-鲲鹏,128,Spring Framework,Web,https://github.com/spring-projects/spring-framework,repo,脚本分类: github.com/spring-projects/spring-framework
-鲲鹏,129,Spring Boot,Web,https://github.com/spring-projects/spring-boot,repo,脚本分类: github.com/spring-projects/spring-boot
-鲲鹏,130,Tengine,Web,https://github.com/alibaba/tengine,repo,脚本分类: github.com/alibaba/tengine
-鲲鹏,132,MySQL,数据库,https://github.com/mysql/mysql-server,repo,脚本分类: github.com/mysql/mysql-server
-鲲鹏,133,MariaDB,数据库,https://github.com/mariadb/server,repo,脚本分类: github.com/mariadb/server
-鲲鹏,134,PostgreSQL,数据库,https://github.com/postgres/postgres,repo,脚本分类: github.com/postgres/postgres
-鲲鹏,135,MongoDB,数据库,https://github.com/mongodb/mongo,repo,脚本分类: github.com/mongodb/mongo
-鲲鹏,136,RocksDB,数据库,https://github.com/facebook/rocksdb,repo,脚本分类: github.com/facebook/rocksdb
-鲲鹏,137,TiDB,数据库,https://github.com/pingcap/tidb,repo,脚本分类: github.com/pingcap/tidb
-鲲鹏,138,InfluxDB,数据库,https://github.com/influxdata/influxdb,repo,脚本分类: github.com/influxdata/influxdb
-鲲鹏,139,SQLite,数据库,https://github.com/sqlite/sqlite,repo,脚本分类: github.com/sqlite/sqlite
-鲲鹏,140,Cassandra,数据库,https://github.com/apache/cassandra,repo,脚本分类: github.com/apache/cassandra
-鲲鹏,141,etcd,数据库,https://github.com/etcd-io/etcd,repo,脚本分类: github.com/etcd-io/etcd
-鲲鹏,142,LevelDB,数据库,https://github.com/google/leveldb,repo,脚本分类: github.com/google/leveldb
-鲲鹏,143,OrientDB,数据库,https://github.com/orientechnologies/orientdb,repo,脚本分类: github.com/orientechnologies/orientdb
-鲲鹏,144,Neo4j,数据库,https://github.com/neo4j/neo4j,repo,脚本分类: github.com/neo4j/neo4j
-鲲鹏,145,gcc,基础库&加速库,https://github.com/gcc-mirror/gcc,repo,脚本分类: github.com/gcc-mirror/gcc
-鲲鹏,146,OpenJDK,基础库&加速库,https://github.com/openjdk/jdk,repo,脚本分类: github.com/openjdk/jdk
-鲲鹏,147,CMake,基础库&加速库,https://github.com/kitware/cmake,repo,脚本分类: github.com/kitware/cmake
-鲲鹏,148,Clang,基础库&加速库,https://github.com/llvm/llvm-project,repo,脚本分类: github.com/llvm/llvm-project
-鲲鹏,149,GDB,基础库&加速库,https://ftp.gnu.org/gnu/gdb/,repo,脚本分类: GNU project: gdb
-鲲鹏,150,Maven,基础库&加速库,https://github.com/apache/maven,repo,脚本分类: github.com/apache/maven
-鲲鹏,151,Ant,基础库&加速库,https://github.com/apache/ant,repo,脚本分类: github.com/apache/ant
-鲲鹏,152,Scala,基础库&加速库,https://github.com/scala/scala,repo,脚本分类: github.com/scala/scala
-鲲鹏,154,Golang,基础库&加速库,https://github.com/golang/go,repo,脚本分类: github.com/golang/go
-鲲鹏,155,Lua,基础库&加速库,https://github.com/lua/lua,repo,脚本分类: github.com/lua/lua
-鲲鹏,156,Perl,基础库&加速库,https://github.com/perl/perl5,repo,脚本分类: github.com/perl/perl5
-鲲鹏,157,Ruby,基础库&加速库,https://github.com/ruby/ruby,repo,脚本分类: github.com/ruby/ruby
-鲲鹏,158,R,基础库&加速库,https://github.com/wch/r-source,repo,脚本分类: github.com/wch/r-source
-鲲鹏,159,Gradle,基础库&加速库,https://github.com/gradle/gradle,repo,脚本分类: github.com/gradle/gradle
-鲲鹏,160,Erlang,基础库&加速库,https://github.com/erlang/otp,repo,脚本分类: github.com/erlang/otp
-鲲鹏,161,Google Test,基础库&加速库,https://github.com/google/googletest,repo,脚本分类: github.com/google/googletest
-鲲鹏,162,SKLearn,基础库&加速库,https://github.com/scikit-learn/scikit-learn,repo,脚本分类: github.com/scikit-learn/scikit-learn
-鲲鹏,163,APR-util,基础库&加速库,https://github.com/apache/apr-util,repo,脚本分类: github.com/apache/apr-util
-鲲鹏,164,TypeScript,基础库&加速库,https://github.com/microsoft/typescript,repo,脚本分类: github.com/microsoft/typescript
-鲲鹏,165,Git,基础库&加速库,https://github.com/git/git,repo,脚本分类: github.com/git/git
-鲲鹏,166,Jenkins,基础库&加速库,https://github.com/jenkinsci/jenkins,repo,脚本分类: github.com/jenkinsci/jenkins
-鲲鹏,167,npm,基础库&加速库,https://github.com/meteorhacks/npm,repo,脚本分类: github.com/meteorhacks/npm
-鲲鹏,168,catj,基础库&加速库,https://github.com/soheilpro/catj,repo,脚本分类: github.com/soheilpro/catj
-鲲鹏,169,bcrypt,基础库&加速库,https://github.com/pyca/bcrypt,repo,脚本分类: github.com/pyca/bcrypt
-鲲鹏,170,busybox,基础库&加速库,https://github.com/mirror/busybox,repo,脚本分类: github.com/mirror/busybox
-鲲鹏,171,Expat,基础库&加速库,https://github.com/libexpat/libexpat,repo,脚本分类: github.com/libexpat/libexpat
-鲲鹏,172,FlatBuffers,基础库&加速库,https://github.com/google/flatbuffers,repo,脚本分类: github.com/google/flatbuffers
-鲲鹏,174,Hiredis,基础库&加速库,https://github.com/redis/hiredis,repo,脚本分类: github.com/redis/hiredis
-鲲鹏,176,Libxml2,基础库&加速库,https://github.com/gnome/libxml2,repo,脚本分类: github.com/gnome/libxml2
-鲲鹏,177,MPFR,基础库&加速库,https://gitlab.inria.fr/mpfr/mpfr,repo,脚本分类: gitlab.inria.fr/mpfr/mpfr
-鲲鹏,178,Next.js,基础库&加速库,https://github.com/vercel/next.js,repo,脚本分类: github.com/vercel/next.js
-鲲鹏,179,pcre,基础库&加速库,https://github.com/pcre2project/pcre2,repo,脚本分类: github.com/pcre2project/pcre2
-鲲鹏,180,PHP,基础库&加速库,https://github.com/php/php-src,repo,脚本分类: github.com/php/php-src
-鲲鹏,181,React,基础库&加速库,https://github.com/facebook/react,repo,脚本分类: github.com/facebook/react
-鲲鹏,182,Rinetd,基础库&加速库,https://github.com/samhocevar/rinetd,repo,脚本分类: github.com/samhocevar/rinetd
-鲲鹏,183,SCons,基础库&加速库,https://github.com/scons/scons,repo,脚本分类: github.com/scons/scons
-鲲鹏,184,Netty,基础库&加速库,https://github.com/netty/netty,repo,脚本分类: github.com/netty/netty
-鲲鹏,185,Boost,基础库&加速库,https://github.com/boostorg/boost,repo,脚本分类: github.com/boostorg/boost
-鲲鹏,186,Protobuf,基础库&加速库,https://github.com/protocolbuffers/protobuf,repo,脚本分类: github.com/protocolbuffers/protobuf
-鲲鹏,187,Libevent,基础库&加速库,https://github.com/libevent/libevent,repo,脚本分类: github.com/libevent/libevent
-鲲鹏,188,Wireshark,基础库&加速库,https://github.com/wireshark/wireshark,repo,脚本分类: github.com/wireshark/wireshark
-鲲鹏,189,JUnit,基础库&加速库,https://github.com/junit-team/junit5,repo,脚本分类: github.com/junit-team/junit5
-鲲鹏,190,DHCP,基础库&加速库,https://github.com/insomniacslk/dhcp,repo,脚本分类: github.com/insomniacslk/dhcp
-鲲鹏,191,DNSmasq,基础库&加速库,https://github.com/coddec/classic-shell,repo,脚本分类: github.com/coddec/classic-shell
-鲲鹏,192,FastJSON,基础库&加速库,https://github.com/alibaba/fastjson2,repo,脚本分类: github.com/alibaba/fastjson2
-鲲鹏,193,grpc-java,基础库&加速库,https://github.com/grpc/grpc-java,repo,脚本分类: github.com/grpc/grpc-java
-鲲鹏,194,jemalloc,基础库&加速库,https://github.com/jemalloc/jemalloc,repo,脚本分类: github.com/jemalloc/jemalloc
-鲲鹏,195,ActiveMQ,基础库&加速库,https://github.com/apache/activemq,repo,脚本分类: github.com/apache/activemq
-鲲鹏,196,RabbitMQ,基础库&加速库,https://github.com/rabbitmq/rabbitmq-server,repo,脚本分类: github.com/rabbitmq/rabbitmq-server
-鲲鹏,197,Ansible,基础库&加速库,https://github.com/ansible/ansible,repo,脚本分类: github.com/ansible/ansible
-鲲鹏,198,APR,基础库&加速库,https://github.com/apache/apr,repo,脚本分类: github.com/apache/apr
-鲲鹏,199,Filebeat,基础库&加速库,https://github.com/elastic/beats,repo,脚本分类: github.com/elastic/beats
-鲲鹏,200,fmt,基础库&加速库,https://github.com/fmtlib/fmt,repo,脚本分类: github.com/fmtlib/fmt
-鲲鹏,201,Geos,基础库&加速库,https://github.com/libgeos/geos,repo,脚本分类: github.com/libgeos/geos
-鲲鹏,202,libconfig,基础库&加速库,https://github.com/hyperrealm/libconfig,repo,脚本分类: github.com/hyperrealm/libconfig
-鲲鹏,204,Netdata,基础库&加速库,https://github.com/netdata/netdata,repo,脚本分类: github.com/netdata/netdata
-鲲鹏,205,psutil,基础库&加速库,https://github.com/giampaolo/psutil,repo,脚本分类: github.com/giampaolo/psutil
-鲲鹏,206,RE2,基础库&加速库,https://github.com/google/re2,repo,脚本分类: github.com/google/re2
-鲲鹏,207,Rsyslog,基础库&加速库,https://github.com/rsyslog/rsyslog,repo,脚本分类: github.com/rsyslog/rsyslog
-鲲鹏,208,Shiny,基础库&加速库,https://github.com/efremidze/shiny,repo,脚本分类: github.com/efremidze/shiny
-鲲鹏,209,Swagger UI,基础库&加速库,https://github.com/swagger-api/swagger-ui,repo,脚本分类: github.com/swagger-api/swagger-ui
-鲲鹏,210,TinyXML,基础库&加速库,https://github.com/leethomason/tinyxml2,repo,脚本分类: github.com/leethomason/tinyxml2
-鲲鹏,211,Tornado,基础库&加速库,https://github.com/tornadoweb/tornado,repo,脚本分类: github.com/tornadoweb/tornado
-鲲鹏,212,Vue,基础库&加速库,https://github.com/vuejs/vue,repo,脚本分类: github.com/vuejs/vue
-鲲鹏,213,canal,基础库&加速库,https://github.com/alibaba/canal,repo,脚本分类: github.com/alibaba/canal
-鲲鹏,214,curl,基础库&加速库,https://github.com/curl/curl,repo,脚本分类: github.com/curl/curl
-鲲鹏,215,Grafana,基础库&加速库,https://github.com/grafana/grafana,repo,脚本分类: github.com/grafana/grafana
-鲲鹏,216,Guacamole,基础库&加速库,https://github.com/apache/guacamole-server,repo,脚本分类: github.com/apache/guacamole-server
-鲲鹏,217,log4cpp,基础库&加速库,https://github.com/orocos-toolchain/log4cpp,repo,脚本分类: github.com/orocos-toolchain/log4cpp
-鲲鹏,219,PaceMaker,基础库&加速库,https://github.com/clusterlabs/pacemaker,repo,脚本分类: github.com/clusterlabs/pacemaker
-鲲鹏,220,pigz,基础库&加速库,https://github.com/madler/pigz,repo,脚本分类: github.com/madler/pigz
-鲲鹏,221,Quartz,基础库&加速库,https://github.com/quartz-scheduler/quartz,repo,脚本分类: github.com/quartz-scheduler/quartz
-鲲鹏,222,Sphinx,基础库&加速库,https://github.com/sphinx-doc/sphinx,repo,脚本分类: github.com/sphinx-doc/sphinx
-鲲鹏,223,Telegraf,基础库&加速库,https://github.com/influxdata/telegraf,repo,脚本分类: github.com/influxdata/telegraf
-鲲鹏,224,Tesseract,基础库&加速库,https://github.com/tesseract-ocr/tesseract,repo,脚本分类: github.com/tesseract-ocr/tesseract
-鲲鹏,225,ZeroMQ,基础库&加速库,https://github.com/zeromq/libzmq,repo,脚本分类: github.com/zeromq/libzmq
-鲲鹏,226,grpc,基础库&加速库,https://github.com/grpc/grpc,repo,脚本分类: github.com/grpc/grpc
-鲲鹏,227,consul,基础库&加速库,https://github.com/hashicorp/consul,repo,脚本分类: github.com/hashicorp/consul
-鲲鹏,228,Kong,基础库&加速库,https://github.com/kong/kong,repo,脚本分类: github.com/kong/kong
-鲲鹏,229,PyTorch,搜广推,https://github.com/pytorch/pytorch,repo,脚本分类: github.com/pytorch/pytorch
-鲲鹏,230,Tensorflow,搜广推,https://github.com/tensorflow/tensorflow,repo,脚本分类: github.com/tensorflow/tensorflow
-鲲鹏,231,PaddlePaddle,搜广推,https://github.com/PaddlePaddle/Paddle,repo,脚本分类: github.com/PaddlePaddle/Paddle
-鲲鹏,232,caffe,搜广推,https://github.com/bvlc/caffe,repo,脚本分类: github.com/bvlc/caffe
-鲲鹏,233,horovod,搜广推,https://github.com/horovod/horovod,repo,脚本分类: github.com/horovod/horovod
-鲲鹏,234,Fio,基础库&加速库,https://github.com/axboe/fio,repo,脚本分类: github.com/axboe/fio
-鲲鹏,235,iperf,基础库&加速库,https://github.com/esnet/iperf,repo,脚本分类: github.com/esnet/iperf
-鲲鹏,236,Netperf,基础库&加速库,https://github.com/hewlettpackard/netperf,repo,脚本分类: github.com/hewlettpackard/netperf
-鲲鹏,237,sysbench,基础库&加速库,https://github.com/akopytov/sysbench,repo,脚本分类: github.com/akopytov/sysbench
-鲲鹏,238,UnixBench,基础库&加速库,https://github.com/kdlucas/byte-unixbench,repo,脚本分类: github.com/kdlucas/byte-unixbench
-鲲鹏,239,WebBench,基础库&加速库,https://github.com/ezlippi/webbench,repo,脚本分类: github.com/ezlippi/webbench
-鲲鹏,240,siege,基础库&加速库,https://github.com/joedog/siege,repo,脚本分类: github.com/joedog/siege
-鲲鹏,241,Wrk,基础库&加速库,https://github.com/wg/wrk,repo,脚本分类: github.com/wg/wrk
-鲲鹏,244,BWA,HPC,https://github.com/lh3/bwa,repo,脚本分类: github.com/lh3/bwa
-鲲鹏,245,GATK,HPC,https://github.com/broadinstitute/gatk,repo,脚本分类: github.com/broadinstitute/gatk
-鲲鹏,246,Relion,HPC,https://github.com/3dem/relion,repo,脚本分类: github.com/3dem/relion
-鲲鹏,247,AlphaFold2,HPC,https://github.com/google-deepmind/alphafold,repo,脚本分类: github.com/google-deepmind/alphafold
-鲲鹏,248,HMMER,HPC,https://github.com/eddyrivaslab/hmmer,repo,脚本分类: github.com/eddyrivaslab/hmmer
-鲲鹏,249,OpenHPC,HPC,https://github.com/openhpc/ohpc,repo,脚本分类: github.com/openhpc/ohpc
-鲲鹏,250,Lammps,HPC,https://github.com/lammps/lammps,repo,脚本分类: github.com/lammps/lammps
-鲲鹏,252,CP2K,HPC,https://github.com/cp2k/cp2k,repo,脚本分类: github.com/cp2k/cp2k
-鲲鹏,253,QuantumEspresso,HPC,https://github.com/qef/q-e,repo,脚本分类: github.com/qef/q-e
-鲲鹏,254,GROMACS,HPC,https://github.com/gromacs/gromacs,repo,脚本分类: github.com/gromacs/gromacs
-鲲鹏,255,Nwchem,HPC,https://github.com/nwchemgit/nwchem,repo,脚本分类: github.com/nwchemgit/nwchem
-鲲鹏,257,WRF,HPC,https://github.com/wrf-model/wrf,repo,脚本分类: github.com/wrf-model/wrf
-鲲鹏,258,CESM,HPC,https://github.com/escomp/cesm,repo,脚本分类: github.com/escomp/cesm
-鲲鹏,259,NEMO,HPC,https://github.com/linuxmint/nemo,repo,脚本分类: github.com/linuxmint/nemo
-鲲鹏,260,WAVEWATCH III,HPC,https://github.com/csdms/bmi-wavewatch3,repo,脚本分类: github.com/csdms/bmi-wavewatch3
-鲲鹏,261,LASTZ,HPC,https://github.com/lastz/lastz,repo,脚本分类: github.com/lastz/lastz
-鲲鹏,263,eman2,HPC,https://github.com/cryoem/eman2,repo,脚本分类: github.com/cryoem/eman2
-鲲鹏,265,FSL,HPC,https://git.fmrib.ox.ac.uk/fsl/fslpy,repo,脚本分类: git.fmrib.ox.ac.uk/fsl/fslpy
-鲲鹏,267,SimpleITK,HPC,https://github.com/simpleitk/simpleitk,repo,脚本分类: github.com/simpleitk/simpleitk
-鲲鹏,268,3DSlicer,HPC,https://github.com/slicer/slicer,repo,脚本分类: github.com/slicer/slicer
-鲲鹏,269,bismark,HPC,https://github.com/felixkrueger/bismark,repo,脚本分类: github.com/felixkrueger/bismark
-鲲鹏,270,Primer3,HPC,https://github.com/primer3-org/primer3,repo,脚本分类: github.com/primer3-org/primer3
-鲲鹏,271,featureCounts,HPC,https://subread.sourceforge.net/,repo,脚本分类: subread.sourceforge (project site)
-鲲鹏,272,nanopack,HPC,https://github.com/wdecoster/nanopack,repo,脚本分类: github.com/wdecoster/nanopack
-鲲鹏,273,GRAPHMAP,HPC,https://github.com/lbcb-sci/graphmap2,repo,脚本分类: github.com/lbcb-sci/graphmap2
-鲲鹏,274,GRIDSS,HPC,https://github.com/papenfusslab/gridss,repo,脚本分类: github.com/papenfusslab/gridss
-鲲鹏,275,Lumpy,HPC,https://github.com/arq5x/lumpy-sv,repo,脚本分类: github.com/arq5x/lumpy-sv
-鲲鹏,276,Manta,HPC,https://github.com/hql287/manta,repo,脚本分类: github.com/hql287/manta
-鲲鹏,277,RepeatModeler,HPC,https://github.com/dfam-consortium/repeatmodeler,repo,脚本分类: github.com/dfam-consortium/repeatmodeler
-鲲鹏,278,rMATs,HPC,https://github.com/xinglab/rmats-turbo,repo,脚本分类: github.com/xinglab/rmats-turbo
-鲲鹏,279,trf,HPC,https://github.com/benson-genomics-lab/trf,repo,脚本分类: github.com/benson-genomics-lab/trf
-鲲鹏,280,deeptools,HPC,https://github.com/deeptools/deeptools,repo,脚本分类: github.com/deeptools/deeptools
-鲲鹏,281,pilon,HPC,https://github.com/broadinstitute/pilon,repo,脚本分类: github.com/broadinstitute/pilon
-鲲鹏,282,FigTRee,HPC,https://github.com/rambaut/figtree,repo,脚本分类: github.com/rambaut/figtree
-鲲鹏,283,3d-dna,HPC,https://github.com/aidenlab/3d-dna,repo,脚本分类: github.com/aidenlab/3d-dna
-鲲鹏,284,ALLHiC,HPC,https://github.com/tanghaibao/allhic,repo,脚本分类: github.com/tanghaibao/allhic
-鲲鹏,285,bamtools,HPC,https://github.com/pezmaster31/bamtools,repo,脚本分类: github.com/pezmaster31/bamtools
-鲲鹏,286,BUSCO,HPC,https://gitlab.com/ezlab/busco,repo,脚本分类: gitlab.com/ezlab/busco
-鲲鹏,287,flye,HPC,https://github.com/fenderglass/flye,repo,脚本分类: github.com/fenderglass/flye
-鲲鹏,288,Muscle,HPC,https://github.com/rcedgar/muscle,repo,脚本分类: github.com/rcedgar/muscle
-鲲鹏,289,EIGENSOFT,HPC,https://github.com/dreichlab/eig,repo,脚本分类: github.com/dreichlab/eig
-鲲鹏,290,trimmomatic,HPC,https://github.com/usadellab/trimmomatic,repo,脚本分类: github.com/usadellab/trimmomatic
-鲲鹏,291,Falcon,HPC,https://github.com/falconry/falcon,repo,脚本分类: github.com/falconry/falcon
-鲲鹏,292,AutoDock vina,HPC,https://github.com/ccsb-scripps/autodock-vina,repo,脚本分类: github.com/ccsb-scripps/autodock-vina
-鲲鹏,293,Tinker,HPC,https://github.com/tinkertools/tinker,repo,脚本分类: github.com/tinkertools/tinker
-鲲鹏,295,sambamba,HPC,https://github.com/biod/sambamba,repo,脚本分类: github.com/biod/sambamba
-鲲鹏,296,Cutadapt,HPC,https://github.com/marcelm/cutadapt,repo,脚本分类: github.com/marcelm/cutadapt
-鲲鹏,297,hyphy,HPC,https://github.com/veg/hyphy,repo,脚本分类: github.com/veg/hyphy
-鲲鹏,298,minimap2,HPC,https://github.com/lh3/minimap2,repo,脚本分类: github.com/lh3/minimap2
-鲲鹏,299,mummer,HPC,https://github.com/mummer4/mummer,repo,脚本分类: github.com/mummer4/mummer
-鲲鹏,300,salmon,HPC,https://github.com/combine-lab/salmon,repo,脚本分类: github.com/combine-lab/salmon
-鲲鹏,301,SoftSV,HPC,https://sourceforge.net/projects/softsv/,repo,脚本分类: sourceforge.net/projects/softsv
-鲲鹏,302,smcpp,HPC,https://github.com/popgenmethods/smcpp,repo,脚本分类: github.com/popgenmethods/smcpp
-鲲鹏,303,glean,HPC,https://sourceforge.net/projects/glean-gene/,repo,脚本分类: sourceforge.net/projects/glean-gene
-鲲鹏,304,trimal,HPC,https://github.com/inab/trimal,repo,脚本分类: github.com/inab/trimal
-鲲鹏,305,mrbayes,HPC,https://github.com/nbisweden/mrbayes,repo,脚本分类: github.com/nbisweden/mrbayes
-鲲鹏,306,VaPoR,HPC,https://github.com/connor-lab/vapor,repo,脚本分类: github.com/connor-lab/vapor
-鲲鹏,307,fastx_toolkit,HPC,https://github.com/agordon/fastx_toolkit,repo,脚本分类: github.com/agordon/fastx_toolkit
-鲲鹏,308,seqwish,HPC,https://github.com/ekg/seqwish,repo,脚本分类: github.com/ekg/seqwish
-鲲鹏,309,seqkit,HPC,https://github.com/shenwei356/seqkit,repo,脚本分类: github.com/shenwei356/seqkit
-鲲鹏,310,MCscanX,HPC,https://github.com/wyp1125/mcscanx,repo,脚本分类: github.com/wyp1125/mcscanx
-鲲鹏,311,bioawk,HPC,https://github.com/lh3/bioawk,repo,脚本分类: github.com/lh3/bioawk
-鲲鹏,312,Mrtrix,HPC,https://github.com/MRtrix3/mrtrix3,repo,脚本分类: github.com/MRtrix3/mrtrix3
-鲲鹏,313,psmc,HPC,https://github.com/lh3/psmc,repo,脚本分类: github.com/lh3/psmc
-鲲鹏,314,metaeuk,HPC,https://github.com/soedinglab/metaeuk,repo,脚本分类: github.com/soedinglab/metaeuk
-鲲鹏,315,gnuplot,HPC,https://sourceforge.net/p/gnuplot/gnuplot-main/ci/master/tree/,repo,脚本分类: sourceforge.net/p/gnuplot
-鲲鹏,316,MNE-python,HPC,https://github.com/mne-tools/mne-python,repo,脚本分类: github.com/mne-tools/mne-python
-鲲鹏,317,centrifuge,HPC,https://github.com/DaehwanKimLab/centrifuge,repo,脚本分类: github.com/DaehwanKimLab/centrifuge
-鲲鹏,318,ClipKIT,HPC,https://github.com/jlsteenwyk/clipkit,repo,脚本分类: github.com/jlsteenwyk/clipkit
-鲲鹏,319,idba,HPC,https://github.com/loneknightpy/idba,repo,脚本分类: github.com/loneknightpy/idba
-鲲鹏,320,samblaster,HPC,https://github.com/gregoryfaust/samblaster,repo,脚本分类: github.com/gregoryfaust/samblaster
-鲲鹏,321,SVseq2,HPC,https://sourceforge.net/projects/svseq2/files/svseq2_2/,repo,脚本分类: sourceforge.net/projects/svseq2
-鲲鹏,322,BayesTyper,HPC,https://github.com/bioinformatics-centre/bayestyper,repo,脚本分类: github.com/bioinformatics-centre/bayestyper
-鲲鹏,323,Graphtyper2,HPC,https://github.com/decodegenetics/graphtyper,repo,脚本分类: github.com/decodegenetics/graphtyper
-鲲鹏,324,TensorRT,HPC,https://github.com/nvidia/tensorrt,repo,脚本分类: github.com/nvidia/tensorrt
-鲲鹏,325,jvarkit,HPC,https://github.com/lindenb/jvarkit,repo,脚本分类: github.com/lindenb/jvarkit
-鲲鹏,327,RepeatScout,HPC,https://github.com/dfam-consortium/repeatscout,repo,脚本分类: github.com/dfam-consortium/repeatscout
-鲲鹏,328,MOPAC,HPC,https://github.com/openmopac/mopac,repo,脚本分类: github.com/openmopac/mopac
-鲲鹏,330,Cubep3m,HPC,https://github.com/jharno/cubep3m,repo,脚本分类: github.com/jharno/cubep3m
-鲲鹏,331,SWAN,HPC,https://swanmodel.sourceforge.io/,repo,脚本分类: swanmodel.sourceforge (project site)
-鲲鹏,332,dnacopy,HPC,https://bioconductor.org/packages/3.20/bioc/html/DNAcopy.html,repo,脚本分类: bioconductor.org package: DNAcopy
-鲲鹏,333,metapod,HPC,https://bioconductor.org/packages/3.20/bioc/html/metapod.html,repo,脚本分类: bioconductor.org package: metapod
-鲲鹏,334,geneselectmmd,HPC,https://bioconductor.org/packages/3.20/bioc/html/GeneSelectMMD.html,repo,脚本分类: bioconductor.org package: GeneSelectMMD
-鲲鹏,335,maigespack,HPC,https://bioconductor.org/packages/3.17/bioc/html/maigesPack.html,repo,脚本分类: bioconductor.org package: maigesPack
-鲲鹏,336,fastseg,HPC,https://bioconductor.org/packages/3.20/bioc/html/fastseg.html,repo,脚本分类: bioconductor.org package: fastseg
-鲲鹏,337,batchelor,HPC,https://bioconductor.org/packages/3.20/bioc/html/batchelor.html,repo,脚本分类: bioconductor.org package: batchelor
-鲲鹏,338,methylkit,HPC,https://bioconductor.org/packages/3.20/bioc/html/methylKit.html,repo,脚本分类: bioconductor.org package: methylKit
-鲲鹏,339,monocle,HPC,https://bioconductor.org/packages/3.20/bioc/html/monocle.html,repo,脚本分类: bioconductor.org package: monocle
-鲲鹏,340,biovizbase,HPC,https://bioconductor.org/packages/3.20/bioc/html/biovizBase.html,repo,脚本分类: bioconductor.org package: biovizBase
-鲲鹏,341,genomation,HPC,https://bioconductor.org/packages/3.20/bioc/html/genomation.html,repo,脚本分类: bioconductor.org package: genomation
-鲲鹏,342,kebabs,HPC,https://bioconductor.org/packages/3.20/bioc/html/kebabs.html,repo,脚本分类: bioconductor.org package: kebabs
-鲲鹏,343,Doris,大数据,https://github.com/apache/doris,repo,脚本分类: github.com/apache/doris
-鲲鹏,344,Cubefs,分布式存储,https://github.com/cubefs/cubefs,repo,脚本分类: github.com/cubefs/cubefs
+页签,序号,项目名称,分类,上游地址,entity_type,source,expanded_from_org,stars,forks,pushed_at,score,language,description,reason
+昇腾,1,transformers,训练加速,https://github.com/huggingface/transformers,repo,repo,,,,,,,,
+昇腾,2,accelerate,训练加速,https://github.com/huggingface/accelerate,repo,repo,,,,,,,,
+昇腾,3,PEFT,训练加速,https://github.com/huggingface/peft,repo,repo,,,,,,,,
+昇腾,4,TRL,训练加速,https://github.com/huggingface/trl,repo,repo,,,,,,,,
+昇腾,5,diffusers,推理加速,https://github.com/huggingface/diffusers,repo,repo,,,,,,,,
+昇腾,6,timm,推理加速,https://github.com/huggingface/pytorch-image-models,repo,repo,,,,,,,,
+昇腾,7,TGI,推理加速,https://github.com/huggingface/text-generation-inference,repo,repo,,,,,,,,
+昇腾,8,LlamaFactory,训练加速,https://github.com/hiyouga/LlamaFactory,repo,repo,,,,,,,,
+昇腾,9,FastChat,推理加速,https://github.com/lm-sys/FastChat,repo,repo,,,,,,,,
+昇腾,10,stable-diffusion-webui,推理加速,https://github.com/AUTOMATIC1111/stable-diffusion-webui,repo,repo,,,,,,,,
+昇腾,11,lm-eval-harness,推理加速,https://github.com/EleutherAI/lm-evaluation-harness,repo,repo,,,,,,,,
+昇腾,12,opencompass,推理加速,https://github.com/open-compass/opencompass,repo,repo,,,,,,,,
+昇腾,13,axolotl,训练加速,https://github.com/axolotl-ai-cloud/axolotl,repo,repo,,,,,,,,
+昇腾,14,openclip,推理加速,https://github.com/mlfoundations/open_clip,repo,repo,,,,,,,,
+昇腾,15,InternLM,推理加速,https://github.com/InternLM/InternLM,repo,repo,,,,,,,,
+昇腾,16,Ollama,推理加速,https://github.com/ollama/ollama,repo,repo,,,,,,,,
+昇腾,18,unsolth,训练加速,https://github.com/unslothai/unsloth,repo,repo,,,,,,,,
+昇腾,19,OpenRLHF,训练加速,https://github.com/OpenRLHF/OpenRLHF,repo,repo,,,,,,,,
+昇腾,20,veRL,训练加速,https://github.com/verl-project/verl,repo,repo,,,,,,,,
+昇腾,21,ChatLearn,训练加速,https://github.com/alibaba/ChatLearn,repo,repo,,,,,,,,
+昇腾,24,ComfyUI,推理加速,https://github.com/Comfy-Org/ComfyUI,repo,repo,,,,,,,,
+昇腾,25,DeepSpeed,训练加速,https://github.com/deepspeedai/DeepSpeed,repo,repo,,,,,,,,
+昇腾,26,OpenCV,推理加速,https://github.com/opencv/opencv,repo,repo,,,,,,,,
+昇腾,27,ONNXRuntime,推理加速,https://github.com/microsoft/onnxruntime,repo,repo,,,,,,,,
+昇腾,28,llama.cpp,推理加速,https://github.com/ggml-org/llama.cpp,repo,repo,,,,,,,,
+昇腾,29,whisper,推理加速,https://github.com/ggml-org/whisper.cpp,repo,repo,,,,,,,,
+昇腾,30,wenet,推理加速,https://github.com/wenet-e2e/wenet,repo,repo,,,,,,,,
+昇腾,33,Kserver,推理加速,https://github.com/kserve/kserve,repo,repo,,,,,,,,
+昇腾,34,Kubernetes DRA,推理加速,https://github.com/kubernetes/dynamic-resource-allocation,repo,repo,,,,,,,,
+昇腾,35,Ray,推理加速,https://github.com/ray-project/ray,repo,repo,,,,,,,,
+昇腾,36,OpenXLA,推理加速,https://github.com/openxla/xla,repo,repo,,,,,,,,
+昇腾,37,bitsandbytes,推理加速,https://github.com/bitsandbytes-foundation/bitsandbytes,repo,repo,,,,,,,,
+昇腾,39,TensorFlow,AI框架,https://github.com/tensorflow/tensorflow,repo,repo,,,,,,,,
+昇腾,40,Triton,算子库和编程,https://github.com/triton-lang/triton,repo,repo,,,,,,,,
+昇腾,41,Dify,应用加速,https://github.com/langgenius/dify,repo,repo,,,,,,,,
+昇腾,42,Coze,应用加速,https://github.com/coze-dev/coze-studio,repo,repo,,,,,,,,
+昇腾,43,MiniOneRec,应用加速,https://github.com/AkaliKong/MiniOneRec,repo,repo,,,,,,,,
+昇腾,45,X402,应用加速,https://github.com/x402-foundation/x402,repo,repo,,,,,,,,
+昇腾,46,AP2,应用加速,https://github.com/google-agentic-commerce/AP2,repo,repo,,,,,,,,
+昇腾,47,MCP,应用加速,https://github.com/modelcontextprotocol/modelcontextprotocol,repo,repo,,,,,,,,
+昇腾,48,A2A,应用加速,https://github.com/a2aproject/A2A,repo,repo,,,,,,,,
+昇腾,49,A2UI,应用加速,https://github.com/google/A2UI,repo,repo,,,,,,,,
+昇腾,50,ANP,应用加速,https://github.com/agent-network-protocol/AgentNetworkProtocol,repo,repo,,,,,,,,
+昇腾,51,Magatron,训练加速,https://github.com/NVIDIA/Megatron-LM,repo,repo,,,,,,,,
+昇腾,52,torchtitan,训练加速,https://github.com/pytorch/torchtitan,repo,repo,,,,,,,,
+昇腾,53,VeOmni,训练加速,https://github.com/ByteDance-Seed/VeOmni,repo,repo,,,,,,,,
+昇腾,54,torchtune,训练加速,https://github.com/meta-pytorch/torchtune,repo,repo,,,,,,,,
+昇腾,55,xtuner,训练加速,https://github.com/InternLM/xtuner,repo,repo,,,,,,,,
+昇腾,56,ms-swift,训练加速,https://github.com/modelscope/ms-swift,repo,repo,,,,,,,,
+昇腾,57,Areal,训练加速,https://github.com/inclusionAI/AReaL,repo,repo,,,,,,,,
+昇腾,58,Slime,训练加速,https://github.com/THUDM/slime,repo,repo,,,,,,,,
+昇腾,59,ROLL,训练加速,https://github.com/alibaba/ROLL,repo,repo,,,,,,,,
+昇腾,60,speculators,训练加速,https://github.com/vllm-project/speculators,repo,repo,,,,,,,,
+昇腾,61,SpecForge,训练加速,https://github.com/sgl-project/SpecForge,repo,repo,,,,,,,,
+昇腾,62,tensordict,训练加速,https://github.com/pytorch/tensordict,repo,repo,,,,,,,,
+昇腾,63,torchvision,训练加速,https://github.com/pytorch/vision,repo,repo,,,,,,,,
+昇腾,64,Liger-Kernel,训练加速,https://github.com/linkedin/Liger-Kernel,repo,repo,,,,,,,,
+昇腾,65,flash-linear-attention,训练加速,https://github.com/fla-org/flash-linear-attention,repo,repo,,,,,,,,
+昇腾,66,dgl,训练加速,https://github.com/dmlc/dgl,repo,repo,,,,,,,,
+昇腾,67,pyg,训练加速,https://github.com/pyg-team/pytorch_geometric,repo,repo,,,,,,,,
+昇腾,68,megablocks,训练加速,https://github.com/databricks/megablocks,repo,repo,,,,,,,,
+昇腾,70,Mooncake,推理加速,https://github.com/kvcache-ai/Mooncake,repo,repo,,,,,,,,
+昇腾,71,cache-dit,推理加速,https://github.com/vipshop/cache-dit,repo,repo,,,,,,,,
+昇腾,72,LMCache,推理加速,https://github.com/LMCache/LMCache,repo,repo,,,,,,,,
+昇腾,73,rtp-llm,推理加速,https://github.com/alibaba/rtp-llm,repo,repo,,,,,,,,
+昇腾,74,xllm,推理加速,https://github.com/jd-opensource/xllm,repo,repo,,,,,,,,
+昇腾,75,router,推理加速,https://github.com/vllm-project/router,repo,repo,,,,,,,,
+昇腾,76,Ktransformers,推理加速,https://github.com/kvcache-ai/ktransformers,repo,repo,,,,,,,,
+昇腾,77,AIGW,推理加速,https://github.com/aigw-project/aigw,repo,repo,,,,,,,,
+昇腾,78,llm-d,推理加速,https://github.com/llm-d/llm-d,repo,repo,,,,,,,,
+昇腾,79,AIBrix,推理加速,https://github.com/vllm-project/aibrix,repo,repo,,,,,,,,
+昇腾,80,GPUStack,推理加速,https://github.com/gpustack/gpustack,repo,repo,,,,,,,,
+昇腾,81,DiffSynth-Studio,推理加速,https://github.com/modelscope/DiffSynth-Studio,repo,repo,,,,,,,,
+昇腾,82,FlagScale,推理加速,https://github.com/flagos-ai/FlagScale,repo,repo,,,,,,,,
+昇腾,83,ColossalAI,推理加速,https://github.com/hpcaitech/ColossalAI,repo,repo,,,,,,,,
+昇腾,84,Vbench,推理加速,https://github.com/Vchitect/VBench,repo,repo,,,,,,,,
+昇腾,85,llm-compressor,推理加速,https://github.com/vllm-project/llm-compressor,repo,repo,,,,,,,,
+昇腾,86,LightX2V,推理加速,https://github.com/ModelTC/LightX2V,repo,repo,,,,,,,,
+昇腾,87,xDiT,推理加速,https://github.com/xdit-project/xDiT,repo,repo,,,,,,,,
+昇腾,91,TileLang,算子库和编程,https://github.com/tile-ai/tilelang,repo,repo,,,,,,,,
+鲲鹏,1,Glibc,基础库&加速库,https://sourceware.org/git/glibc.git,repo,repo,,,,,,,,
+鲲鹏,2,Hyperscan,基础库&加速库,https://github.com/est31/cargo-udeps,repo,repo,,,,,,,,
+鲲鹏,4,Zlib,基础库&加速库,https://github.com/madler/zlib,repo,repo,,,,,,,,
+鲲鹏,5,LZ4,基础库&加速库,https://github.com/lz4/lz4,repo,repo,,,,,,,,
+鲲鹏,6,zlib-ng,基础库&加速库,https://github.com/zlib-ng/zlib-ng,repo,repo,,,,,,,,
+鲲鹏,7,edk2,基础库&加速库,https://github.com/tianocore/edk2,repo,repo,,,,,,,,
+鲲鹏,8,Suricata,基础库&加速库,https://github.com/OISF/suricata,repo,repo,,,,,,,,
+鲲鹏,9,Snort,基础库&加速库,https://github.com/snort3/snort3,repo,repo,,,,,,,,
+鲲鹏,10,nDPI,基础库&加速库,https://github.com/ntop/nDPI,repo,repo,,,,,,,,
+鲲鹏,11,Gzip,基础库&加速库,https://github.com/Distrotech/gzip,repo,repo,,,,,,,,
+鲲鹏,12,Zstd,基础库&加速库,https://github.com/facebook/zstd,repo,repo,,,,,,,,
+鲲鹏,13,Snappy,基础库&加速库,https://github.com/google/snappy,repo,repo,,,,,,,,
+鲲鹏,14,X265,基础库&加速库,https://bitbucket.org/multicoreware/x265,repo,repo,,,,,,,,
+鲲鹏,15,DPDK,基础库&加速库,https://github.com/DPDK/dpdk,repo,repo,,,,,,,,
+鲲鹏,16,X264,基础库&加速库,https://code.videolan.org/videolan/x264,repo,repo,,,,,,,,
+鲲鹏,17,SPDK,基础库&加速库,https://github.com/spdk/spdk,repo,repo,,,,,,,,
+鲲鹏,18,Bcache,基础库&加速库,https://github.com/g2p/bcache-tools,repo,repo,,,,,,,,
+鲲鹏,19,OpenBLAS,基础库&加速库,https://github.com/OpenMathLib/OpenBLAS,repo,repo,,,,,,,,
+鲲鹏,20,lapack,基础库&加速库,https://github.com/Reference-LAPACK/lapack,repo,repo,,,,,,,,
+鲲鹏,21,Numpy,基础库&加速库,https://github.com/numpy/numpy,repo,repo,,,,,,,,
+鲲鹏,22,ISA-L,基础库&加速库,https://github.com/intel/isa-l,repo,repo,,,,,,,,
+鲲鹏,23,EMU,ARM应用支持,https://github.com/treangenlab/emu,repo,repo,,,,,,,,
+鲲鹏,24,Mesa,ARM应用支持,https://gitlab.freedesktop.org/mesa/mesa,repo,repo,,,,,,,,
+鲲鹏,25,Binder,ARM应用支持,https://github.com/kupferlauncher/keybinder,repo,repo,,,,,,,,
+鲲鹏,26,LLVM,ARM应用支持,https://github.com/llvm/llvm-project,repo,repo,,,,,,,,
+鲲鹏,27,libdrm,ARM应用支持,https://gitlab.freedesktop.org/mesa/drm,repo,repo,,,,,,,,
+鲲鹏,28,musl,ARM应用支持,https://git.musl-libc.org/cgit/musl,repo,repo,,,,,,,,
+鲲鹏,29,OpenH264,ARM应用支持,https://github.com/cisco/openh264,repo,repo,,,,,,,,
+鲲鹏,30,Opus,ARM应用支持,https://github.com/xiph/opus,repo,repo,,,,,,,,
+鲲鹏,31,cJSON,ARM应用支持,https://github.com/DaveGamble/cJSON,repo,repo,,,,,,,,
+鲲鹏,32,libyuv-android,ARM应用支持,https://github.com/crow-misia/libyuv-android,repo,repo,,,,,,,,
+鲲鹏,33,benchmark,ARM应用支持,https://github.com/google/benchmark,repo,repo,,,,,,,,
+鲲鹏,35,Ffmpeg,ARM应用支持,https://git.ffmpeg.org/ffmpeg.git,repo,repo,,,,,,,,
+鲲鹏,36,libjpeg-turbo,ARM应用支持,https://github.com/libjpeg-turbo/libjpeg-turbo,repo,repo,,,,,,,,
+鲲鹏,37,Hadoop,大数据,https://github.com/apache/hadoop,repo,repo,,,,,,,,
+鲲鹏,38,Spark,大数据,https://github.com/apache/spark,repo,repo,,,,,,,,
+鲲鹏,39,Hive,大数据,https://github.com/apache/hive,repo,repo,,,,,,,,
+鲲鹏,40,HBase,大数据,https://github.com/apache/hbase,repo,repo,,,,,,,,
+鲲鹏,41,ElasticSearch,大数据,https://github.com/elastic/elasticsearch,repo,repo,,,,,,,,
+鲲鹏,42,Flink,大数据,https://github.com/apache/flink,repo,repo,,,,,,,,
+鲲鹏,43,Kafka,大数据,https://github.com/apache/kafka,repo,repo,,,,,,,,
+鲲鹏,44,Storm,大数据,https://github.com/apache/storm,repo,repo,,,,,,,,
+鲲鹏,45,Redis,大数据,https://github.com/redis/redis,repo,repo,,,,,,,,
+鲲鹏,46,Impala,大数据,https://github.com/apache/impala,repo,repo,,,,,,,,
+鲲鹏,47,Zookeeper,大数据,https://github.com/apache/zookeeper,repo,repo,,,,,,,,
+鲲鹏,48,ClickHouse,大数据,https://github.com/ClickHouse/ClickHouse,repo,repo,,,,,,,,
+鲲鹏,49,Alluxio,大数据,https://github.com/Alluxio/alluxio,repo,repo,,,,,,,,
+鲲鹏,50,Ranger,大数据,https://github.com/ranger/ranger,repo,repo,,,,,,,,
+鲲鹏,51,Tez,大数据,https://github.com/apache/tez,repo,repo,,,,,,,,
+鲲鹏,52,Flume,大数据,https://github.com/apache/logging-flume,repo,repo,,,,,,,,
+鲲鹏,53,Oozie,大数据,https://github.com/apache/oozie,repo,repo,,,,,,,,
+鲲鹏,54,Solr,大数据,https://github.com/apache/solr,repo,repo,,,,,,,,
+鲲鹏,55,Presto,大数据,https://github.com/prestodb/presto,repo,repo,,,,,,,,
+鲲鹏,56,Kylin,大数据,https://github.com/apache/kylin,repo,repo,,,,,,,,
+鲲鹏,57,Accumulo,大数据,https://github.com/apache/accumulo,repo,repo,,,,,,,,
+鲲鹏,58,Avro,大数据,https://github.com/apache/avro,repo,repo,,,,,,,,
+鲲鹏,59,logstash,大数据,https://github.com/elastic/logstash,repo,repo,,,,,,,,
+鲲鹏,60,Kibana,大数据,https://github.com/elastic/kibana,repo,repo,,,,,,,,
+鲲鹏,61,Knox,大数据,https://github.com/Automattic/knox,repo,repo,,,,,,,,
+鲲鹏,62,Pig,大数据,https://github.com/apache/pig,repo,repo,,,,,,,,
+鲲鹏,63,Atlas,大数据,https://github.com/apache/atlas,repo,repo,,,,,,,,
+鲲鹏,64,Livy,大数据,https://github.com/apache/incubator-livy,repo,repo,,,,,,,,
+鲲鹏,65,Parquet,大数据,https://github.com/apache/parquet-java/,repo,repo,,,,,,,,
+鲲鹏,66,Mesos,大数据,https://github.com/apache/mesos,repo,repo,,,,,,,,
+鲲鹏,67,Thrift,大数据,https://github.com/apache/thrift,repo,repo,,,,,,,,
+鲲鹏,68,Drill,大数据,https://github.com/apache/drill,repo,repo,,,,,,,,
+鲲鹏,69,Druid,大数据,https://github.com/apache/druid,repo,repo,,,,,,,,
+鲲鹏,70,Phoenix,大数据,https://github.com/apache/phoenix,repo,repo,,,,,,,,
+鲲鹏,71,Lucene,大数据,https://github.com/apache/lucene,repo,repo,,,,,,,,
+鲲鹏,72,TDengine,大数据,https://github.com/taosdata/TDengine,repo,repo,,,,,,,,
+鲲鹏,73,Arrow,大数据,https://github.com/apache/arrow,repo,repo,,,,,,,,
+鲲鹏,74,Kudu,大数据,https://github.com/apache/kudu,repo,repo,,,,,,,,
+鲲鹏,75,Kyuubi,大数据,https://github.com/apache/kyuubi,repo,repo,,,,,,,,
+鲲鹏,76,Ceph,分布式存储,https://github.com/ceph/ceph,repo,repo,,,,,,,,
+鲲鹏,77,GlusterFS,分布式存储,https://github.com/gluster/glusterfs,repo,repo,,,,,,,,
+鲲鹏,79,FastDFS,分布式存储,https://github.com/greduan/emacs-theme-gruvbox,repo,repo,,,,,,,,
+鲲鹏,80,MinIO,分布式存储,https://github.com/minio/minio,repo,repo,,,,,,,,
+鲲鹏,81,MooseFS,分布式存储,https://github.com/moosefs/moosefs,repo,repo,,,,,,,,
+鲲鹏,82,LizardFS,分布式存储,https://github.com/lizardfs/lizardfs,repo,repo,,,,,,,,
+鲲鹏,83,Sheepdog,分布式存储,https://github.com/sheepdog/sheepdog,repo,repo,,,,,,,,
+鲲鹏,84,DRBD,分布式存储,https://github.com/LINBIT/drbd,repo,repo,,,,,,,,
+鲲鹏,85,DAOS,分布式存储,https://github.com/daos-stack/daos,repo,repo,,,,,,,,
+鲲鹏,86,CURVE,分布式存储,https://github.com/opencurve/curve,repo,repo,,,,,,,,
+鲲鹏,87,SeaweedFS,分布式存储,https://github.com/seaweedfs/seaweedfs,repo,repo,,,,,,,,
+鲲鹏,88,Docker,虚拟化,https://github.com/nextcloud/docker,repo,repo,,,,,,,,
+鲲鹏,89,Kubernetes,虚拟化,https://github.com/kubernetes/kubernetes,repo,repo,,,,,,,,
+鲲鹏,90,libvirt,虚拟化,https://github.com/libvirt/libvirt,repo,repo,,,,,,,,
+鲲鹏,91,OpenStack,虚拟化,https://opendev.org/openstack/openstack,repo,repo,,,,,,,,
+鲲鹏,92,KVM,虚拟化,https://git.kernel.org/pub/scm/virt/kvm/kvm.git,repo,repo,,,,,,,,
+鲲鹏,93,Open vSwitch,虚拟化,https://github.com/openvswitch/ovs,repo,repo,,,,,,,,
+鲲鹏,94,QEMU,虚拟化,https://gitlab.com/qemu-project/qemu,repo,repo,,,,,,,,
+鲲鹏,95,Ovirt,虚拟化,https://github.com/oVirt/ovirt-engine,repo,repo,,,,,,,,
+鲲鹏,96,Stratovirt,虚拟化,https://atomgit.com/openeuler/stratovirt,repo,repo,,,,,,,,
+鲲鹏,97,Calico,虚拟化,https://github.com/projectcalico/calico,repo,repo,,,,,,,,
+鲲鹏,98,Flannel,虚拟化,https://github.com/flannel-io/flannel,repo,repo,,,,,,,,
+鲲鹏,99,CoreDNS,虚拟化,https://github.com/coredns/coredns,repo,repo,,,,,,,,
+鲲鹏,100,Containerd,虚拟化,https://github.com/containerd/containerd,repo,repo,,,,,,,,
+鲲鹏,101,Prometheus,虚拟化,https://github.com/prometheus/prometheus,repo,repo,,,,,,,,
+鲲鹏,102,lstio,虚拟化,https://github.com/istio/istio,repo,repo,,,,,,,,
+鲲鹏,103,Envoy,虚拟化,https://github.com/envoyproxy/envoy,repo,repo,,,,,,,,
+鲲鹏,104,iSula,虚拟化,https://atomgit.com/openeuler/iSulad,repo,repo,,,,,,,,
+鲲鹏,105,harbor,虚拟化,https://github.com/goharbor/harbor,repo,repo,,,,,,,,
+鲲鹏,106,Apache HTTP Server,Web,https://github.com/apache/httpd,repo,repo,,,,,,,,
+鲲鹏,107,Tomcat,Web,https://github.com/apache/tomcat,repo,repo,,,,,,,,
+鲲鹏,108,Varnish,Web,https://github.com/varnishcache/varnish-cache,repo,repo,,,,,,,,
+鲲鹏,109,JBOSS,Web,https://github.com/wildfly/wildfly,repo,repo,,,,,,,,
+鲲鹏,110,HAProxy,Web,https://github.com/haproxy/haproxy,repo,repo,,,,,,,,
+鲲鹏,111,Memcached,Web,https://github.com/memcached/memcached,repo,repo,,,,,,,,
+鲲鹏,112,Nginx,Web,https://github.com/nginx/nginx,repo,repo,,,,,,,,
+鲲鹏,113,.NET Core,Web,https://github.com/dotnet/core,repo,repo,,,,,,,,
+鲲鹏,114,ATS,Web,https://github.com/apache/trafficserver,repo,repo,,,,,,,,
+鲲鹏,115,Jetty,Web,https://github.com/jetty/jetty.project,repo,repo,,,,,,,,
+鲲鹏,116,Keepalived,Web,https://github.com/acassen/keepalived,repo,repo,,,,,,,,
+鲲鹏,118,Dubbo,Web,https://github.com/apache/dubbo,repo,repo,,,,,,,,
+鲲鹏,119,Squid,Web,https://github.com/squid-cache/squid,repo,repo,,,,,,,,
+鲲鹏,120,Glassfish,Web,https://github.com/eclipse-ee4j/glassfish,repo,repo,,,,,,,,
+鲲鹏,121,Node.js,Web,https://github.com/nodejs/node,repo,repo,,,,,,,,
+鲲鹏,122,chromium,Web,https://chromium.googlesource.com/chromium,repo,repo,,,,,,,,
+鲲鹏,123,Django,Web,https://github.com/django/django,repo,repo,,,,,,,,
+鲲鹏,124,fcgi,Web,https://github.com/FastCGI-Archives/fcgi2,repo,repo,,,,,,,,
+鲲鹏,125,Mongoose,Web,https://github.com/Automattic/mongoose,repo,repo,,,,,,,,
+鲲鹏,126,Nagios,Web,https://github.com/NagiosEnterprises/nagioscore,repo,repo,,,,,,,,
+鲲鹏,127,uWSGI,Web,https://github.com/unbit/uwsgi,repo,repo,,,,,,,,
+鲲鹏,128,Spring Framework,Web,https://github.com/spring-projects/spring-framework,repo,repo,,,,,,,,
+鲲鹏,129,Spring Boot,Web,https://github.com/spring-projects/spring-boot,repo,repo,,,,,,,,
+鲲鹏,130,Tengine,Web,https://github.com/alibaba/tengine,repo,repo,,,,,,,,
+鲲鹏,132,MySQL,数据库,https://github.com/mysql/mysql-server,repo,repo,,,,,,,,
+鲲鹏,133,MariaDB,数据库,https://github.com/MariaDB/server,repo,repo,,,,,,,,
+鲲鹏,134,PostgreSQL,数据库,https://git.postgresql.org/git/postgresql.git,repo,repo,,,,,,,,
+鲲鹏,135,MongoDB,数据库,https://github.com/mongodb/mongo,repo,repo,,,,,,,,
+鲲鹏,136,RocksDB,数据库,https://github.com/facebook/rocksdb,repo,repo,,,,,,,,
+鲲鹏,137,TiDB,数据库,https://github.com/pingcap/tidb,repo,repo,,,,,,,,
+鲲鹏,138,InfluxDB,数据库,https://github.com/influxdata/influxdb,repo,repo,,,,,,,,
+鲲鹏,139,SQLite,数据库,https://sqlite.org/src,repo,repo,,,,,,,,
+鲲鹏,140,Cassandra,数据库,https://github.com/apache/cassandra,repo,repo,,,,,,,,
+鲲鹏,141,etcd,数据库,https://github.com/etcd-io/etcd,repo,repo,,,,,,,,
+鲲鹏,142,LevelDB,数据库,https://github.com/google/leveldb,repo,repo,,,,,,,,
+鲲鹏,143,OrientDB,数据库,https://github.com/orientechnologies/orientdb,repo,repo,,,,,,,,
+鲲鹏,144,Neo4j,数据库,https://github.com/neo4j/neo4j,repo,repo,,,,,,,,
+鲲鹏,145,gcc,基础库&加速库,https://github.com/gcc-mirror/gcc,repo,repo,,,,,,,,
+鲲鹏,146,OpenJDK,基础库&加速库,https://github.com/openjdk/jdk,repo,repo,,,,,,,,
+鲲鹏,147,CMake,基础库&加速库,https://gitlab.kitware.com/cmake/cmake,repo,repo,,,,,,,,
+鲲鹏,149,GDB,基础库&加速库,https://ftp.gnu.org/gnu/gdb/,repo,repo,,,,,,,,
+鲲鹏,150,Maven,基础库&加速库,https://github.com/apache/maven,repo,repo,,,,,,,,
+鲲鹏,151,Ant,基础库&加速库,https://github.com/apache/ant,repo,repo,,,,,,,,
+鲲鹏,152,Scala,基础库&加速库,https://github.com/scala/scala,repo,repo,,,,,,,,
+鲲鹏,154,Golang,基础库&加速库,https://github.com/golang/go,repo,repo,,,,,,,,
+鲲鹏,155,Lua,基础库&加速库,https://www.lua.org/source/,repo,repo,,,,,,,,
+鲲鹏,156,Perl,基础库&加速库,https://github.com/Perl/perl5,repo,repo,,,,,,,,
+鲲鹏,157,Ruby,基础库&加速库,https://github.com/ruby/ruby,repo,repo,,,,,,,,
+鲲鹏,158,R,基础库&加速库,https://svn.r-project.org/R/,repo,repo,,,,,,,,
+鲲鹏,159,Gradle,基础库&加速库,https://github.com/gradle/gradle,repo,repo,,,,,,,,
+鲲鹏,160,Erlang,基础库&加速库,https://github.com/erlang/otp,repo,repo,,,,,,,,
+鲲鹏,161,Google Test,基础库&加速库,https://github.com/google/googletest,repo,repo,,,,,,,,
+鲲鹏,162,SKLearn,基础库&加速库,https://github.com/scikit-learn/scikit-learn,repo,repo,,,,,,,,
+鲲鹏,163,APR-util,基础库&加速库,https://github.com/apache/apr-util,repo,repo,,,,,,,,
+鲲鹏,164,TypeScript,基础库&加速库,https://github.com/microsoft/TypeScript,repo,repo,,,,,,,,
+鲲鹏,165,Git,基础库&加速库,https://github.com/git/git,repo,repo,,,,,,,,
+鲲鹏,166,Jenkins,基础库&加速库,https://github.com/jenkinsci/jenkins,repo,repo,,,,,,,,
+鲲鹏,167,npm,基础库&加速库,https://github.com/meteorhacks/npm,repo,repo,,,,,,,,
+鲲鹏,168,catj,基础库&加速库,https://github.com/soheilpro/catj,repo,repo,,,,,,,,
+鲲鹏,169,bcrypt,基础库&加速库,https://github.com/pyca/bcrypt,repo,repo,,,,,,,,
+鲲鹏,170,busybox,基础库&加速库,https://github.com/mirror/busybox,repo,repo,,,,,,,,
+鲲鹏,171,Expat,基础库&加速库,https://github.com/libexpat/libexpat,repo,repo,,,,,,,,
+鲲鹏,172,FlatBuffers,基础库&加速库,https://github.com/google/flatbuffers,repo,repo,,,,,,,,
+鲲鹏,174,Hiredis,基础库&加速库,https://github.com/redis/hiredis,repo,repo,,,,,,,,
+鲲鹏,176,Libxml2,基础库&加速库,https://gitlab.gnome.org/GNOME/libxml2,repo,repo,,,,,,,,
+鲲鹏,177,MPFR,基础库&加速库,https://gitlab.inria.fr/mpfr/mpfr,repo,repo,,,,,,,,
+鲲鹏,178,Next.js,基础库&加速库,https://github.com/vercel/next.js,repo,repo,,,,,,,,
+鲲鹏,179,pcre,基础库&加速库,https://github.com/PCRE2Project/pcre2,repo,repo,,,,,,,,
+鲲鹏,180,PHP,基础库&加速库,https://github.com/php/php-src,repo,repo,,,,,,,,
+鲲鹏,181,React,基础库&加速库,https://github.com/facebook/react,repo,repo,,,,,,,,
+鲲鹏,182,Rinetd,基础库&加速库,https://github.com/samhocevar/rinetd,repo,repo,,,,,,,,
+鲲鹏,183,SCons,基础库&加速库,https://github.com/SCons/scons,repo,repo,,,,,,,,
+鲲鹏,184,Netty,基础库&加速库,https://github.com/netty/netty,repo,repo,,,,,,,,
+鲲鹏,185,Boost,基础库&加速库,https://github.com/boostorg/boost,repo,repo,,,,,,,,
+鲲鹏,186,Protobuf,基础库&加速库,https://github.com/protocolbuffers/protobuf,repo,repo,,,,,,,,
+鲲鹏,187,Libevent,基础库&加速库,https://github.com/libevent/libevent,repo,repo,,,,,,,,
+鲲鹏,188,Wireshark,基础库&加速库,https://gitlab.com/wireshark/wireshark,repo,repo,,,,,,,,
+鲲鹏,189,JUnit,基础库&加速库,https://github.com/junit-team/junit-framework,repo,repo,,,,,,,,
+鲲鹏,190,DHCP,基础库&加速库,https://github.com/insomniacslk/dhcp,repo,repo,,,,,,,,
+鲲鹏,191,DNSmasq,基础库&加速库,https://github.com/coddec/Classic-Shell,repo,repo,,,,,,,,
+鲲鹏,192,FastJSON,基础库&加速库,https://github.com/alibaba/fastjson2,repo,repo,,,,,,,,
+鲲鹏,193,grpc-java,基础库&加速库,https://github.com/grpc/grpc-java,repo,repo,,,,,,,,
+鲲鹏,194,jemalloc,基础库&加速库,https://github.com/jemalloc/jemalloc,repo,repo,,,,,,,,
+鲲鹏,195,ActiveMQ,基础库&加速库,https://github.com/apache/activemq,repo,repo,,,,,,,,
+鲲鹏,196,RabbitMQ,基础库&加速库,https://github.com/rabbitmq/rabbitmq-server,repo,repo,,,,,,,,
+鲲鹏,197,Ansible,基础库&加速库,https://github.com/ansible/ansible,repo,repo,,,,,,,,
+鲲鹏,198,APR,基础库&加速库,https://github.com/apache/apr,repo,repo,,,,,,,,
+鲲鹏,199,Filebeat,基础库&加速库,https://github.com/elastic/beats,repo,repo,,,,,,,,
+鲲鹏,200,fmt,基础库&加速库,https://github.com/fmtlib/fmt,repo,repo,,,,,,,,
+鲲鹏,201,Geos,基础库&加速库,https://github.com/libgeos/geos,repo,repo,,,,,,,,
+鲲鹏,202,libconfig,基础库&加速库,https://github.com/hyperrealm/libconfig,repo,repo,,,,,,,,
+鲲鹏,204,Netdata,基础库&加速库,https://github.com/netdata/netdata,repo,repo,,,,,,,,
+鲲鹏,205,psutil,基础库&加速库,https://github.com/giampaolo/psutil,repo,repo,,,,,,,,
+鲲鹏,206,RE2,基础库&加速库,https://github.com/google/re2,repo,repo,,,,,,,,
+鲲鹏,207,Rsyslog,基础库&加速库,https://github.com/rsyslog/rsyslog,repo,repo,,,,,,,,
+鲲鹏,208,Shiny,基础库&加速库,https://github.com/efremidze/Shiny,repo,repo,,,,,,,,
+鲲鹏,209,Swagger UI,基础库&加速库,https://github.com/swagger-api/swagger-ui,repo,repo,,,,,,,,
+鲲鹏,210,TinyXML,基础库&加速库,https://github.com/leethomason/tinyxml2,repo,repo,,,,,,,,
+鲲鹏,211,Tornado,基础库&加速库,https://github.com/tornadoweb/tornado,repo,repo,,,,,,,,
+鲲鹏,212,Vue,基础库&加速库,https://github.com/vuejs/vue,repo,repo,,,,,,,,
+鲲鹏,213,canal,基础库&加速库,https://github.com/alibaba/canal,repo,repo,,,,,,,,
+鲲鹏,214,curl,基础库&加速库,https://github.com/curl/curl,repo,repo,,,,,,,,
+鲲鹏,215,Grafana,基础库&加速库,https://github.com/grafana/grafana,repo,repo,,,,,,,,
+鲲鹏,216,Guacamole,基础库&加速库,https://github.com/apache/guacamole-server,repo,repo,,,,,,,,
+鲲鹏,217,log4cpp,基础库&加速库,https://github.com/orocos-toolchain/log4cpp,repo,repo,,,,,,,,
+鲲鹏,219,PaceMaker,基础库&加速库,https://github.com/ClusterLabs/pacemaker,repo,repo,,,,,,,,
+鲲鹏,220,pigz,基础库&加速库,https://github.com/madler/pigz,repo,repo,,,,,,,,
+鲲鹏,221,Quartz,基础库&加速库,https://github.com/quartz-scheduler/quartz,repo,repo,,,,,,,,
+鲲鹏,222,Sphinx,基础库&加速库,https://github.com/sphinx-doc/sphinx,repo,repo,,,,,,,,
+鲲鹏,223,Telegraf,基础库&加速库,https://github.com/influxdata/telegraf,repo,repo,,,,,,,,
+鲲鹏,224,Tesseract,基础库&加速库,https://github.com/tesseract-ocr/tesseract,repo,repo,,,,,,,,
+鲲鹏,225,ZeroMQ,基础库&加速库,https://github.com/zeromq/libzmq,repo,repo,,,,,,,,
+鲲鹏,226,grpc,基础库&加速库,https://github.com/grpc/grpc,repo,repo,,,,,,,,
+鲲鹏,227,consul,基础库&加速库,https://github.com/hashicorp/consul,repo,repo,,,,,,,,
+鲲鹏,228,Kong,基础库&加速库,https://github.com/Kong/kong,repo,repo,,,,,,,,
+鲲鹏,229,PyTorch,搜广推,https://github.com/pytorch/pytorch,repo,repo,,,,,,,,
+鲲鹏,231,PaddlePaddle,搜广推,https://github.com/PaddlePaddle/Paddle,repo,repo,,,,,,,,
+鲲鹏,232,caffe,搜广推,https://github.com/BVLC/caffe,repo,repo,,,,,,,,
+鲲鹏,233,horovod,搜广推,https://github.com/horovod/horovod,repo,repo,,,,,,,,
+鲲鹏,234,Fio,基础库&加速库,https://github.com/axboe/fio,repo,repo,,,,,,,,
+鲲鹏,235,iperf,基础库&加速库,https://github.com/esnet/iperf,repo,repo,,,,,,,,
+鲲鹏,236,Netperf,基础库&加速库,https://github.com/HewlettPackard/netperf,repo,repo,,,,,,,,
+鲲鹏,237,sysbench,基础库&加速库,https://github.com/akopytov/sysbench,repo,repo,,,,,,,,
+鲲鹏,238,UnixBench,基础库&加速库,https://github.com/kdlucas/byte-unixbench,repo,repo,,,,,,,,
+鲲鹏,239,WebBench,基础库&加速库,https://github.com/EZLippi/WebBench,repo,repo,,,,,,,,
+鲲鹏,240,siege,基础库&加速库,https://github.com/JoeDog/siege,repo,repo,,,,,,,,
+鲲鹏,241,Wrk,基础库&加速库,https://github.com/wg/wrk,repo,repo,,,,,,,,
+鲲鹏,244,BWA,HPC,https://github.com/lh3/bwa,repo,repo,,,,,,,,
+鲲鹏,245,GATK,HPC,https://github.com/broadinstitute/gatk,repo,repo,,,,,,,,
+鲲鹏,246,Relion,HPC,https://github.com/3dem/relion,repo,repo,,,,,,,,
+鲲鹏,247,AlphaFold2,HPC,https://github.com/google-deepmind/alphafold,repo,repo,,,,,,,,
+鲲鹏,248,HMMER,HPC,https://github.com/EddyRivasLab/hmmer,repo,repo,,,,,,,,
+鲲鹏,249,OpenHPC,HPC,https://github.com/openhpc/ohpc,repo,repo,,,,,,,,
+鲲鹏,250,Lammps,HPC,https://github.com/lammps/lammps,repo,repo,,,,,,,,
+鲲鹏,252,CP2K,HPC,https://github.com/cp2k/cp2k,repo,repo,,,,,,,,
+鲲鹏,253,QuantumEspresso,HPC,https://gitlab.com/QEF/q-e,repo,repo,,,,,,,,
+鲲鹏,254,GROMACS,HPC,https://gitlab.com/gromacs/gromacs,repo,repo,,,,,,,,
+鲲鹏,255,Nwchem,HPC,https://github.com/nwchemgit/nwchem,repo,repo,,,,,,,,
+鲲鹏,257,WRF,HPC,https://github.com/wrf-model/WRF,repo,repo,,,,,,,,
+鲲鹏,258,CESM,HPC,https://github.com/ESCOMP/CESM,repo,repo,,,,,,,,
+鲲鹏,259,NEMO,HPC,https://github.com/linuxmint/nemo,repo,repo,,,,,,,,
+鲲鹏,260,WAVEWATCH III,HPC,https://github.com/csdms/bmi-wavewatch3,repo,repo,,,,,,,,
+鲲鹏,261,LASTZ,HPC,https://github.com/lastz/lastz,repo,repo,,,,,,,,
+鲲鹏,263,eman2,HPC,https://github.com/cryoem/eman2,repo,repo,,,,,,,,
+鲲鹏,265,FSL,HPC,https://git.fmrib.ox.ac.uk/fsl/fslpy,repo,repo,,,,,,,,
+鲲鹏,267,SimpleITK,HPC,https://github.com/SimpleITK/SimpleITK,repo,repo,,,,,,,,
+鲲鹏,268,3DSlicer,HPC,https://github.com/Slicer/Slicer,repo,repo,,,,,,,,
+鲲鹏,269,bismark,HPC,https://github.com/FelixKrueger/Bismark,repo,repo,,,,,,,,
+鲲鹏,270,Primer3,HPC,https://github.com/primer3-org/primer3,repo,repo,,,,,,,,
+鲲鹏,271,featureCounts,HPC,https://subread.sourceforge.net/,repo,repo,,,,,,,,
+鲲鹏,272,nanopack,HPC,https://github.com/wdecoster/nanopack,repo,repo,,,,,,,,
+鲲鹏,273,GRAPHMAP,HPC,https://github.com/lbcb-sci/graphmap2,repo,repo,,,,,,,,
+鲲鹏,274,GRIDSS,HPC,https://github.com/PapenfussLab/gridss,repo,repo,,,,,,,,
+鲲鹏,275,Lumpy,HPC,https://github.com/arq5x/lumpy-sv,repo,repo,,,,,,,,
+鲲鹏,276,Manta,HPC,https://github.com/hql287/Manta,repo,repo,,,,,,,,
+鲲鹏,277,RepeatModeler,HPC,https://github.com/Dfam-consortium/RepeatModeler,repo,repo,,,,,,,,
+鲲鹏,278,rMATs,HPC,https://github.com/Xinglab/rmats-turbo,repo,repo,,,,,,,,
+鲲鹏,279,trf,HPC,https://github.com/Benson-Genomics-Lab/TRF,repo,repo,,,,,,,,
+鲲鹏,280,deeptools,HPC,https://github.com/deeptools/deepTools,repo,repo,,,,,,,,
+鲲鹏,281,pilon,HPC,https://github.com/broadinstitute/pilon,repo,repo,,,,,,,,
+鲲鹏,282,FigTRee,HPC,https://github.com/rambaut/figtree,repo,repo,,,,,,,,
+鲲鹏,283,3d-dna,HPC,https://github.com/aidenlab/3d-dna,repo,repo,,,,,,,,
+鲲鹏,284,ALLHiC,HPC,https://github.com/tanghaibao/allhic,repo,repo,,,,,,,,
+鲲鹏,285,bamtools,HPC,https://github.com/pezmaster31/bamtools,repo,repo,,,,,,,,
+鲲鹏,286,BUSCO,HPC,https://gitlab.com/ezlab/busco,repo,repo,,,,,,,,
+鲲鹏,287,flye,HPC,https://github.com/mikolmogorov/Flye,repo,repo,,,,,,,,
+鲲鹏,288,Muscle,HPC,https://github.com/rcedgar/muscle,repo,repo,,,,,,,,
+鲲鹏,289,EIGENSOFT,HPC,https://github.com/DReichLab/EIG,repo,repo,,,,,,,,
+鲲鹏,290,trimmomatic,HPC,https://github.com/usadellab/Trimmomatic,repo,repo,,,,,,,,
+鲲鹏,291,Falcon,HPC,https://github.com/falconry/falcon,repo,repo,,,,,,,,
+鲲鹏,292,AutoDock vina,HPC,https://github.com/ccsb-scripps/AutoDock-Vina,repo,repo,,,,,,,,
+鲲鹏,293,Tinker,HPC,https://github.com/TinkerTools/tinker,repo,repo,,,,,,,,
+鲲鹏,295,sambamba,HPC,https://github.com/biod/sambamba,repo,repo,,,,,,,,
+鲲鹏,296,Cutadapt,HPC,https://github.com/marcelm/cutadapt,repo,repo,,,,,,,,
+鲲鹏,297,hyphy,HPC,https://github.com/veg/hyphy,repo,repo,,,,,,,,
+鲲鹏,298,minimap2,HPC,https://github.com/lh3/minimap2,repo,repo,,,,,,,,
+鲲鹏,299,mummer,HPC,https://github.com/mummer4/mummer,repo,repo,,,,,,,,
+鲲鹏,300,salmon,HPC,https://github.com/COMBINE-lab/salmon,repo,repo,,,,,,,,
+鲲鹏,301,SoftSV,HPC,https://sourceforge.net/projects/softsv/,repo,repo,,,,,,,,
+鲲鹏,302,smcpp,HPC,https://github.com/popgenmethods/smcpp,repo,repo,,,,,,,,
+鲲鹏,303,glean,HPC,https://sourceforge.net/projects/glean-gene/,repo,repo,,,,,,,,
+鲲鹏,304,trimal,HPC,https://github.com/inab/trimal,repo,repo,,,,,,,,
+鲲鹏,305,mrbayes,HPC,https://github.com/NBISweden/MrBayes,repo,repo,,,,,,,,
+鲲鹏,306,VaPoR,HPC,https://github.com/connor-lab/vapor,repo,repo,,,,,,,,
+鲲鹏,307,fastx_toolkit,HPC,https://github.com/agordon/fastx_toolkit,repo,repo,,,,,,,,
+鲲鹏,308,seqwish,HPC,https://github.com/pangenome/seqwish,repo,repo,,,,,,,,
+鲲鹏,309,seqkit,HPC,https://github.com/shenwei356/seqkit,repo,repo,,,,,,,,
+鲲鹏,310,MCscanX,HPC,https://github.com/wyp1125/MCScanX,repo,repo,,,,,,,,
+鲲鹏,311,bioawk,HPC,https://github.com/lh3/bioawk,repo,repo,,,,,,,,
+鲲鹏,312,Mrtrix,HPC,https://github.com/MRtrix3/mrtrix3,repo,repo,,,,,,,,
+鲲鹏,313,psmc,HPC,https://github.com/lh3/psmc,repo,repo,,,,,,,,
+鲲鹏,314,metaeuk,HPC,https://github.com/soedinglab/metaeuk,repo,repo,,,,,,,,
+鲲鹏,315,gnuplot,HPC,https://sourceforge.net/p/gnuplot/gnuplot-main/ci/master/tree/,repo,repo,,,,,,,,
+鲲鹏,316,MNE-python,HPC,https://github.com/mne-tools/mne-python,repo,repo,,,,,,,,
+鲲鹏,317,centrifuge,HPC,https://github.com/DaehwanKimLab/centrifuge,repo,repo,,,,,,,,
+鲲鹏,318,ClipKIT,HPC,https://github.com/JLSteenwyk/ClipKIT,repo,repo,,,,,,,,
+鲲鹏,319,idba,HPC,https://github.com/loneknightpy/idba,repo,repo,,,,,,,,
+鲲鹏,320,samblaster,HPC,https://github.com/GregoryFaust/samblaster,repo,repo,,,,,,,,
+鲲鹏,321,SVseq2,HPC,https://sourceforge.net/projects/svseq2/files/svseq2_2/,repo,repo,,,,,,,,
+鲲鹏,322,BayesTyper,HPC,https://github.com/bioinformatics-centre/BayesTyper,repo,repo,,,,,,,,
+鲲鹏,323,Graphtyper2,HPC,https://github.com/DecodeGenetics/graphtyper,repo,repo,,,,,,,,
+鲲鹏,324,TensorRT,HPC,https://github.com/NVIDIA/TensorRT,repo,repo,,,,,,,,
+鲲鹏,325,jvarkit,HPC,https://github.com/lindenb/jvarkit,repo,repo,,,,,,,,
+鲲鹏,327,RepeatScout,HPC,https://github.com/Dfam-consortium/RepeatScout,repo,repo,,,,,,,,
+鲲鹏,328,MOPAC,HPC,https://github.com/openmopac/mopac,repo,repo,,,,,,,,
+鲲鹏,330,Cubep3m,HPC,https://github.com/jharno/cubep3m,repo,repo,,,,,,,,
+鲲鹏,331,SWAN,HPC,https://swanmodel.sourceforge.io/,repo,repo,,,,,,,,
+鲲鹏,332,dnacopy,HPC,https://bioconductor.org/packages/3.20/bioc/html/DNAcopy.html,repo,repo,,,,,,,,
+鲲鹏,333,metapod,HPC,https://bioconductor.org/packages/3.20/bioc/html/metapod.html,repo,repo,,,,,,,,
+鲲鹏,334,geneselectmmd,HPC,https://bioconductor.org/packages/3.20/bioc/html/GeneSelectMMD.html,repo,repo,,,,,,,,
+鲲鹏,335,maigespack,HPC,https://bioconductor.org/packages/3.17/bioc/html/maigesPack.html,repo,repo,,,,,,,,
+鲲鹏,336,fastseg,HPC,https://bioconductor.org/packages/3.20/bioc/html/fastseg.html,repo,repo,,,,,,,,
+鲲鹏,337,batchelor,HPC,https://bioconductor.org/packages/3.20/bioc/html/batchelor.html,repo,repo,,,,,,,,
+鲲鹏,338,methylkit,HPC,https://bioconductor.org/packages/3.20/bioc/html/methylKit.html,repo,repo,,,,,,,,
+鲲鹏,339,monocle,HPC,https://bioconductor.org/packages/3.20/bioc/html/monocle.html,repo,repo,,,,,,,,
+鲲鹏,340,biovizbase,HPC,https://bioconductor.org/packages/3.20/bioc/html/biovizBase.html,repo,repo,,,,,,,,
+鲲鹏,341,genomation,HPC,https://bioconductor.org/packages/3.20/bioc/html/genomation.html,repo,repo,,,,,,,,
+鲲鹏,342,kebabs,HPC,https://bioconductor.org/packages/3.20/bioc/html/kebabs.html,repo,repo,,,,,,,,
+鲲鹏,343,Doris,大数据,https://github.com/apache/doris,repo,repo,,,,,,,,
+鲲鹏,344,Cubefs,分布式存储,https://github.com/cubefs/cubefs,repo,repo,,,,,,,,
 鲲鹏,345,fuse,分布式存储,"fuse-go修改部分:https://github.com/cubefs/cubefs/
-fuse内核优化部分：https://github.com/torvalds/linux",repo,脚本分类: github.com/cubefs/cubefs
-鲲鹏,346,Milvus,数据库,https://github.com/milvus-io/milvus,repo,脚本分类: github.com/milvus-io/milvus
-鲲鹏,347,OceanBase,数据库,https://github.com/oceanbase/oceanbase,repo,脚本分类: github.com/oceanbase/oceanbase
-鲲鹏,348,O3DE,虚拟化,https://github.com/o3de/o3de,repo,脚本分类: github.com/o3de/o3de
-鲲鹏,349,Strongswan,虚拟化,https://github.com/strongswan/strongswan,repo,脚本分类: github.com/strongswan/strongswan
-鲲鹏,350,rdma-core,虚拟化,https://github.com/linux-rdma/rdma-core,repo,脚本分类: github.com/linux-rdma/rdma-core
-鲲鹏,351,DELFT3D,HPC,https://svn.oss.deltares.nl/repos/delft3d,repo,脚本分类: svn.oss.deltares.nl/repos/delft3d
-鲲鹏,352,NAMD,HPC,https://github.com/nbcrrolls/namd,repo,脚本分类: github.com/nbcrrolls/namd
-鲲鹏,353,Gluten(京东/美团),大数据,https://github.com/apache/gluten,repo,脚本分类: github.com/apache/gluten
-鲲鹏,354,Iceberg(字节/京东),大数据,https://github.com/apache/iceberg,repo,脚本分类: github.com/apache/iceberg
-鲲鹏,355,Ambari(中移),大数据,https://github.com/apache/ambari,repo,脚本分类: github.com/apache/ambari
-鲲鹏,356,starrocks(腾讯),大数据,https://github.com/starrocks/starrocks,repo,脚本分类: github.com/starrocks/starrocks
-鲲鹏,357,hudi(字节/京东),大数据,https://github.com/apache/hudi,repo,脚本分类: github.com/apache/hudi
-鲲鹏,358,ORC(京东),大数据,https://github.com/apache/orc,repo,脚本分类: github.com/apache/orc
-鲲鹏,359,Bolt(字节),大数据,https://github.com/bytedance/bolt,repo,脚本分类: github.com/bytedance/bolt
-鲲鹏,360,daft（字节）,大数据,https://github.com/Eventual-Inc/daft,repo,脚本分类: github.com/Eventual-Inc/daft
-鲲鹏,361,data-juicer（腾讯）,大数据,https://github.com/datajuicer/data-juicer,repo,脚本分类: github.com/datajuicer/data-juicer
-鲲鹏,362,pandas（携程）,大数据,https://github.com/pandas-dev/pandas,repo,脚本分类: github.com/pandas-dev/pandas
-鲲鹏,363,Celeborn（阿里）,大数据,https://github.com/apache/celeborn,repo,脚本分类: github.com/apache/celeborn
-鲲鹏,364,Lance（字节）,大数据,https://github.com/lancedb/lancedb,repo,脚本分类: github.com/lancedb/lancedb
-鲲鹏,365,Ray（蚂蚁）,大数据,https://github.com/ray-project/ray,repo,脚本分类: github.com/ray-project/ray
-鲲鹏,366,auron（快手）,大数据,https://github.com/apache/auron,repo,脚本分类: github.com/apache/auron
-鲲鹏,367,3FS(Xsky),分布式存储,https://github.com/3fs/3fs,repo,脚本分类: github.com/3fs/3fs
-鲲鹏,368,reedsolomon(深信服),分布式存储,https://github.com/klauspost/reedsolomon,repo,脚本分类: github.com/klauspost/reedsolomon
-鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicefs/juicefs,repo,脚本分类: github.com/juicefs/juicefs
-鲲鹏,370,Mooncake(京东),分布式存储,https://github.com/mooncake-ai/mooncake,repo,脚本分类: github.com/mooncake-ai/mooncake
-鲲鹏,371,Percona(字节),数据库,https://github.com/percona/percona-server,repo,脚本分类: github.com/percona/percona-server
-鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux/openvelinux,repo,脚本分类: github.com/openvelinux/openvelinux
-鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS/OpenCloudOS,repo,脚本分类: github.com/OpenCloudOS/OpenCloudOS
-鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego/cloudwego,repo,脚本分类: github.com/cloudwego/cloudwego
-鲲鹏,375,DeathStarBench(字节/腾讯),虚拟化,https://github.com/delimitrou/DeathStarBench,repo,脚本分类: github.com/delimitrou/DeathStarBench
-鲲鹏,376,fluid(字节),虚拟化,https://github.com/fluid-cloudnative/fluid,repo,脚本分类: github.com/fluid-cloudnative/fluid
-鲲鹏,377,kubeflow(字节),虚拟化,https://github.com/kubeflow/kubeflow,repo,脚本分类: github.com/kubeflow/kubeflow
-鲲鹏,378,kuberay(字节),虚拟化,https://github.com/ray-project/kuberay,repo,脚本分类: github.com/ray-project/kuberay
-鲲鹏,379,sriov-network-operato(快手/字节),虚拟化,https://github.com/k8snetworkplumbingwg/sriov-network-operator,repo,脚本分类: github.com/k8snetworkplumbingwg/sriov-network-operator
-鲲鹏,380,E2B(字节),虚拟化,https://github.com/e2b-dev/e2b,repo,脚本分类: github.com/e2b-dev/e2b
-鲲鹏,381,kata-containers(京东/腾讯),虚拟化,https://github.com/kata-containers/kata-containers,repo,脚本分类: github.com/kata-containers/kata-containers
-鲲鹏,382,libavif(京东),ARM原生,https://github.com/AOMediaCodec/libavif,repo,脚本分类: github.com/AOMediaCodec/libavif
-鲲鹏,383,libwebp(京东),ARM原生,https://github.com/webmproject/libwebp,repo,脚本分类: github.com/webmproject/libwebp
-鲲鹏,384,torchvision(多模态大模型媒体库),ARM原生,https://github.com/pytorch/vision,repo,脚本分类: github.com/pytorch/vision
-鲲鹏,386,vvenc(字节),ARM原生,https://github.com/ultravideo/vvenc,repo,脚本分类: github.com/ultravideo/vvenc
-鲲鹏,387,tensorflow-serving(BOSS),搜广推,https://github.com/tensorflow/serving,repo,脚本分类: github.com/tensorflow/serving
-鲲鹏,388,onednn(京东),搜广推,https://github.com/oneapi-src/oneDNN,repo,脚本分类: github.com/oneapi-src/oneDNN
-鲲鹏,389,Faiss(美团),搜广推,https://github.com/facebookresearch/faiss,repo,脚本分类: github.com/facebookresearch/faiss
-鲲鹏,390,hnswlib(美团),搜广推,https://github.com/nmslib/hnswlib,repo,脚本分类: github.com/nmslib/hnswlib
-鲲鹏,391,XLA(京东),搜广推,https://github.com/tensorflow/xla,repo,脚本分类: github.com/tensorflow/xla
-鲲鹏,392,ScaNN(美团),搜广推,https://github.com/google/scaNN,repo,脚本分类: github.com/google/scaNN
-鲲鹏,393,newpfordelta(美团),搜广推,https://github.com/newpfordelta/newpfordelta,repo,脚本分类: github.com/newpfordelta/newpfordelta
-鲲鹏,394,RabitQ(字节),搜广推,https://github.com/rabitq/rabitq,repo,脚本分类: github.com/rabitq/rabitq
-鲲鹏,395,DiskANN(字节),搜广推,https://github.com/microsoft/DiskANN,repo,脚本分类: github.com/microsoft/DiskANN
-鲲鹏,396,monolith(字节),搜广推,https://github.com/bytedance/monolith,repo,脚本分类: github.com/bytedance/monolith
-鲲鹏,397,Eigen(京东),搜广推,https://github.com/eigenteam/eigen-git-mirror （官方镜像）,repo,脚本分类: github.com/eigenteam/eigen-git-mirror
-鲲鹏,398,TVM(CBG),搜广推,https://github.com/apache/tvm,repo,脚本分类: github.com/apache/tvm
-鲲鹏,399,onnxruntime(CBG),搜广推,https://github.com/microsoft/onnxruntime,repo,脚本分类: github.com/microsoft/onnxruntime
-鲲鹏,400,vLLM(蚂蚁/腾讯),搜广推,https://github.com/vllm-project/vllm,repo,脚本分类: github.com/vllm-project/vllm
-鲲鹏,401,llama.cpp（电信/移动）,搜广推,https://github.com/ggerganov/llama.cpp,repo,脚本分类: github.com/ggerganov/llama.cpp
-鲲鹏,402,LangGraph(移动),搜广推,https://github.com/langchain-ai/langgraph,repo,脚本分类: github.com/langchain-ai/langgraph
-鲲鹏,403,TensorRT（京东）,搜广推,https://github.com/NVIDIA/TensorRT,repo,脚本分类: github.com/NVIDIA/TensorRT
-鲲鹏,404,TensorRT-LLM（京东）,搜广推,https://github.com/NVIDIA/TensorRT-LLM,repo,脚本分类: github.com/NVIDIA/TensorRT-LLM
-鲲鹏,405,protobuf(字节),基础库&加速库,https://github.com/protocolbuffers/protobuf,repo,脚本分类: github.com/protocolbuffers/protobuf
-鲲鹏,406,folly(字节),基础库&加速库,https://github.com/facebook/folly,repo,脚本分类: github.com/facebook/folly
-鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/sonic-net/sonic-cpp,repo,脚本分类: github.com/sonic-net/sonic-cpp
-鲲鹏,408,Tongsuo(蚂蚁),基础库&加速库,https://github.com/Tongsuo-Project/Tongsuo,repo,脚本分类: github.com/Tongsuo-Project/Tongsuo
-鲲鹏,409,rapidjson(字节/腾讯),基础库&加速库,https://github.com/Tencent/rapidjson,repo,脚本分类: github.com/Tencent/rapidjson
-鲲鹏,410,simdjson(美团),基础库&加速库,https://github.com/simdjson/simdjson,repo,脚本分类: github.com/simdjson/simdjson
-鲲鹏,411,openssl(美团),基础库&加速库,https://github.com/openssl/openssl,repo,脚本分类: github.com/openssl/openssl
-鲲鹏,412,fbthrift(字节),基础库&加速库,https://github.com/facebook/fbthrift,repo,脚本分类: github.com/facebook/fbthrift
-鲲鹏,413,brpc(美团),基础库&加速库,https://github.com/brpc/brpc,repo,脚本分类: github.com/brpc/brpc
-鲲鹏,414,taskflow(字节),基础库&加速库,https://github.com/taskflow/taskflow,repo,脚本分类: github.com/taskflow/taskflow
-鲲鹏,415,simde（美团）,基础库&加速库,https://github.com/simd-everywhere/simde,repo,脚本分类: github.com/simd-everywhere/simde
-鲲鹏,416,rust（字节/腾讯）,基础库&加速库,https://github.com/rust-lang/rust,repo,脚本分类: github.com/rust-lang/rust
-鲲鹏,417,specfem3d,HPC,https://github.com/SPECFEM/specfem3d,repo,脚本分类: github.com/SPECFEM/specfem3d
-鲲鹏,418,DeePMD-kit,HPC,https://github.com/deepmodeling/deepmd-kit,repo,脚本分类: github.com/deepmodeling/deepmd-kit
-鲲鹏,419,RHMC,HPC,https://github.com/LatticeQCD/SIMULATeQCD,repo,脚本分类: github.com/LatticeQCD/SIMULATeQCD
-鲲鹏,420,deepseek,HPC,https://github.com/deepseek-ai/DeepSeek-LLM,repo,脚本分类: github.com/deepseek-ai/DeepSeek-LLM
-鲲鹏,421,Rfdiffusion,HPC,https://github.com/RosettaCommons/Rfdiffusion,repo,脚本分类: github.com/RosettaCommons/Rfdiffusion
-鲲鹏,422,specfem3d_globe,HPC,https://github.com/SPECFEM/specfem3d_globe,repo,脚本分类: github.com/SPECFEM/specfem3d_globe
-鲲鹏,423,Quantum Package,HPC,https://github.com/QuantumPackage/qp2,repo,脚本分类: github.com/QuantumPackage/qp2
-鲲鹏,424,Abinit,HPC,https://github.com/abinit/abinit,repo,脚本分类: github.com/abinit/abinit
-鲲鹏,425,CPMD,HPC,https://github.com/CPMD-code/CPMD,repo,脚本分类: github.com/CPMD-code/CPMD
-鲲鹏,426,PSI,HPC,https://github.com/psi4/psi4,repo,脚本分类: github.com/psi4/psi4
-鲲鹏,427,pwdft,HPC,https://github.com/ebylaska/PWDFT,repo,脚本分类: github.com/ebylaska/PWDFT
-鲲鹏,428,ESPResSOmd,HPC,https://github.com/espressomd/espresso,repo,脚本分类: github.com/espressomd/espresso
-鲲鹏,429,DL_POLY,HPC,https://github.com/ccp5UK/dl-poly,repo,脚本分类: github.com/ccp5UK/dl-poly
-鲲鹏,430,miniGhost,HPC,https://github.com/Mantevo/miniGhost,repo,脚本分类: github.com/Mantevo/miniGhost
-鲲鹏,431,Hefei-NAMD,HPC,https://github.com/QijingZheng/Hefei-NAMD,repo,脚本分类: github.com/QijingZheng/Hefei-NAMD
-鲲鹏,432,siesta,HPC,https://gitlab.com/siesta-project/siesta,repo,脚本分类: gitlab.com/siesta-project/siesta
-鲲鹏,433,ProteinMPNN,HPC,https://github.com/dauparas/ProteinMPNN,repo,脚本分类: github.com/dauparas/ProteinMPNN
-鲲鹏,434,Moose Framework,HPC,https://github.com/idaholab/moose,repo,脚本分类: github.com/idaholab/moose
-鲲鹏,435,QMCPACK,HPC,https://github.com/QMCPACK/qmcpack,repo,脚本分类: github.com/QMCPACK/qmcpack
-鲲鹏,436,Geant4,HPC,https://github.com/Geant4/geant4,repo,脚本分类: github.com/Geant4/geant4
-鲲鹏,437,Chroma,HPC,https://github.com/JeffersonLab/chroma,repo,脚本分类: github.com/JeffersonLab/chroma
-鲲鹏,438,MILC,HPC,https://github.com/milc-qcd/milc_qcd,repo,脚本分类: github.com/milc-qcd/milc_qcd
-鲲鹏,439,CPS,HPC,https://github.com/RBC-UKQCD/CPS_public,repo,脚本分类: github.com/RBC-UKQCD/CPS_public
-鲲鹏,440,MEEP,HPC,https://github.com/NanoComp/meep,repo,脚本分类: github.com/NanoComp/meep
-鲲鹏,441,Elmer,HPC,https://github.com/ElmerCSC/elmerfem,repo,脚本分类: github.com/ElmerCSC/elmerfem
-鲲鹏,442,Code-Aster,HPC,https://github.com/ralic/Code_Aster,repo,脚本分类: github.com/ralic/Code_Aster
-鲲鹏,443,Deal.II,HPC,https://github.com/dealii/dealii,repo,脚本分类: github.com/dealii/dealii
-鲲鹏,444,FDS,HPC,https://github.com/firemodels/fds,repo,脚本分类: github.com/firemodels/fds
-鲲鹏,445,SU2,HPC,https://github.com/su2code/SU2,repo,脚本分类: github.com/su2code/SU2
-鲲鹏,446,Code-Saturne,HPC,https://github.com/code-saturne/code_saturne,repo,脚本分类: github.com/code-saturne/code_saturne
-鲲鹏,447,PALABOS,HPC,https://gitlab.com/unigespc/palabos,repo,脚本分类: gitlab.com/unigespc/palabos
-鲲鹏,448,CMAQ,HPC,https://github.com/USEPA/CMAQ,repo,脚本分类: github.com/USEPA/CMAQ
-鲲鹏,449,WPS,HPC,https://github.com/wrf-model/WPS,repo,脚本分类: github.com/wrf-model/WPS
-鲲鹏,450,WAVEWATCH,HPC,https://github.com/NOAA-EMC/WW3,repo,脚本分类: github.com/NOAA-EMC/WW3
-鲲鹏,451,ROMS,HPC,https://github.com/myroms/roms,repo,脚本分类: github.com/myroms/roms
-鲲鹏,452,HYCOM,HPC,https://github.com/HYCOM/HYCOM-src,repo,脚本分类: github.com/HYCOM/HYCOM-src
-鲲鹏,453,Augustus,HPC,https://github.com/Gaius-Augustus/Augustus,repo,脚本分类: github.com/Gaius-Augustus/Augustus
-鲲鹏,454,Chaste,HPC,https://github.com/Chaste/Chaste,repo,脚本分类: github.com/Chaste/Chaste
-鲲鹏,455,CNVnator,HPC,https://github.com/abyzovlab/CNVnator,repo,脚本分类: github.com/abyzovlab/CNVnator
-鲲鹏,456,SeisSol,HPC,https://github.com/SeisSol/SeisSol,repo,脚本分类: github.com/SeisSol/SeisSol
-鲲鹏,457,GEMMA,HPC,https://github.com/genetics-statistics/GEMMA,repo,脚本分类: github.com/genetics-statistics/GEMMA
-鲲鹏,458,kallisto,HPC,https://github.com/pachterlab/kallisto,repo,脚本分类: github.com/pachterlab/kallisto
-鲲鹏,459,ROOT,HPC,https://github.com/root-project/root,repo,脚本分类: github.com/root-project/root
-鲲鹏,460,MPB,HPC,https://github.com/NanoComp/mpb,repo,脚本分类: github.com/NanoComp/mpb
-鲲鹏,461,Foldseek,HPC,https://github.com/steineggerlab/foldseek,repo,脚本分类: github.com/steineggerlab/foldseek
-鲲鹏,462,phonopy,HPC,https://github.com/phonopy/phonopy,repo,脚本分类: github.com/phonopy/phonopy
-鲲鹏,463,megahit,HPC,https://github.com/voutcn/megahit,repo,脚本分类: github.com/voutcn/megahit
-鲲鹏,464,bcftools,HPC,https://github.com/samtools/bcftools,repo,脚本分类: github.com/samtools/bcftools
-鲲鹏,465,openbabel,HPC,https://github.com/openbabel/openbabel,repo,脚本分类: github.com/openbabel/openbabel
-鲲鹏,466,Abyss,HPC,https://github.com/bcgsc/abyss,repo,脚本分类: github.com/bcgsc/abyss
-鲲鹏,467,FVCOM,HPC,https://github.com/FVCOM-GitHub/fvcom,repo,脚本分类: github.com/FVCOM-GitHub/fvcom
-鲲鹏,468,Velvet,HPC,https://github.com/dzerbino/velvet,repo,脚本分类: github.com/dzerbino/velvet
-鲲鹏,469,Tophat2,HPC,https://github.com/infphilo/tophat,repo,脚本分类: github.com/infphilo/tophat
-鲲鹏,470,NOVOPlasty,HPC,https://github.com/ndierckx/NOVOPlasty,repo,脚本分类: github.com/ndierckx/NOVOPlasty
-鲲鹏,471,PyRosetta,HPC,https://github.com/RosettaCommons/rosetta,repo,脚本分类: github.com/RosettaCommons/rosetta
-鲲鹏,472,scanpy,HPC,https://github.com/scverse/scanpy,repo,脚本分类: github.com/scverse/scanpy
-鲲鹏,473,Seurat,HPC,https://github.com/satijalab/seurat,repo,脚本分类: github.com/satijalab/seurat
-鲲鹏,474,diamond,HPC,https://github.com/bbuchfink/diamond,repo,脚本分类: github.com/bbuchfink/diamond
-鲲鹏,475,prodigal,HPC,https://github.com/hyattpd/Prodigal,repo,脚本分类: github.com/hyattpd/Prodigal
-鲲鹏,476,COPASI,HPC,https://github.com/copasi/copasi,repo,脚本分类: github.com/copasi/copasi
-鲲鹏,477,OpenMolcas,HPC,https://github.com/Molcas/OpenMolcas,repo,脚本分类: github.com/Molcas/OpenMolcas
-鲲鹏,478,Cactus,HPC,https://github.com/ComparativeGenomicsToolkit/cactus,repo,脚本分类: github.com/ComparativeGenomicsToolkit/cactus
-鲲鹏,479,Samtools,HPC,https://github.com/samtools/samtools,repo,脚本分类: github.com/samtools/samtools
-鲲鹏,480,wtdbg2,HPC,https://github.com/ruanjue/wtdbg2,repo,脚本分类: github.com/ruanjue/wtdbg2
-鲲鹏,481,wannier tools,HPC,https://github.com/quanshengwu/wannier_tools,repo,脚本分类: github.com/quanshengwu/wannier_tools
-鲲鹏,482,Bowtie2,HPC,https://github.com/BenLangmead/bowtie2,repo,脚本分类: github.com/BenLangmead/bowtie2
-鲲鹏,483,MACS3,HPC,https://github.com/macs3-project/MACS,repo,脚本分类: github.com/macs3-project/MACS
-鲲鹏,484,HISAT2,HPC,https://github.com/DaehwanKimLab/hisat2,repo,脚本分类: github.com/DaehwanKimLab/hisat2
-鲲鹏,485,Canu,HPC,https://github.com/marbl/canu,repo,脚本分类: github.com/marbl/canu
-鲲鹏,486,interproscan,HPC,https://github.com/ebi-pf-team/interproscan,repo,脚本分类: github.com/ebi-pf-team/interproscan
-鲲鹏,487,RSEM,HPC,https://github.com/deweylab/RSEM,repo,脚本分类: github.com/deweylab/RSEM
-鲲鹏,488,jellyfish,HPC,https://github.com/gmarcais/Jellyfish,repo,脚本分类: github.com/gmarcais/Jellyfish
-鲲鹏,489,STAR,HPC,https://github.com/alexdobin/STAR,repo,脚本分类: github.com/alexdobin/STAR
-鲲鹏,490,fastp,HPC,https://github.com/OpenGene/fastp,repo,脚本分类: github.com/OpenGene/fastp
-鲲鹏,491,WGCNA,HPC,https://github.com/smorabit/hdWGCNA,repo,脚本分类: github.com/smorabit/hdWGCNA
-鲲鹏,492,vaspkit,HPC,https://github.com/vaspkit/vaspkit.github.io,repo,脚本分类: github.com/vaspkit/vaspkit.github.io
-鲲鹏,493,Trinity,HPC,https://github.com/trinityrnaseq/trinityrnaseq,repo,脚本分类: github.com/trinityrnaseq/trinityrnaseq
-鲲鹏,494,FASTA,HPC,https://github.com/xapple/fasta,repo,脚本分类: github.com/xapple/fasta
-鲲鹏,495,FastTree,HPC,https://github.com/morgannprice/fasttree,repo,脚本分类: github.com/morgannprice/fasttree
-鲲鹏,496,kraken2,HPC,https://github.com/DerrickWood/kraken2,repo,脚本分类: github.com/DerrickWood/kraken2
-鲲鹏,497,Blat,HPC,https://github.com/icebert/pblat-cluster,repo,脚本分类: github.com/icebert/pblat-cluster
-鲲鹏,498,AutoDOCK,HPC,https://github.com/ccsb-scripps/AutoDock-Vina,repo,脚本分类: github.com/ccsb-scripps/AutoDock-Vina
-鲲鹏,499,cd-hit,HPC,https://github.com/weizhongli/cdhit,repo,脚本分类: github.com/weizhongli/cdhit
-鲲鹏,500,kobas,HPC,https://github.com/xmao/kobas,repo,脚本分类: github.com/xmao/kobas
-鲲鹏,501,meryl,HPC,https://github.com/marbl/meryl,repo,脚本分类: github.com/marbl/meryl
-鲲鹏,502,pysam,HPC,https://github.com/pysam-developers/pysam,repo,脚本分类: github.com/pysam-developers/pysam
-鲲鹏,503,phylophlan,HPC,https://github.com/biobakery/phylophlan,repo,脚本分类: github.com/biobakery/phylophlan
-鲲鹏,504,VEP,HPC,https://github.com/Ensembl/ensembl-vep,repo,脚本分类: github.com/Ensembl/ensembl-vep
-鲲鹏,505,prottest,HPC,https://github.com/ddarriba/prottest3,repo,脚本分类: github.com/ddarriba/prottest3
-鲲鹏,506,phono3py,HPC,https://github.com/phonopy/phono3py,repo,脚本分类: github.com/phonopy/phono3py
-鲲鹏,507,Cufflinks,HPC,https://github.com/cole-trapnell-lab/cufflinks,repo,脚本分类: github.com/cole-trapnell-lab/cufflinks
-鲲鹏,508,bedtools,HPC,https://github.com/arq5x/bedtools2,repo,脚本分类: github.com/arq5x/bedtools2
-鲲鹏,509,kallisto+bustools_python,HPC,https://github.com/pachterlab/kb_python,repo,脚本分类: github.com/pachterlab/kb_python
-鲲鹏,510,circos,HPC,https://github.com/vigsterkr/circos,repo,脚本分类: github.com/vigsterkr/circos
-鲲鹏,511,SURVIVOR,HPC,https://github.com/fritzsedlazeck/SURVIVOR,repo,脚本分类: github.com/fritzsedlazeck/SURVIVOR
-鲲鹏,512,multiqc,HPC,https://github.com/ewels/MultiQC,repo,脚本分类: github.com/ewels/MultiQC
-鲲鹏,513,RDKit,HPC,https://github.com/rdkit/rdkit,repo,脚本分类: github.com/rdkit/rdkit
-鲲鹏,514,BEAST,HPC,https://github.com/beast-dev/beast-mcmc,repo,脚本分类: github.com/beast-dev/beast-mcmc
-鲲鹏,515,kalign,HPC,https://github.com/TimoLassmann/kalign,repo,脚本分类: github.com/TimoLassmann/kalign
-鲲鹏,516,psipred,HPC,https://github.com/psipred/psipred,repo,脚本分类: github.com/psipred/psipred
-鲲鹏,517,HH-suite,HPC,https://github.com/soedinglab/hh-suite,repo,脚本分类: github.com/soedinglab/hh-suite
-鲲鹏,518,NCL,HPC,https://github.com/NCAR/ncl,repo,脚本分类: github.com/NCAR/ncl
-鲲鹏,519,xla,HPC,https://github.com/openxla/xla,repo,脚本分类: github.com/openxla/xla
-鲲鹏,520,tvm,HPC,https://github.com/apache/tvm,repo,脚本分类: github.com/apache/tvm
-鲲鹏,521,Want,基础库&加速库,https://github.com/QEF/want,repo,脚本分类: github.com/QEF/want
-鲲鹏,522,AMG,HPC,https://github.com/llnl/AMG,repo,脚本分类: github.com/llnl/AMG
-鲲鹏,523,gulp,基础库&加速库,https://github.com/gulpjs/gulp,repo,脚本分类: github.com/gulpjs/gulp
-鲲鹏,524,Towhee,基础库&加速库,https://github.com/towhee-io/towhee,repo,脚本分类: github.com/towhee-io/towhee
-鲲鹏,525,Multiwfn,基础库&加速库,https://github.com/foxtran/MultiWFN,repo,脚本分类: github.com/foxtran/MultiWFN
-鲲鹏,526,Jax,HPC,https://github.com/jax-ml/jax,repo,脚本分类: github.com/jax-ml/jax
-鲲鹏,527,sundials,基础库&加速库,https://github.com/llnl/sundials,repo,脚本分类: github.com/llnl/sundials
-鲲鹏,528,NCEPLIBS,HPC,https://github.com/NOAA-EMC/NCEPLIBS,repo,脚本分类: github.com/NOAA-EMC/NCEPLIBS
-鲲鹏,529,GADGET-2,HPC,https://github.com/gadget-framework/gadget2,repo,脚本分类: github.com/gadget-framework/gadget2
-鲲鹏,530,paraFEM,HPC,https://github.com/parafem/parafem,repo,脚本分类: github.com/parafem/parafem
-鲲鹏,531,QDK,基础库&加速库,https://github.com/qnap-dev/QDK,repo,脚本分类: github.com/qnap-dev/QDK
-鲲鹏,532,NCO,HPC,https://github.com/nco/nco,repo,脚本分类: github.com/nco/nco
-鲲鹏,533,qgis,基础库&加速库,https://github.com/qgis/QGIS,repo,脚本分类: github.com/qgis/QGIS
-鲲鹏,534,eccodes,HPC,https://github.com/ecmwf/eccodes,repo,脚本分类: github.com/ecmwf/eccodes
-鲲鹏,535,ecflow,HPC,https://github.com/ecmwf/ecflow,repo,脚本分类: github.com/ecmwf/ecflow
-鲲鹏,536,Wannier90,基础库&加速库,https://github.com/wannier-developers/wannier90,repo,脚本分类: github.com/wannier-developers/wannier90
-鲲鹏,537,udunits,基础库&加速库,https://github.com/Unidata/UDUNITS-2,repo,脚本分类: github.com/Unidata/UDUNITS-2
-鲲鹏,538,wgrib2,HPC,https://github.com/NOAA-EMC/NCEPLIBS-wgrib2,repo,脚本分类: github.com/NOAA-EMC/NCEPLIBS-wgrib2
-鲲鹏,539,grads,HPC,https://github.com/j-m-adams/GrADS,repo,脚本分类: github.com/j-m-adams/GrADS
-鲲鹏,540,ncview,HPC,https://github.com/iem-projects/ncview,repo,脚本分类: github.com/iem-projects/ncview
-鲲鹏,541,apptainer,基础库&加速库,https://github.com/apptainer/apptainer,repo,脚本分类: github.com/apptainer/apptainer
-鲲鹏,542,grib_api,HPC,https://github.com/weathersource/grib_api,repo,脚本分类: github.com/weathersource/grib_api
-鲲鹏,543,GDAL,基础库&加速库,https://github.com/OSGeo/GDAL,repo,脚本分类: github.com/OSGeo/GDAL
-鲲鹏,544,Proj,基础库&加速库,https://github.com/OSGeo/PROJ,repo,脚本分类: github.com/OSGeo/PROJ
-鲲鹏,545,plumed,基础库&加速库,https://github.com/plumed/plumed2,repo,脚本分类: github.com/plumed/plumed2
-鲲鹏,546,SCALAPACK,基础库&加速库,https://github.com/Reference-ScaLAPACK/scalapack,repo,脚本分类: github.com/Reference-ScaLAPACK/scalapack
-鲲鹏,547,gsl,HPC,https://github.com/ampl/gsl,repo,脚本分类: github.com/ampl/gsl
-鲲鹏,548,FFTW,基础库&加速库,https://github.com/FFTW/fftw3,repo,脚本分类: github.com/FFTW/fftw3
-鲲鹏,549,picard,HPC,https://github.com/broadinstitute/picard,repo,脚本分类: github.com/broadinstitute/picard
-鲲鹏,550,Plink,HPC,https://github.com/chrchang/plink-ng,repo,脚本分类: github.com/chrchang/plink-ng
-鲲鹏,551,sniffles,HPC,https://github.com/fritzsedlazeck/Sniffles,repo,脚本分类: github.com/fritzsedlazeck/Sniffles
-鲲鹏,552,ObsPy,基础库&加速库,https://github.com/obspy/obspy,repo,脚本分类: github.com/obspy/obspy
-鲲鹏,553,Metis,基础库&加速库,https://github.com/KarypisLab/METIS,repo,脚本分类: github.com/KarypisLab/METIS
-鲲鹏,554,Eigen,基础库&加速库,https://gitlab.com/libeigen/eigen,repo,脚本分类: gitlab.com/libeigen/eigen
-鲲鹏,555,irvsp,基础库&加速库,https://github.com/zjwang11/IRVSP,repo,脚本分类: github.com/zjwang11/IRVSP
-鲲鹏,556,SPACK,基础库&加速库,https://github.com/spack/spack,repo,脚本分类: github.com/spack/spack
-鲲鹏,557,brpc,基础库&加速库,https://github.com/apache/brpc,repo,脚本分类: github.com/apache/brpc
-鲲鹏,558,gperftools,基础库&加速库,https://github.com/gperftools/gperftools,repo,脚本分类: github.com/gperftools/gperftools
-鲲鹏,559,mpi4py,基础库&加速库,https://github.com/mpi4py/mpi4py,repo,脚本分类: github.com/mpi4py/mpi4py
-鲲鹏,560,SWMM,基础库&加速库,https://github.com/USEPA/Stormwater-Management-Model,repo,脚本分类: github.com/USEPA/Stormwater-Management-Model
-鲲鹏,561,PETSc,基础库&加速库,https://github.com/petsc/petsc,repo,脚本分类: github.com/petsc/petsc
-鲲鹏,562,mfem,HPC,https://github.com/mfem/mfem,repo,脚本分类: github.com/mfem/mfem
-鲲鹏,563,kokkos,基础库&加速库,https://github.com/kokkos/kokkos,repo,脚本分类: github.com/kokkos/kokkos
-鲲鹏,564,triton,基础库&加速库,https://github.com/triton-lang/triton,repo,脚本分类: github.com/triton-lang/triton
-鲲鹏,565,slurm,基础库&加速库,https://github.com/SchedMD/slurm,repo,脚本分类: github.com/SchedMD/slurm
-鲲鹏,566,sglang,HPC,https://github.com/sgl-project/sglang,repo,脚本分类: github.com/sgl-project/sglang
-鲲鹏,567,vllm,HPC,https://github.com/vllm-project/vllm,repo,脚本分类: github.com/vllm-project/vllm
+fuse内核优化部分：https://github.com/torvalds/linux",repo,repo,,,,,,,,
+鲲鹏,346,Milvus,数据库,https://github.com/milvus-io/milvus,repo,repo,,,,,,,,
+鲲鹏,347,OceanBase,数据库,https://github.com/oceanbase/oceanbase,repo,repo,,,,,,,,
+鲲鹏,348,O3DE,虚拟化,https://github.com/o3de/o3de,repo,repo,,,,,,,,
+鲲鹏,349,Strongswan,虚拟化,https://github.com/strongswan/strongswan,repo,repo,,,,,,,,
+鲲鹏,350,rdma-core,虚拟化,https://github.com/linux-rdma/rdma-core,repo,repo,,,,,,,,
+鲲鹏,351,DELFT3D,HPC,https://svn.oss.deltares.nl/repos/delft3d,repo,repo,,,,,,,,
+鲲鹏,352,NAMD,HPC,https://github.com/nbcrrolls/namd,repo,repo,,,,,,,,
+鲲鹏,353,Gluten(京东/美团),大数据,https://github.com/apache/gluten,repo,repo,,,,,,,,
+鲲鹏,354,Iceberg(字节/京东),大数据,https://github.com/apache/iceberg,repo,repo,,,,,,,,
+鲲鹏,355,Ambari(中移),大数据,https://github.com/apache/ambari,repo,repo,,,,,,,,
+鲲鹏,356,starrocks(腾讯),大数据,https://github.com/StarRocks/starrocks,repo,repo,,,,,,,,
+鲲鹏,357,hudi(字节/京东),大数据,https://github.com/apache/hudi,repo,repo,,,,,,,,
+鲲鹏,358,ORC(京东),大数据,https://github.com/apache/orc,repo,repo,,,,,,,,
+鲲鹏,359,Bolt(字节),大数据,https://github.com/bytedance/bolt,repo,repo,,,,,,,,
+鲲鹏,360,daft（字节）,大数据,https://github.com/Eventual-Inc/Daft,repo,repo,,,,,,,,
+鲲鹏,361,data-juicer（腾讯）,大数据,https://github.com/datajuicer/data-juicer,repo,repo,,,,,,,,
+鲲鹏,362,pandas（携程）,大数据,https://github.com/pandas-dev/pandas,repo,repo,,,,,,,,
+鲲鹏,363,Celeborn（阿里）,大数据,https://github.com/apache/celeborn,repo,repo,,,,,,,,
+鲲鹏,364,Lance（字节）,大数据,https://github.com/lancedb/lancedb,repo,repo,,,,,,,,
+鲲鹏,366,auron（快手）,大数据,https://github.com/apache/auron,repo,repo,,,,,,,,
+鲲鹏,367,3FS(Xsky),分布式存储,https://github.com/deepseek-ai/3FS,repo,repo,,,,,,,,
+鲲鹏,368,reedsolomon(深信服),分布式存储,https://github.com/klauspost/reedsolomon,repo,repo,,,,,,,,
+鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicedata/juicefs,repo,repo,,,,,,,,
+鲲鹏,371,Percona(字节),数据库,https://github.com/percona/percona-server,repo,repo,,,,,,,,
+鲲鹏,375,DeathStarBench(字节/腾讯),虚拟化,https://github.com/delimitrou/DeathStarBench,repo,repo,,,,,,,,
+鲲鹏,376,fluid(字节),虚拟化,https://github.com/fluid-cloudnative/fluid,repo,repo,,,,,,,,
+鲲鹏,377,kubeflow(字节),虚拟化,https://github.com/kubeflow/kubeflow,repo,repo,,,,,,,,
+鲲鹏,378,kuberay(字节),虚拟化,https://github.com/ray-project/kuberay,repo,repo,,,,,,,,
+鲲鹏,379,sriov-network-operato(快手/字节),虚拟化,https://github.com/k8snetworkplumbingwg/sriov-network-operator,repo,repo,,,,,,,,
+鲲鹏,380,E2B(字节),虚拟化,https://github.com/e2b-dev/E2B,repo,repo,,,,,,,,
+鲲鹏,381,kata-containers(京东/腾讯),虚拟化,https://github.com/kata-containers/kata-containers,repo,repo,,,,,,,,
+鲲鹏,382,libavif(京东),ARM原生,https://github.com/AOMediaCodec/libavif,repo,repo,,,,,,,,
+鲲鹏,383,libwebp(京东),ARM原生,https://chromium.googlesource.com/webm/libwebp,repo,repo,,,,,,,,
+鲲鹏,386,vvenc(字节),ARM原生,https://github.com/fraunhoferhhi/vvenc,repo,repo,,,,,,,,
+鲲鹏,387,tensorflow-serving(BOSS),搜广推,https://github.com/tensorflow/serving,repo,repo,,,,,,,,
+鲲鹏,388,onednn(京东),搜广推,https://github.com/uxlfoundation/oneDNN,repo,repo,,,,,,,,
+鲲鹏,389,Faiss(美团),搜广推,https://github.com/facebookresearch/faiss,repo,repo,,,,,,,,
+鲲鹏,390,hnswlib(美团),搜广推,https://github.com/nmslib/hnswlib,repo,repo,,,,,,,,
+鲲鹏,392,ScaNN(美团),搜广推,https://github.com/google-research/google-research/tree/master/scann,repo,repo,,,,,,,,
+鲲鹏,393,newpfordelta(美团),搜广推,https://github.com/newpfordelta/newpfordelta,repo,repo,,,,,,,,
+鲲鹏,394,RabitQ(字节),搜广推,https://github.com/gaoj0017/RaBitQ,repo,repo,,,,,,,,
+鲲鹏,395,DiskANN(字节),搜广推,https://github.com/microsoft/DiskANN,repo,repo,,,,,,,,
+鲲鹏,396,monolith(字节),搜广推,https://github.com/bytedance/monolith,repo,repo,,,,,,,,
+鲲鹏,397,Eigen(京东),搜广推,https://gitlab.com/libeigen/eigen,repo,repo,,,,,,,,
+鲲鹏,398,TVM(CBG),搜广推,https://github.com/apache/tvm,repo,repo,,,,,,,,
+鲲鹏,400,vLLM(蚂蚁/腾讯),搜广推,https://github.com/vllm-project/vllm,repo,repo,,,,,,,,
+鲲鹏,402,LangGraph(移动),搜广推,https://github.com/langchain-ai/langgraph,repo,repo,,,,,,,,
+鲲鹏,404,TensorRT-LLM（京东）,搜广推,https://github.com/NVIDIA/TensorRT-LLM,repo,repo,,,,,,,,
+鲲鹏,406,folly(字节),基础库&加速库,https://github.com/facebook/folly,repo,repo,,,,,,,,
+鲲鹏,407,sonic-cpp(互联网),基础库&加速库,https://github.com/bytedance/sonic-cpp,repo,repo,,,,,,,,
+鲲鹏,408,Tongsuo(蚂蚁),基础库&加速库,https://github.com/Tongsuo-Project/Tongsuo,repo,repo,,,,,,,,
+鲲鹏,409,rapidjson(字节/腾讯),基础库&加速库,https://github.com/Tencent/rapidjson,repo,repo,,,,,,,,
+鲲鹏,410,simdjson(美团),基础库&加速库,https://github.com/simdjson/simdjson,repo,repo,,,,,,,,
+鲲鹏,411,openssl(美团),基础库&加速库,https://github.com/openssl/openssl,repo,repo,,,,,,,,
+鲲鹏,412,fbthrift(字节),基础库&加速库,https://github.com/facebook/fbthrift,repo,repo,,,,,,,,
+鲲鹏,413,brpc(美团),基础库&加速库,https://github.com/apache/brpc,repo,repo,,,,,,,,
+鲲鹏,414,taskflow(字节),基础库&加速库,https://github.com/taskflow/taskflow,repo,repo,,,,,,,,
+鲲鹏,415,simde（美团）,基础库&加速库,https://github.com/simd-everywhere/simde,repo,repo,,,,,,,,
+鲲鹏,416,rust（字节/腾讯）,基础库&加速库,https://github.com/rust-lang/rust,repo,repo,,,,,,,,
+鲲鹏,417,specfem3d,HPC,https://github.com/SPECFEM/specfem3d,repo,repo,,,,,,,,
+鲲鹏,418,DeePMD-kit,HPC,https://github.com/deepmodeling/deepmd-kit,repo,repo,,,,,,,,
+鲲鹏,419,RHMC,HPC,https://github.com/LatticeQCD/SIMULATeQCD,repo,repo,,,,,,,,
+鲲鹏,420,deepseek,HPC,https://github.com/deepseek-ai/DeepSeek-LLM,repo,repo,,,,,,,,
+鲲鹏,421,Rfdiffusion,HPC,https://github.com/RosettaCommons/RFdiffusion,repo,repo,,,,,,,,
+鲲鹏,422,specfem3d_globe,HPC,https://github.com/SPECFEM/specfem3d_globe,repo,repo,,,,,,,,
+鲲鹏,423,Quantum Package,HPC,https://github.com/QuantumPackage/qp2,repo,repo,,,,,,,,
+鲲鹏,424,Abinit,HPC,https://github.com/abinit/abinit,repo,repo,,,,,,,,
+鲲鹏,425,CPMD,HPC,https://github.com/CPMD-code/CPMD,repo,repo,,,,,,,,
+鲲鹏,426,PSI,HPC,https://github.com/psi4/psi4,repo,repo,,,,,,,,
+鲲鹏,427,pwdft,HPC,https://github.com/ebylaska/PWDFT,repo,repo,,,,,,,,
+鲲鹏,428,ESPResSOmd,HPC,https://github.com/espressomd/espresso,repo,repo,,,,,,,,
+鲲鹏,429,DL_POLY,HPC,https://github.com/ccp5UK/dl-poly,repo,repo,,,,,,,,
+鲲鹏,430,miniGhost,HPC,https://github.com/Mantevo/miniGhost,repo,repo,,,,,,,,
+鲲鹏,431,Hefei-NAMD,HPC,https://github.com/QijingZheng/Hefei-NAMD,repo,repo,,,,,,,,
+鲲鹏,432,siesta,HPC,https://gitlab.com/siesta-project/siesta,repo,repo,,,,,,,,
+鲲鹏,433,ProteinMPNN,HPC,https://github.com/dauparas/ProteinMPNN,repo,repo,,,,,,,,
+鲲鹏,434,Moose Framework,HPC,https://github.com/idaholab/moose,repo,repo,,,,,,,,
+鲲鹏,435,QMCPACK,HPC,https://github.com/QMCPACK/qmcpack,repo,repo,,,,,,,,
+鲲鹏,436,Geant4,HPC,https://gitlab.cern.ch/geant4/geant4,repo,repo,,,,,,,,
+鲲鹏,437,Chroma,HPC,https://github.com/JeffersonLab/chroma,repo,repo,,,,,,,,
+鲲鹏,438,MILC,HPC,https://github.com/milc-qcd/milc_qcd,repo,repo,,,,,,,,
+鲲鹏,439,CPS,HPC,https://github.com/RBC-UKQCD/CPS_public,repo,repo,,,,,,,,
+鲲鹏,440,MEEP,HPC,https://github.com/NanoComp/meep,repo,repo,,,,,,,,
+鲲鹏,441,Elmer,HPC,https://github.com/ElmerCSC/elmerfem,repo,repo,,,,,,,,
+鲲鹏,442,Code-Aster,HPC,https://github.com/ralic/Code_Aster,repo,repo,,,,,,,,
+鲲鹏,443,Deal.II,HPC,https://github.com/dealii/dealii,repo,repo,,,,,,,,
+鲲鹏,444,FDS,HPC,https://github.com/firemodels/fds,repo,repo,,,,,,,,
+鲲鹏,445,SU2,HPC,https://github.com/su2code/SU2,repo,repo,,,,,,,,
+鲲鹏,446,Code-Saturne,HPC,https://github.com/code-saturne/code_saturne,repo,repo,,,,,,,,
+鲲鹏,447,PALABOS,HPC,https://gitlab.com/unigespc/palabos,repo,repo,,,,,,,,
+鲲鹏,448,CMAQ,HPC,https://github.com/USEPA/CMAQ,repo,repo,,,,,,,,
+鲲鹏,449,WPS,HPC,https://github.com/wrf-model/WPS,repo,repo,,,,,,,,
+鲲鹏,450,WAVEWATCH,HPC,https://github.com/NOAA-EMC/WW3,repo,repo,,,,,,,,
+鲲鹏,451,ROMS,HPC,https://github.com/myroms/roms,repo,repo,,,,,,,,
+鲲鹏,452,HYCOM,HPC,https://github.com/HYCOM/HYCOM-src,repo,repo,,,,,,,,
+鲲鹏,453,Augustus,HPC,https://github.com/Gaius-Augustus/Augustus,repo,repo,,,,,,,,
+鲲鹏,454,Chaste,HPC,https://github.com/Chaste/Chaste,repo,repo,,,,,,,,
+鲲鹏,455,CNVnator,HPC,https://github.com/abyzovlab/CNVnator,repo,repo,,,,,,,,
+鲲鹏,456,SeisSol,HPC,https://github.com/SeisSol/SeisSol,repo,repo,,,,,,,,
+鲲鹏,457,GEMMA,HPC,https://github.com/genetics-statistics/GEMMA,repo,repo,,,,,,,,
+鲲鹏,458,kallisto,HPC,https://github.com/pachterlab/kallisto,repo,repo,,,,,,,,
+鲲鹏,459,ROOT,HPC,https://github.com/root-project/root,repo,repo,,,,,,,,
+鲲鹏,460,MPB,HPC,https://github.com/NanoComp/mpb,repo,repo,,,,,,,,
+鲲鹏,461,Foldseek,HPC,https://github.com/steineggerlab/foldseek,repo,repo,,,,,,,,
+鲲鹏,462,phonopy,HPC,https://github.com/phonopy/phonopy,repo,repo,,,,,,,,
+鲲鹏,463,megahit,HPC,https://github.com/voutcn/megahit,repo,repo,,,,,,,,
+鲲鹏,464,bcftools,HPC,https://github.com/samtools/bcftools,repo,repo,,,,,,,,
+鲲鹏,465,openbabel,HPC,https://github.com/openbabel/openbabel,repo,repo,,,,,,,,
+鲲鹏,466,Abyss,HPC,https://github.com/BirolLab/abyss,repo,repo,,,,,,,,
+鲲鹏,467,FVCOM,HPC,https://github.com/FVCOM-GitHub/FVCOM,repo,repo,,,,,,,,
+鲲鹏,468,Velvet,HPC,https://github.com/dzerbino/velvet,repo,repo,,,,,,,,
+鲲鹏,469,Tophat2,HPC,https://github.com/DaehwanKimLab/tophat,repo,repo,,,,,,,,
+鲲鹏,470,NOVOPlasty,HPC,https://github.com/ndierckx/NOVOPlasty,repo,repo,,,,,,,,
+鲲鹏,471,PyRosetta,HPC,https://github.com/RosettaCommons/rosetta,repo,repo,,,,,,,,
+鲲鹏,472,scanpy,HPC,https://github.com/scverse/scanpy,repo,repo,,,,,,,,
+鲲鹏,473,Seurat,HPC,https://github.com/satijalab/seurat,repo,repo,,,,,,,,
+鲲鹏,474,diamond,HPC,https://github.com/bbuchfink/diamond,repo,repo,,,,,,,,
+鲲鹏,475,prodigal,HPC,https://github.com/hyattpd/Prodigal,repo,repo,,,,,,,,
+鲲鹏,476,COPASI,HPC,https://github.com/copasi/COPASI,repo,repo,,,,,,,,
+鲲鹏,477,OpenMolcas,HPC,https://gitlab.com/Molcas/OpenMolcas,repo,repo,,,,,,,,
+鲲鹏,478,Cactus,HPC,https://github.com/ComparativeGenomicsToolkit/cactus,repo,repo,,,,,,,,
+鲲鹏,479,Samtools,HPC,https://github.com/samtools/samtools,repo,repo,,,,,,,,
+鲲鹏,480,wtdbg2,HPC,https://github.com/ruanjue/wtdbg2,repo,repo,,,,,,,,
+鲲鹏,481,wannier tools,HPC,https://github.com/quanshengwu/wannier_tools,repo,repo,,,,,,,,
+鲲鹏,482,Bowtie2,HPC,https://github.com/BenLangmead/bowtie2,repo,repo,,,,,,,,
+鲲鹏,483,MACS3,HPC,https://github.com/macs3-project/MACS,repo,repo,,,,,,,,
+鲲鹏,484,HISAT2,HPC,https://github.com/DaehwanKimLab/hisat2,repo,repo,,,,,,,,
+鲲鹏,485,Canu,HPC,https://github.com/marbl/canu,repo,repo,,,,,,,,
+鲲鹏,486,interproscan,HPC,https://github.com/ebi-pf-team/interproscan,repo,repo,,,,,,,,
+鲲鹏,487,RSEM,HPC,https://github.com/deweylab/RSEM,repo,repo,,,,,,,,
+鲲鹏,488,jellyfish,HPC,https://github.com/gmarcais/Jellyfish,repo,repo,,,,,,,,
+鲲鹏,489,STAR,HPC,https://github.com/alexdobin/STAR,repo,repo,,,,,,,,
+鲲鹏,490,fastp,HPC,https://github.com/OpenGene/fastp,repo,repo,,,,,,,,
+鲲鹏,491,WGCNA,HPC,https://github.com/smorabit/hdWGCNA,repo,repo,,,,,,,,
+鲲鹏,492,vaspkit,HPC,https://github.com/vaspkit/vaspkit.github.io,repo,repo,,,,,,,,
+鲲鹏,493,Trinity,HPC,https://github.com/trinityrnaseq/trinityrnaseq,repo,repo,,,,,,,,
+鲲鹏,494,FASTA,HPC,https://github.com/xapple/fasta,repo,repo,,,,,,,,
+鲲鹏,495,FastTree,HPC,https://github.com/morgannprice/fasttree,repo,repo,,,,,,,,
+鲲鹏,496,kraken2,HPC,https://github.com/DerrickWood/kraken2,repo,repo,,,,,,,,
+鲲鹏,497,Blat,HPC,https://github.com/icebert/pblat-cluster,repo,repo,,,,,,,,
+鲲鹏,499,cd-hit,HPC,https://github.com/weizhongli/cdhit,repo,repo,,,,,,,,
+鲲鹏,500,kobas,HPC,https://github.com/xmao/kobas,repo,repo,,,,,,,,
+鲲鹏,501,meryl,HPC,https://github.com/marbl/meryl,repo,repo,,,,,,,,
+鲲鹏,502,pysam,HPC,https://github.com/pysam-developers/pysam,repo,repo,,,,,,,,
+鲲鹏,503,phylophlan,HPC,https://github.com/biobakery/phylophlan,repo,repo,,,,,,,,
+鲲鹏,504,VEP,HPC,https://github.com/Ensembl/ensembl-vep,repo,repo,,,,,,,,
+鲲鹏,505,prottest,HPC,https://github.com/ddarriba/prottest3,repo,repo,,,,,,,,
+鲲鹏,506,phono3py,HPC,https://github.com/phonopy/phono3py,repo,repo,,,,,,,,
+鲲鹏,507,Cufflinks,HPC,https://github.com/cole-trapnell-lab/cufflinks,repo,repo,,,,,,,,
+鲲鹏,508,bedtools,HPC,https://github.com/arq5x/bedtools2,repo,repo,,,,,,,,
+鲲鹏,509,kallisto+bustools_python,HPC,https://github.com/pachterlab/kb_python,repo,repo,,,,,,,,
+鲲鹏,510,circos,HPC,https://github.com/vigsterkr/circos,repo,repo,,,,,,,,
+鲲鹏,511,SURVIVOR,HPC,https://github.com/fritzsedlazeck/SURVIVOR,repo,repo,,,,,,,,
+鲲鹏,512,multiqc,HPC,https://github.com/MultiQC/MultiQC,repo,repo,,,,,,,,
+鲲鹏,513,RDKit,HPC,https://github.com/rdkit/rdkit,repo,repo,,,,,,,,
+鲲鹏,514,BEAST,HPC,https://github.com/beast-dev/beast-mcmc,repo,repo,,,,,,,,
+鲲鹏,515,kalign,HPC,https://github.com/TimoLassmann/kalign,repo,repo,,,,,,,,
+鲲鹏,516,psipred,HPC,https://github.com/psipred/psipred,repo,repo,,,,,,,,
+鲲鹏,517,HH-suite,HPC,https://github.com/soedinglab/hh-suite,repo,repo,,,,,,,,
+鲲鹏,518,NCL,HPC,https://github.com/NCAR/ncl,repo,repo,,,,,,,,
+鲲鹏,521,Want,基础库&加速库,https://github.com/QEF/want,repo,repo,,,,,,,,
+鲲鹏,522,AMG,HPC,https://github.com/llnl/AMG,repo,repo,,,,,,,,
+鲲鹏,523,gulp,基础库&加速库,https://github.com/gulpjs/gulp,repo,repo,,,,,,,,
+鲲鹏,524,Towhee,基础库&加速库,https://github.com/towhee-io/towhee,repo,repo,,,,,,,,
+鲲鹏,525,Multiwfn,基础库&加速库,https://github.com/foxtran/MultiWFN,repo,repo,,,,,,,,
+鲲鹏,526,Jax,HPC,https://github.com/jax-ml/jax,repo,repo,,,,,,,,
+鲲鹏,527,sundials,基础库&加速库,https://github.com/llnl/sundials,repo,repo,,,,,,,,
+鲲鹏,528,NCEPLIBS,HPC,https://github.com/NOAA-EMC/NCEPLIBS,repo,repo,,,,,,,,
+鲲鹏,529,GADGET-2,HPC,https://github.com/gadget-framework/gadget2,repo,repo,,,,,,,,
+鲲鹏,530,paraFEM,HPC,https://github.com/ParaFEM/ParaFEM,repo,repo,,,,,,,,
+鲲鹏,531,QDK,基础库&加速库,https://github.com/qnap-dev/QDK,repo,repo,,,,,,,,
+鲲鹏,532,NCO,HPC,https://github.com/nco/nco,repo,repo,,,,,,,,
+鲲鹏,533,qgis,基础库&加速库,https://github.com/qgis/QGIS,repo,repo,,,,,,,,
+鲲鹏,534,eccodes,HPC,https://github.com/ecmwf/eccodes,repo,repo,,,,,,,,
+鲲鹏,535,ecflow,HPC,https://github.com/ecmwf/ecflow,repo,repo,,,,,,,,
+鲲鹏,536,Wannier90,基础库&加速库,https://github.com/wannier-developers/wannier90,repo,repo,,,,,,,,
+鲲鹏,537,udunits,基础库&加速库,https://github.com/Unidata/UDUNITS-2,repo,repo,,,,,,,,
+鲲鹏,538,wgrib2,HPC,https://github.com/NOAA-EMC/wgrib2,repo,repo,,,,,,,,
+鲲鹏,539,grads,HPC,https://github.com/j-m-adams/GrADS,repo,repo,,,,,,,,
+鲲鹏,540,ncview,HPC,https://github.com/iem-projects/ncview,repo,repo,,,,,,,,
+鲲鹏,541,apptainer,基础库&加速库,https://github.com/apptainer/apptainer,repo,repo,,,,,,,,
+鲲鹏,542,grib_api,HPC,https://github.com/weathersource/grib_api,repo,repo,,,,,,,,
+鲲鹏,543,GDAL,基础库&加速库,https://github.com/OSGeo/gdal,repo,repo,,,,,,,,
+鲲鹏,544,Proj,基础库&加速库,https://github.com/OSGeo/PROJ,repo,repo,,,,,,,,
+鲲鹏,545,plumed,基础库&加速库,https://github.com/plumed/plumed2,repo,repo,,,,,,,,
+鲲鹏,546,SCALAPACK,基础库&加速库,https://github.com/Reference-ScaLAPACK/scalapack,repo,repo,,,,,,,,
+鲲鹏,547,gsl,HPC,https://github.com/ampl/gsl,repo,repo,,,,,,,,
+鲲鹏,548,FFTW,基础库&加速库,https://github.com/FFTW/fftw3,repo,repo,,,,,,,,
+鲲鹏,549,picard,HPC,https://github.com/broadinstitute/picard,repo,repo,,,,,,,,
+鲲鹏,550,Plink,HPC,https://github.com/chrchang/plink-ng,repo,repo,,,,,,,,
+鲲鹏,551,sniffles,HPC,https://github.com/fritzsedlazeck/Sniffles,repo,repo,,,,,,,,
+鲲鹏,552,ObsPy,基础库&加速库,https://github.com/obspy/obspy,repo,repo,,,,,,,,
+鲲鹏,553,Metis,基础库&加速库,https://github.com/KarypisLab/METIS,repo,repo,,,,,,,,
+鲲鹏,555,irvsp,基础库&加速库,https://github.com/zjwang11/IRVSP,repo,repo,,,,,,,,
+鲲鹏,556,SPACK,基础库&加速库,https://github.com/spack/spack,repo,repo,,,,,,,,
+鲲鹏,558,gperftools,基础库&加速库,https://github.com/gperftools/gperftools,repo,repo,,,,,,,,
+鲲鹏,559,mpi4py,基础库&加速库,https://github.com/mpi4py/mpi4py,repo,repo,,,,,,,,
+鲲鹏,560,SWMM,基础库&加速库,https://github.com/USEPA/Stormwater-Management-Model,repo,repo,,,,,,,,
+鲲鹏,561,PETSc,基础库&加速库,https://gitlab.com/petsc/petsc,repo,repo,,,,,,,,
+鲲鹏,562,mfem,HPC,https://github.com/mfem/mfem,repo,repo,,,,,,,,
+鲲鹏,563,kokkos,基础库&加速库,https://github.com/kokkos/kokkos,repo,repo,,,,,,,,
+鲲鹏,565,slurm,基础库&加速库,https://github.com/SchedMD/slurm,repo,repo,,,,,,,,
+鲲鹏,566,sglang,HPC,https://github.com/sgl-project/sglang,repo,repo,,,,,,,,
+,,GenAIExamples,,https://github.com/opea-project/GenAIExamples,repo,org_expansion,opea-project,728,338,2026-04-12T08:59:57Z,11.239,Shell,"Generative AI Examples is a collection of GenAI examples such as ChatQnA, Copilot, which illustrate the pipeline capabilities of the Open Platform for Enterprise AI (OPEA) project.",org_expansion: opea-project (score=11.239)
+,,GenAIComps,,https://github.com/opea-project/GenAIComps,repo,org_expansion,opea-project,195,217,2026-04-07T11:39:44Z,9.8408,Python,GenAI components at micro-service level; GenAI service composer to create mega-service,org_expansion: opea-project (score=9.8408)
+,,GenAIInfra,,https://github.com/opea-project/GenAIInfra,repo,org_expansion,opea-project,73,98,2026-04-06T22:42:55Z,8.6357,Go,Containerization and cloud native suite for OPEA,org_expansion: opea-project (score=8.6357)
+,,GenAIStudio,,https://github.com/opea-project/GenAIStudio,repo,org_expansion,opea-project,60,27,2026-04-08T16:58:24Z,7.9519,JavaScript,"GenAI Studio is a low code platform to enable users to construct, evaluate, and benchmark GenAI applications. The platform also provide capability to export developed application as a ready-to-deploy ",org_expansion: opea-project (score=7.9519)
+,,Enterprise-RAG,,https://github.com/opea-project/Enterprise-RAG,repo,org_expansion,opea-project,56,25,2026-04-13T09:07:14Z,7.9267,Python,Intel® AI for Enterprise RAG converts enterprise data into actionable insights with excellent TCO. Utilizing Intel Gaudi AI accelerators and Intel Xeon processors ensuring streamlined deployment.,org_expansion: opea-project (score=7.9267)
+,,GenAIEval,,https://github.com/opea-project/GenAIEval,repo,org_expansion,opea-project,41,58,2026-04-06T22:45:00Z,7.919,Jupyter Notebook,"Evaluation, benchmark, and scorecard, targeting for performance on throughput and latency, accuracy on popular evaluation harness, safety, and hallucination",org_expansion: opea-project (score=7.919)
+,,Enterprise-Inference,,https://github.com/opea-project/Enterprise-Inference,repo,org_expansion,opea-project,38,26,2026-04-13T04:18:12Z,7.6135,Python,"Intel® AI for Enterprise Inference optimizes AI inference services on Intel hardware using Kubernetes Orchestration. It automates LLM model deployment for faster inference, resource provisioning, and ",org_expansion: opea-project (score=7.6135)
+,,docs,,https://github.com/opea-project/docs,repo,org_expansion,opea-project,44,86,2025-12-19T03:04:24Z,6.8296,Python,This repo contains documents of the OPEA project,org_expansion: opea-project (score=6.8296)
+,,opea-project.github.io,,https://github.com/opea-project/opea-project.github.io,repo,org_expansion,opea-project,3,8,2026-04-13T02:30:36Z,5.1584,HTML,,org_expansion: opea-project (score=5.1584)
+,,LangChain-OPEA,,https://github.com/opea-project/LangChain-OPEA,repo,org_expansion,opea-project,3,2,2026-04-06T22:41:23Z,4.5829,Python,,org_expansion: opea-project (score=4.5829)
+,,Course-Material,,https://github.com/opea-project/Course-Material,repo,org_expansion,opea-project,9,4,2025-06-12T14:33:31Z,3.2531,Jupyter Notebook,"Training materials and resources for OPEA development, featuring Docker and Kubernetes implementations, Jupyter notebooks, and hands-on examples for OPEA blueprints.",org_expansion: opea-project (score=3.2531)
+,,Security-Working-Group,,https://github.com/opea-project/Security-Working-Group,repo,org_expansion,opea-project,6,5,2024-10-02T21:31:45Z,2.6042,,,org_expansion: opea-project (score=2.6042)
+,,Validation,,https://github.com/opea-project/Validation,repo,org_expansion,opea-project,1,4,2025-08-11T06:09:40Z,2.0702,Python,,org_expansion: opea-project (score=2.0702)
+,,GenAIResearch,,https://github.com/opea-project/GenAIResearch,repo,org_expansion,opea-project,1,4,2025-01-21T05:25:32Z,1.5514,Python,GenAI Innovations for OPEA,org_expansion: opea-project (score=1.5514)
+,,Governance,,https://github.com/opea-project/Governance,repo,org_expansion,opea-project,2,2,2024-07-29T05:51:39Z,1.5255,,Technical Charter,org_expansion: opea-project (score=1.5255)
+,,Working-Groups,,https://github.com/opea-project/Working-Groups,repo,org_expansion,opea-project,1,1,2025-05-19T18:28:15Z,1.3881,,Repos for all OPEA working groups,org_expansion: opea-project (score=1.3881)
+,,DX-Working-Group,,https://github.com/opea-project/DX-Working-Group,repo,org_expansion,opea-project,2,1,2024-08-21T00:17:20Z,1.3623,,Developer Experience Working Group,org_expansion: opea-project (score=1.3623)
+,,C-RAG,,https://github.com/opea-project/C-RAG,repo,org_expansion,opea-project,2,0,2025-01-14T06:27:36Z,1.1951,,China Enterprise RAG,org_expansion: opea-project (score=1.1951)
+,,Haystack-OPEA,,https://github.com/opea-project/Haystack-OPEA,repo,org_expansion,opea-project,1,0,2025-06-12T13:41:57Z,1.1562,Python,,org_expansion: opea-project (score=1.1562)
+,,enduser-public,,https://github.com/opea-project/enduser-public,repo,org_expansion,opea-project,2,0,2024-08-07T00:26:53Z,1.0533,,OPEA End User Community,org_expansion: opea-project (score=1.0533)
+,,Amphion,,https://github.com/open-mmlab/Amphion,repo,org_expansion,open-mmlab,9755,807,2026-03-25T14:11:57Z,13.6005,Python,"Amphion (/æmˈfaɪən/) is a toolkit for Audio, Music, and Speech Generation. Its purpose is to support reproducible research and help junior researchers and engineers get started in the field of audio, ",org_expansion: open-mmlab (score=13.6005)
+,,mmdetection,,https://github.com/open-mmlab/mmdetection,repo,org_expansion,open-mmlab,32590,9842,2024-08-21T02:01:07Z,13.1263,Python,OpenMMLab Detection Toolbox and Benchmark,org_expansion: open-mmlab (score=13.1263)
+,,mmaction2,,https://github.com/open-mmlab/mmaction2,repo,org_expansion,open-mmlab,4982,1347,2026-03-18T04:04:49Z,13.1212,Python,OpenMMLab's Next Generation Video Understanding Toolbox and Benchmark,org_expansion: open-mmlab (score=13.1212)
+,,mmcv,,https://github.com/open-mmlab/mmcv,repo,org_expansion,open-mmlab,6430,1763,2026-01-29T17:08:43Z,12.8629,Python,OpenMMLab Computer Vision Foundation,org_expansion: open-mmlab (score=12.8629)
+,,OpenPCDet,,https://github.com/open-mmlab/OpenPCDet,repo,org_expansion,open-mmlab,5533,1438,2025-10-08T10:56:40Z,11.7116,Python,OpenPCDet Toolbox for LiDAR-based 3D Object Detection.,org_expansion: open-mmlab (score=11.7116)
+,,mmpose,,https://github.com/open-mmlab/mmpose,repo,org_expansion,open-mmlab,7506,1475,2025-08-04T07:30:50Z,11.6598,Python,OpenMMLab Pose Estimation Toolbox and Benchmark.,org_expansion: open-mmlab (score=11.6598)
+,,mmsegmentation,,https://github.com/open-mmlab/mmsegmentation,repo,org_expansion,open-mmlab,9736,2841,2024-08-13T08:53:34Z,11.5328,Python,OpenMMLab Semantic Segmentation Toolbox and Benchmark.,org_expansion: open-mmlab (score=11.5328)
+,,mmdetection3d,,https://github.com/open-mmlab/mmdetection3d,repo,org_expansion,open-mmlab,6369,1744,2024-07-10T15:19:34Z,10.9353,Python,OpenMMLab's next-generation platform for general 3D object detection.,org_expansion: open-mmlab (score=10.9353)
+,,mmagic,,https://github.com/open-mmlab/mmagic,repo,org_expansion,open-mmlab,7415,1100,2024-08-06T07:19:40Z,10.8806,Jupyter Notebook,"OpenMMLab Multimodal Advanced, Generative, and Intelligent Creation Toolbox. Unlock the magic 🪄: Generative-AI (AIGC), easy-to-use APIs, awsome model zoo, diffusion models, for text-to-image generatio",org_expansion: open-mmlab (score=10.8806)
+,,mmengine,,https://github.com/open-mmlab/mmengine,repo,org_expansion,open-mmlab,1464,445,2025-12-23T04:41:48Z,10.6002,Python,OpenMMLab Foundational Library for Training Deep Learning Models,org_expansion: open-mmlab (score=10.6002)
+,,mmocr,,https://github.com/open-mmlab/mmocr,repo,org_expansion,open-mmlab,4729,778,2024-11-27T09:38:10Z,10.4257,Python,"OpenMMLab Text Detection, Recognition and Understanding Toolbox",org_expansion: open-mmlab (score=10.4257)
+,,mmpretrain,,https://github.com/open-mmlab/mmpretrain,repo,org_expansion,open-mmlab,3838,1112,2024-11-01T06:27:36Z,10.3746,Python,OpenMMLab Pre-training Toolbox and Benchmark,org_expansion: open-mmlab (score=10.3746)
+,,mmskeleton,,https://github.com/open-mmlab/mmskeleton,repo,org_expansion,open-mmlab,3106,1062,2022-11-25T20:02:00Z,10.0144,Python,"A OpenMMLAB toolbox  for human pose estimation, skeleton-based action recognition, and action synthesis.",org_expansion: open-mmlab (score=10.0144)
+,,mmtracking,,https://github.com/open-mmlab/mmtracking,repo,org_expansion,open-mmlab,3877,620,2023-09-19T07:31:38Z,9.9868,Python,"OpenMMLab Video Perception Toolbox. It supports Video Object Detection (VID), Multiple Object Tracking (MOT), Single Object Tracking (SOT), Video Instance Segmentation (VIS) with a unified framework.",org_expansion: open-mmlab (score=9.9868)
+,,mmdeploy,,https://github.com/open-mmlab/mmdeploy,repo,org_expansion,open-mmlab,3123,706,2024-09-30T02:34:18Z,9.9725,Python,OpenMMLab Model Deployment Framework,org_expansion: open-mmlab (score=9.9725)
+,,mmyolo,,https://github.com/open-mmlab/mmyolo,repo,org_expansion,open-mmlab,3428,624,2024-07-14T02:44:12Z,9.9529,Python,"OpenMMLab YOLO series toolbox and benchmark. Implemented RTMDet, RTMDet-Rotated,YOLOv5, YOLOv6, YOLOv7, YOLOv8,YOLOX, PPYOLOE, etc.",org_expansion: open-mmlab (score=9.9529)
+,,mmselfsup,,https://github.com/open-mmlab/mmselfsup,repo,org_expansion,open-mmlab,3302,442,2023-06-25T02:30:28Z,9.6944,Python,OpenMMLab Self-Supervised Learning Toolbox and Benchmark,org_expansion: open-mmlab (score=9.6944)
+,,mmrotate,,https://github.com/open-mmlab/mmrotate,repo,org_expansion,open-mmlab,2127,634,2024-09-28T11:54:55Z,9.5916,Python,OpenMMLab Rotated Object Detection Toolbox and Benchmark,org_expansion: open-mmlab (score=9.5916)
+,,PowerPaint,,https://github.com/open-mmlab/PowerPaint,repo,org_expansion,open-mmlab,1067,78,2025-12-20T14:19:00Z,9.5561,Python,"[ECCV 2024] PowerPaint, a versatile image inpainting model that supports text-guided object inpainting, object removal, image outpainting and shape-guided object inpainting with only a single model. 一",org_expansion: open-mmlab (score=9.5561)
+,,labelbee,,https://github.com/open-mmlab/labelbee,repo,org_expansion,open-mmlab,300,67,2026-03-27T08:29:45Z,9.5193,TypeScript,LabelBee is an annotation Library,org_expansion: open-mmlab (score=9.5193)
+,,FunASR,,https://github.com/modelscope/FunASR,repo,org_expansion,modelscope,15641,1640,2026-03-17T12:14:01Z,14.2002,Python,"A Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Recognition, Voice Activity Detection, Text Post-processing etc.",org_expansion: modelscope (score=14.2002)
+,,modelscope,,https://github.com/modelscope/modelscope,repo,org_expansion,modelscope,8851,929,2026-04-13T06:21:28Z,13.8626,Python,ModelScope: bring the notion of Model-as-a-Service to life.,org_expansion: modelscope (score=13.8626)
+,,ms-agent,,https://github.com/modelscope/ms-agent,repo,org_expansion,modelscope,4158,489,2026-04-12T14:01:03Z,12.9282,Python,MS-Agent: a lightweight framework to empower agentic execution of complex tasks,org_expansion: modelscope (score=12.9282)
+,,evalscope,,https://github.com/modelscope/evalscope,repo,org_expansion,modelscope,2658,311,2026-04-13T09:27:18Z,12.3436,Python,"A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.",org_expansion: modelscope (score=12.3436)
+,,facechain,,https://github.com/modelscope/facechain,repo,org_expansion,modelscope,9492,888,2025-06-06T09:32:00Z,11.4367,Jupyter Notebook,FaceChain is a deep-learning toolchain for generating your Digital-Twin.,org_expansion: modelscope (score=11.4367)
+,,AgentEvolver,,https://github.com/modelscope/AgentEvolver,repo,org_expansion,modelscope,1365,155,2026-04-01T08:47:19Z,11.2705,Python,AgentEvolver: Towards Efficient Self-Evolving Agent System,org_expansion: modelscope (score=11.2705)
+,,modelscope-classroom,,https://github.com/modelscope/modelscope-classroom,repo,org_expansion,modelscope,1362,163,2026-03-24T13:12:03Z,11.1833,Jupyter Notebook,,org_expansion: modelscope (score=11.1833)
+,,FunClip,,https://github.com/modelscope/FunClip,repo,org_expansion,modelscope,5506,675,2025-07-11T08:05:02Z,10.9592,Python,"Open-source, accurate and easy-to-use video speech recognition & clipping tool, LLM based AI clipping intergrated.",org_expansion: modelscope (score=10.9592)
+,,sirchmunk,,https://github.com/modelscope/sirchmunk,repo,org_expansion,modelscope,963,95,2026-04-13T06:40:13Z,10.9504,Python,"🐿️ Sirchmunk:  Raw data to self-evolving intelligence, real-time.",org_expansion: modelscope (score=10.9504)
+,,3D-Speaker,,https://github.com/modelscope/3D-Speaker,repo,org_expansion,modelscope,2879,261,2025-12-08T07:20:17Z,10.8268,Python,"A Repository for Single- and Multi-modal Speaker Verification, Speaker Recognition and Speaker Diarization",org_expansion: modelscope (score=10.8268)
+,,ClearerVoice-Studio,,https://github.com/modelscope/ClearerVoice-Studio,repo,org_expansion,modelscope,4059,334,2025-08-14T08:26:31Z,10.5242,Python,"An AI-Powered Speech Processing Toolkit and Open Source SOTA Pretrained Models, Supporting Speech Enhancement, Separation, and Target Speaker Extraction, etc.",org_expansion: modelscope (score=10.5242)
+,,DiffSynth-Engine,,https://github.com/modelscope/DiffSynth-Engine,repo,org_expansion,modelscope,393,40,2026-04-09T02:36:47Z,9.7378,Python,,org_expansion: modelscope (score=9.7378)
+,,twinkle,,https://github.com/modelscope/twinkle,repo,org_expansion,modelscope,209,22,2026-04-13T09:24:22Z,9.0062,Python,Twinkle✨: Training workbench to make your model glow.,org_expansion: modelscope (score=9.0062)
+,,easydistill,,https://github.com/modelscope/easydistill,repo,org_expansion,modelscope,309,33,2026-03-10T06:23:52Z,8.9978,Python,a toolkit on knowledge distillation for large language models,org_expansion: modelscope (score=8.9978)
+,,AgentJet,,https://github.com/modelscope/AgentJet,repo,org_expansion,modelscope,188,17,2026-04-10T12:23:19Z,8.775,Python,"Cutting-edge platform for LLM agent tuning. Deliver RL tuning with flexibility, reliability, speed, multi-agent optimization and realtime community benchmarking.",org_expansion: modelscope (score=8.775)
+,,modelscope-studio,,https://github.com/modelscope/modelscope-studio,repo,org_expansion,modelscope,141,20,2026-04-10T10:32:28Z,8.5936,TypeScript,"A third-party component library based on Gradio. Integrates Ant Design, Ant Design X, Monaco Editor and more advanced components  to help you build applications efficiently.",org_expansion: modelscope (score=8.5936)
+,,KAN-TTS,,https://github.com/modelscope/KAN-TTS,repo,org_expansion,modelscope,524,88,2023-12-28T06:21:05Z,7.4184,Python,"KAN-TTS is a speech-synthesis training framework, please try the demos we have posted at  https://modelscope.cn/models?page=1&tasks=text-to-speech",org_expansion: modelscope (score=7.4184)
+,,scepter,,https://github.com/modelscope/scepter,repo,org_expansion,modelscope,552,30,2025-04-03T06:00:15Z,7.3504,Python,"SCEPTER is an open-source framework used for training, fine-tuning, and inference with generative models.",org_expansion: modelscope (score=7.3504)
+,,vllm-omni,,https://github.com/vllm-project/vllm-omni,repo,org_expansion,vllm-project,4260,740,2026-04-13T08:01:15Z,13.1288,Python,A framework for efficient model inference with omni-modality models,org_expansion: vllm-project (score=13.1288)
+,,semantic-router,,https://github.com/vllm-project/semantic-router,repo,org_expansion,vllm-project,3699,615,2026-04-13T02:11:12Z,12.926,Go,"System Level Intelligent Router for Mixture-of-Models at Cloud, Data Center and Edge",org_expansion: vllm-project (score=12.926)
+,,vllm-ascend,,https://github.com/vllm-project/vllm-ascend,repo,org_expansion,vllm-project,1914,1057,2026-04-13T09:27:40Z,12.5888,Python,Community maintained hardware plugin for vLLM on Ascend,org_expansion: vllm-project (score=12.5888)
+,,production-stack,,https://github.com/vllm-project/production-stack,repo,org_expansion,vllm-project,2272,387,2026-04-09T23:28:36Z,12.2524,Python,vLLM’s reference system for K8S-native cluster-wide deployment with community-driven performance optimization,org_expansion: vllm-project (score=12.2524)
+,,guidellm,,https://github.com/vllm-project/guidellm,repo,org_expansion,vllm-project,993,143,2026-04-13T02:26:00Z,11.1531,Python,Evaluate and Enhance Your LLM Deployments for Real-World Inference Needs,org_expansion: vllm-project (score=11.1531)
+,,recipes,,https://github.com/vllm-project/recipes,repo,org_expansion,vllm-project,673,218,2026-04-13T07:40:24Z,10.9978,Jupyter Notebook,Common recipes to run vLLM,org_expansion: vllm-project (score=10.9978)
+,,vllm-metal,,https://github.com/vllm-project/vllm-metal,repo,org_expansion,vllm-project,879,90,2026-04-13T09:30:55Z,10.848,Python,Community maintained hardware plugin for vLLM on Apple Silicon,org_expansion: vllm-project (score=10.848)
+,,tpu-inference,,https://github.com/vllm-project/tpu-inference,repo,org_expansion,vllm-project,286,157,2026-04-13T08:39:55Z,10.1144,Python,"TPU inference for vLLM, with unified JAX and PyTorch support.",org_expansion: vllm-project (score=10.1144)
+,,compressed-tensors,,https://github.com/vllm-project/compressed-tensors,repo,org_expansion,vllm-project,272,80,2026-04-13T06:00:40Z,9.7808,Python,A safetensors extension to efficiently store sparse quantized tensors on disk,org_expansion: vllm-project (score=9.7808)
+,,vllm-gaudi,,https://github.com/vllm-project/vllm-gaudi,repo,org_expansion,vllm-project,38,125,2026-04-13T08:33:41Z,8.2825,Python,Community maintained hardware plugin for vLLM on Intel Gaudi,org_expansion: vllm-project (score=8.2825)
+,,vllm-spyre,,https://github.com/vllm-project/vllm-spyre,repo,org_expansion,vllm-project,50,51,2026-04-10T04:51:10Z,8.0816,Python,Community maintained hardware plugin for vLLM on Spyre,org_expansion: vllm-project (score=8.0816)
+,,ci-infra,,https://github.com/vllm-project/ci-infra,repo,org_expansion,vllm-project,34,65,2026-04-13T09:17:33Z,7.9077,HCL,This repo hosts code for vLLM CI & Performance Benchmark infrastructure.,org_expansion: vllm-project (score=7.9077)
+,,vllm-project.github.io,,https://github.com/vllm-project/vllm-project.github.io,repo,org_expansion,vllm-project,34,83,2026-04-02T19:16:52Z,7.8503,HTML,,org_expansion: vllm-project (score=7.8503)
+,,vllm-skills,,https://github.com/vllm-project/vllm-skills,repo,org_expansion,vllm-project,59,18,2026-04-03T14:11:28Z,7.6887,Shell,Agent skills for vLLM,org_expansion: vllm-project (score=7.6887)
+,,vllm-xpu-kernels,,https://github.com/vllm-project/vllm-xpu-kernels,repo,org_expansion,vllm-project,30,46,2026-04-13T08:22:53Z,7.6548,C++,The vLLM XPU kernels for Intel GPU,org_expansion: vllm-project (score=7.6548)
+,,mini-sglang,,https://github.com/sgl-project/mini-sglang,repo,org_expansion,sgl-project,3972,569,2026-03-13T06:32:39Z,12.4795,Python,"A compact implementation of SGLang, designed to demystify the complexities of modern LLM serving systems.",org_expansion: sgl-project (score=12.4795)
+,,ome,,https://github.com/sgl-project/ome,repo,org_expansion,sgl-project,419,71,2026-04-11T13:32:53Z,10.0872,Go,"Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton",org_expansion: sgl-project (score=10.0872)
+,,sglang-jax,,https://github.com/sgl-project/sglang-jax,repo,org_expansion,sgl-project,264,88,2026-04-13T05:56:15Z,9.7959,Python,JAX backend for SGL,org_expansion: sgl-project (score=9.7959)
+,,sglang-omni,,https://github.com/sgl-project/sglang-omni,repo,org_expansion,sgl-project,193,77,2026-04-13T02:58:03Z,9.4677,Python,SGLang Omni: High-Performance Multi-Stage Pipeline Framework for Omni Models,org_expansion: sgl-project (score=9.4677)
+,,genai-bench,,https://github.com/sgl-project/genai-bench,repo,org_expansion,sgl-project,289,51,2026-04-02T01:43:53Z,9.463,Python,Genai-bench is a powerful benchmark tool designed for comprehensive token-level performance evaluation of large language model (LLM) serving systems.,org_expansion: sgl-project (score=9.463)
+,,rbg,,https://github.com/sgl-project/rbg,repo,org_expansion,sgl-project,201,54,2026-04-13T03:02:18Z,9.3511,Go,A workload for deploying LLM inference services on Kubernetes,org_expansion: sgl-project (score=9.3511)
+,,sgl-learning-materials,,https://github.com/sgl-project/sgl-learning-materials,repo,org_expansion,sgl-project,798,61,2026-01-05T04:55:34Z,9.338,,Materials for learning SGLang,org_expansion: sgl-project (score=9.338)
+,,sgl-kernel-npu,,https://github.com/sgl-project/sgl-kernel-npu,repo,org_expansion,sgl-project,119,108,2026-04-13T01:15:39Z,9.1958,C++,SGLang kernel library for NPU,org_expansion: sgl-project (score=9.1958)
+,,sgl-cookbook,,https://github.com/sgl-project/sgl-cookbook,repo,org_expansion,sgl-project,119,61,2026-04-12T00:58:42Z,8.9341,JavaScript,Cookbook of SGLang - Recipe,org_expansion: sgl-project (score=8.9341)
+,,sgl-project.github.io,,https://github.com/sgl-project/sgl-project.github.io,repo,org_expansion,sgl-project,125,34,2026-04-13T08:17:37Z,8.7448,HTML,This is the documentation repository for SGLang. It is auto-generated from https://github.com/sgl-project/sglang,org_expansion: sgl-project (score=8.7448)
+,,sgl-kernel-xpu,,https://github.com/sgl-project/sgl-kernel-xpu,repo,org_expansion,sgl-project,24,21,2026-04-13T08:02:07Z,7.1383,Python,SGLang kernel library for Intel XPU,org_expansion: sgl-project (score=7.1383)
+,,whl,,https://github.com/sgl-project/whl,repo,org_expansion,sgl-project,20,10,2026-04-13T03:13:43Z,6.6858,HTML,SGLang Kernel Wheel Index,org_expansion: sgl-project (score=6.6858)
+,,sgl-docs,,https://github.com/sgl-project/sgl-docs,repo,org_expansion,sgl-project,4,16,2026-04-13T00:15:38Z,5.6284,MDX,,org_expansion: sgl-project (score=5.6284)
+,,cuLA,,https://github.com/sgl-project/cuLA,repo,org_expansion,sgl-project,2,0,2026-04-08T01:38:22Z,3.8721,Python,,org_expansion: sgl-project (score=3.8721)
+,,sgl-whl,,https://github.com/sgl-project/sgl-whl,repo,org_expansion,sgl-project,12,2,2025-10-13T23:31:27Z,3.8025,,SGLang wheels for multiple platforms,org_expansion: sgl-project (score=3.8025)
+,,sgl-test-files,,https://github.com/sgl-project/sgl-test-files,repo,org_expansion,sgl-project,1,3,2026-02-23T15:30:37Z,3.5019,,The test files for SGLang.,org_expansion: sgl-project (score=3.5019)
+,,rbg-api,,https://github.com/sgl-project/rbg-api,repo,org_expansion,sgl-project,0,1,2026-03-26T01:29:36Z,3.0155,Go,,org_expansion: sgl-project (score=3.0155)
+,,ome-crd,,https://github.com/sgl-project/ome-crd,repo,org_expansion,sgl-project,0,0,2026-01-15T08:23:19Z,1.8399,,,org_expansion: sgl-project (score=1.8399)
+,,tutorials,,https://github.com/pytorch/tutorials,repo,org_expansion,pytorch,9107,4374,2026-04-10T17:23:21Z,14.5267,Python,PyTorch tutorials.,org_expansion: pytorch (score=14.5267)
+,,examples,,https://github.com/pytorch/examples,repo,org_expansion,pytorch,23838,9819,2025-09-01T17:21:47Z,13.6158,Python,"A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc.",org_expansion: pytorch (score=13.6158)
+,,executorch,,https://github.com/pytorch/executorch,repo,org_expansion,pytorch,4502,932,2026-04-13T09:26:23Z,13.2769,Python,"On-device AI across mobile, embedded and edge for PyTorch",org_expansion: pytorch (score=13.2769)
+,,ignite,,https://github.com/pytorch/ignite,repo,org_expansion,pytorch,4753,695,2026-04-12T14:07:38Z,13.1967,Python,High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently.,org_expansion: pytorch (score=13.1967)
+,,audio,,https://github.com/pytorch/audio,repo,org_expansion,pytorch,2863,769,2026-04-12T11:45:10Z,12.8004,Python,"Data manipulation and transformation for audio signal processing, powered by PyTorch",org_expansion: pytorch (score=12.8004)
+,,rl,,https://github.com/pytorch/rl,repo,org_expansion,pytorch,3391,449,2026-04-13T08:07:48Z,12.7141,Python,"A modular, primitive-first, python-first PyTorch library for Reinforcement Learning.",org_expansion: pytorch (score=12.7141)
+,,ao,,https://github.com/pytorch/ao,repo,org_expansion,pytorch,2771,481,2026-04-12T20:43:55Z,12.5686,Python,PyTorch native quantization and sparsity for training and inference,org_expansion: pytorch (score=12.5686)
+,,TensorRT,,https://github.com/pytorch/TensorRT,repo,org_expansion,pytorch,2964,391,2026-04-13T04:21:00Z,12.5373,Python,PyTorch/TorchScript/FX compiler for NVIDIA GPUs using TensorRT,org_expansion: pytorch (score=12.5373)
+,,FBGEMM,,https://github.com/pytorch/FBGEMM,repo,org_expansion,pytorch,1552,731,2026-04-12T22:35:32Z,12.2469,C++,FB (Facebook) + GEMM (General Matrix-Matrix Multiplication) - https://code.fb.com/ml-applications/fbgemm/,org_expansion: pytorch (score=12.2469)
+,,benchmark,,https://github.com/pytorch/benchmark,repo,org_expansion,pytorch,1026,332,2026-04-12T01:22:41Z,11.529,Python,TorchBench is a collection of open source benchmarks used to evaluate PyTorch performance.,org_expansion: pytorch (score=11.529)
+,,gloo,,https://github.com/pytorch/gloo,repo,org_expansion,pytorch,1418,352,2026-03-20T02:49:43Z,11.4773,C++,Collective communications library with various primitives for multi-machine training.,org_expansion: pytorch (score=11.4773)
+,,kineto,,https://github.com/pytorch/kineto,repo,org_expansion,pytorch,941,246,2026-04-10T21:19:33Z,11.3076,HTML,A CPU+GPU Profiling library that provides access to timeline traces and hardware performance counters. ,org_expansion: pytorch (score=11.3076)
+,,cpuinfo,,https://github.com/pytorch/cpuinfo,repo,org_expansion,pytorch,1166,396,2026-03-12T01:02:42Z,11.2443,C,"CPU INFOrmation library (x86/x86-64/ARM/ARM64, Linux/Windows/Android/macOS/iOS)",org_expansion: pytorch (score=11.2443)
+,,xla,,https://github.com/pytorch/xla,repo,org_expansion,pytorch,2763,568,2025-12-18T18:36:49Z,11.2218,C++,Enabling PyTorch on XLA Devices (e.g. Google TPU),org_expansion: pytorch (score=11.2218)
+,,helion,,https://github.com/pytorch/helion,repo,org_expansion,pytorch,835,139,2026-04-13T06:44:16Z,10.9905,Python,"A Python-embedded DSL that makes it easy to write fast, scalable ML kernels with minimal boilerplate.",org_expansion: pytorch (score=10.9905)
+,,extension-cpp,,https://github.com/pytorch/extension-cpp,repo,org_expansion,pytorch,1185,248,2026-01-13T16:13:29Z,10.3741,Python,C++ extensions in PyTorch,org_expansion: pytorch (score=10.3741)
+,,WMRouter,,https://github.com/meituan/WMRouter,repo,org_expansion,meituan,2366,341,2026-04-02T08:13:28Z,12.1046,Java,WMRouter是一款Android路由框架，基于组件化的设计思路，有功能灵活、使用简单的特点。,org_expansion: meituan (score=12.1046)
+,,YOLOv6,,https://github.com/meituan/YOLOv6,repo,org_expansion,meituan,5880,1062,2024-08-07T18:20:33Z,10.665,Jupyter Notebook,YOLOv6: a single-stage object detection framework dedicated to industrial applications.,org_expansion: meituan (score=10.665)
+,,EvoCUA,,https://github.com/meituan/EvoCUA,repo,org_expansion,meituan,308,20,2026-03-31T05:16:39Z,9.0931,Python,EvoCUA: Evolving Computer Use Agent,org_expansion: meituan (score=9.0931)
+,,Meituan-INFORMS-TSL-Research-Challenge,,https://github.com/meituan/Meituan-INFORMS-TSL-Research-Challenge,repo,org_expansion,meituan,144,67,2025-12-03T07:03:17Z,7.6042,,,org_expansion: meituan (score=7.6042)
+,,RoboAspectJ,,https://github.com/meituan/RoboAspectJ,repo,org_expansion,meituan,225,21,2016-12-06T08:42:46Z,6.0506,Groovy,A gradle plugin that enables AOP in android.,org_expansion: meituan (score=6.0506)
+,,LIBERO-X,,https://github.com/meituan/LIBERO-X,repo,org_expansion,meituan,19,0,2026-03-04T13:14:28Z,5.0177,Python,LIBERO-X Robustness Litmus for Vision-Language-Action Models,org_expansion: meituan (score=5.0177)
+,,ptubes,,https://github.com/meituan/ptubes,repo,org_expansion,meituan,59,11,2022-07-13T13:19:59Z,4.637,Java,"Ptubes is a database disaster recovery product based on the PITR (Point In Time Recovery) method, which can be used to restore the entire database to a specific point in time to help users improve the",org_expansion: meituan (score=4.637)
+,,MemOCR,,https://github.com/meituan/MemOCR,repo,org_expansion,meituan,9,0,2026-03-09T12:06:12Z,4.4836,Python,MemOCR: an OCR-driven visual memory agent.,org_expansion: meituan (score=4.4836)
+,,Firefly,,https://github.com/meituan/Firefly,repo,org_expansion,meituan,50,9,2018-06-03T16:48:05Z,4.4151,Java,Lightweight thrift client code generator and runtime library for Android and Java. ,org_expansion: meituan (score=4.4151)
+,,vitabench,,https://github.com/meituan/vitabench,repo,org_expansion,meituan,21,0,2025-10-17T06:36:54Z,3.8008,Python,VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in Real-world Applications,org_expansion: meituan (score=3.8008)
+,,DiningBench,,https://github.com/meituan/DiningBench,repo,org_expansion,meituan,0,0,2026-04-10T04:57:01Z,2.9504,Python,"[ACL 2026 Main] The offical implementation of paper ""DiningBench: A Hierarchical Multi-view Benchmark for Perception and Reasoning in the Dietary Domain""",org_expansion: meituan (score=2.9504)
+,,POT,,https://github.com/meituan/POT,repo,org_expansion,meituan,0,1,2022-06-22T12:27:25Z,0.3024,Python,,org_expansion: meituan (score=0.3024)
+,,DTS,,https://github.com/meituan/DTS,repo,org_expansion,meituan,0,0,2022-03-30T07:30:14Z,0.0008,,,org_expansion: meituan (score=0.0008)
+,,AWorld,,https://github.com/inclusionAI/AWorld,repo,org_expansion,inclusionAI,1176,121,2026-04-13T09:22:52Z,11.2279,Python,"Search, understand, reproduce, and improve an idea with ease",org_expansion: inclusionAI (score=11.2279)
+,,UI-Venus,,https://github.com/inclusionAI/UI-Venus,repo,org_expansion,inclusionAI,1061,87,2026-04-08T05:47:24Z,10.9145,Python,UI-Venus is a native UI agent designed to perform precise GUI element grounding and effective navigation using only screenshots as input.,org_expansion: inclusionAI (score=10.9145)
+,,Ming,,https://github.com/inclusionAI/Ming,repo,org_expansion,inclusionAI,648,57,2026-03-17T11:55:16Z,9.9844,Jupyter Notebook,Ming - facilitating advanced multimodal understanding and generation capabilities built upon the Ling LLM.,org_expansion: inclusionAI (score=9.9844)
+,,cuLA,,https://github.com/inclusionAI/cuLA,repo,org_expansion,inclusionAI,435,43,2026-04-13T03:46:38Z,9.9224,Python,"CUDA kernels for linear attention variants, written in CuTe DSL and CUTLASS C++.",org_expansion: inclusionAI (score=9.9224)
+,,AEnvironment,,https://github.com/inclusionAI/AEnvironment,repo,org_expansion,inclusionAI,290,36,2026-04-10T06:13:31Z,9.4464,Python,Standardized environment infrastructure for Agentic AI development.,org_expansion: inclusionAI (score=9.4464)
+,,TwinFlow,,https://github.com/inclusionAI/TwinFlow,repo,org_expansion,inclusionAI,506,26,2026-02-24T02:19:59Z,9.1392,Python,[ICLR 2026] Taming large-scale few-step training with self-adversarial flows! 👏🏻,org_expansion: inclusionAI (score=9.1392)
+,,dInfer,,https://github.com/inclusionAI/dInfer,repo,org_expansion,inclusionAI,452,43,2026-02-11T03:10:42Z,9.0933,Python,dInfer: An Efficient Inference Framework for Diffusion Language Models,org_expansion: inclusionAI (score=9.0933)
+,,LLaDA2.X,,https://github.com/inclusionAI/LLaDA2.X,repo,org_expansion,inclusionAI,394,22,2026-02-12T16:33:03Z,8.7165,,"LLaDA2.0 is the diffusion language model series developed by InclusionAI team, Ant Group.",org_expansion: inclusionAI (score=8.7165)
+,,asystem-awex,,https://github.com/inclusionAI/asystem-awex,repo,org_expansion,inclusionAI,145,16,2026-04-10T13:40:25Z,8.526,Python,"A high-performance RL training-inference weight synchronization framework, designed to enable second-level parameter updates from training to inference in RL workflows",org_expansion: inclusionAI (score=8.526)
+,,ASearcher,,https://github.com/inclusionAI/ASearcher,repo,org_expansion,inclusionAI,577,38,2025-11-26T06:28:16Z,8.5086,Python,An Open-Source Large-Scale Reinforcement Learning Project for Search Agents,org_expansion: inclusionAI (score=8.5086)
+,,dFactory,,https://github.com/inclusionAI/dFactory,repo,org_expansion,inclusionAI,242,15,2026-03-02T06:00:00Z,8.351,Python,Easy and Efficient dLLM Fine-Tuning,org_expansion: inclusionAI (score=8.351)
+,,Ming-omni-tts,,https://github.com/inclusionAI/Ming-omni-tts,repo,org_expansion,inclusionAI,220,16,2026-02-26T12:06:53Z,8.2556,Python,"Ming-omni-tts: Simple and Efficient Unified Generation of Speech, Music, and Sound with Precise Control",org_expansion: inclusionAI (score=8.2556)
+,,Ming-UniAudio,,https://github.com/inclusionAI/Ming-UniAudio,repo,org_expansion,inclusionAI,441,29,2025-11-27T02:51:18Z,8.1694,Python,"Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation",org_expansion: inclusionAI (score=8.1694)
+,,AWorld-RL,,https://github.com/inclusionAI/AWorld-RL,repo,org_expansion,inclusionAI,99,10,2026-04-07T06:22:01Z,7.943,Python,Agentic Learning Powered by AWorld,org_expansion: inclusionAI (score=7.943)
+,,PromptCoT,,https://github.com/inclusionAI/PromptCoT,repo,org_expansion,inclusionAI,134,14,2026-01-31T06:55:27Z,7.4477,Python,"A unified suite for generating elite reasoning problems and training high-performance LLMs, including pioneering attention-free architectures",org_expansion: inclusionAI (score=7.4477)
+,,humming,,https://github.com/inclusionAI/humming,repo,org_expansion,inclusionAI,64,4,2026-04-12T02:29:21Z,7.3082,Python,,org_expansion: inclusionAI (score=7.3082)
+,,Ling-V2,,https://github.com/inclusionAI/Ling-V2,repo,org_expansion,inclusionAI,264,18,2025-10-04T06:15:38Z,7.1635,Python,Ling-V2 is a MoE LLM provided and open-sourced by InclusionAI.,org_expansion: inclusionAI (score=7.1635)
+,,MingTok-Audio,,https://github.com/inclusionAI/MingTok-Audio,repo,org_expansion,inclusionAI,85,8,2026-02-24T04:10:19Z,7.121,Python,,org_expansion: inclusionAI (score=7.121)
+,,AudioMCQ,,https://github.com/inclusionAI/AudioMCQ,repo,org_expansion,inclusionAI,48,4,2026-04-13T07:13:16Z,7.0794,Python,[ICLR 2026] AudioMCQ: A 571k audio multiple-choice question dataset for post-training Large Audio Language Models with dual CoT annotations and audio-contribution filtering. 🏆 1st place in DCASE 2025 ,org_expansion: inclusionAI (score=7.0794)
+,,DeepSeek-V3,,https://github.com/deepseek-ai/DeepSeek-V3,repo,org_expansion,deepseek-ai,102593,16642,2025-08-28T03:24:37Z,15.0888,Python,,org_expansion: deepseek-ai (score=15.0888)
+,,awesome-deepseek-integration,,https://github.com/deepseek-ai/awesome-deepseek-integration,repo,org_expansion,deepseek-ai,36248,4015,2026-02-23T16:27:47Z,15.0202,,Integrate the DeepSeek API into popular software,org_expansion: deepseek-ai (score=15.0202)
+,,DeepSeek-R1,,https://github.com/deepseek-ai/DeepSeek-R1,repo,org_expansion,deepseek-ai,91967,11736,2025-06-27T08:35:54Z,14.5958,,,org_expansion: deepseek-ai (score=14.5958)
+,,FlashMLA,,https://github.com/deepseek-ai/FlashMLA,repo,org_expansion,deepseek-ai,12556,1005,2026-04-07T03:02:45Z,14.102,C++,FlashMLA: Efficient Multi-head Latent Attention Kernels,org_expansion: deepseek-ai (score=14.102)
+,,DeepSeek-OCR,,https://github.com/deepseek-ai/DeepSeek-OCR,repo,org_expansion,deepseek-ai,22813,2099,2026-01-27T03:45:14Z,14.0054,Python,Contexts Optical Compression,org_expansion: deepseek-ai (score=14.0054)
+,,DeepEP,,https://github.com/deepseek-ai/DeepEP,repo,org_expansion,deepseek-ai,9116,1148,2026-04-09T09:21:26Z,13.9141,Cuda,DeepEP: an efficient expert-parallel communication library,org_expansion: deepseek-ai (score=13.9141)
+,,DeepSeek-Coder,,https://github.com/deepseek-ai/DeepSeek-Coder,repo,org_expansion,deepseek-ai,23022,2753,2025-11-11T06:44:56Z,13.4465,Python,DeepSeek Coder: Let the Code Write Itself,org_expansion: deepseek-ai (score=13.4465)
+,,DeepGEMM,,https://github.com/deepseek-ai/DeepGEMM,repo,org_expansion,deepseek-ai,6324,858,2026-03-22T08:41:28Z,13.191,Cuda,DeepGEMM: clean and efficient FP8 GEMM kernels with fine-grained scaling,org_expansion: deepseek-ai (score=13.191)
+,,Janus,,https://github.com/deepseek-ai/Janus,repo,org_expansion,deepseek-ai,17692,2229,2025-02-01T07:58:29Z,12.1101,Python,Janus-Series: Unified Multimodal Understanding and Generation Models,org_expansion: deepseek-ai (score=12.1101)
+,,DeepSeek-Coder-V2,,https://github.com/deepseek-ai/DeepSeek-Coder-V2,repo,org_expansion,deepseek-ai,6604,1064,2025-11-11T06:44:45Z,11.9493,,DeepSeek-Coder-V2: Breaking the Barrier of Closed-Source Models in Code Intelligence,org_expansion: deepseek-ai (score=11.9493)
+,,Engram,,https://github.com/deepseek-ai/Engram,repo,org_expansion,deepseek-ai,4271,312,2026-01-14T01:13:02Z,11.5865,Python,Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models,org_expansion: deepseek-ai (score=11.5865)
+,,DualPipe,,https://github.com/deepseek-ai/DualPipe,repo,org_expansion,deepseek-ai,2942,321,2026-01-14T06:34:59Z,11.2752,Python,A bidirectional pipeline parallelism algorithm for computation-communication overlap in DeepSeek V3/R1 training.,org_expansion: deepseek-ai (score=11.2752)
+,,DeepSeek-OCR-2,,https://github.com/deepseek-ai/DeepSeek-OCR-2,repo,org_expansion,deepseek-ai,2694,225,2026-02-03T00:34:18Z,11.26,Python,Visual Causal Flow,org_expansion: deepseek-ai (score=11.26)
+,,DeepSeek-VL2,,https://github.com/deepseek-ai/DeepSeek-VL2,repo,org_expansion,deepseek-ai,5260,1815,2025-02-26T05:03:42Z,11.0071,Python,DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding,org_expansion: deepseek-ai (score=11.0071)
+,,open-infra-index,,https://github.com/deepseek-ai/open-infra-index,repo,org_expansion,deepseek-ai,7971,286,2025-05-15T02:00:43Z,10.7327,,Production-tested AI infrastructure tools for efficient AGI development and community-driven innovation,org_expansion: deepseek-ai (score=10.7327)
+,,smallpond,,https://github.com/deepseek-ai/smallpond,repo,org_expansion,deepseek-ai,4947,442,2025-03-05T18:23:54Z,10.355,Python,A lightweight data processing framework built on DuckDB and 3FS.,org_expansion: deepseek-ai (score=10.355)
+,,DeepSeek-V2,,https://github.com/deepseek-ai/DeepSeek-V2,repo,org_expansion,deepseek-ai,5006,534,2024-09-25T10:23:55Z,10.2582,,"DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model",org_expansion: deepseek-ai (score=10.2582)
+,,DeepSeek-VL,,https://github.com/deepseek-ai/DeepSeek-VL,repo,org_expansion,deepseek-ai,4088,585,2024-04-24T05:01:06Z,10.0464,Python,DeepSeek-VL: Towards Real-World Vision-Language Understanding,org_expansion: deepseek-ai (score=10.0464)
+,,qwen-code,,https://github.com/QwenLM/qwen-code,repo,org_expansion,QwenLM,22947,2131,2026-04-13T09:27:37Z,15.0503,TypeScript,An open-source AI agent that lives in your terminal.,org_expansion: QwenLM (score=15.0503)
+,,Qwen,,https://github.com/QwenLM/Qwen,repo,org_expansion,QwenLM,20977,1786,2026-03-05T13:55:17Z,14.3247,Python,The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud.,org_expansion: QwenLM (score=14.3247)
+,,Qwen3-Coder,,https://github.com/QwenLM/Qwen3-Coder,repo,org_expansion,QwenLM,16356,1177,2026-03-24T08:22:10Z,14.1831,Python,"Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team.",org_expansion: QwenLM (score=14.1831)
+,,Qwen-Agent,,https://github.com/QwenLM/Qwen-Agent,repo,org_expansion,QwenLM,15974,1556,2026-03-04T08:15:07Z,14.0014,Python,"Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",org_expansion: QwenLM (score=14.0014)
+,,Qwen3,,https://github.com/QwenLM/Qwen3,repo,org_expansion,QwenLM,27094,1972,2026-01-09T03:05:47Z,13.9405,Python,"Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud.",org_expansion: QwenLM (score=13.9405)
+,,Qwen3-VL,,https://github.com/QwenLM/Qwen3-VL,repo,org_expansion,QwenLM,18945,1730,2026-01-30T04:47:30Z,13.7932,Jupyter Notebook,"Qwen3-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud.",org_expansion: QwenLM (score=13.7932)
+,,Qwen3-TTS,,https://github.com/QwenLM/Qwen3-TTS,repo,org_expansion,QwenLM,10616,1379,2026-03-17T06:38:41Z,13.774,Python,"Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cl",org_expansion: QwenLM (score=13.774)
+,,Qwen-Image,,https://github.com/QwenLM/Qwen-Image,repo,org_expansion,QwenLM,7772,479,2026-02-10T07:37:37Z,12.5883,Python,Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing.,org_expansion: QwenLM (score=12.5883)
+,,Qwen3.5,,https://github.com/QwenLM/Qwen3.5,repo,org_expansion,QwenLM,2566,146,2026-03-02T12:48:07Z,11.3751,,"Qwen3.5 is the large language model series developed by Qwen team, Alibaba Cloud.",org_expansion: QwenLM (score=11.3751)
+,,Qwen3-Omni,,https://github.com/QwenLM/Qwen3-Omni,repo,org_expansion,QwenLM,3666,253,2026-01-08T07:04:48Z,11.3032,Jupyter Notebook,"Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of understanding text, audio, images, and video, as well as generating speech in real time.",org_expansion: QwenLM (score=11.3032)
+,,Qwen3-ASR,,https://github.com/QwenLM/Qwen3-ASR,repo,org_expansion,QwenLM,2381,233,2026-01-30T03:24:24Z,11.1229,Python,"Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction.",org_expansion: QwenLM (score=11.1229)
+,,Qwen3-VL-Embedding,,https://github.com/QwenLM/Qwen3-VL-Embedding,repo,org_expansion,QwenLM,1179,91,2026-04-08T05:01:00Z,11.0254,Python,,org_expansion: QwenLM (score=11.0254)
+,,Qwen-VL,,https://github.com/QwenLM/Qwen-VL,repo,org_expansion,QwenLM,6613,489,2024-08-07T02:37:06Z,10.4301,Python,The official repo of Qwen-VL (通义千问-VL) chat & pretrained large vision language model proposed by Alibaba Cloud.,org_expansion: QwenLM (score=10.4301)
+,,Qwen-Image-Layered,,https://github.com/QwenLM/Qwen-Image-Layered,repo,org_expansion,QwenLM,1768,138,2025-12-31T11:40:35Z,10.3407,Python,Qwen-Image-Layered: Layered Decomposition for Inherent Editablity,org_expansion: QwenLM (score=10.3407)
+,,Qwen2.5-Omni,,https://github.com/QwenLM/Qwen2.5-Omni,repo,org_expansion,QwenLM,3974,323,2025-06-12T11:03:07Z,10.2634,Jupyter Notebook,"Qwen2.5-Omni is an end-to-end multimodal model by Qwen team at Alibaba Cloud, capable of understanding text, audio, vision, video, and performing real-time speech generation.",org_expansion: QwenLM (score=10.2634)
+,,Qwen3-ASR-Toolkit,,https://github.com/QwenLM/Qwen3-ASR-Toolkit,repo,org_expansion,QwenLM,929,88,2026-02-05T05:35:03Z,9.954,Python,"Official Python toolkit for the Qwen3-ASR API. Parallel high‑throughput calls, robust long‑audio transcription, multi‑sample‑rate support.",org_expansion: QwenLM (score=9.954)
+,,Qwen3-Embedding,,https://github.com/QwenLM/Qwen3-Embedding,repo,org_expansion,QwenLM,1891,119,2025-09-30T06:10:27Z,9.6484,Python,,org_expansion: QwenLM (score=9.6484)
+,,Qwen2-Audio,,https://github.com/QwenLM/Qwen2-Audio,repo,org_expansion,QwenLM,2059,164,2025-04-21T08:50:49Z,9.258,Python,The official repo of Qwen2-Audio chat & pretrained large audio language model proposed by Alibaba Cloud.,org_expansion: QwenLM (score=9.258)
+,,Qwen-Audio,,https://github.com/QwenLM/Qwen-Audio,repo,org_expansion,QwenLM,1888,145,2024-07-05T09:17:49Z,8.7992,Python,The official repo of Qwen-Audio (通义千问-Audio) chat & pretrained large audio language model proposed by Alibaba Cloud.,org_expansion: QwenLM (score=8.7992)
+,,Qwen2.5-Math,,https://github.com/QwenLM/Qwen2.5-Math,repo,org_expansion,QwenLM,1076,158,2025-01-11T17:30:43Z,8.504,Python,A series of math-specific large language models of our Qwen2 series.,org_expansion: QwenLM (score=8.504)
+,,AgentBench,,https://github.com/THUDM/AgentBench,repo,org_expansion,THUDM,3319,245,2026-02-08T17:01:05Z,11.5473,Python,A Comprehensive Benchmark to Evaluate LLMs as Agents (ICLR'24),org_expansion: THUDM (score=11.5473)
+,,GLM,,https://github.com/THUDM/GLM,repo,org_expansion,THUDM,3479,349,2023-11-03T08:26:49Z,9.6484,Python,GLM (General Language Model),org_expansion: THUDM (score=9.6484)
+,,LongWriter,,https://github.com/THUDM/LongWriter,repo,org_expansion,THUDM,1852,184,2025-06-24T06:41:41Z,9.392,Python,"[ICLR 2025] LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs",org_expansion: THUDM (score=9.392)
+,,CogDL,,https://github.com/THUDM/CogDL,repo,org_expansion,THUDM,1819,309,2024-02-01T21:24:47Z,9.0465,Python,CogDL: A Comprehensive Library for Graph Deep Learning (WWW 2023),org_expansion: THUDM (score=9.0465)
+,,P-tuning-v2,,https://github.com/THUDM/P-tuning-v2,repo,org_expansion,THUDM,2075,208,2023-11-16T04:38:09Z,8.9773,Python,An optimized deep prompt tuning strategy comparable to fine-tuning across scales and tasks,org_expansion: THUDM (score=8.9773)
+,,WebGLM,,https://github.com/THUDM/WebGLM,repo,org_expansion,THUDM,1604,135,2025-03-25T03:31:42Z,8.8998,Python,WebGLM: An Efficient Web-enhanced Question Answering System (KDD 2023),org_expansion: THUDM (score=8.8998)
+,,LongBench,,https://github.com/THUDM/LongBench,repo,org_expansion,THUDM,1148,122,2025-01-15T02:04:04Z,8.4527,Python,LongBench v2 and LongBench (ACL 25'&24'),org_expansion: THUDM (score=8.4527)
+,,AgentTuning,,https://github.com/THUDM/AgentTuning,repo,org_expansion,THUDM,1483,106,2023-10-31T15:34:43Z,8.3932,Python,AgentTuning: Enabling Generalized Agent Abilities for LLMs,org_expansion: THUDM (score=8.3932)
+,,SwissArmyTransformer,,https://github.com/THUDM/SwissArmyTransformer,repo,org_expansion,THUDM,1116,99,2024-12-26T13:23:58Z,8.314,Python,SwissArmyTransformer is a flexible and powerful library to develop your own Transformer variants.,org_expansion: THUDM (score=8.314)
+,,AgentRL,,https://github.com/THUDM/AgentRL,repo,org_expansion,THUDM,269,20,2026-01-17T07:55:04Z,8.0454,Python,"Scaling Agentic Reinforcement Learning with a Multi-Turn, Multi-Task Framework",org_expansion: THUDM (score=8.0454)
+,,P-tuning,,https://github.com/THUDM/P-tuning,repo,org_expansion,THUDM,938,114,2022-10-06T12:36:12Z,8.0084,Python,"A novel method to tune language models. Codes and datasets for paper ``GPT understands, too''.",org_expansion: THUDM (score=8.0084)
+,,AutoWebGLM,,https://github.com/THUDM/AutoWebGLM,repo,org_expansion,THUDM,933,84,2024-09-27T10:08:29Z,8.0023,Python,An LLM-based Web Navigating Agent (KDD'24),org_expansion: THUDM (score=8.0023)
+,,AlignBench,,https://github.com/THUDM/AlignBench,repo,org_expansion,THUDM,425,29,2025-10-25T04:14:14Z,7.9026,Python,大模型多维度中文对齐评测基准 (ACL 2024),org_expansion: THUDM (score=7.9026)
+,,ReST-MCTS,,https://github.com/THUDM/ReST-MCTS,repo,org_expansion,THUDM,701,49,2025-01-20T06:01:03Z,7.6407,Python,ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search (NeurIPS 2024),org_expansion: THUDM (score=7.6407)
+,,GATNE,,https://github.com/THUDM/GATNE,repo,org_expansion,THUDM,536,144,2022-01-11T12:55:18Z,7.6219,Python,"Source code and dataset for KDD 2019 paper ""Representation Learning for Attributed Multiplex Heterogeneous Network""",org_expansion: THUDM (score=7.6219)
+,,WebRL,,https://github.com/THUDM/WebRL,repo,org_expansion,THUDM,515,37,2025-06-06T03:19:56Z,7.5381,Python,Building Open LLM Web Agents with Self-Evolving Online Curriculum RL,org_expansion: THUDM (score=7.5381)
+,,GraphMAE,,https://github.com/THUDM/GraphMAE,repo,org_expansion,THUDM,584,80,2023-04-12T11:15:23Z,7.4496,Python,GraphMAE: Self-Supervised Masked Graph Autoencoders in KDD'22,org_expansion: THUDM (score=7.4496)
+,,DeepDive,,https://github.com/THUDM/DeepDive,repo,org_expansion,THUDM,294,29,2025-10-02T09:24:51Z,7.4435,Python,DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL,org_expansion: THUDM (score=7.4435)
+,,INFTY,,https://github.com/THUDM/INFTY,repo,org_expansion,THUDM,566,9,2025-09-13T03:54:19Z,7.4311,Python,INFTY Engine: An Optimization Toolkit to Support Continual AI,org_expansion: THUDM (score=7.4311)
+,,spring-cloud-gateway,,https://github.com/spring-cloud/spring-cloud-gateway,repo,org_expansion,spring-cloud,4854,3445,2026-04-10T15:26:32Z,13.8765,Java,An API Gateway built on Spring Framework and Spring Boot providing routing and more.,org_expansion: spring-cloud (score=13.8765)
+,,spring-cloud-netflix,,https://github.com/spring-cloud/spring-cloud-netflix,repo,org_expansion,spring-cloud,4961,2451,2026-04-09T17:27:46Z,13.7312,Java,Integration with Netflix OSS components,org_expansion: spring-cloud (score=13.7312)
+,,spring-cloud-kubernetes,,https://github.com/spring-cloud/spring-cloud-kubernetes,repo,org_expansion,spring-cloud,3531,1052,2026-04-12T21:56:06Z,13.1185,Java,"Kubernetes integration with Spring Cloud Discovery Client, Configuration, etc...",org_expansion: spring-cloud (score=13.1185)
+,,spring-cloud-config,,https://github.com/spring-cloud/spring-cloud-config,repo,org_expansion,spring-cloud,2031,1315,2026-04-08T09:55:05Z,12.6692,Java,External configuration (server and client) for Spring Cloud,org_expansion: spring-cloud (score=12.6692)
+,,spring-cloud-openfeign,,https://github.com/spring-cloud/spring-cloud-openfeign,repo,org_expansion,spring-cloud,1301,828,2026-04-03T19:51:29Z,12.0015,Java,Support for using OpenFeign in Spring Cloud apps,org_expansion: spring-cloud (score=12.0015)
+,,spring-cloud-function,,https://github.com/spring-cloud/spring-cloud-function,repo,org_expansion,spring-cloud,1064,638,2026-04-13T09:19:48Z,11.8602,Java,,org_expansion: spring-cloud (score=11.8602)
+,,spring-cloud-stream,,https://github.com/spring-cloud/spring-cloud-stream,repo,org_expansion,spring-cloud,1062,633,2026-04-07T16:27:47Z,11.773,Java,Framework for building Event-Driven Microservices,org_expansion: spring-cloud (score=11.773)
+,,spring-cloud-commons,,https://github.com/spring-cloud/spring-cloud-commons,repo,org_expansion,spring-cloud,748,736,2026-04-13T03:30:48Z,11.6164,Java,Common classes used in different Spring Cloud implementations,org_expansion: spring-cloud (score=11.6164)
+,,spring-cloud-consul,,https://github.com/spring-cloud/spring-cloud-consul,repo,org_expansion,spring-cloud,824,539,2026-04-13T00:31:55Z,11.5653,Java,Spring Cloud Consul,org_expansion: spring-cloud (score=11.5653)
+,,spring-cloud-contract,,https://github.com/spring-cloud/spring-cloud-contract,repo,org_expansion,spring-cloud,730,434,2026-04-13T03:13:24Z,11.3663,Java,Support for Consumer Driven Contracts in Spring,org_expansion: spring-cloud (score=11.3663)
+,,spring-cloud-release,,https://github.com/spring-cloud/spring-cloud-release,repo,org_expansion,spring-cloud,941,186,2026-04-13T09:27:18Z,11.2199,,Spring Cloud Release Train - dependency management across a wide range of Spring Cloud projects.,org_expansion: spring-cloud (score=11.2199)
+,,spring-cloud-zookeeper,,https://github.com/spring-cloud/spring-cloud-zookeeper,repo,org_expansion,spring-cloud,573,409,2026-04-01T22:27:18Z,10.9528,Java,Spring Cloud Zookeeper,org_expansion: spring-cloud (score=10.9528)
+,,spring-cloud-sleuth,,https://github.com/spring-cloud/spring-cloud-sleuth,repo,org_expansion,spring-cloud,1792,778,2025-11-13T18:31:22Z,10.7025,Java,Distributed tracing for spring cloud,org_expansion: spring-cloud (score=10.7025)
+,,spring-cloud-task,,https://github.com/spring-cloud/spring-cloud-task,repo,org_expansion,spring-cloud,437,307,2026-03-25T20:17:28Z,10.486,Java,Short lived microservices with Spring Batch,org_expansion: spring-cloud (score=10.486)
+,,spring-cloud-bus,,https://github.com/spring-cloud/spring-cloud-bus,repo,org_expansion,spring-cloud,438,243,2026-03-25T19:57:17Z,10.3868,Java,Spring Cloud event bus,org_expansion: spring-cloud (score=10.3868)
+,,spring-cloud-circuitbreaker,,https://github.com/spring-cloud/spring-cloud-circuitbreaker,repo,org_expansion,spring-cloud,353,121,2026-04-13T01:55:23Z,10.1844,Java,Spring Cloud Circuit Breaker API and Implementations,org_expansion: spring-cloud (score=10.1844)
+,,spring-cloud-build,,https://github.com/spring-cloud/spring-cloud-build,repo,org_expansion,spring-cloud,220,292,2026-04-13T09:19:30Z,10.1557,Shell,"Common build concerns, shared plugin configuration, etc. for Spring Cloud modules",org_expansion: spring-cloud (score=10.1557)
+,,spring-cloud-vault,,https://github.com/spring-cloud/spring-cloud-vault,repo,org_expansion,spring-cloud,289,150,2026-04-02T15:18:35Z,9.9417,Java,Configuration Integration with HashiCorp Vault,org_expansion: spring-cloud (score=9.9417)
+,,spring-cloud-open-service-broker,,https://github.com/spring-cloud/spring-cloud-open-service-broker,repo,org_expansion,spring-cloud,189,114,2026-04-09T21:47:25Z,9.5686,Java,Spring Cloud project for creating service brokers that conform to the Open Server Broker API specification,org_expansion: spring-cloud (score=9.5686)
+,,spring-cloud-stream-samples,,https://github.com/spring-cloud/spring-cloud-stream-samples,repo,org_expansion,spring-cloud,989,684,2025-02-24T16:57:00Z,9.1311,Java,Samples for Spring Cloud Stream,org_expansion: spring-cloud (score=9.1311)
+,,cpython,,https://github.com/python/cpython,repo,org_expansion,python,72305,34393,2026-04-13T01:40:54Z,17.2548,Python,The Python programming language,org_expansion: python (score=17.2548)
+,,mypy,,https://github.com/python/mypy,repo,org_expansion,python,20360,3164,2026-04-13T09:22:09Z,15.118,Python,Optional static typing for Python,org_expansion: python (score=15.118)
+,,typeshed,,https://github.com/python/typeshed,repo,org_expansion,python,5041,1995,2026-04-11T03:38:41Z,13.6722,Python,"Collection of library stubs for Python, with static types",org_expansion: python (score=13.6722)
+,,peps,,https://github.com/python/peps,repo,org_expansion,python,4903,1764,2026-04-12T20:54:05Z,13.6278,reStructuredText,Python Enhancement Proposals,org_expansion: python (score=13.6278)
+,,devguide,,https://github.com/python/devguide,repo,org_expansion,python,2067,986,2026-03-31T18:31:30Z,12.4319,Python,The Python developer's guide,org_expansion: python (score=12.4319)
+,,pythondotorg,,https://github.com/python/pythondotorg,repo,org_expansion,python,1627,671,2026-04-08T20:10:26Z,12.1847,Python,Source code for python.org,org_expansion: python (score=12.1847)
+,,typing,,https://github.com/python/typing,repo,org_expansion,python,1747,292,2026-04-10T20:57:45Z,11.9188,Python,Python static typing home. Hosts the documentation and a user help forum.,org_expansion: python (score=11.9188)
+,,pyperformance,,https://github.com/python/pyperformance,repo,org_expansion,python,1008,201,2026-04-07T17:34:33Z,11.2309,Python,Python Performance Benchmark Suite,org_expansion: python (score=11.2309)
+,,typing_extensions,,https://github.com/python/typing_extensions,repo,org_expansion,python,562,136,2026-04-06T21:55:42Z,10.5394,Python,Backported and experimental type hints for Python,org_expansion: python (score=10.5394)
+,,python-docs-es,,https://github.com/python/python-docs-es,repo,org_expansion,python,360,404,2026-03-26T22:46:21Z,10.4521,Python,Spanish translation of the Python documentation.,org_expansion: python (score=10.4521)
+,,python-docs-zh-cn,,https://github.com/python/python-docs-zh-cn,repo,org_expansion,python,457,90,2026-04-12T15:25:40Z,10.2808,,Simplified Chinese translation of the Python documentation,org_expansion: python (score=10.2808)
+,,python-docs-zh-tw,,https://github.com/python/python-docs-zh-tw,repo,org_expansion,python,278,224,2026-04-13T07:40:39Z,10.2434,Python,Traditional Chinese (zh-tw) translation of the Python Documentation,org_expansion: python (score=10.2434)
+,,planet,,https://github.com/python/planet,repo,org_expansion,python,143,186,2026-04-01T09:49:06Z,9.4107,Python,Configuration for Python planets,org_expansion: python (score=9.4107)
+,,pymanager,,https://github.com/python/pymanager,repo,org_expansion,python,264,49,2026-03-31T22:25:37Z,9.352,Python,The Python Install Manager (for Windows),org_expansion: python (score=9.352)
+,,python-docs-pt-br,,https://github.com/python/python-docs-pt-br,repo,org_expansion,python,156,40,2026-04-13T00:45:48Z,9.0046,Python,Brazilian Portuguese translation of the Python Documentation,org_expansion: python (score=9.0046)
+,,psf-salt,,https://github.com/python/psf-salt,repo,org_expansion,python,121,64,2026-04-10T22:02:38Z,8.9525,Hurl,PSF infrastructure configuration,org_expansion: python (score=8.9525)
+,,importlib_metadata,,https://github.com/python/importlib_metadata,repo,org_expansion,python,140,92,2026-03-20T20:20:31Z,8.9071,Python,Library to access metadata for Python packages,org_expansion: python (score=8.9071)
+,,bedevere,,https://github.com/python/bedevere,repo,org_expansion,python,136,62,2026-04-01T21:53:22Z,8.8949,Python,A bot to help identify missing information for CPython pull requests,org_expansion: python (score=8.8949)
+,,python-docs-fr,,https://github.com/python/python-docs-fr,repo,org_expansion,python,354,260,2025-11-22T13:30:01Z,8.8877,,Mirroir de https://git.afpy.org/AFPy/python-docs-fr,org_expansion: python (score=8.8877)
+,,steering-council,,https://github.com/python/steering-council,repo,org_expansion,python,176,32,2026-03-23T19:25:15Z,8.699,Makefile,Communications from the Steering Council,org_expansion: python (score=8.699)
+,,bioconda-recipes,,https://github.com/bioconda/bioconda-recipes,repo,org_expansion,bioconda,1800,3848,2026-04-13T09:13:55Z,13.0964,Shell,Conda recipes for the bioconda channel.,org_expansion: bioconda (score=13.0964)
+,,bioconda-utils,,https://github.com/bioconda/bioconda-utils,repo,org_expansion,bioconda,104,134,2026-04-09T06:10:14Z,9.1068,Python,Utilities for building and managing bioconda recipes,org_expansion: bioconda (score=9.1068)
+,,bioconda.github.io,,https://github.com/bioconda/bioconda.github.io,repo,org_expansion,bioconda,40,23,2026-04-12T15:18:14Z,7.6058,HTML,Bioconda is a distribution of bioinformatics software realized as a channel for the versatile package manager Conda.,org_expansion: bioconda (score=7.6058)
+,,bioconda-docs,,https://github.com/bioconda/bioconda-docs,repo,org_expansion,bioconda,7,35,2026-03-13T15:11:22Z,5.9019,SCSS,Documentation for bioconda,org_expansion: bioconda (score=5.9019)
+,,bioconda-common,,https://github.com/bioconda/bioconda-common,repo,org_expansion,bioconda,2,6,2026-04-09T14:05:27Z,4.7498,Shell,Common definitions for the bioconda build system,org_expansion: bioconda (score=4.7498)
+,,bioconda-plots,,https://github.com/bioconda/bioconda-plots,repo,org_expansion,bioconda,3,2,2026-04-13T03:25:13Z,4.6812,Python,Generating various plots for the bioconda homepage,org_expansion: bioconda (score=4.6812)
+,,bioconda-stats,,https://github.com/bioconda/bioconda-stats,repo,org_expansion,bioconda,1,2,2026-04-13T04:14:30Z,4.0792,Python,Automatic gathering of statistics around Bioconda,org_expansion: bioconda (score=4.0792)
+,,bioconda-outreach,,https://github.com/bioconda/bioconda-outreach,repo,org_expansion,bioconda,8,1,2019-09-02T09:08:46Z,2.2095,,Presentation and training materials from Bioconda project members on Bioconda and Conda,org_expansion: bioconda (score=2.2095)
+,,bioconda-containers,,https://github.com/bioconda/bioconda-containers,repo,org_expansion,bioconda,3,4,2024-11-19T19:32:06Z,2.0805,Python,Container images for usage inside of Bioconda,org_expansion: bioconda (score=2.0805)
+,,bioconda-paper,,https://github.com/bioconda/bioconda-paper,repo,org_expansion,bioconda,4,3,2018-04-17T17:23:43Z,2.0,Python,Data analysis related to the bioconda paper,org_expansion: bioconda (score=2.0)
+,,bioconda-actions,,https://github.com/bioconda/bioconda-actions,repo,org_expansion,bioconda,1,3,2023-03-04T05:33:10Z,1.2096,JavaScript,A repository of github actions used by the Bioconda project,org_expansion: bioconda (score=1.2096)
+,,bioconda-tests,,https://github.com/bioconda/bioconda-tests,repo,org_expansion,bioconda,1,1,2021-11-27T20:55:59Z,0.9035,Python,A repository to periodically test all recipes.,org_expansion: bioconda (score=0.9035)
+,,bioconda-repodata-patches,,https://github.com/bioconda/bioconda-repodata-patches,repo,org_expansion,bioconda,1,1,2021-03-15T07:59:44Z,0.9032,Python,,org_expansion: bioconda (score=0.9032)
+,,bioconda-extended-base-image,,https://github.com/bioconda/bioconda-extended-base-image,repo,org_expansion,bioconda,1,1,2019-08-30T19:08:53Z,0.9031,Dockerfile,An extended docker container for cases where the busybox image is too limited.,org_expansion: bioconda (score=0.9031)
+,,BiocStickers,,https://github.com/Bioconductor/BiocStickers,repo,org_expansion,bioconductor,136,112,2026-03-23T09:27:16Z,8.9962,R,Stickers for some Bioconductor packages - feel free to contribute and/or modify.,org_expansion: bioconductor (score=8.9962)
+,,bioconductor_docker,,https://github.com/Bioconductor/bioconductor_docker,repo,org_expansion,bioconductor,89,32,2026-04-13T06:48:26Z,8.427,Dockerfile,Docker Containers for Bioconductor,org_expansion: bioconductor (score=8.427)
+,,bioconductor-training,,https://github.com/Bioconductor/bioconductor-training,repo,org_expansion,bioconductor,53,26,2026-04-12T01:36:11Z,7.8795,HTML,Bioconductor teaching and education committee,org_expansion: bioconductor (score=7.8795)
+,,bioconductor.org,,https://github.com/Bioconductor/bioconductor.org,repo,org_expansion,bioconductor,33,46,2026-04-09T11:08:52Z,7.6855,HTML,Source code for the Bioconductor website,org_expansion: bioconductor (score=7.6855)
+,,GenomicRanges,,https://github.com/Bioconductor/GenomicRanges,repo,org_expansion,bioconductor,46,19,2026-04-05T20:11:58Z,7.5308,R,Representation and manipulation of genomic intervals,org_expansion: bioconductor (score=7.5308)
+,,Biostrings,,https://github.com/Bioconductor/Biostrings,repo,org_expansion,bioconductor,66,17,2026-03-06T06:40:28Z,7.3365,R,Efficient manipulation of biological strings,org_expansion: bioconductor (score=7.3365)
+,,BuildABiocWorkshop,,https://github.com/Bioconductor/BuildABiocWorkshop,repo,org_expansion,bioconductor,23,26,2026-04-13T00:42:04Z,7.1918,Dockerfile,Template for building a bioconductor workshop package using github actions,org_expansion: bioconductor (score=7.1918)
+,,biocblog,,https://github.com/Bioconductor/biocblog,repo,org_expansion,bioconductor,16,43,2026-04-09T06:28:19Z,7.0384,HTML,A Quarto blog for Bioconductor community,org_expansion: bioconductor (score=7.0384)
+,,GenomicFeatures,,https://github.com/Bioconductor/GenomicFeatures,repo,org_expansion,bioconductor,27,11,2026-04-05T20:11:45Z,6.8591,R,Query the gene models of a given organism/assembly,org_expansion: bioconductor (score=6.8591)
+,,S4Vectors,,https://github.com/Bioconductor/S4Vectors,repo,org_expansion,bioconductor,17,22,2026-04-12T03:44:59Z,6.8557,R,Foundation of vector-like and list-like containers in Bioconductor,org_expansion: bioconductor (score=6.8557)
+,,Rsamtools,,https://github.com/Bioconductor/Rsamtools,repo,org_expansion,bioconductor,28,28,2026-03-07T00:59:55Z,6.8298,R,"Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import",org_expansion: bioconductor (score=6.8298)
+,,DelayedArray,,https://github.com/Bioconductor/DelayedArray,repo,org_expansion,bioconductor,28,11,2026-03-31T14:09:17Z,6.8105,R,A unified framework for working transparently with on-disk and in-memory array-like datasets,org_expansion: bioconductor (score=6.8105)
+,,GenomicDataCommons,,https://github.com/Bioconductor/GenomicDataCommons,repo,org_expansion,bioconductor,90,25,2025-11-07T16:01:44Z,6.5941,R,Provide R access to the NCI Genomic Data Commons portal.,org_expansion: bioconductor (score=6.5941)
+,,BiocManager,,https://github.com/Bioconductor/BiocManager,repo,org_expansion,bioconductor,76,29,2025-11-13T20:10:18Z,6.5539,R,CRAN Package For Managing Bioconductor Packages,org_expansion: bioconductor (score=6.5539)
+,,BiocCheck,,https://github.com/Bioconductor/BiocCheck,repo,org_expansion,bioconductor,9,28,2026-04-10T18:25:41Z,6.4292,R,,org_expansion: bioconductor (score=6.4292)
+,,BiocParallel,,https://github.com/Bioconductor/BiocParallel,repo,org_expansion,bioconductor,69,31,2025-10-30T18:07:32Z,6.4016,R,Bioconductor facilities for parallel evaluation,org_expansion: bioconductor (score=6.4016)
+,,pkgrevdocs,,https://github.com/Bioconductor/pkgrevdocs,repo,org_expansion,bioconductor,13,22,2026-03-26T17:27:40Z,6.3836,TeX,Training Material for Community Reviewers,org_expansion: bioconductor (score=6.3836)
+,,BBS,,https://github.com/Bioconductor/BBS,repo,org_expansion,bioconductor,12,13,2026-04-08T19:30:07Z,6.3081,Shell,The Bioconductor Build System,org_expansion: bioconductor (score=6.3081)
+,,HDF5Array,,https://github.com/Bioconductor/HDF5Array,repo,org_expansion,bioconductor,12,14,2026-04-07T05:38:03Z,6.3056,R,HDF5 datasets as array-like objects in R,org_expansion: bioconductor (score=6.3056)
+,,Contributions,,https://github.com/Bioconductor/Contributions,repo,org_expansion,bioconductor,147,34,2025-04-10T18:26:59Z,6.2751,,Contribute Packages to Bioconductor,org_expansion: bioconductor (score=6.2751)
+,,kernel,,https://github.com/openvelinux/kernel,repo,org_expansion,openvelinux,108,51,2026-03-25T13:48:48Z,8.5054,C,ByteDance kernel for use on cloud.,org_expansion: openvelinux (score=8.5054)
+,,unscd,,https://github.com/openvelinux/unscd,repo,org_expansion,openvelinux,0,0,2025-01-15T03:19:41Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,systemtap,,https://github.com/openvelinux/systemtap,repo,org_expansion,openvelinux,0,0,2025-01-15T02:40:09Z,0.2422,C++,,org_expansion: openvelinux (score=0.2422)
+,,makedumpfile,,https://github.com/openvelinux/makedumpfile,repo,org_expansion,openvelinux,0,0,2025-01-15T03:36:59Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,kexec-tools,,https://github.com/openvelinux/kexec-tools,repo,org_expansion,openvelinux,0,0,2025-01-15T03:43:31Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,crash,,https://github.com/openvelinux/crash,repo,org_expansion,openvelinux,0,0,2025-01-15T03:50:01Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,flamegraph,,https://github.com/openvelinux/flamegraph,repo,org_expansion,openvelinux,0,0,2025-01-15T04:14:38Z,0.2422,Perl,,org_expansion: openvelinux (score=0.2422)
+,,kdump-tools,,https://github.com/openvelinux/kdump-tools,repo,org_expansion,openvelinux,0,0,2025-01-15T04:48:27Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,grub,,https://github.com/openvelinux/grub,repo,org_expansion,openvelinux,0,0,2025-01-15T04:53:20Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,shim,,https://github.com/openvelinux/shim,repo,org_expansion,openvelinux,0,0,2025-01-15T04:58:17Z,0.2422,C,,org_expansion: openvelinux (score=0.2422)
+,,base-files,,https://github.com/openvelinux/base-files,repo,org_expansion,openvelinux,0,0,2025-01-15T05:14:10Z,0.2422,Roff,,org_expansion: openvelinux (score=0.2422)
+,,debootstrap,,https://github.com/openvelinux/debootstrap,repo,org_expansion,openvelinux,0,0,2025-01-15T05:06:51Z,0.2422,Shell,,org_expansion: openvelinux (score=0.2422)
+,,velinux-archive-keyring,,https://github.com/openvelinux/velinux-archive-keyring,repo,org_expansion,openvelinux,0,0,2025-01-15T05:10:04Z,0.2422,,,org_expansion: openvelinux (score=0.2422)
+,,nettrace,,https://github.com/OpenCloudOS/nettrace,repo,org_expansion,OpenCloudOS,483,110,2026-03-05T07:12:55Z,9.8306,C,nettrace is a eBPF-based tool to trace network packet and diagnose network problem.,org_expansion: OpenCloudOS (score=9.8306)
+,,opencloudos.github.io,,https://github.com/OpenCloudOS/opencloudos.github.io,repo,org_expansion,OpenCloudOS,17,39,2026-04-08T07:05:25Z,7.0304,,OpenCloudOS Documentation,org_expansion: OpenCloudOS (score=7.0304)
+,,LiKeX,,https://github.com/OpenCloudOS/LiKeX,repo,org_expansion,OpenCloudOS,42,20,2023-03-21T04:06:36Z,4.5951,C,LiKeX(RustKVM) is a KVM rust light project.,org_expansion: OpenCloudOS (score=4.5951)
+,,fuse-extent,,https://github.com/OpenCloudOS/fuse-extent,repo,org_expansion,OpenCloudOS,26,13,2022-09-24T01:49:12Z,4.0111,C,"This project is a fuse extent, which contains fuse-crash-recovery framework and fuse-base-ebpf performance improvement. ",org_expansion: OpenCloudOS (score=4.0111)
+,,lkp-extent,,https://github.com/OpenCloudOS/lkp-extent,repo,org_expansion,OpenCloudOS,19,15,2023-12-13T12:42:18Z,3.8327,C++,lkp-extent enhances the ability to run inside containers and deploy containers on multiple hosts based on lkp,org_expansion: OpenCloudOS (score=3.8327)
+,,community,,https://github.com/OpenCloudOS/community,repo,org_expansion,OpenCloudOS,18,14,2022-06-23T08:58:32Z,3.7349,,这是OpenCloudOS社区创始委员会的工作区,org_expansion: OpenCloudOS (score=3.7349)
+,,SIG-ops,,https://github.com/OpenCloudOS/SIG-ops,repo,org_expansion,OpenCloudOS,19,3,2022-12-12T07:12:02Z,3.2076,C,本小组的目标致力于，将腾讯云的运维经验中积累的有较广泛价值工具，以开源的形式贡献给社区。主要工作包括对现有系统开源工具及命令的能力补充和新工具能力的开发和运营。,org_expansion: OpenCloudOS (score=3.2076)
+,,OpenCloudOS-tools,,https://github.com/OpenCloudOS/OpenCloudOS-tools,repo,org_expansion,OpenCloudOS,12,3,2022-07-05T07:50:59Z,2.8314,Shell,"OpenCloudOS-tools is a useful toolkit, which allows querying and changing settings for OpenCloudOS, such as system information, upgrade, fixing system problems, backup and recover system.",org_expansion: OpenCloudOS (score=2.8314)
+,,OpenCloudOS-Packages,,https://github.com/OpenCloudOS/OpenCloudOS-Packages,repo,org_expansion,OpenCloudOS,14,2,2022-02-08T03:43:03Z,2.8299,,OpenCloudOS发行版包含的除内核之外的软件包,org_expansion: OpenCloudOS (score=2.8299)
+,,EMF-ebpf-module-framework,,https://github.com/OpenCloudOS/EMF-ebpf-module-framework,repo,org_expansion,OpenCloudOS,10,2,2023-07-16T06:06:39Z,2.5714,C,EMF(ebpf-module-framework) is a ebpf framework that is convenient to add a new ebpf program in the form of module.,org_expansion: OpenCloudOS (score=2.5714)
+,,SIG-Security,,https://github.com/OpenCloudOS/SIG-Security,repo,org_expansion,OpenCloudOS,8,2,2022-06-07T14:36:17Z,2.3868,,,org_expansion: OpenCloudOS (score=2.3868)
+,,OpenCloudOS-Kernel-Stream,,https://github.com/OpenCloudOS/OpenCloudOS-Kernel-Stream,repo,org_expansion,OpenCloudOS,6,3,2024-05-27T07:41:06Z,2.3586,C,OpenCloudOS Kernel Stream,org_expansion: OpenCloudOS (score=2.3586)
+,,SIG-kernel,,https://github.com/OpenCloudOS/SIG-kernel,repo,org_expansion,OpenCloudOS,4,3,2023-01-06T02:17:51Z,2.004,,OpenCloudOS SIG-kernel主要职责OpenCloudOS的内核路线规划、方案讨论、技术输出等工作，基于OpenCloudOS开源、中立的立场，为各位合作伙伴、开发者提供相互交流的平台，共建OS基础能力,org_expansion: OpenCloudOS (score=2.004)
+,,SIG-release,,https://github.com/OpenCloudOS/SIG-release,repo,org_expansion,OpenCloudOS,4,2,2022-08-26T06:34:24Z,1.877,,OpenCloudOS SIG-release的主要职责是在社区协调各SIG，完成OpenCloudOS社区版本的发布工作。,org_expansion: OpenCloudOS (score=1.877)
+,,SIG-compliance,,https://github.com/OpenCloudOS/SIG-compliance,repo,org_expansion,OpenCloudOS,3,2,2022-08-25T08:20:14Z,1.6831,,,org_expansion: OpenCloudOS (score=1.6831)
+,,SIG-Marketing,,https://github.com/OpenCloudOS/SIG-Marketing,repo,org_expansion,OpenCloudOS,2,1,2022-06-07T14:49:47Z,1.2565,,负责OpenCloudOS社区的市场营销相关工作，包括不限于品牌建设、内容运营、伙伴拓展与生态共建等，借助活动、公关等营销手段，提升OpenCloudOS在操作系统社区领域的知名度，吸引开发者参与社区建设。,org_expansion: OpenCloudOS (score=1.2565)
+,,LonganChkout,,https://github.com/OpenCloudOS/LonganChkout,repo,org_expansion,OpenCloudOS,2,1,2022-04-14T07:37:00Z,1.2562,C,,org_expansion: OpenCloudOS (score=1.2562)
+,,SIG-infra,,https://github.com/OpenCloudOS/SIG-infra,repo,org_expansion,OpenCloudOS,1,2,2023-05-16T02:41:55Z,1.0874,,OpenCloudOS项目的健康运行离不开一系列IT基础设施的支持。这些支持既包括代码研发、打包、发行等方面的支持，也包括在文化、社区等方面的支持。基础设施组（基础设施SIG）职责范围就是为提供这些支持采购、建设、维护、管理相应的IT系统。OpenCloudOS社区的其它SIG，由于自身需要也可能建设自己某些IT系统。当这些系统进入稳定运行后，也可交由基础设施SIG进行统一管理和运维。,org_expansion: OpenCloudOS (score=1.0874)
+,,SIG-Testing,,https://github.com/OpenCloudOS/SIG-Testing,repo,org_expansion,OpenCloudOS,1,0,2022-12-07T06:24:21Z,0.6054,,OpenCloudOS测试SIG,org_expansion: OpenCloudOS (score=0.6054)
+,,Docs,,https://github.com/OpenCloudOS/Docs,repo,org_expansion,OpenCloudOS,0,3,2022-09-26T07:38:27Z,0.6043,,,org_expansion: OpenCloudOS (score=0.6043)
+,,eino,,https://github.com/cloudwego/eino,repo,org_expansion,cloudwego,10591,841,2026-04-13T09:32:20Z,13.9753,Go,The ultimate LLM/AI application development framework in Go.,org_expansion: cloudwego (score=13.9753)
+,,kitex,,https://github.com/cloudwego/kitex,repo,org_expansion,cloudwego,7918,898,2026-04-13T09:20:03Z,13.7511,Go,Go RPC framework with high-performance and strong-extensibility for building micro-services.,org_expansion: cloudwego (score=13.7511)
+,,hertz,,https://github.com/cloudwego/hertz,repo,org_expansion,cloudwego,7160,620,2026-04-09T09:44:43Z,13.4371,Go,Go HTTP framework with high-performance and strong-extensibility for building micro-services.,org_expansion: cloudwego (score=13.4371)
+,,netpoll,,https://github.com/cloudwego/netpoll,repo,org_expansion,cloudwego,4551,501,2026-04-06T06:38:41Z,12.9027,Go,A high-performance non-blocking I/O networking framework focusing on RPC scenarios.,org_expansion: cloudwego (score=12.9027)
+,,volo,,https://github.com/cloudwego/volo,repo,org_expansion,cloudwego,2548,213,2026-04-09T03:21:50Z,12.0772,Rust,Rust RPC framework with high-performance and strong-extensibility for building micro-services.,org_expansion: cloudwego (score=12.0772)
+,,eino-ext,,https://github.com/cloudwego/eino-ext,repo,org_expansion,cloudwego,660,285,2026-04-13T08:50:31Z,11.0968,Go,Various extensions for the Eino framework: https://github.com/cloudwego/eino,org_expansion: cloudwego (score=11.0968)
+,,eino-examples,,https://github.com/cloudwego/eino-examples,repo,org_expansion,cloudwego,574,218,2026-04-06T17:58:23Z,10.7614,Go,Examples and demonstrations for using the Eino framework,org_expansion: cloudwego (score=10.7614)
+,,sonic-rs,,https://github.com/cloudwego/sonic-rs,repo,org_expansion,cloudwego,859,59,2026-04-10T10:14:35Z,10.614,Rust,A fast Rust JSON library based on SIMD.,org_expansion: cloudwego (score=10.614)
+,,goref,,https://github.com/cloudwego/goref,repo,org_expansion,cloudwego,995,44,2026-03-24T07:04:35Z,10.3342,Go,Go heap object reference analysis tool,org_expansion: cloudwego (score=10.3342)
+,,kitex-examples,,https://github.com/cloudwego/kitex-examples,repo,org_expansion,cloudwego,418,240,2026-03-18T03:47:04Z,10.223,Go,Examples for Kitex.,org_expansion: cloudwego (score=10.223)
+,,cloudwego.github.io,,https://github.com/cloudwego/cloudwego.github.io,repo,org_expansion,cloudwego,175,307,2026-04-09T08:52:09Z,9.9136,HTML,Website for CloudWeGo,org_expansion: cloudwego (score=9.9136)
+,,abcoder,,https://github.com/cloudwego/abcoder,repo,org_expansion,cloudwego,358,53,2026-04-07T15:18:38Z,9.7604,Go,"deep, reliable and confidential coding-context",org_expansion: cloudwego (score=9.7604)
+,,thriftgo,,https://github.com/cloudwego/thriftgo,repo,org_expansion,cloudwego,302,91,2026-03-24T07:17:40Z,9.6112,Go,An implementation of thrift compiler in go language. ,org_expansion: cloudwego (score=9.6112)
+,,biz-demo,,https://github.com/cloudwego/biz-demo,repo,org_expansion,cloudwego,355,131,2026-02-11T06:05:07Z,9.3612,Go,Business Demo for CloudWeGo,org_expansion: cloudwego (score=9.3612)
+,,hertz-examples,,https://github.com/cloudwego/hertz-examples,repo,org_expansion,cloudwego,345,145,2025-12-15T05:07:42Z,8.7913,Go,Examples for Hertz.,org_expansion: cloudwego (score=8.7913)
+,,pilota,,https://github.com/cloudwego/pilota,repo,org_expansion,cloudwego,159,24,2026-04-10T12:21:20Z,8.773,Rust,A thrift and protobuf implementation in pure rust with high performance and extensibility.,org_expansion: cloudwego (score=8.773)
+,,frugal,,https://github.com/cloudwego/frugal,repo,org_expansion,cloudwego,129,21,2026-04-06T07:30:27Z,8.4559,Go,A very fast dynamic Thrift serializer & deserializer.,org_expansion: cloudwego (score=8.4559)
+,,shmipc-go,,https://github.com/cloudwego/shmipc-go,repo,org_expansion,cloudwego,517,45,2025-10-21T02:43:25Z,8.2325,Go,A high performance inter-process communication golang library developed by CloudWeGo,org_expansion: cloudwego (score=8.2325)
+,,dynamicgo,,https://github.com/cloudwego/dynamicgo,repo,org_expansion,cloudwego,178,30,2026-02-04T09:40:48Z,8.0532,Go,Dynamically and efficiently operate RPC data for Go,org_expansion: cloudwego (score=8.0532)
+,,kitex-benchmark,,https://github.com/cloudwego/kitex-benchmark,repo,org_expansion,cloudwego,63,29,2026-04-02T03:37:02Z,7.9116,Go,,org_expansion: cloudwego (score=7.9116)
+,,architecture-samples,,https://github.com/android/architecture-samples,repo,org_expansion,android,45635,11873,2026-04-09T21:33:53Z,16.3436,Kotlin,A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.,org_expansion: android (score=16.3436)
+,,compose-samples,,https://github.com/android/compose-samples,repo,org_expansion,android,23057,5413,2026-04-08T15:34:15Z,15.3932,Kotlin,Official Jetpack Compose samples.,org_expansion: android (score=15.3932)
+,,nowinandroid,,https://github.com/android/nowinandroid,repo,org_expansion,android,21019,4353,2026-04-13T05:09:42Z,15.2842,Kotlin,A fully functional Android app built entirely with Kotlin and Jetpack Compose,org_expansion: android (score=15.2842)
+,,ndk-samples,,https://github.com/android/ndk-samples,repo,org_expansion,android,10499,4255,2026-02-20T03:19:39Z,13.9187,C++,Android NDK samples with Android Studio,org_expansion: android (score=13.9187)
+,,camera-samples,,https://github.com/android/camera-samples,repo,org_expansion,android,5415,2421,2026-03-25T18:24:32Z,13.566,Kotlin,Multiple samples showing the best practices in camera APIs on Android.,org_expansion: android (score=13.566)
+,,architecture-templates,,https://github.com/android/architecture-templates,repo,org_expansion,android,3118,368,2026-04-09T18:45:36Z,12.5055,,,org_expansion: android (score=12.5055)
+,,testing-samples,,https://github.com/android/testing-samples,repo,org_expansion,android,9291,3644,2025-07-18T16:19:23Z,12.1748,Java,A collection of samples demonstrating different frameworks and techniques for automated testing,org_expansion: android (score=12.1748)
+,,platform-samples,,https://github.com/android/platform-samples,repo,org_expansion,android,1669,507,2026-04-10T07:07:00Z,12.1017,Kotlin,A collection of samples of different Android OS platform APIs.,org_expansion: android (score=12.1017)
+,,codelab-android-compose,,https://github.com/android/codelab-android-compose,repo,org_expansion,android,1682,788,2026-03-27T14:26:17Z,12.0941,Kotlin,,org_expansion: android (score=12.0941)
+,,gradle-recipes,,https://github.com/android/gradle-recipes,repo,org_expansion,android,2335,255,2026-04-09T09:37:17Z,12.0793,Kotlin,Ready-to-use recipes for common build customizations that showcase the Android Gradle plugin's public APIs and DSL.,org_expansion: android (score=12.0793)
+,,wear-os-samples,,https://github.com/android/wear-os-samples,repo,org_expansion,android,1348,632,2026-04-08T18:44:35Z,11.9955,Kotlin,Multiple samples showing best practices in app and watch face development on Wear OS.,org_expansion: android (score=11.9955)
+,,androidify,,https://github.com/android/androidify,repo,org_expansion,android,1921,287,2026-03-31T07:51:51Z,11.8179,Kotlin,Sample app for Androidify,org_expansion: android (score=11.8179)
+,,ndk,,https://github.com/android/ndk,repo,org_expansion,android,2275,297,2026-03-12T20:33:34Z,11.7139,,The Android Native Development Kit,org_expansion: android (score=11.7139)
+,,performance-samples,,https://github.com/android/performance-samples,repo,org_expansion,android,1420,244,2026-04-09T21:43:01Z,11.6448,Kotlin,Samples to show APIs and best practices in Performance on Android,org_expansion: android (score=11.6448)
+,,android-test,,https://github.com/android/android-test,repo,org_expansion,android,1214,337,2026-04-07T23:05:17Z,11.6159,Java,An extensive framework for testing Android apps,org_expansion: android (score=11.6159)
+,,tv-samples,,https://github.com/android/tv-samples,repo,org_expansion,android,1247,395,2026-03-29T22:31:37Z,11.5656,Kotlin,Multiple samples showing best practices in app development on Android TV.,org_expansion: android (score=11.5656)
+,,snippets,,https://github.com/android/snippets,repo,org_expansion,android,1021,355,2026-04-10T19:16:04Z,11.5372,Kotlin,Main repository for snippets surfaced on developer.android.com.,org_expansion: android (score=11.5372)
+,,kotlin-multiplatform-samples,,https://github.com/android/kotlin-multiplatform-samples,repo,org_expansion,android,1283,136,2026-04-09T19:02:21Z,11.3043,Kotlin,Samples showcasing the Kotlin Multiplatform Jetpack libraries,org_expansion: android (score=11.3043)
+,,nav3-recipes,,https://github.com/android/nav3-recipes,repo,org_expansion,android,1240,137,2026-04-04T17:49:42Z,11.197,Kotlin,Implement common use cases with Jetpack Navigation 3,org_expansion: android (score=11.197)
+,,app-bundle-samples,,https://github.com/android/app-bundle-samples,repo,org_expansion,android,734,346,2026-03-31T18:01:05Z,11.0794,C++,Multiple samples showing the best practices in app bundles on Android.,org_expansion: android (score=11.0794)

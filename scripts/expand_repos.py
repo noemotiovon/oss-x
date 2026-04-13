@@ -1,22 +1,34 @@
 #!/usr/bin/env python3
 """
-Expand repos: discover additional popular repos from original organizations.
+Expand repos from data_classify.csv:
 
-1. Copies all repo.csv entries with source=repo
-2. For each org in organization.csv (GitHub orgs):
-   - Fetches repos with stars > 100 AND active in last year
-   - Adds them with source=org_expansion
-3. Deduplicates (original repo.csv takes priority)
+1. For each row with entity_type=organization, list all repos under that org
+   via the GitHub API (stars, forks, pushed_at).
+2. Score each repo with:
+
+       score = 2 * log10(stars + 1)
+             + 1 * log10(forks + 1)
+             + 3 * exp(-days_since_last_push / 180)
+
+   (stars/forks reflect popularity on a log scale; the recency term is a
+   half-life-style decay that rewards repos still being pushed to.)
+3. Keep the top 20 repos per org by score.
+4. Merge with all entity_type=repo rows from data_classify.csv.
+5. Deduplicate by normalized URL; original repo rows always win.
+
+Input:  output/data_classify.csv
+Output: output/repos.csv
 """
 
 import argparse
 import csv
 import json
+import math
 import os
 import re
 import sys
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
@@ -31,23 +43,21 @@ _rate_reset = None
 
 
 def _interruptible_wait(seconds, label="Rate limit reset"):
-    end_time = time.time() + seconds
+    end = time.time() + seconds
     while True:
-        remaining = int(end_time - time.time())
+        remaining = int(end - time.time())
         if remaining <= 0:
             break
-        print(f"\r  ⏳ {label}: {remaining}s remaining  ", end="", file=sys.stderr, flush=True)
+        print(f"\r  ⏳ {label}: {remaining}s  ", end="", file=sys.stderr, flush=True)
         time.sleep(min(5, remaining))
-    print(f"\r  ✓ {label} complete.{' ' * 40}", file=sys.stderr)
+    print(f"\r  ✓ {label} done.{' ' * 40}", file=sys.stderr)
 
 
 def _load_cache():
     if CACHE_FILE.exists():
         try:
             with open(CACHE_FILE, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            print(f"  Loaded {len(data)} cached org repo lists", file=sys.stderr)
-            return data
+                return json.load(f)
         except (json.JSONDecodeError, OSError):
             pass
     return {}
@@ -88,7 +98,7 @@ def github_api(endpoint):
             if reset:
                 wait = int(reset) - int(time.time()) + 1
                 if wait > 0:
-                    _interruptible_wait(wait, "403 rate-limit retry")
+                    _interruptible_wait(wait, "403 retry")
                     return github_api(endpoint)
         elif e.code in (404, 422):
             return None
@@ -99,50 +109,72 @@ def github_api(endpoint):
         return None
 
 
-def fetch_org_active_starred_repos(org_login, min_stars=100):
-    """Fetch repos from an org with stars > min_stars AND pushed in last year."""
-    one_year_ago = (datetime.now() - timedelta(days=365)).strftime("%Y-%m-%d")
-    repos = []
-    page = 1
-    while True:
-        data = github_api(
-            f"/search/repositories?q=org:{org_login}+stars:>{min_stars}+pushed:>{one_year_ago}"
-            f"&sort=stars&order=desc&per_page=100&page={page}"
-        )
-        if not data or not isinstance(data, dict):
-            break
-        items = data.get("items", [])
-        if not items:
-            break
-        for repo in items:
-            repos.append({
-                "name": repo.get("name", ""),
-                "full_name": repo.get("full_name", ""),
-                "url": repo.get("html_url", ""),
-                "stars": repo.get("stargazers_count", 0),
-                "pushed_at": repo.get("pushed_at", ""),
-                "description": (repo.get("description") or "")[:200],
-                "language": repo.get("language") or "",
-            })
-        if len(items) < 100:
-            break
-        page += 1
-    return repos
+def fetch_org_repos(owner):
+    """List all non-fork, non-archived repos under an org/user."""
+    # Try /orgs first; fall back to /users for personal accounts.
+    for kind in ("orgs", "users"):
+        repos = []
+        page = 1
+        ok = False
+        while True:
+            data = github_api(
+                f"/{kind}/{owner}/repos?per_page=100&page={page}&type=public&sort=updated"
+            )
+            if data is None:
+                break
+            ok = True
+            if not isinstance(data, list) or not data:
+                break
+            for r in data:
+                if r.get("fork") or r.get("archived"):
+                    continue
+                repos.append({
+                    "name": r.get("name", ""),
+                    "full_name": r.get("full_name", ""),
+                    "url": r.get("html_url", ""),
+                    "stars": r.get("stargazers_count", 0),
+                    "forks": r.get("forks_count", 0),
+                    "pushed_at": r.get("pushed_at", "") or "",
+                    "description": (r.get("description") or "")[:200],
+                    "language": r.get("language") or "",
+                })
+            if len(data) < 100:
+                break
+            page += 1
+        if ok:
+            return repos
+    return []
 
 
-def extract_repo_url_key(url):
-    """Normalize a repo URL for deduplication."""
-    url = (url or "").strip().rstrip("/").lower()
-    if url.endswith(".git"):
-        url = url[:-4]
-    url = re.sub(r'^https?://', '', url)
-    return url
+def score_repo(repo, now=None):
+    now = now or datetime.now(timezone.utc)
+    stars = repo.get("stars", 0) or 0
+    forks = repo.get("forks", 0) or 0
+    pushed = repo.get("pushed_at") or ""
+    try:
+        dt = datetime.strptime(pushed, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        days = max(0, (now - dt).days)
+    except ValueError:
+        days = 10_000
+    s = math.log10(stars + 1)
+    f = math.log10(forks + 1)
+    r = math.exp(-days / 180.0)
+    return round(2 * s + 1 * f + 3 * r, 4)
+
+
+URL_KEY_RE = re.compile(r"^https?://")
+
+
+def url_key(url):
+    u = (url or "").strip().rstrip("/").lower()
+    if u.endswith(".git"):
+        u = u[:-4]
+    return URL_KEY_RE.sub("", u)
 
 
 def extract_github_owner(url):
     parsed = urlparse((url or "").strip().rstrip("/"))
-    host = (parsed.hostname or "").lower()
-    if host == "github.com":
+    if (parsed.hostname or "").lower() == "github.com":
         parts = [p for p in parsed.path.strip("/").split("/") if p]
         if parts:
             return parts[0]
@@ -150,138 +182,126 @@ def extract_github_owner(url):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Expand repos from original organizations")
-    parser.add_argument("repo_csv", help="Path to repo.csv")
-    parser.add_argument("org_csv", help="Path to organization.csv")
-    parser.add_argument("-o", "--output", required=True, help="Output CSV path")
-    parser.add_argument("--summary", action="store_true")
-    parser.add_argument("--no-cache", action="store_true")
-    parser.add_argument("--min-stars", type=int, default=100, help="Minimum stars for expansion")
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("input", nargs="?", default="output/data_classify.csv")
+    ap.add_argument("-o", "--output", default="output/repos.csv")
+    ap.add_argument("--top", type=int, default=20, help="Top N repos per org")
+    ap.add_argument("--no-cache", action="store_true")
+    ap.add_argument("--summary", action="store_true")
+    args = ap.parse_args()
 
-    # --- Read original repos ---
-    original_repos = []
-    with open(args.repo_csv, "r", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            original_repos.append(row)
+    with open(args.input, "r", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
 
-    # Build dedup set from original repos
-    existing_urls = set()
-    for row in original_repos:
-        url = row.get("上游地址", "")
-        key = extract_repo_url_key(url)
-        if key:
-            existing_urls.add(key)
+    original_repo_rows = [r for r in rows if (r.get("entity_type") or "").strip() == "repo"]
+    org_rows = [r for r in rows if (r.get("entity_type") or "").strip() == "organization"]
 
-    print(f"Original repos: {len(original_repos)}", file=sys.stderr)
-    print(f"Unique URLs: {len(existing_urls)}", file=sys.stderr)
+    print(f"Original repos: {len(original_repo_rows)}", file=sys.stderr)
+    print(f"Organizations:  {len(org_rows)}", file=sys.stderr)
 
-    # --- Read organizations (from organization.csv, NOT org_exp_val.csv) ---
-    orgs = []
-    with open(args.org_csv, "r", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            orgs.append(row)
-
-    # Filter to GitHub orgs only
-    github_orgs = []
-    non_github_orgs = []
-    for org in orgs:
-        url = org.get("上游地址", "").strip()
-        owner = extract_github_owner(url)
-        if owner:
-            github_orgs.append((org, owner))
-        else:
-            non_github_orgs.append(org)
-
-    print(f"\nOrganizations from organization.csv: {len(orgs)}", file=sys.stderr)
-    print(f"  GitHub orgs to expand: {len(github_orgs)}", file=sys.stderr)
-    print(f"  Non-GitHub orgs (skip API, mark for LLM): {len(non_github_orgs)}", file=sys.stderr)
-
-    # --- Expand from GitHub orgs ---
     cache = {} if args.no_cache else _load_cache()
-    expanded_repos = []
 
-    for i, (org, owner) in enumerate(github_orgs, 1):
+    expanded = []
+    github_org_count = 0
+    for i, org in enumerate(org_rows, 1):
+        url = org.get("上游地址", "")
+        owner = extract_github_owner(url)
+        if not owner:
+            print(f"  [{i}/{len(org_rows)}] skip non-GitHub: {url}", file=sys.stderr)
+            continue
+        github_org_count += 1
         key = owner.lower()
-        org_name = org.get("项目名称", owner)
-
         if key in cache:
             repos = cache[key]
-            print(f"  [{i}/{len(github_orgs)}] {owner}: {len(repos)} repos (cached)", file=sys.stderr)
+            print(f"  [{i}/{len(org_rows)}] {owner}: {len(repos)} repos (cached)", file=sys.stderr)
         else:
-            repos = fetch_org_active_starred_repos(owner, args.min_stars)
+            repos = fetch_org_repos(owner)
             cache[key] = repos
             _save_cache(cache)
-            rl_info = f" [rate_remaining={_rate_remaining}]" if _rate_remaining is not None else ""
-            print(f"  [{i}/{len(github_orgs)}] {owner}: {len(repos)} repos{rl_info}", file=sys.stderr)
+            rl = f" [remaining={_rate_remaining}]" if _rate_remaining is not None else ""
+            print(f"  [{i}/{len(org_rows)}] {owner}: {len(repos)} repos{rl}", file=sys.stderr)
 
-        for repo in repos:
-            url_key = extract_repo_url_key(repo["url"])
-            if url_key and url_key not in existing_urls:
-                existing_urls.add(url_key)
-                expanded_repos.append({
-                    "repo_name": repo["name"],
-                    "repo_url": repo["url"],
-                    "stars": repo["stars"],
-                    "description": repo["description"],
-                    "language": repo["language"],
-                    "expanded_from_org": owner,
-                    "org_name": org_name,
-                })
+        for r in repos:
+            r["_score"] = score_repo(r)
+        repos_sorted = sorted(repos, key=lambda x: x["_score"], reverse=True)[: args.top]
+        for r in repos_sorted:
+            expanded.append({
+                "项目名称": r["name"],
+                "上游地址": r["url"],
+                "entity_type": "repo",
+                "source": "org_expansion",
+                "expanded_from_org": owner,
+                "stars": r["stars"],
+                "forks": r["forks"],
+                "pushed_at": r["pushed_at"],
+                "score": r["_score"],
+                "language": r["language"],
+                "description": r["description"],
+            })
 
-    # --- Write output ---
+    # Merge — original rows win on URL collision.
+    seen = set()
     output_fields = [
-        "页签", "序号", "项目名称", "分类", "上游地址", "entity_type", "reason",
-        "source", "expanded_from_org", "stars", "description", "language", "llm_note",
+        "页签", "序号", "项目名称", "分类", "上游地址", "entity_type",
+        "source", "expanded_from_org", "stars", "forks", "pushed_at",
+        "score", "language", "description", "reason",
     ]
+    out_rows = []
 
-    output_rows = []
-    # Original repos
-    for row in original_repos:
-        out = {k: row.get(k, "") for k in output_fields}
-        out["source"] = "repo"
-        output_rows.append(out)
-
-    # Expanded repos
-    for repo in expanded_repos:
-        output_rows.append({
-            "页签": "",
-            "序号": "",
-            "项目名称": repo["repo_name"],
-            "分类": "",
-            "上游地址": repo["repo_url"],
+    for r in original_repo_rows:
+        k = url_key(r.get("上游地址", ""))
+        if not k or k in seen:
+            continue
+        seen.add(k)
+        out_rows.append({
+            "页签": r.get("页签", ""),
+            "序号": r.get("序号", ""),
+            "项目名称": r.get("项目名称", ""),
+            "分类": r.get("分类", ""),
+            "上游地址": r.get("上游地址", ""),
             "entity_type": "repo",
-            "reason": f"org_expansion: {repo['expanded_from_org']}",
-            "source": "org_expansion",
-            "expanded_from_org": repo["expanded_from_org"],
-            "stars": repo["stars"],
-            "description": repo["description"],
-            "language": repo["language"],
-            "llm_note": "",
+            "source": "repo",
+            "expanded_from_org": "",
+            "stars": "", "forks": "", "pushed_at": "",
+            "score": "", "language": "", "description": "",
+            "reason": r.get("reason", ""),
+        })
+
+    dedup_expanded = 0
+    for r in expanded:
+        k = url_key(r["上游地址"])
+        if not k or k in seen:
+            dedup_expanded += 1
+            continue
+        seen.add(k)
+        out_rows.append({
+            "页签": "", "序号": "", "项目名称": r["项目名称"],
+            "分类": "", "上游地址": r["上游地址"],
+            "entity_type": "repo", "source": "org_expansion",
+            "expanded_from_org": r["expanded_from_org"],
+            "stars": r["stars"], "forks": r["forks"], "pushed_at": r["pushed_at"],
+            "score": r["score"], "language": r["language"],
+            "description": r["description"],
+            "reason": f"org_expansion: {r['expanded_from_org']} (score={r['score']})",
         })
 
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
     with open(args.output, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=output_fields)
-        writer.writeheader()
-        for row in output_rows:
-            writer.writerow({k: row.get(k, "") for k in output_fields})
+        w = csv.DictWriter(f, fieldnames=output_fields)
+        w.writeheader()
+        for row in out_rows:
+            w.writerow({k: row.get(k, "") for k in output_fields})
 
     if args.summary:
         print(f"\n{'='*60}", file=sys.stderr)
         print(f"Repo Expansion Summary", file=sys.stderr)
         print(f"{'='*60}", file=sys.stderr)
-        print(f"  Original repos (repo.csv):  {len(original_repos)}", file=sys.stderr)
-        print(f"  New repos (org expansion):  {len(expanded_repos)}", file=sys.stderr)
-        print(f"  Total in repo_exp.csv:      {len(output_rows)}", file=sys.stderr)
-        print(f"  Filter: stars > {args.min_stars} AND active in last year", file=sys.stderr)
-        print(f"{'─'*60}", file=sys.stderr)
-
-        from collections import Counter
-        org_counts = Counter(r["expanded_from_org"] for r in expanded_repos)
-        print(f"\n  Repos by organization:", file=sys.stderr)
-        for org, count in org_counts.most_common():
-            print(f"    {org:40s} +{count} repos", file=sys.stderr)
+        print(f"  Original repos:      {len(original_repo_rows)}", file=sys.stderr)
+        print(f"  GitHub orgs processed: {github_org_count}/{len(org_rows)}", file=sys.stderr)
+        print(f"  Expansion candidates: {len(expanded)}", file=sys.stderr)
+        print(f"  Dedup dropped:       {dedup_expanded}", file=sys.stderr)
+        print(f"  Final rows in {args.output}: {len(out_rows)}", file=sys.stderr)
+        print(f"  Top-N per org:       {args.top}", file=sys.stderr)
 
 
 if __name__ == "__main__":

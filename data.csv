@@ -180,7 +180,7 @@
 鲲鹏,88,Docker,虚拟化,https://github.com/nextcloud/docker,,repo
 鲲鹏,89,Kubernetes,虚拟化,https://github.com/kubernetes/kubernetes,,repo
 鲲鹏,90,libvirt,虚拟化,https://github.com/libvirt/libvirt,,repo
-鲲鹏,91,OpenStack,虚拟化,https://opendev.org/openstack,,repo
+鲲鹏,91,OpenStack,虚拟化,https://opendev.org/openstack/openstack,,repo
 鲲鹏,92,KVM,虚拟化,https://git.kernel.org/pub/scm/virt/kvm/kvm.git,,repo
 鲲鹏,93,Open vSwitch,虚拟化,https://github.com/openvswitch/ovs,,repo
 鲲鹏,94,QEMU,虚拟化,https://gitlab.com/qemu-project/qemu,,repo
@@ -462,9 +462,9 @@ fuse内核优化部分：https://github.com/torvalds/linux",,repo
 鲲鹏,369,JuiceFS(电信),分布式存储,https://github.com/juicedata/juicefs,,repo
 鲲鹏,370,Mooncake(京东),分布式存储,https://github.com/kvcache-ai/Mooncake,,repo
 鲲鹏,371,Percona(字节),数据库,https://github.com/percona/percona-server,,repo
-鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux,,repo
-鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS,,repo
-鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego,,repo
+鲲鹏,372,openvelinux(字节),虚拟化,https://github.com/openvelinux,,organization
+鲲鹏,373,OpenCloudOS(腾讯),虚拟化,https://github.com/OpenCloudOS,,organization
+鲲鹏,374,CloudWeGo(字节),虚拟化,https://github.com/cloudwego,,organization
 鲲鹏,375,DeathStarBench(字节/腾讯),虚拟化,https://github.com/delimitrou/DeathStarBench,,repo
 鲲鹏,376,fluid(字节),虚拟化,https://github.com/fluid-cloudnative/fluid,,repo
 鲲鹏,377,kubeflow(字节),虚拟化,https://github.com/kubeflow/kubeflow,,repo
